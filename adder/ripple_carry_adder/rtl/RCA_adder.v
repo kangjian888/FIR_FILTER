@@ -15,7 +15,7 @@ generate
 	for (i = 0; i < BIT_WIDTH; i = i + 1)
 	begin:add_chain
 		one_bit_full_adder one_bit_full_adder_inst(.add_1(add_1[i]),.add_2(add_2[i]),.c_in(temp_carry[i]),
-			.c_out(temp_carry[i+1]), .sum(sum[i]))
+			.c_out(temp_carry[i+1]), .sum(sum[i]));
 	end
 endgenerate
 

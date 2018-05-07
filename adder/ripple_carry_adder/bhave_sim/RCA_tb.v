@@ -50,8 +50,8 @@ initial
 		add_2 = 16'd1;
 		c_in = 1'b1;
 		#(CLK_PERIOD)
-		$finish
+		$finish;
 	end
 
 //Output Monitor
-
+endmodule
