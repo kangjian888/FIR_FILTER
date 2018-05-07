@@ -1,3 +1,5 @@
+`timescale 1 ns / 1 ps
+
 module RCA_adder#(parameter BIT_WIDTH = 16)(
 	input [BIT_WIDTH-1:0] add_1,
 	input [BIT_WIDTH-1:0] add_2,
