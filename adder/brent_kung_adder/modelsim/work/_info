@@ -1,0 +1,142 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/modelsim
+vCarry_Generate
+Z0 !s110 1525930913
+!i10b 1
+!s100 SRRIaS@mg6MkNR;=5Ekef2
+IW0O7PPQ]nk2SnhLoUc[B:3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/modelsim
+w1525929250
+8D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/Carry_Generate.v
+FD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/Carry_Generate.v
+L0 8
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1525930913.000000
+!s107 D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/Carry_Generate.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/Carry_Generate.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@carry_@generate
+vCUS_PLUS
+R0
+!i10b 1
+!s100 cQ;P1fk^b;`IW51?eIWWi1
+IYb[LSDEBPMPFK7_H6;;hG0
+R1
+R2
+w1525874231
+8D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/CUS_PLUS.v
+FD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/CUS_PLUS.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/CUS_PLUS.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/CUS_PLUS.v|
+!s101 -O0
+!i113 1
+R5
+n@c@u@s_@p@l@u@s
+vPG_generate
+R0
+!i10b 1
+!s100 ;4eE<[iH5aHI7mcddENh;1
+IK?MH<dWIc^1^0CZ38]BGk0
+R1
+R2
+w1525786627
+8D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/PG_generate.v
+FD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/PG_generate.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/PG_generate.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/PG_generate.v|
+!s101 -O0
+!i113 1
+R5
+n@p@g_generate
+vPPA
+R0
+!i10b 1
+!s100 1T9z`=61jELdcAI10i^Mo3
+IZm<^PlX5IQ7do;:Ta6Y;62
+R1
+R2
+w1525930354
+8D:\OneDrive - HKUST Connect\COURSE\FIRST_GRADE\digital circuit\FIR_FILTER_DESIGN\adder\brent_kung_adder\rtl\PPA.v
+FD:\OneDrive - HKUST Connect\COURSE\FIRST_GRADE\digital circuit\FIR_FILTER_DESIGN\adder\brent_kung_adder\rtl\PPA.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:\OneDrive - HKUST Connect\COURSE\FIRST_GRADE\digital circuit\FIR_FILTER_DESIGN\adder\brent_kung_adder\rtl\PPA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\OneDrive - HKUST Connect\COURSE\FIRST_GRADE\digital circuit\FIR_FILTER_DESIGN\adder\brent_kung_adder\rtl\PPA.v|
+!s101 -O0
+!i113 1
+R5
+n@p@p@a
+vPPA_tb
+R0
+!i10b 1
+!s100 M]XgYjJ;7lYXHKVhM;c_?3
+I<FRc;c<LklO]ZanMgbzTO0
+R1
+R2
+w1525930907
+8D:\OneDrive - HKUST Connect\COURSE\FIRST_GRADE\digital circuit\FIR_FILTER_DESIGN\adder\brent_kung_adder\bhave_sim\PPA_tb.v
+FD:\OneDrive - HKUST Connect\COURSE\FIRST_GRADE\digital circuit\FIR_FILTER_DESIGN\adder\brent_kung_adder\bhave_sim\PPA_tb.v
+L0 10
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:\OneDrive - HKUST Connect\COURSE\FIRST_GRADE\digital circuit\FIR_FILTER_DESIGN\adder\brent_kung_adder\bhave_sim\PPA_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\OneDrive - HKUST Connect\COURSE\FIRST_GRADE\digital circuit\FIR_FILTER_DESIGN\adder\brent_kung_adder\bhave_sim\PPA_tb.v|
+!s101 -O0
+!i113 1
+R5
+n@p@p@a_tb
+vSUM_generate
+R0
+!i10b 1
+!s100 o_RXKjMWF15l?UHSOO0b?2
+I_ReI?CR4EJiFMV7_5zm;Y3
+R1
+R2
+w1525785569
+8D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/SUM_generate.v
+FD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/SUM_generate.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/SUM_generate.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/SUM_generate.v|
+!s101 -O0
+!i113 1
+R5
+n@s@u@m_generate

@@ -1,0 +1,142 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples
+vCarry_Generate
+Z0 !s110 1525869897
+!i10b 1
+!s100 ?75E8ec?5DLS]=^ogZAg91
+IM`;Gen<2U]2oz0RXZa@=z1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/modelsim
+w1525785739
+8D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/Carry_Generate.v
+FD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/Carry_Generate.v
+L0 8
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1525869897.000000
+!s107 D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/Carry_Generate.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/Carry_Generate.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@carry_@generate
+vCLA_basic
+R0
+!i10b 1
+!s100 [8in7@LLc`ld5YYT66Um;1
+IziA]_2fKl4`f4M6HlHh=a2
+R1
+R2
+w1525869882
+8D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/CLA_basic.v
+FD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/CLA_basic.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/CLA_basic.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/CLA_basic.v|
+!s101 -O0
+!i113 1
+R5
+n@c@l@a_basic
+vHiera_CLA
+R0
+!i10b 1
+!s100 e]h1c@nB8GhZJ1]@mPgeZ1
+IG_Ya;nRDU0NCE1jd019I;3
+R1
+R2
+w1525868213
+8D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/Hiera_CLA.v
+FD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/Hiera_CLA.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/Hiera_CLA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/Hiera_CLA.v|
+!s101 -O0
+!i113 1
+R5
+n@hiera_@c@l@a
+vHiera_CLA_tb
+R0
+!i10b 1
+!s100 kk:9LQ3<SVn>o7`3V:aU72
+IK`kNIQCbE7@LBifcmEYKW3
+R1
+R2
+w1525867391
+8D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/bhave_sim/Hiera_CLA_tb.v
+FD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/bhave_sim/Hiera_CLA_tb.v
+L0 10
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/bhave_sim/Hiera_CLA_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/bhave_sim/Hiera_CLA_tb.v|
+!s101 -O0
+!i113 1
+R5
+n@hiera_@c@l@a_tb
+vPG_generate
+R0
+!i10b 1
+!s100 ;4eE<[iH5aHI7mcddENh;1
+ILl_d`2S^JnWzNmE5<;[HS0
+R1
+R2
+w1525786627
+8D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/PG_generate.v
+FD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/PG_generate.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/PG_generate.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/PG_generate.v|
+!s101 -O0
+!i113 1
+R5
+n@p@g_generate
+vSUM_generate
+R0
+!i10b 1
+!s100 o_RXKjMWF15l?UHSOO0b?2
+IJmMRRVcYQKD=mPogUX_KX2
+R1
+R2
+w1525785569
+8D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/SUM_generate.v
+FD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/SUM_generate.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/SUM_generate.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/SUM_generate.v|
+!s101 -O0
+!i113 1
+R5
+n@s@u@m_generate

@@ -1,0 +1,43 @@
+{D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/bhave_sim/Hiera_CLA_tb.v} {1 {vlog -work work -stats=none {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/bhave_sim/Hiera_CLA_tb.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Hiera_CLA_tb
+
+Top level modules:
+	Hiera_CLA_tb
+
+} {} {}} {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/PG_generate.v} {1 {vlog -work work -stats=none {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/PG_generate.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module PG_generate
+
+Top level modules:
+	PG_generate
+
+} {} {}} {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/CLA_basic.v} {1 {vlog -work work -stats=none {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/CLA_basic.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module CLA_basic
+
+Top level modules:
+	CLA_basic
+
+} {} {}} {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/SUM_generate.v} {1 {vlog -work work -stats=none {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/SUM_generate.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module SUM_generate
+
+Top level modules:
+	SUM_generate
+
+} {} {}} {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/Carry_Generate.v} {1 {vlog -work work -stats=none {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/Carry_Generate.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Carry_Generate
+
+Top level modules:
+	Carry_Generate
+
+} {} {}} {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/Hiera_CLA.v} {1 {vlog -work work -stats=none {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/carry_lookahead_adder/rtl/Hiera_CLA.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Hiera_CLA
+
+Top level modules:
+	Hiera_CLA
+
+} {} {}}
