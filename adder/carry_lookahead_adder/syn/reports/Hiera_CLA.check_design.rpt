@@ -1,0 +1,18 @@
+ 
+****************************************
+check_design summary:
+Version:     I-2013.12-SP5-5
+Date:        Thu May 10 20:39:31 2018
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Nets                                                                4
+    Unloaded nets (LINT-2)                                          4
+--------------------------------------------------------------------------------
+
+Warning: In design 'Hiera_CLA', net 'CLA_BASIC[2].CLA_basic_inst/Carry[4]' driven by pin 'CLA_BASIC[2].CLA_basic_inst/C_GEN[4].Carry_Generate_inst/c_out[0]' has no loads. (LINT-2)
+Warning: In design 'Hiera_CLA', net 'CLA_BASIC[3].CLA_basic_inst/Carry[4]' driven by pin 'CLA_BASIC[3].CLA_basic_inst/C_GEN[4].Carry_Generate_inst/c_out[0]' has no loads. (LINT-2)
+Warning: In design 'Hiera_CLA', net 'CLA_BASIC[4].CLA_basic_inst/Carry[4]' driven by pin 'CLA_BASIC[4].CLA_basic_inst/C_GEN[4].Carry_Generate_inst/c_out[0]' has no loads. (LINT-2)
+Warning: In design 'Hiera_CLA', net 'CLA_BASIC[1].CLA_basic_inst/Carry[4]' driven by pin 'CLA_BASIC[1].CLA_basic_inst/C_GEN[4].Carry_Generate_inst/c_out[0]' has no loads. (LINT-2)
+1

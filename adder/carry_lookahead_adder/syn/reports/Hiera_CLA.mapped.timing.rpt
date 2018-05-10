@@ -1,0 +1,131 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : Hiera_CLA
+Version: I-2013.12-SP5-5
+Date   : Thu May 10 20:40:43 2018
+****************************************
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: add_1[1] (input port clocked by VCLK)
+  Endpoint: sum[15] (output port clocked by VCLK)
+  Path Group: FEEDTHROUGH
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Hiera_CLA          5K_hvratio_1_1        NangateOpenCellLibrary
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock VCLK (rise edge)                                            0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  input external delay                                              0.00       0.00 f
+  add_1[1] (in)                                           0.10      0.00       0.00 f
+  add_1[1] (net)                                2                   0.00       0.00 f
+  CLA_BASIC_1__CLA_basic_inst/add_1[2] (CLA_basic_0)                0.00       0.00 f
+  CLA_BASIC_1__CLA_basic_inst/add_1[2] (net)                        0.00       0.00 f
+  CLA_BASIC_1__CLA_basic_inst/PG_GEN_2__PG_generate_inst/add_1 (PG_generate_15)     0.00     0.00 f
+  CLA_BASIC_1__CLA_basic_inst/PG_GEN_2__PG_generate_inst/add_1 (net)     0.00     0.00 f
+  CLA_BASIC_1__CLA_basic_inst/PG_GEN_2__PG_generate_inst/U2/Z (XOR2_X1)     0.05     0.28     0.28 f
+  CLA_BASIC_1__CLA_basic_inst/PG_GEN_2__PG_generate_inst/Propagate (net)     4     0.00     0.28 f
+  CLA_BASIC_1__CLA_basic_inst/PG_GEN_2__PG_generate_inst/Propagate (PG_generate_15)     0.00     0.28 f
+  CLA_BASIC_1__CLA_basic_inst/Propagate[2] (net)                    0.00       0.28 f
+  CLA_BASIC_1__CLA_basic_inst/U1/ZN (AOI21_X1)            0.09      0.15       0.43 r
+  CLA_BASIC_1__CLA_basic_inst/n6 (net)          1                   0.00       0.43 r
+  CLA_BASIC_1__CLA_basic_inst/U3/ZN (OAI21_X1)            0.03      0.07       0.50 f
+  CLA_BASIC_1__CLA_basic_inst/n4 (net)          1                   0.00       0.50 f
+  CLA_BASIC_1__CLA_basic_inst/U2/ZN (AOI21_X1)            0.09      0.11       0.62 r
+  CLA_BASIC_1__CLA_basic_inst/n3 (net)          1                   0.00       0.62 r
+  CLA_BASIC_1__CLA_basic_inst/U7/ZN (INV_X1)              0.02      0.05       0.66 f
+  CLA_BASIC_1__CLA_basic_inst/Group_Generate[0] (net)     1         0.00       0.66 f
+  CLA_BASIC_1__CLA_basic_inst/Group_Generate[0] (CLA_basic_0)       0.00       0.66 f
+  Group_Generate[1] (net)                                           0.00       0.66 f
+  C_GEN_1__Carry_Generate_inst/Generate[0] (Carry_Generate_0)       0.00       0.66 f
+  C_GEN_1__Carry_Generate_inst/Generate[0] (net)                    0.00       0.66 f
+  C_GEN_1__Carry_Generate_inst/U2/ZN (AOI21_X1)           0.09      0.16       0.83 r
+  C_GEN_1__Carry_Generate_inst/n2 (net)         1                   0.00       0.83 r
+  C_GEN_1__Carry_Generate_inst/U1/ZN (INV_X1)             0.03      0.07       0.90 f
+  C_GEN_1__Carry_Generate_inst/c_out[0] (net)     3                 0.00       0.90 f
+  C_GEN_1__Carry_Generate_inst/c_out[0] (Carry_Generate_0)          0.00       0.90 f
+  Group_Carry[1] (net)                                              0.00       0.90 f
+  C_GEN_2__Carry_Generate_inst/c_in[0] (Carry_Generate_19)          0.00       0.90 f
+  C_GEN_2__Carry_Generate_inst/c_in[0] (net)                        0.00       0.90 f
+  C_GEN_2__Carry_Generate_inst/U2/ZN (AOI21_X1)           0.09      0.12       1.01 r
+  C_GEN_2__Carry_Generate_inst/n1 (net)         1                   0.00       1.01 r
+  C_GEN_2__Carry_Generate_inst/U1/ZN (INV_X1)             0.03      0.07       1.08 f
+  C_GEN_2__Carry_Generate_inst/c_out[0] (net)     3                 0.00       1.08 f
+  C_GEN_2__Carry_Generate_inst/c_out[0] (Carry_Generate_19)         0.00       1.08 f
+  Group_Carry[2] (net)                                              0.00       1.08 f
+  C_GEN_3__Carry_Generate_inst/c_in[0] (Carry_Generate_18)          0.00       1.08 f
+  C_GEN_3__Carry_Generate_inst/c_in[0] (net)                        0.00       1.08 f
+  C_GEN_3__Carry_Generate_inst/U2/ZN (AOI21_X1)           0.09      0.12       1.20 r
+  C_GEN_3__Carry_Generate_inst/n1 (net)         1                   0.00       1.20 r
+  C_GEN_3__Carry_Generate_inst/U1/ZN (INV_X1)             0.03      0.07       1.27 f
+  C_GEN_3__Carry_Generate_inst/c_out[0] (net)     3                 0.00       1.27 f
+  C_GEN_3__Carry_Generate_inst/c_out[0] (Carry_Generate_18)         0.00       1.27 f
+  Group_Carry[3] (net)                                              0.00       1.27 f
+  CLA_BASIC_4__CLA_basic_inst/c_in (CLA_basic_1)                    0.00       1.27 f
+  CLA_BASIC_4__CLA_basic_inst/c_in (net)                            0.00       1.27 f
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_1__Carry_Generate_inst/c_in[0] (Carry_Generate_4)     0.00     1.27 f
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_1__Carry_Generate_inst/c_in[0] (net)     0.00     1.27 f
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_1__Carry_Generate_inst/U2/ZN (AOI21_X1)     0.09     0.12     1.39 r
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_1__Carry_Generate_inst/n1 (net)     1     0.00     1.39 r
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_1__Carry_Generate_inst/U1/ZN (INV_X1)     0.03     0.06     1.45 f
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_1__Carry_Generate_inst/c_out[0] (net)     2     0.00     1.45 f
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_1__Carry_Generate_inst/c_out[0] (Carry_Generate_4)     0.00     1.45 f
+  CLA_BASIC_4__CLA_basic_inst/Carry[1] (net)                        0.00       1.45 f
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_2__Carry_Generate_inst/c_in[0] (Carry_Generate_3)     0.00     1.45 f
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_2__Carry_Generate_inst/c_in[0] (net)     0.00     1.45 f
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_2__Carry_Generate_inst/U2/ZN (AOI21_X1)     0.09     0.12     1.57 r
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_2__Carry_Generate_inst/n1 (net)     1     0.00     1.57 r
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_2__Carry_Generate_inst/U1/ZN (INV_X1)     0.03     0.06     1.63 f
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_2__Carry_Generate_inst/c_out[0] (net)     2     0.00     1.63 f
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_2__Carry_Generate_inst/c_out[0] (Carry_Generate_3)     0.00     1.63 f
+  CLA_BASIC_4__CLA_basic_inst/Carry[2] (net)                        0.00       1.63 f
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_3__Carry_Generate_inst/c_in[0] (Carry_Generate_2)     0.00     1.63 f
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_3__Carry_Generate_inst/c_in[0] (net)     0.00     1.63 f
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_3__Carry_Generate_inst/U2/ZN (AOI21_X1)     0.09     0.12     1.75 r
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_3__Carry_Generate_inst/n1 (net)     1     0.00     1.75 r
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_3__Carry_Generate_inst/U1/ZN (INV_X1)     0.02     0.05     1.80 f
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_3__Carry_Generate_inst/c_out[0] (net)     1     0.00     1.80 f
+  CLA_BASIC_4__CLA_basic_inst/C_GEN_3__Carry_Generate_inst/c_out[0] (Carry_Generate_2)     0.00     1.80 f
+  CLA_BASIC_4__CLA_basic_inst/Carry[3] (net)                        0.00       1.80 f
+  CLA_BASIC_4__CLA_basic_inst/SUM_GEN_4__SUM_generate_inst/c_in[0] (SUM_generate_1)     0.00     1.80 f
+  CLA_BASIC_4__CLA_basic_inst/SUM_GEN_4__SUM_generate_inst/c_in[0] (net)     0.00     1.80 f
+  CLA_BASIC_4__CLA_basic_inst/SUM_GEN_4__SUM_generate_inst/U1/Z (XOR2_X1)     0.03     0.19     1.99 f
+  CLA_BASIC_4__CLA_basic_inst/SUM_GEN_4__SUM_generate_inst/Sum[0] (net)     1     0.00     1.99 f
+  CLA_BASIC_4__CLA_basic_inst/SUM_GEN_4__SUM_generate_inst/Sum[0] (SUM_generate_1)     0.00     1.99 f
+  CLA_BASIC_4__CLA_basic_inst/sum[4] (net)                          0.00       1.99 f
+  CLA_BASIC_4__CLA_basic_inst/sum[4] (CLA_basic_1)                  0.00       1.99 f
+  sum[15] (net)                                                     0.00       1.99 f
+  sum[15] (out)                                           0.03      0.01       2.00 f
+  data arrival time                                                            2.00
+
+  clock VCLK (rise edge)                                            5.00       5.00
+  clock network delay (ideal)                                       0.00       5.00
+  output external delay                                             0.00       5.00
+  data required time                                                           5.00
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           5.00
+  data arrival time                                                           -2.00
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  3.00
+
+
+1

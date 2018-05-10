@@ -1,0 +1,187 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : PPA
+Version: I-2013.12-SP5-5
+Date   : Thu May 10 23:03:50 2018
+****************************************
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: add_1[2] (input port clocked by VCLK)
+  Endpoint: sum[16] (output port clocked by VCLK)
+  Path Group: FEEDTHROUGH
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  PPA                5K_hvratio_1_1        NangateOpenCellLibrary
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock VCLK (rise edge)                                            0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  input external delay                                              0.00       0.00 f
+  add_1[2] (in)                                           0.10      0.00       0.00 f
+  add_1[2] (net)                                2                   0.00       0.00 f
+  PG_GEN_2__PG_generate_inst/add_1 (PG_generate_15)                 0.00       0.00 f
+  PG_GEN_2__PG_generate_inst/add_1 (net)                            0.00       0.00 f
+  PG_GEN_2__PG_generate_inst/U2/Z (XOR2_X1)               0.05      0.28       0.28 f
+  PG_GEN_2__PG_generate_inst/Propagate (net)     3                  0.00       0.28 f
+  PG_GEN_2__PG_generate_inst/Propagate (PG_generate_15)             0.00       0.28 f
+  Propagate[2] (net)                                                0.00       0.28 f
+  STAGE_1_GEN_2__STAGE_1_GEN_CUS_PLUS_inst/p_high[0] (CUS_PLUS_0)     0.00     0.28 f
+  STAGE_1_GEN_2__STAGE_1_GEN_CUS_PLUS_inst/p_high[0] (net)          0.00       0.28 f
+  STAGE_1_GEN_2__STAGE_1_GEN_CUS_PLUS_inst/U3/ZN (AOI21_X1)     0.09     0.14     0.42 r
+  STAGE_1_GEN_2__STAGE_1_GEN_CUS_PLUS_inst/n2 (net)     1           0.00       0.42 r
+  STAGE_1_GEN_2__STAGE_1_GEN_CUS_PLUS_inst/U2/ZN (INV_X1)     0.03     0.07     0.49 f
+  STAGE_1_GEN_2__STAGE_1_GEN_CUS_PLUS_inst/alpha[0] (net)     3     0.00       0.49 f
+  STAGE_1_GEN_2__STAGE_1_GEN_CUS_PLUS_inst/alpha[0] (CUS_PLUS_0)     0.00      0.49 f
+  stage_1_alpha_2 (net)                                             0.00       0.49 f
+  CARRY_GEN_2__Carry_Generate_inst/alpha[0] (Carry_Generate_15)     0.00       0.49 f
+  CARRY_GEN_2__Carry_Generate_inst/alpha[0] (net)                   0.00       0.49 f
+  CARRY_GEN_2__Carry_Generate_inst/U2/ZN (AOI21_X1)       0.09      0.17       0.66 r
+  CARRY_GEN_2__Carry_Generate_inst/n1 (net)     1                   0.00       0.66 r
+  CARRY_GEN_2__Carry_Generate_inst/U1/ZN (INV_X1)         0.03      0.06       0.72 f
+  CARRY_GEN_2__Carry_Generate_inst/c_out[0] (net)     2             0.00       0.72 f
+  CARRY_GEN_2__Carry_Generate_inst/c_out[0] (Carry_Generate_15)     0.00       0.72 f
+  Carry[2] (net)                                                    0.00       0.72 f
+  CARRY_GEN_3__Carry_Generate_inst/c_in[0] (Carry_Generate_14)      0.00       0.72 f
+  CARRY_GEN_3__Carry_Generate_inst/c_in[0] (net)                    0.00       0.72 f
+  CARRY_GEN_3__Carry_Generate_inst/U2/ZN (AOI21_X1)       0.09      0.12       0.83 r
+  CARRY_GEN_3__Carry_Generate_inst/n1 (net)     1                   0.00       0.83 r
+  CARRY_GEN_3__Carry_Generate_inst/U1/ZN (INV_X1)         0.03      0.06       0.90 f
+  CARRY_GEN_3__Carry_Generate_inst/c_out[0] (net)     2             0.00       0.90 f
+  CARRY_GEN_3__Carry_Generate_inst/c_out[0] (Carry_Generate_14)     0.00       0.90 f
+  Carry[3] (net)                                                    0.00       0.90 f
+  CARRY_GEN_4__Carry_Generate_inst/c_in[0] (Carry_Generate_13)      0.00       0.90 f
+  CARRY_GEN_4__Carry_Generate_inst/c_in[0] (net)                    0.00       0.90 f
+  CARRY_GEN_4__Carry_Generate_inst/U2/ZN (AOI21_X1)       0.09      0.12       1.01 r
+  CARRY_GEN_4__Carry_Generate_inst/n1 (net)     1                   0.00       1.01 r
+  CARRY_GEN_4__Carry_Generate_inst/U1/ZN (INV_X1)         0.03      0.06       1.08 f
+  CARRY_GEN_4__Carry_Generate_inst/c_out[0] (net)     2             0.00       1.08 f
+  CARRY_GEN_4__Carry_Generate_inst/c_out[0] (Carry_Generate_13)     0.00       1.08 f
+  Carry[4] (net)                                                    0.00       1.08 f
+  CARRY_GEN_5__Carry_Generate_inst/c_in[0] (Carry_Generate_12)      0.00       1.08 f
+  CARRY_GEN_5__Carry_Generate_inst/c_in[0] (net)                    0.00       1.08 f
+  CARRY_GEN_5__Carry_Generate_inst/U2/ZN (AOI21_X1)       0.09      0.12       1.19 r
+  CARRY_GEN_5__Carry_Generate_inst/n1 (net)     1                   0.00       1.19 r
+  CARRY_GEN_5__Carry_Generate_inst/U1/ZN (INV_X1)         0.03      0.06       1.25 f
+  CARRY_GEN_5__Carry_Generate_inst/c_out[0] (net)     2             0.00       1.25 f
+  CARRY_GEN_5__Carry_Generate_inst/c_out[0] (Carry_Generate_12)     0.00       1.25 f
+  Carry[5] (net)                                                    0.00       1.25 f
+  CARRY_GEN_6__Carry_Generate_inst/c_in[0] (Carry_Generate_11)      0.00       1.25 f
+  CARRY_GEN_6__Carry_Generate_inst/c_in[0] (net)                    0.00       1.25 f
+  CARRY_GEN_6__Carry_Generate_inst/U2/ZN (AOI21_X1)       0.09      0.12       1.37 r
+  CARRY_GEN_6__Carry_Generate_inst/n1 (net)     1                   0.00       1.37 r
+  CARRY_GEN_6__Carry_Generate_inst/U1/ZN (INV_X1)         0.03      0.06       1.43 f
+  CARRY_GEN_6__Carry_Generate_inst/c_out[0] (net)     2             0.00       1.43 f
+  CARRY_GEN_6__Carry_Generate_inst/c_out[0] (Carry_Generate_11)     0.00       1.43 f
+  Carry[6] (net)                                                    0.00       1.43 f
+  CARRY_GEN_7__Carry_Generate_inst/c_in[0] (Carry_Generate_10)      0.00       1.43 f
+  CARRY_GEN_7__Carry_Generate_inst/c_in[0] (net)                    0.00       1.43 f
+  CARRY_GEN_7__Carry_Generate_inst/U2/ZN (AOI21_X1)       0.09      0.12       1.55 r
+  CARRY_GEN_7__Carry_Generate_inst/n1 (net)     1                   0.00       1.55 r
+  CARRY_GEN_7__Carry_Generate_inst/U1/ZN (INV_X1)         0.03      0.06       1.61 f
+  CARRY_GEN_7__Carry_Generate_inst/c_out[0] (net)     2             0.00       1.61 f
+  CARRY_GEN_7__Carry_Generate_inst/c_out[0] (Carry_Generate_10)     0.00       1.61 f
+  Carry[7] (net)                                                    0.00       1.61 f
+  CARRY_GEN_8__Carry_Generate_inst/c_in[0] (Carry_Generate_9)       0.00       1.61 f
+  CARRY_GEN_8__Carry_Generate_inst/c_in[0] (net)                    0.00       1.61 f
+  CARRY_GEN_8__Carry_Generate_inst/U2/ZN (AOI21_X1)       0.09      0.12       1.72 r
+  CARRY_GEN_8__Carry_Generate_inst/n1 (net)     1                   0.00       1.72 r
+  CARRY_GEN_8__Carry_Generate_inst/U1/ZN (INV_X1)         0.03      0.06       1.79 f
+  CARRY_GEN_8__Carry_Generate_inst/c_out[0] (net)     2             0.00       1.79 f
+  CARRY_GEN_8__Carry_Generate_inst/c_out[0] (Carry_Generate_9)      0.00       1.79 f
+  Carry[8] (net)                                                    0.00       1.79 f
+  CARRY_GEN_9__Carry_Generate_inst/c_in[0] (Carry_Generate_8)       0.00       1.79 f
+  CARRY_GEN_9__Carry_Generate_inst/c_in[0] (net)                    0.00       1.79 f
+  CARRY_GEN_9__Carry_Generate_inst/U2/ZN (AOI21_X1)       0.09      0.12       1.90 r
+  CARRY_GEN_9__Carry_Generate_inst/n1 (net)     1                   0.00       1.90 r
+  CARRY_GEN_9__Carry_Generate_inst/U1/ZN (INV_X1)         0.03      0.06       1.96 f
+  CARRY_GEN_9__Carry_Generate_inst/c_out[0] (net)     2             0.00       1.96 f
+  CARRY_GEN_9__Carry_Generate_inst/c_out[0] (Carry_Generate_8)      0.00       1.96 f
+  Carry[9] (net)                                                    0.00       1.96 f
+  CARRY_GEN_10__Carry_Generate_inst/c_in[0] (Carry_Generate_7)      0.00       1.96 f
+  CARRY_GEN_10__Carry_Generate_inst/c_in[0] (net)                   0.00       1.96 f
+  CARRY_GEN_10__Carry_Generate_inst/U2/ZN (AOI21_X1)      0.09      0.12       2.08 r
+  CARRY_GEN_10__Carry_Generate_inst/n1 (net)     1                  0.00       2.08 r
+  CARRY_GEN_10__Carry_Generate_inst/U1/ZN (INV_X1)        0.03      0.06       2.14 f
+  CARRY_GEN_10__Carry_Generate_inst/c_out[0] (net)     2            0.00       2.14 f
+  CARRY_GEN_10__Carry_Generate_inst/c_out[0] (Carry_Generate_7)     0.00       2.14 f
+  Carry[10] (net)                                                   0.00       2.14 f
+  CARRY_GEN_11__Carry_Generate_inst/c_in[0] (Carry_Generate_6)      0.00       2.14 f
+  CARRY_GEN_11__Carry_Generate_inst/c_in[0] (net)                   0.00       2.14 f
+  CARRY_GEN_11__Carry_Generate_inst/U2/ZN (AOI21_X1)      0.09      0.12       2.26 r
+  CARRY_GEN_11__Carry_Generate_inst/n1 (net)     1                  0.00       2.26 r
+  CARRY_GEN_11__Carry_Generate_inst/U1/ZN (INV_X1)        0.03      0.06       2.32 f
+  CARRY_GEN_11__Carry_Generate_inst/c_out[0] (net)     2            0.00       2.32 f
+  CARRY_GEN_11__Carry_Generate_inst/c_out[0] (Carry_Generate_6)     0.00       2.32 f
+  Carry[11] (net)                                                   0.00       2.32 f
+  CARRY_GEN_12__Carry_Generate_inst/c_in[0] (Carry_Generate_5)      0.00       2.32 f
+  CARRY_GEN_12__Carry_Generate_inst/c_in[0] (net)                   0.00       2.32 f
+  CARRY_GEN_12__Carry_Generate_inst/U2/ZN (AOI21_X1)      0.09      0.12       2.43 r
+  CARRY_GEN_12__Carry_Generate_inst/n1 (net)     1                  0.00       2.43 r
+  CARRY_GEN_12__Carry_Generate_inst/U1/ZN (INV_X1)        0.03      0.06       2.50 f
+  CARRY_GEN_12__Carry_Generate_inst/c_out[0] (net)     2            0.00       2.50 f
+  CARRY_GEN_12__Carry_Generate_inst/c_out[0] (Carry_Generate_5)     0.00       2.50 f
+  Carry[12] (net)                                                   0.00       2.50 f
+  CARRY_GEN_13__Carry_Generate_inst/c_in[0] (Carry_Generate_4)      0.00       2.50 f
+  CARRY_GEN_13__Carry_Generate_inst/c_in[0] (net)                   0.00       2.50 f
+  CARRY_GEN_13__Carry_Generate_inst/U2/ZN (AOI21_X1)      0.09      0.12       2.61 r
+  CARRY_GEN_13__Carry_Generate_inst/n1 (net)     1                  0.00       2.61 r
+  CARRY_GEN_13__Carry_Generate_inst/U1/ZN (INV_X1)        0.03      0.06       2.67 f
+  CARRY_GEN_13__Carry_Generate_inst/c_out[0] (net)     2            0.00       2.67 f
+  CARRY_GEN_13__Carry_Generate_inst/c_out[0] (Carry_Generate_4)     0.00       2.67 f
+  Carry[13] (net)                                                   0.00       2.67 f
+  CARRY_GEN_14__Carry_Generate_inst/c_in[0] (Carry_Generate_3)      0.00       2.67 f
+  CARRY_GEN_14__Carry_Generate_inst/c_in[0] (net)                   0.00       2.67 f
+  CARRY_GEN_14__Carry_Generate_inst/U2/ZN (AOI21_X1)      0.09      0.12       2.79 r
+  CARRY_GEN_14__Carry_Generate_inst/n1 (net)     1                  0.00       2.79 r
+  CARRY_GEN_14__Carry_Generate_inst/U1/ZN (INV_X1)        0.03      0.06       2.85 f
+  CARRY_GEN_14__Carry_Generate_inst/c_out[0] (net)     2            0.00       2.85 f
+  CARRY_GEN_14__Carry_Generate_inst/c_out[0] (Carry_Generate_3)     0.00       2.85 f
+  Carry[14] (net)                                                   0.00       2.85 f
+  CARRY_GEN_15__Carry_Generate_inst/c_in[0] (Carry_Generate_2)      0.00       2.85 f
+  CARRY_GEN_15__Carry_Generate_inst/c_in[0] (net)                   0.00       2.85 f
+  CARRY_GEN_15__Carry_Generate_inst/U2/ZN (AOI21_X1)      0.09      0.12       2.97 r
+  CARRY_GEN_15__Carry_Generate_inst/n1 (net)     1                  0.00       2.97 r
+  CARRY_GEN_15__Carry_Generate_inst/U1/ZN (INV_X1)        0.03      0.06       3.03 f
+  CARRY_GEN_15__Carry_Generate_inst/c_out[0] (net)     2            0.00       3.03 f
+  CARRY_GEN_15__Carry_Generate_inst/c_out[0] (Carry_Generate_2)     0.00       3.03 f
+  Carry[15] (net)                                                   0.00       3.03 f
+  SUM_GEN_16__SUM_generate_inst/c_in[0] (SUM_generate_1)            0.00       3.03 f
+  SUM_GEN_16__SUM_generate_inst/c_in[0] (net)                       0.00       3.03 f
+  SUM_GEN_16__SUM_generate_inst/U1/Z (XOR2_X1)            0.03      0.20       3.23 f
+  SUM_GEN_16__SUM_generate_inst/Sum[0] (net)     1                  0.00       3.23 f
+  SUM_GEN_16__SUM_generate_inst/Sum[0] (SUM_generate_1)             0.00       3.23 f
+  sum[16] (net)                                                     0.00       3.23 f
+  sum[16] (out)                                           0.03      0.01       3.24 f
+  data arrival time                                                            3.24
+
+  clock VCLK (rise edge)                                            5.00       5.00
+  clock network delay (ideal)                                       0.00       5.00
+  output external delay                                             0.00       5.00
+  data required time                                                           5.00
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                           5.00
+  data arrival time                                                           -3.24
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                  1.76
+
+
+1
