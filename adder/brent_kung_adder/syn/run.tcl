@@ -32,7 +32,7 @@ set_app_var link_library "* $target_library $synthetic_library"
 # Please do NOT import testbench or behavior memory model here.
 ################################################################################
 define_design_lib WORK -path ./WORK
-analyze -format verilog {PPA.v}{Carry_Generate.v}{CUS_PLUS.v}{PG_generate.v}{SUM_generate.v}
+analyze -format verilog {PPA.v Carry_Generate.v CUS_PLUS.v PG_generate.v SUM_generate.v}
 elaborate PPA; # top module name
 
 # store the unmapped results

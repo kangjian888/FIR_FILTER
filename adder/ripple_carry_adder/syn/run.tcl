@@ -32,7 +32,7 @@ set_app_var link_library "* $target_library $synthetic_library"
 # Please do NOT import testbench or behavior memory model here.
 ################################################################################
 define_design_lib WORK -path ./WORK
-analyze -format verilog {RCA_adder.v}{one_bit_full_adder.v}
+analyze -format verilog {RCA_adder.v one_bit_full_adder.v}
 elaborate RCA_adder; # top module name
 
 # store the unmapped results
