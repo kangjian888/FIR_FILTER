@@ -32,7 +32,7 @@ set_app_var link_library "* $target_library $synthetic_library"
 # Please do NOT import testbench or behavior memory model here.
 ################################################################################
 define_design_lib WORK -path ./WORK
-analyze -format verilog {Hiera_CLA.v}
+analyze -format verilog {Hiera_CLA.v}{CLA_basic.v}{PG_generate.v}{SUM_generate.v}{Carry_generate.v}
 elaborate Hiera_CLA; # top module name
 
 # store the unmapped results
