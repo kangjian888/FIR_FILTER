@@ -1,0 +1,92 @@
+1        
+0 Hiera_CLA.mapped.sdf_c
+39
++cli+4
++itf+/usr/eelocal/synopsys/vcs_mx-vi2014.03-2/amd64/lib/vcsd.tab
++memcbk
++neg_tchk
++v2k
++vcsd
++vpi
++vpi
++warn=noTFIPC
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/usr/eelocal/synopsys/vcs_mx-vi2014.03-2/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mldflags=
+-Mobjects= /usr/eelocal/synopsys/vcs_mx-vi2014.03-2/amd64/lib/libvirsim.so /usr/eelocal/synopsys/vcs_mx-vi2014.03-2/amd64/lib/liberrorinf.so /usr/eelocal/synopsys/vcs_mx-vi2014.03-2/amd64/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/usr/eelocal/synopsys/vcs_mx-vi2014.03-2/amd64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl -lm
+-Mvcsaceobjs=
+-Xcbug=0x1
+-debug=4
+-debug_all
+-debug_obj
+-full64
+-gen_obj
+-line
+-picarchive
+-timescale=1ns/1ps
+-top
+-v
+/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Verilog/NangateOpenCellLibrary.v
+/usr/eelocal/synopsys/vcs_mx-vi2014.03-2/amd64/bin/vcs1
+Hiera_CLA.mapped.v
+Hiera_CLA_tb
+Hiera_CLA_tb.v
+35
+sysc_uni_pwd=/staff/ee/jkangac/Desktop/FIR_FILTER/adder/carry_lookahead_adder/syn_sim
+VMR_MODE_FLAG=64
+VENDOR=unknown
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/usr/eelocal/synopsys/vcs_mx-vi2014.03-2
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=amd64
+UNAME=/bin/uname
+TOOL_HOME=/usr/eelocal/synopsys/vcs_mx-vi2014.03-2/amd64
+SYNTHESIS_HOME=/usr/eelocal/synopsys/syn-vi2013.12-sp5-5
+SSH_TTY=/dev/pts/7
+SSH_CONNECTION=143.89.156.148 59617 143.89.44.109 22
+SSH_CLIENT=143.89.156.148 59617 22
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+REMOTEHOST=dmg148.resnet.ust.hk
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+OVA_UUM=0
+OSTYPE=linux
+MODULESHOME=/usr/share/Modules
+MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
+LOADEDMODULES=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+KRB5CCNAME=FILE:/tmp/krb5cc_59662_3CNPOj
+HOSTTYPE=x86_64-linux
+G_BROKEN_FILENAMES=1
+GROUP=ee
+CVS_RSH=ssh
+CDS_LIC_FILE=/usr/eelocal/cadence/license/license.80816eab
+0
+6
+1525966582 Hiera_CLA.mapped.sdf
+1456713297 /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Verilog/NangateOpenCellLibrary.v
+1456713297 /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Verilog/NangateOpenCellLibrary.v
+1526007948 Hiera_CLA_tb.v
+1525966582 Hiera_CLA.mapped.v
+1400211380 /usr/eelocal/synopsys/vcs_mx-vi2014.03-2/amd64/lib/vcsd.tab
+4
+0 
+1400212067 /usr/eelocal/synopsys/vcs_mx-vi2014.03-2/amd64/lib/libvirsim.so
+1400211856 /usr/eelocal/synopsys/vcs_mx-vi2014.03-2/amd64/lib/liberrorinf.so
+1400211646 /usr/eelocal/synopsys/vcs_mx-vi2014.03-2/amd64/lib/libsnpsmalloc.so
+1526007913 simv.daidir

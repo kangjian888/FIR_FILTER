@@ -37,7 +37,7 @@ PPA PPA_inst (
 
 
 initial begin
-  $sdf_annotate("PPA.mapped.sdf", RCA_adder_inst);
+  $sdf_annotate("PPA.mapped.sdf", PPA_inst);
 end
 // ----------------------------------
 // Clock generation

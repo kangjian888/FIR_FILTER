@@ -1,0 +1,32 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/adder/ripple_carry_adder/syn_sim/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpBb7KHI
+synUtils::sendTool -active {_icl_start_rpc -version "I-2014.03-2_Full64" -sync_file /tmp/vcs_dve_rpc.jkangac.56340}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jkangac.56340}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+ucliGUI::vpdAddHierarchy -scope RCA_tb -depth 1 -file /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/adder/ripple_carry_adder/syn_sim/inter.vpd; synopsys::dump -flush VPD0
+synopsys::dump -add {RCA_tb.add_1 RCA_tb.add_2 RCA_tb.c_in RCA_tb.c_out RCA_tb.sum } -aggregates  -fid VPD0
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+set ucliGUI::state
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

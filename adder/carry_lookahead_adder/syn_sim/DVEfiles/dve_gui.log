@@ -1,0 +1,13 @@
+Chronologic VCS simulator copyright 1991-2014
+Contains Synopsys proprietary information.
+Compiler version I-2014.03-2_Full64; Runtime version I-2014.03-2_Full64;  May 11 11:06 2018
+Doing SDF annotation ...... Done
+VCD+ Writer I-2014.03-2_Full64 Copyright (c) 1991-2014 by Synopsys Inc.
+The file '/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/adder/carry_lookahead_adder/syn_sim/inter.vpd' was opened successfully.
+$finish called from file "Hiera_CLA_tb.v", line 83.
+$finish at simulation time                20000
+Simulation complete, time is 20000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 20000 ps
+CPU Time:      0.120 seconds;       Data structure size:   0.0Mb
+Fri May 11 11:06:36 2018

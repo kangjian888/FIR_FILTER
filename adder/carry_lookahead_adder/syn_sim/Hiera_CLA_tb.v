@@ -37,7 +37,7 @@ Hiera_CLA Hiera_CLA_inst(
 
 
 initial begin
-  $sdf_annotate("Hiera_CLA.mapped.sdf", RCA_adder_inst);
+  $sdf_annotate("Hiera_CLA.mapped.sdf", Hiera_CLA_inst);
 end
 // ----------------------------------
 // Clock generation
