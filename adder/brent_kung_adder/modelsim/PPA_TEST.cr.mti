@@ -1,23 +1,16 @@
-{D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/bhave_sim/PPA_tb.v} {1 {vlog -work work -stats=none {D:\OneDrive - HKUST Connect\COURSE\FIRST_GRADE\digital circuit\FIR_FILTER_DESIGN\adder\brent_kung_adder\bhave_sim\PPA_tb.v}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module PPA_tb
-
-Top level modules:
-	PPA_tb
-
-} {} {}} {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/CUS_PLUS.v} {1 {vlog -work work -stats=none {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/CUS_PLUS.v}
+{D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/CUS_PLUS.v} {1 {vlog -work work -stats=none {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/CUS_PLUS.v}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
 -- Compiling module CUS_PLUS
 
 Top level modules:
 	CUS_PLUS
 
-} {} {}} {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/Carry_Generate.v} {1 {vlog -work work -stats=none {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/Carry_Generate.v}
+} {} {}} {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/bhave_sim/PPA_tb.v} {1 {vlog -work work -stats=none {D:\OneDrive - HKUST Connect\COURSE\FIRST_GRADE\digital circuit\FIR_FILTER_DESIGN\adder\brent_kung_adder\bhave_sim\PPA_tb.v}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module Carry_Generate
+-- Compiling module PPA_tb
 
 Top level modules:
-	Carry_Generate
+	PPA_tb
 
 } {} {}} {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/SUM_generate.v} {1 {vlog -work work -stats=none {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/SUM_generate.v}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
@@ -26,12 +19,12 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	SUM_generate
 
-} {} {}} {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/PPA.v} {1 {vlog -work work -stats=none {D:\OneDrive - HKUST Connect\COURSE\FIRST_GRADE\digital circuit\FIR_FILTER_DESIGN\adder\brent_kung_adder\rtl\PPA.v}
+} {} {}} {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/Carry_Generate.v} {1 {vlog -work work -stats=none {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/Carry_Generate.v}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module PPA
+-- Compiling module Carry_Generate
 
 Top level modules:
-	PPA
+	Carry_Generate
 
 } {} {}} {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/PG_generate.v} {1 {vlog -work work -stats=none {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/adder/brent_kung_adder/rtl/PG_generate.v}
 Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
