@@ -1,0 +1,33 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_homework/syn_sim/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnp2ZXMb8
+synUtils::sendTool -active {_icl_start_rpc -version "I-2014.03-2_Full64" -sync_file /tmp/vcs_dve_rpc.jkangac.25680}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.jkangac.25680}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+synopsys::dump -add {FIR_4TAP_tb.calculation_done FIR_4TAP_tb.clk FIR_4TAP_tb.data_in FIR_4TAP_tb.data_out FIR_4TAP_tb.enable FIR_4TAP_tb.rst_n } -aggregates  -fid VPD0
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+ucliCore::stopTool -no_signal
+set ucliGUI::state
+set ucliGUI::state
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit
