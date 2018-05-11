@@ -1,0 +1,109 @@
+ 
+****************************************
+Report : qor
+Design : FIR_4TAP
+Version: I-2013.12-SP5-5
+Date   : Fri May 11 23:37:19 2018
+****************************************
+
+
+  Timing Path Group 'REGIN'
+  -----------------------------------
+  Levels of Logic:               2.00
+  Critical Path Length:          0.25
+  Critical Path Slack:        7999.59
+  Critical Path Clk Period:  20000.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'REGOUT'
+  -----------------------------------
+  Levels of Logic:               0.00
+  Critical Path Length:          0.35
+  Critical Path Slack:        7999.65
+  Critical Path Clk Period:  20000.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              19.00
+  Critical Path Length:          5.44
+  Critical Path Slack:       19994.45
+  Critical Path Clk Period:  20000.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          4
+  Hierarchical Port Count:        198
+  Leaf Cell Count:                529
+  Buf/Inv Cell Count:              79
+  Buf Cell Count:                   0
+  Inv Cell Count:                  79
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:       347
+  Sequential Cell Count:          182
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:      547.960009
+  Noncombinational Area:   968.772031
+  Buf/Inv Area:             42.028000
+  Total Buffer Area:             0.00
+  Total Inverter Area:          42.03
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:              1516.732040
+  Design Area:            1516.732040
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           745
+  Nets With Violations:             1
+  Max Trans Violations:             1
+  Max Cap Violations:               1
+  -----------------------------------
+
+
+  Hostname: EEX109
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.00
+  Logic Optimization:                  0.00
+  Mapping Optimization:                0.00
+  -----------------------------------------
+  Overall Compile Time:                2.22
+  Overall Compile Wall Clock Time:     6.03
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

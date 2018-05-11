@@ -1,0 +1,367 @@
+
+                      Design Compiler Graphical
+                            DC Ultra (TM)
+                             DFTMAX (TM)
+                         Power Compiler (TM)
+                           DesignWare (R)
+                           DC Expert (TM)
+                         Design Vision (TM)
+                          HDL Compiler (TM)
+                         VHDL Compiler (TM)
+                            DFT Compiler
+                        Library Compiler (TM)
+                         Design Compiler(R)
+
+         Version I-2013.12-SP5-5 for RHEL32 -- Dec 16, 2014
+               Copyright (c) 1988-2014 Synopsys, Inc.
+
+This software and the associated documentation are confidential and 
+proprietary to Synopsys, Inc. Your use or disclosure of this software 
+is subject to the terms and conditions of a written license agreement 
+between you, or your company, and Synopsys, Inc.
+
+Information: As of the J-2014.09 version of dc_shell, the 32-bit
+             version of the product will not be delivered by default.
+             If you require a 32-bit version for any reason, please
+             contact Synopsys technical support.
+
+Initializing...
+################################################################################
+# Filename: dc.tcl
+# Author: ZHU Jingyang
+# Email: jzhuak@connect.ust.hk
+# Affiliation: Hong Kong University of Science and Technology
+# -------------------------------------------------------------------------------
+# This is the template Design Compiler script for ELEC5160/EESM5020.
+################################################################################
+################################################################################
+# Step 0: create directories for results and reports
+################################################################################
+file mkdir reports; # store area, timing, power reports
+file mkdir results; # store design
+################################################################################
+# Step 1: digital standard cell library set up
+# You should specify the following paths accordingly:
+# - search_path
+# - target_library
+# - link_library
+################################################################################
+set_app_var search_path "/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM ../rtl $search_path"
+/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM ../rtl . /usr/eelocal/synopsys/syn-vi2013.12-sp5-5/libraries/syn /usr/eelocal/synopsys/syn-vi2013.12-sp5-5/minpower/syn /usr/eelocal/synopsys/syn-vi2013.12-sp5-5/dw/syn_ver /usr/eelocal/synopsys/syn-vi2013.12-sp5-5/dw/sim_ver
+set_app_var target_library "NangateOpenCellLibrary_slow.db"
+NangateOpenCellLibrary_slow.db
+set_app_var synthetic_library dw_foundation.sldb
+dw_foundation.sldb
+set_app_var link_library "* $target_library $synthetic_library"
+* NangateOpenCellLibrary_slow.db dw_foundation.sldb
+################################################################################
+# Step 2: import design
+# You should specify the HDL files for your design accordingly.
+# Note: the HDL files should be located in the search_path you defined above.
+# Please do NOT import testbench or behavior memory model here.
+################################################################################
+define_design_lib WORK -path ./WORK
+1
+analyze -format verilog {FIR_4TAP.v}
+Running PRESTO HDLC
+Searching for /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/FIR_4TAP.v
+Searching for ../rtl/FIR_4TAP.v
+Compiling source file ../rtl/FIR_4TAP.v
+Presto compilation completed successfully.
+Loading db file '/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.db'
+Loading db file '/usr/eelocal/synopsys/syn-vi2013.12-sp5-5/libraries/syn/dw_foundation.sldb'
+1
+elaborate FIR_4TAP; # top module name
+Loading db file '/usr/eelocal/synopsys/syn-vi2013.12-sp5-5/libraries/syn/gtech.db'
+Loading db file '/usr/eelocal/synopsys/syn-vi2013.12-sp5-5/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine FIR_4TAP line 30 in file
+		'../rtl/FIR_4TAP.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    mul_stage_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  output_stage_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   add_2_stage_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   add_1_stage_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine FIR_4TAP line 48 in file
+		'../rtl/FIR_4TAP.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   data_reg_0_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   data_reg_1_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   data_reg_2_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   data_reg_3_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine FIR_4TAP line 81 in file
+		'../rtl/FIR_4TAP.v'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| multiplication_1_reg | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+| multiplication_2_reg | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+| multiplication_3_reg | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+| multiplication_0_reg | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine FIR_4TAP line 111 in file
+		'../rtl/FIR_4TAP.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      sum_2_reg      | Flip-flop |  17   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      sum_1_reg      | Flip-flop |  17   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine FIR_4TAP line 136 in file
+		'../rtl/FIR_4TAP.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     result_reg      | Flip-flop |  18   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'FIR_4TAP'.
+1
+# store the unmapped results
+write -hierarchy -format ddc -output results/FIR_4TAP.unmapped.ddc
+Writing ddc file 'results/FIR_4TAP.unmapped.ddc'.
+1
+################################################################################
+# Step 3: constrain your design
+# You should specify the critical path, the input & output delay and the
+# environment attribute of your design, so that Design Compiler can correctly
+# synthesize your design with the required specfication.
+################################################################################
+# All the constraints are written in the following tcl script
+source FIR_4TAP.constraints.tcl
+1
+################################################################################
+# Create default path groups
+#
+# Seperate these paths can help improve optimization results.
+################################################################################
+set ports_clock_root   [filter_collection [get_attribute [get_clocks] sources] object_class==port]
+{clk}
+group_path -name REGOUT -to [all_outputs]
+1
+group_path -name REGIN -from [remove_from_collection [all_inputs]   ${ports_clock_root}]
+1
+group_path -name FEEDTHROUGH -from   [remove_from_collection [all_inputs] ${ports_clock_root}] -to [all_outputs]
+1
+################################################################################
+# Apply Additional Optimization Constraints
+################################################################################
+# Prevent assignment statements in the Verilog netlist.
+set_fix_multiple_port_nets -all -buffer_constants
+1
+################################################################################
+# Check for Design Errors. It is a good habit to check the design before you run
+# the synthesis.
+################################################################################
+check_design -summary
+ 
+****************************************
+check_design summary:
+Version:     I-2013.12-SP5-5
+Date:        Fri May 11 23:36:04 2018
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               3
+    Cells do not drive (LINT-1)                                     3
+--------------------------------------------------------------------------------
+
+Information: Use the 'check_design' command for 
+	 more information about warnings. (LINT-98)
+
+1
+check_design > reports/FIR_4TAP.check_design.rpt; # dump to the file
+################################################################################
+# Step 4: compile the design
+# There exits lots of option for compile command. Please check the manual of
+# compile for further info.
+################################################################################
+compile
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | I-2013.12-DWBB_201312.5.1
+                                                               |     *     |
+| Licensed DW Building Blocks        | I-2013.12-DWBB_201312.5.1
+                                                               |     *     |
+============================================================================
+
+
+Information: There are 3 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'FIR_4TAP'
+Information: The register 'multiplication_1_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'multiplication_2_reg[0]' is a constant and will be removed. (OPT-1206)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'FIR_4TAP_DW01_add_0'
+  Processing 'FIR_4TAP_DW01_add_1'
+  Processing 'FIR_4TAP_DW01_add_2'
+  Mapping 'FIR_4TAP_DW_mult_uns_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    1835.7      0.00       0.0       0.0                          
+    0:00:01    1835.7      0.00       0.0       0.0                          
+    0:00:01    1835.7      0.00       0.0       0.0                          
+    0:00:01    1835.7      0.00       0.0       0.0                          
+    0:00:02    1835.7      0.00       0.0       0.0                          
+    0:00:02    1582.2      0.00       0.0       0.0                          
+    0:00:02    1582.2      0.00       0.0       0.0                          
+    0:00:02    1582.2      0.00       0.0       0.0                          
+    0:00:02    1582.2      0.00       0.0       0.0                          
+    0:00:02    1582.2      0.00       0.0       0.0                          
+    0:00:02    1582.2      0.00       0.0       0.0                          
+    0:00:02    1582.2      0.00       0.0       0.0                          
+    0:00:02    1582.2      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:02    1582.2      0.00       0.0       0.0                          
+    0:00:02    1582.2      0.00       0.0       0.0                          
+    0:00:03    1571.3      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:03    1571.3      0.00       0.0       0.0                          
+    0:00:03    1571.3      0.00       0.0       0.0                          
+    0:00:03    1567.3      0.00       0.0       0.0                          
+    0:00:03    1565.4      0.00       0.0       0.0                          
+    0:00:03    1563.8      0.00       0.0       0.0                          
+    0:00:03    1562.2      0.00       0.0       0.0                          
+    0:00:03    1560.6      0.00       0.0       0.0                          
+    0:00:03    1560.6      0.00       0.0       0.0                          
+    0:00:03    1560.6      0.00       0.0       0.0                          
+    0:00:03    1560.6      0.00       0.0       0.0                          
+    0:00:03    1560.6      0.00       0.0       0.0                          
+    0:00:03    1560.6      0.00       0.0       0.0                          
+    0:00:03    1560.6      0.00       0.0       0.0                          
+    0:00:03    1560.6      0.00       0.0       0.0                          
+    0:00:03    1560.6      0.00       0.0       0.0                          
+Loading db file '/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.db'
+
+  Optimization Complete
+  ---------------------
+1
+################################################################################
+# Note: compile_ultra does not work for some open source libraries, i.e. Nangate
+# since there are some cells missing for these libraries.
+# Sol: use compile instead. You can use compile_ultra for the commerial library
+# such TSMC45nm, which has a complete set of gates supported.
+#
+# compile_ultra -no_autoungroup; # keep hierarchy for the purpose of debug
+################################################################################
+# High-effort area optimization which improves the area without degrading the
+# timing or leakage of the compiled design
+optimize_netlist -area
+Analyzing: "/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.db"
+Library analysis succeeded.
+
+Information: There are 40 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Loaded alib file './alib-52/NangateOpenCellLibrary_slow.db.alib'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Loading db file '/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.db'
+
+
+  Beginning Area Optimization
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    1560.6      0.00       0.0       0.0                          
+    0:00:02    1516.7      0.00       0.0      75.0                          
+Loading db file '/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.db'
+
+  Optimization Complete
+  ---------------------
+1
+################################################################################
+# Step 5: write out final design and reports
+# The files include:
+# - .ddc: binary format used for subsequent Design Compiler sessions
+# - .v: Verilog netlist for gate-level simulation and P&R
+# - .sdf: SDF backannotated file containing gate and net latency
+# - .sdc: SDC constraints for ASCII flow
+################################################################################
+change_names -rules verilog -hierarchy
+1
+# Write out design
+write -format verilog -hierarchy -output results/FIR_4TAP.mapped.v
+Writing verilog file '/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_homework/syn/results/FIR_4TAP.mapped.v'.
+1
+write -format ddc -hierarchy -output results/FIR_4TAP.mapped.ddc
+Writing ddc file 'results/FIR_4TAP.mapped.ddc'.
+1
+write_sdf results/FIR_4TAP.mapped.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_homework/syn/results/FIR_4TAP.mapped.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+write_sdc -nosplit results/FIR_4TAP.mapped.sdc
+1
+# Generate reports
+report_qor > reports/FIR_4TAP.mapped.qor.rpt
+report_timing -transition_time -nets -attribute -nosplit   > reports/FIR_4TAP.mapped.timing.rpt
+report_area -nosplit > reports/FIR_4TAP.mapped.area.rpt
+report_power -nosplit > reports/FIR_4TAP.mapped.power.rpt
+################################################################################
+# Exit Design Compiler
+################################################################################
+exit
+
+Thank you...

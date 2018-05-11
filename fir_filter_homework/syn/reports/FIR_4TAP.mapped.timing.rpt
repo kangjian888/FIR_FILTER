@@ -1,0 +1,184 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : FIR_4TAP
+Version: I-2013.12-SP5-5
+Date   : Fri May 11 23:37:19 2018
+****************************************
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: enable (input port clocked by clk)
+  Endpoint: data_reg_1_reg_14_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: REGIN
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIR_4TAP           5K_hvratio_1_1        NangateOpenCellLibrary
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes
+  ------------------------------------------------------------------------------------------
+  clock clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  input external delay                           12000.00   12000.00 f
+  enable (in)                              0.10      0.00   12000.00 f
+  enable (net)                 100                   0.00   12000.00 f
+  U602/ZN (INV_X1)                         0.06      0.16   12000.16 r
+  n501 (net)                     3                   0.00   12000.16 r
+  U349/ZN (OAI22_X1)                       0.03      0.08   12000.24 f
+  n430 (net)                     1                   0.00   12000.24 f
+  data_reg_1_reg_14_/D (DFFR_X1)           0.03      0.01   12000.25 f
+  data arrival time                                         12000.25
+
+  clock clk (rise edge)                          20000.00   20000.00
+  clock network delay (ideal)                        0.00   20000.00
+  data_reg_1_reg_14_/CK (DFFR_X1)                    0.00   20000.00 r
+  library setup time                                -0.16   19999.84
+  data required time                                        19999.84
+  ------------------------------------------------------------------------------------------
+  data required time                                        19999.84
+  data arrival time                                         -12000.25
+  ------------------------------------------------------------------------------------------
+  slack (MET)                                                7999.59
+
+
+  Startpoint: output_stage_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: calculation_done
+            (output port clocked by clk)
+  Path Group: REGOUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIR_4TAP           5K_hvratio_1_1        NangateOpenCellLibrary
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes
+  ------------------------------------------------------------------------------------------
+  clock clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  output_stage_reg/CK (DFFR_X1)            0.00      0.00       0.00 r
+  output_stage_reg/Q (DFFR_X1)             0.03      0.34       0.34 r
+  calculation_done (net)         1                   0.00       0.34 r
+  calculation_done (out)                   0.03      0.01       0.35 r
+  data arrival time                                             0.35
+
+  clock clk (rise edge)                          20000.00   20000.00
+  clock network delay (ideal)                        0.00   20000.00
+  output external delay                          -12000.00   8000.00
+  data required time                                         8000.00
+  ------------------------------------------------------------------------------------------
+  data required time                                         8000.00
+  data arrival time                                            -0.35
+  ------------------------------------------------------------------------------------------
+  slack (MET)                                                7999.65
+
+
+  Startpoint: sum_2_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result_reg_16_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIR_4TAP           5K_hvratio_1_1        NangateOpenCellLibrary
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  sum_2_reg_0_/CK (DFFR_X1)                               0.00      0.00       0.00 r
+  sum_2_reg_0_/Q (DFFR_X1)                                0.02      0.27       0.27 f
+  sum_2[0] (net)                                2                   0.00       0.27 f
+  add_146/A[0] (FIR_4TAP_DW01_add_0)                                0.00       0.27 f
+  add_146/A[0] (net)                                                0.00       0.27 f
+  add_146/U2/ZN (AND2_X1)                                 0.02      0.12       0.39 f
+  add_146/n2 (net)                              1                   0.00       0.39 f
+  add_146/U1_1/CO (FA_X1)                                 0.05      0.28       0.67 f    mo 
+  add_146/carry[2] (net)                        1                   0.00       0.67 f
+  add_146/U1_2/CO (FA_X1)                                 0.05      0.30       0.97 f    mo 
+  add_146/carry[3] (net)                        1                   0.00       0.97 f
+  add_146/U1_3/CO (FA_X1)                                 0.05      0.30       1.27 f    mo 
+  add_146/carry[4] (net)                        1                   0.00       1.27 f
+  add_146/U1_4/CO (FA_X1)                                 0.05      0.30       1.56 f    mo 
+  add_146/carry[5] (net)                        1                   0.00       1.56 f
+  add_146/U1_5/CO (FA_X1)                                 0.05      0.30       1.86 f    mo 
+  add_146/carry[6] (net)                        1                   0.00       1.86 f
+  add_146/U1_6/CO (FA_X1)                                 0.05      0.30       2.15 f    mo 
+  add_146/carry[7] (net)                        1                   0.00       2.15 f
+  add_146/U1_7/CO (FA_X1)                                 0.05      0.30       2.45 f    mo 
+  add_146/carry[8] (net)                        1                   0.00       2.45 f
+  add_146/U1_8/CO (FA_X1)                                 0.05      0.30       2.74 f    mo 
+  add_146/carry[9] (net)                        1                   0.00       2.74 f
+  add_146/U1_9/CO (FA_X1)                                 0.05      0.30       3.04 f    mo 
+  add_146/carry[10] (net)                       1                   0.00       3.04 f
+  add_146/U1_10/CO (FA_X1)                                0.05      0.30       3.33 f    mo 
+  add_146/carry[11] (net)                       1                   0.00       3.33 f
+  add_146/U1_11/CO (FA_X1)                                0.05      0.30       3.63 f    mo 
+  add_146/carry[12] (net)                       1                   0.00       3.63 f
+  add_146/U1_12/CO (FA_X1)                                0.05      0.30       3.92 f    mo 
+  add_146/carry[13] (net)                       1                   0.00       3.92 f
+  add_146/U1_13/CO (FA_X1)                                0.05      0.30       4.22 f    mo 
+  add_146/carry[14] (net)                       1                   0.00       4.22 f
+  add_146/U1_14/CO (FA_X1)                                0.05      0.30       4.51 f    mo 
+  add_146/carry[15] (net)                       1                   0.00       4.51 f
+  add_146/U1_15/CO (FA_X1)                                0.05      0.30       4.81 f    mo 
+  add_146/carry[16] (net)                       1                   0.00       4.81 f
+  add_146/U1_16/S (FA_X1)                                 0.04      0.43       5.24 r    mo 
+  add_146/SUM[16] (net)                         1                   0.00       5.24 r
+  add_146/SUM[16] (FIR_4TAP_DW01_add_0)                             0.00       5.24 r
+  N68 (net)                                                         0.00       5.24 r
+  U407/ZN (INV_X1)                                        0.01      0.04       5.27 f
+  n565 (net)                                    1                   0.00       5.27 f
+  U406/ZN (OAI22_X1)                                      0.10      0.16       5.43 r
+  n286 (net)                                    1                   0.00       5.43 r
+  result_reg_16_/D (DFFR_X1)                              0.10      0.01       5.44 r
+  data arrival time                                                            5.44
+
+  clock clk (rise edge)                                         20000.00   20000.00
+  clock network delay (ideal)                                       0.00   20000.00
+  result_reg_16_/CK (DFFR_X1)                                       0.00   20000.00 r
+  library setup time                                               -0.11   19999.89
+  data required time                                                       19999.89
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                       19999.89
+  data arrival time                                                           -5.44
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                              19994.45
+
+
+1

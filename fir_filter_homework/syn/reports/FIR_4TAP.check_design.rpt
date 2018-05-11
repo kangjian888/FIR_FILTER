@@ -1,0 +1,17 @@
+ 
+****************************************
+check_design summary:
+Version:     I-2013.12-SP5-5
+Date:        Fri May 11 23:36:04 2018
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               3
+    Cells do not drive (LINT-1)                                     3
+--------------------------------------------------------------------------------
+
+Warning: In design 'FIR_4TAP', cell 'C789' does not drive any nets. (LINT-1)
+Warning: In design 'FIR_4TAP', cell 'C794' does not drive any nets. (LINT-1)
+Warning: In design 'FIR_4TAP', cell 'C798' does not drive any nets. (LINT-1)
+1
