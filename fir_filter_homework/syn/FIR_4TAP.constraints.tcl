@@ -1,7 +1,7 @@
 ################################################################################
-# Filename: divider.constraints.tcl
-# Author: ZHU Jingyang
-# Email: jzhuak@connect.ust.hk
+# Filename: FIR_4TAP.constraints.tcl
+# Author: KANG Jian
+# Email: jkangac@connect.ust.hk
 # Affiliation: Hong Kong University of Science and Technology
 # -------------------------------------------------------------------------------
 # This is the template constraint script for ELEC5160/EESM5020.
