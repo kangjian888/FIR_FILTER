@@ -3,16 +3,16 @@
 Report : qor
 Design : FIR
 Version: I-2013.12-SP5-5
-Date   : Mon May 14 20:45:09 2018
+Date   : Mon May 14 21:55:13 2018
 ****************************************
 
 
   Timing Path Group 'REGIN'
   -----------------------------------
   Levels of Logic:               5.00
-  Critical Path Length:          1.46
-  Critical Path Slack:           2.38
-  Critical Path Clk Period:      5.00
+  Critical Path Length:          1.43
+  Critical Path Slack:          38.41
+  Critical Path Clk Period:     50.00
   Total Negative Slack:          0.00
   No. of Violating Paths:        0.00
   Worst Hold Violation:          0.00
@@ -24,8 +24,8 @@ Date   : Mon May 14 20:45:09 2018
   -----------------------------------
   Levels of Logic:               0.00
   Critical Path Length:          0.37
-  Critical Path Slack:           3.63
-  Critical Path Clk Period:      5.00
+  Critical Path Slack:          39.63
+  Critical Path Clk Period:     50.00
   Total Negative Slack:          0.00
   No. of Violating Paths:        0.00
   Worst Hold Violation:          0.00
@@ -35,10 +35,10 @@ Date   : Mon May 14 20:45:09 2018
 
   Timing Path Group 'clk'
   -----------------------------------
-  Levels of Logic:              30.00
-  Critical Path Length:          4.89
-  Critical Path Slack:           0.00
-  Critical Path Clk Period:      5.00
+  Levels of Logic:              33.00
+  Critical Path Length:          7.48
+  Critical Path Slack:          42.33
+  Critical Path Clk Period:     50.00
   Total Negative Slack:          0.00
   No. of Violating Paths:        0.00
   Worst Hold Violation:          0.00
@@ -51,12 +51,12 @@ Date   : Mon May 14 20:45:09 2018
   -----------------------------------
   Hierarchical Cell Count:         21
   Hierarchical Port Count:        973
-  Leaf Cell Count:               2954
-  Buf/Inv Cell Count:             645
-  Buf Cell Count:                  25
-  Inv Cell Count:                 620
+  Leaf Cell Count:               2591
+  Buf/Inv Cell Count:             610
+  Buf Cell Count:                  11
+  Inv Cell Count:                 599
   CT Buf/Inv Cell Count:            0
-  Combinational Cell Count:      2446
+  Combinational Cell Count:      2083
   Sequential Cell Count:          508
   Macro Count:                      0
   -----------------------------------
@@ -64,21 +64,21 @@ Date   : Mon May 14 20:45:09 2018
 
   Area
   -----------------------------------
-  Combinational Area:     2800.714013
-  Noncombinational Area:  2643.508070
-  Buf/Inv Area:            353.780003
-  Total Buffer Area:            22.34
-  Total Inverter Area:         331.44
+  Combinational Area:     2693.516024
+  Noncombinational Area:  2642.976070
+  Buf/Inv Area:            328.510003
+  Total Buffer Area:             8.78
+  Total Inverter Area:         319.73
   Macro/Black Box Area:      0.000000
   Net Area:                  0.000000
   -----------------------------------
-  Cell Area:              5444.222083
-  Design Area:            5444.222083
+  Cell Area:              5336.492094
+  Design Area:            5336.492094
 
 
   Design Rules
   -----------------------------------
-  Total Number of Nets:          3142
+  Total Number of Nets:          2870
   Nets With Violations:             0
   Max Trans Violations:             0
   Max Cap Violations:               0
@@ -93,8 +93,8 @@ Date   : Mon May 14 20:45:09 2018
   Logic Optimization:                  0.00
   Mapping Optimization:                0.00
   -----------------------------------------
-  Overall Compile Time:                6.33
-  Overall Compile Wall Clock Time:    19.21
+  Overall Compile Time:                4.95
+  Overall Compile Wall Clock Time:    12.54
 
   --------------------------------------------------------------------
 

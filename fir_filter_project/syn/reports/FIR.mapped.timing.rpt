@@ -8,7 +8,7 @@ Report : timing
         -transition_time
 Design : FIR
 Version: I-2013.12-SP5-5
-Date   : Mon May 14 20:45:09 2018
+Date   : Mon May 14 21:55:13 2018
 ****************************************
 
 Operating Conditions: slow   Library: NangateOpenCellLibrary
@@ -37,34 +37,34 @@ Attributes:
   ---------------------------------------------------------------------------------------------------------
   clock clk (rise edge)                                             0.00       0.00
   clock network delay (ideal)                                       0.00       0.00
-  input external delay                                              1.00       1.00 r
-  config_data_enable (in)                                 0.10      0.00       1.00 r
-  config_data_enable (net)                      1                   0.00       1.00 r
-  CONFIG_inst/config_data_enable (CONFIG)                           0.00       1.00 r
-  CONFIG_inst/config_data_enable (net)                              0.00       1.00 r
-  CONFIG_inst/U7/ZN (NAND2_X1)                            0.13      0.22       1.22 f
-  CONFIG_inst/n2 (net)                         13                   0.00       1.22 f
-  CONFIG_inst/U2/ZN (INV_X4)                              0.48      0.65       1.86 r
-  CONFIG_inst/n40 (net)                       101                   0.00       1.86 r
-  CONFIG_inst/U8/ZN (INV_X1)                              0.16      0.33       2.19 f
-  CONFIG_inst/n11 (net)                        15                   0.00       2.19 f
-  CONFIG_inst/U47/ZN (AOI22_X1)                           0.10      0.21       2.40 r
-  CONFIG_inst/n134 (net)                        1                   0.00       2.40 r
-  CONFIG_inst/U46/ZN (INV_X1)                             0.02      0.05       2.45 f
-  CONFIG_inst/n318 (net)                        1                   0.00       2.45 f
-  CONFIG_inst/tap_num_reg_0_/D (DFFS_X1)                  0.02      0.01       2.46 f
-  data arrival time                                                            2.46
+  input external delay                                             10.00      10.00 r
+  config_data_enable (in)                                 0.10      0.00      10.00 r
+  config_data_enable (net)                      1                   0.00      10.00 r
+  CONFIG_inst/config_data_enable (CONFIG)                           0.00      10.00 r
+  CONFIG_inst/config_data_enable (net)                              0.00      10.00 r
+  CONFIG_inst/U6/ZN (NAND2_X1)                            0.13      0.22      10.22 f
+  CONFIG_inst/n3 (net)                         13                   0.00      10.22 f
+  CONFIG_inst/U2/ZN (INV_X4)                              0.46      0.63      10.84 r
+  CONFIG_inst/n40 (net)                        97                   0.00      10.84 r
+  CONFIG_inst/U8/ZN (INV_X1)                              0.15      0.32      11.16 f
+  CONFIG_inst/n11 (net)                        15                   0.00      11.16 f
+  CONFIG_inst/U59/ZN (AOI22_X1)                           0.10      0.21      11.37 r
+  CONFIG_inst/n134 (net)                        1                   0.00      11.37 r
+  CONFIG_inst/U58/ZN (INV_X1)                             0.02      0.05      11.42 f
+  CONFIG_inst/n318 (net)                        1                   0.00      11.42 f
+  CONFIG_inst/tap_num_reg_0_/D (DFFS_X1)                  0.02      0.01      11.43 f
+  data arrival time                                                           11.43
 
-  clock clk (rise edge)                                             5.00       5.00
-  clock network delay (ideal)                                       0.00       5.00
-  CONFIG_inst/tap_num_reg_0_/CK (DFFS_X1)                           0.00       5.00 r
-  library setup time                                               -0.16       4.84
-  data required time                                                           4.84
+  clock clk (rise edge)                                            50.00      50.00
+  clock network delay (ideal)                                       0.00      50.00
+  CONFIG_inst/tap_num_reg_0_/CK (DFFS_X1)                           0.00      50.00 r
+  library setup time                                               -0.16      49.84
+  data required time                                                          49.84
   ---------------------------------------------------------------------------------------------------------
-  data required time                                                           4.84
-  data arrival time                                                           -2.46
+  data required time                                                          49.84
+  data arrival time                                                          -11.43
   ---------------------------------------------------------------------------------------------------------
-  slack (MET)                                                                  2.38
+  slack (MET)                                                                 38.41
 
 
   Startpoint: data_out_reg_7_
@@ -96,15 +96,15 @@ Attributes:
   data_out[7] (out)                        0.04      0.01       0.37 r
   data arrival time                                             0.37
 
-  clock clk (rise edge)                              5.00       5.00
-  clock network delay (ideal)                        0.00       5.00
-  output external delay                             -1.00       4.00
-  data required time                                            4.00
+  clock clk (rise edge)                             50.00      50.00
+  clock network delay (ideal)                        0.00      50.00
+  output external delay                            -10.00      40.00
+  data required time                                           40.00
   ------------------------------------------------------------------------------------------
-  data required time                                            4.00
+  data required time                                           40.00
   data arrival time                                            -0.37
   ------------------------------------------------------------------------------------------
-  slack (MET)                                                   3.63
+  slack (MET)                                                  39.63
 
 
   Startpoint: MAC_inst_1/op_1_reg_1_
@@ -131,93 +131,99 @@ Attributes:
   clock clk (rise edge)                                             0.00       0.00
   clock network delay (ideal)                                       0.00       0.00
   MAC_inst_1/op_1_reg_1_/CK (DFFR_X1)                     0.00      0.00       0.00 r
-  MAC_inst_1/op_1_reg_1_/Q (DFFR_X1)                      0.03      0.28       0.28 f
-  MAC_inst_1/op_1[1] (net)                      3                   0.00       0.28 f
-  MAC_inst_1/mac_operate_inst/op_1[1] (mac_operate_0)               0.00       0.28 f
-  MAC_inst_1/mac_operate_inst/op_1[1] (net)                         0.00       0.28 f
-  MAC_inst_1/mac_operate_inst/U56/ZN (NOR2_X1)            0.10      0.17       0.45 r
-  MAC_inst_1/mac_operate_inst/n15 (net)         2                   0.00       0.45 r
-  MAC_inst_1/mac_operate_inst/U55/ZN (INV_X1)             0.02      0.05       0.50 f
-  MAC_inst_1/mac_operate_inst/n70 (net)         1                   0.00       0.50 f
-  MAC_inst_1/mac_operate_inst/U54/ZN (NOR2_X1)            0.10      0.16       0.66 r
-  MAC_inst_1/mac_operate_inst/n12 (net)         2                   0.00       0.66 r
-  MAC_inst_1/mac_operate_inst/U41/ZN (NAND2_X1)           0.03      0.09       0.75 f
-  MAC_inst_1/mac_operate_inst/n66 (net)         2                   0.00       0.75 f
-  MAC_inst_1/mac_operate_inst/U37/ZN (NOR2_X1)            0.10      0.17       0.91 r
-  MAC_inst_1/mac_operate_inst/n10 (net)         2                   0.00       0.91 r
-  MAC_inst_1/mac_operate_inst/U24/ZN (NOR2_X1)            0.03      0.06       0.97 f
-  MAC_inst_1/mac_operate_inst/n26 (net)         1                   0.00       0.97 f
-  MAC_inst_1/mac_operate_inst/U50/Z (XOR2_X1)             0.03      0.22       1.19 f
-  MAC_inst_1/mac_operate_inst/op_1_ori[5] (net)     1               0.00       1.19 f
-  MAC_inst_1/mac_operate_inst/mult_128/a[5] (mac_operate_0_DW_mult_uns_1)     0.00     1.19 f
-  MAC_inst_1/mac_operate_inst/mult_128/a[5] (net)                   0.00       1.19 f
-  MAC_inst_1/mac_operate_inst/mult_128/U222/Z (CLKBUF_X2)     0.05     0.14     1.33 f
-  MAC_inst_1/mac_operate_inst/mult_128/n261 (net)     6             0.00       1.33 f
-  MAC_inst_1/mac_operate_inst/mult_128/U301/ZN (XNOR2_X2)     0.17     0.28     1.61 r
-  MAC_inst_1/mac_operate_inst/mult_128/n252 (net)     7             0.00       1.61 r
-  MAC_inst_1/mac_operate_inst/mult_128/U304/ZN (NOR2_X1)     0.04     0.09     1.71 f
-  MAC_inst_1/mac_operate_inst/mult_128/n125 (net)     1             0.00       1.71 f
-  MAC_inst_1/mac_operate_inst/mult_128/U92/S (FA_X1)      0.06      0.43       2.14 f
-  MAC_inst_1/mac_operate_inst/mult_128/n98 (net)     1              0.00       2.14 f
-  MAC_inst_1/mac_operate_inst/mult_128/U91/S (FA_X1)      0.06      0.40       2.54 f
-  MAC_inst_1/mac_operate_inst/mult_128/n96 (net)     2              0.00       2.54 f
-  MAC_inst_1/mac_operate_inst/mult_128/U353/ZN (NOR2_X2)     0.09     0.16     2.70 r
-  MAC_inst_1/mac_operate_inst/mult_128/n42 (net)     1              0.00       2.70 r
-  MAC_inst_1/mac_operate_inst/mult_128/U352/ZN (OAI21_X4)     0.04     0.10     2.79 f
-  MAC_inst_1/mac_operate_inst/mult_128/n41 (net)     3              0.00       2.79 f
-  MAC_inst_1/mac_operate_inst/mult_128/U209/ZN (INV_X1)     0.04     0.08      2.87 r
-  MAC_inst_1/mac_operate_inst/mult_128/n40 (net)     2              0.00       2.87 r
-  MAC_inst_1/mac_operate_inst/mult_128/U332/ZN (OAI21_X1)     0.04     0.06     2.94 f
-  MAC_inst_1/mac_operate_inst/mult_128/n37 (net)     1              0.00       2.94 f
-  MAC_inst_1/mac_operate_inst/mult_128/U355/ZN (XNOR2_X1)     0.04     0.16     3.09 f
-  MAC_inst_1/mac_operate_inst/mult_128/product[8] (net)     2       0.00       3.09 f
-  MAC_inst_1/mac_operate_inst/mult_128/product[8] (mac_operate_0_DW_mult_uns_1)     0.00     3.09 f
-  MAC_inst_1/mac_operate_inst/mul_temp[8] (net)                     0.00       3.09 f
-  MAC_inst_1/mac_operate_inst/U4/ZN (NOR2_X1)             0.10      0.15       3.24 r
-  MAC_inst_1/mac_operate_inst/n5 (net)          2                   0.00       3.24 r
-  MAC_inst_1/mac_operate_inst/U8/ZN (NOR2_X1)             0.06      0.07       3.31 f
-  MAC_inst_1/mac_operate_inst/n50 (net)         1                   0.00       3.31 f
-  MAC_inst_1/mac_operate_inst/U39/Z (XOR2_X1)             0.04      0.25       3.55 f
-  MAC_inst_1/mac_operate_inst/n57 (net)         2                   0.00       3.55 f
-  MAC_inst_1/mac_operate_inst/add_131/B[2] (mac_operate_0_DW01_add_1)     0.00     3.55 f
-  MAC_inst_1/mac_operate_inst/add_131/B[2] (net)                    0.00       3.55 f
-  MAC_inst_1/mac_operate_inst/add_131/U75/ZN (OR2_X2)     0.03      0.18       3.74 f
-  MAC_inst_1/mac_operate_inst/add_131/n96 (net)     2               0.00       3.74 f
-  MAC_inst_1/mac_operate_inst/add_131/U128/ZN (AOI21_X2)     0.11     0.15     3.89 r
-  MAC_inst_1/mac_operate_inst/add_131/n36 (net)     2               0.00       3.89 r
-  MAC_inst_1/mac_operate_inst/add_131/U125/ZN (OAI21_X2)     0.04     0.11     4.00 f
-  MAC_inst_1/mac_operate_inst/add_131/n33 (net)     2               0.00       4.00 f
-  MAC_inst_1/mac_operate_inst/add_131/U127/ZN (AOI21_X2)     0.11     0.18     4.17 r
-  MAC_inst_1/mac_operate_inst/add_131/n28 (net)     2               0.00       4.17 r
-  MAC_inst_1/mac_operate_inst/add_131/U105/ZN (OAI21_X2)     0.04     0.10     4.28 f
-  MAC_inst_1/mac_operate_inst/add_131/n25 (net)     2               0.00       4.28 f
-  MAC_inst_1/mac_operate_inst/add_131/U107/ZN (AOI21_X2)     0.10     0.17     4.45 r
-  MAC_inst_1/mac_operate_inst/add_131/n16 (net)     2               0.00       4.45 r
-  MAC_inst_1/mac_operate_inst/add_131/U103/ZN (OAI21_X2)     0.04     0.08     4.53 f
-  MAC_inst_1/mac_operate_inst/add_131/n13 (net)     1               0.00       4.53 f
-  MAC_inst_1/mac_operate_inst/add_131/U116/ZN (XNOR2_X1)     0.08     0.13     4.66 r
-  MAC_inst_1/mac_operate_inst/add_131/SUM[9] (net)     1            0.00       4.66 r
-  MAC_inst_1/mac_operate_inst/add_131/SUM[9] (mac_operate_0_DW01_add_1)     0.00     4.66 r
-  MAC_inst_1/mac_operate_inst/ac_sum_new[9] (net)                   0.00       4.66 r
-  MAC_inst_1/mac_operate_inst/ac_sum_new[9] (mac_operate_0)         0.00       4.66 r
-  MAC_inst_1/ac_sum_new[9] (net)                                    0.00       4.66 r
-  MAC_inst_1/U74/ZN (INV_X1)                              0.02      0.06       4.71 f
-  MAC_inst_1/n71 (net)                          2                   0.00       4.71 f
-  MAC_inst_1/U75/ZN (OAI22_X1)                            0.10      0.17       4.88 r
-  MAC_inst_1/n95 (net)                          1                   0.00       4.88 r
-  MAC_inst_1/ac_sum_old_reg_9_/D (DFFR_X1)                0.10      0.01       4.89 r
-  data arrival time                                                            4.89
+  MAC_inst_1/op_1_reg_1_/Q (DFFR_X1)                      0.08      0.40       0.40 r
+  MAC_inst_1/op_1[1] (net)                      4                   0.00       0.40 r
+  MAC_inst_1/mac_operate_inst/op_1[1] (mac_operate_0)               0.00       0.40 r
+  MAC_inst_1/mac_operate_inst/op_1[1] (net)                         0.00       0.40 r
+  MAC_inst_1/mac_operate_inst/U68/ZN (NOR2_X1)            0.03      0.07       0.47 f
+  MAC_inst_1/mac_operate_inst/sub_add_125_b0_carry[2] (net)     2     0.00     0.47 f
+  MAC_inst_1/mac_operate_inst/U99/ZN (AND2_X1)            0.02      0.12       0.58 f
+  MAC_inst_1/mac_operate_inst/sub_add_125_b0_carry[3] (net)     2     0.00     0.58 f
+  MAC_inst_1/mac_operate_inst/U97/ZN (AND2_X1)            0.02      0.11       0.70 f
+  MAC_inst_1/mac_operate_inst/sub_add_125_b0_carry[4] (net)     2     0.00     0.70 f
+  MAC_inst_1/mac_operate_inst/U85/ZN (AND2_X1)            0.02      0.12       0.81 f
+  MAC_inst_1/mac_operate_inst/sub_add_125_b0_carry[5] (net)     2     0.00     0.81 f
+  MAC_inst_1/mac_operate_inst/U84/Z (XOR2_X1)             0.03      0.22       1.03 f
+  MAC_inst_1/mac_operate_inst/N10 (net)         1                   0.00       1.03 f
+  MAC_inst_1/mac_operate_inst/U26/ZN (AOI22_X1)           0.10      0.14       1.17 r
+  MAC_inst_1/mac_operate_inst/n44 (net)         1                   0.00       1.17 r
+  MAC_inst_1/mac_operate_inst/U25/ZN (INV_X1)             0.02      0.05       1.22 f
+  MAC_inst_1/mac_operate_inst/op_1_ori[5] (net)     1               0.00       1.22 f
+  MAC_inst_1/mac_operate_inst/mult_128/a[5] (mac_operate_0_DW_mult_uns_0)     0.00     1.22 f
+  MAC_inst_1/mac_operate_inst/mult_128/a[5] (net)                   0.00       1.22 f
+  MAC_inst_1/mac_operate_inst/mult_128/U117/ZN (INV_X1)     0.13     0.16      1.38 r
+  MAC_inst_1/mac_operate_inst/mult_128/n163 (net)     7             0.00       1.38 r
+  MAC_inst_1/mac_operate_inst/mult_128/U140/ZN (NOR2_X1)     0.03     0.08     1.46 f
+  MAC_inst_1/mac_operate_inst/mult_128/n86 (net)     1              0.00       1.46 f
+  MAC_inst_1/mac_operate_inst/mult_128/U37/S (HA_X1)      0.04      0.23       1.70 f
+  MAC_inst_1/mac_operate_inst/mult_128/n60 (net)     1              0.00       1.70 f
+  MAC_inst_1/mac_operate_inst/mult_128/U35/S (FA_X1)      0.04      0.43       2.13 r
+  MAC_inst_1/mac_operate_inst/mult_128/n56 (net)     1              0.00       2.13 r
+  MAC_inst_1/mac_operate_inst/mult_128/U34/S (FA_X1)      0.06      0.34       2.47 f
+  MAC_inst_1/mac_operate_inst/mult_128/n54 (net)     2              0.00       2.47 f
+  MAC_inst_1/mac_operate_inst/mult_128/U155/ZN (AOI222_X1)     0.19     0.40     2.87 r
+  MAC_inst_1/mac_operate_inst/mult_128/n180 (net)     1             0.00       2.87 r
+  MAC_inst_1/mac_operate_inst/mult_128/U110/ZN (INV_X1)     0.05     0.07      2.94 f
+  MAC_inst_1/mac_operate_inst/mult_128/n162 (net)     2             0.00       2.94 f
+  MAC_inst_1/mac_operate_inst/mult_128/U154/ZN (AOI222_X1)     0.19     0.33     3.27 r
+  MAC_inst_1/mac_operate_inst/mult_128/n179 (net)     1             0.00       3.27 r
+  MAC_inst_1/mac_operate_inst/mult_128/U112/ZN (INV_X1)     0.04     0.07      3.34 f
+  MAC_inst_1/mac_operate_inst/mult_128/n160 (net)     1             0.00       3.34 f
+  MAC_inst_1/mac_operate_inst/mult_128/U7/CO (FA_X1)      0.05      0.29       3.63 f
+  MAC_inst_1/mac_operate_inst/mult_128/n6 (net)     1               0.00       3.63 f
+  MAC_inst_1/mac_operate_inst/mult_128/U6/CO (FA_X1)      0.05      0.30       3.92 f
+  MAC_inst_1/mac_operate_inst/mult_128/n5 (net)     1               0.00       3.92 f
+  MAC_inst_1/mac_operate_inst/mult_128/U5/CO (FA_X1)      0.05      0.30       4.22 f
+  MAC_inst_1/mac_operate_inst/mult_128/n4 (net)     1               0.00       4.22 f
+  MAC_inst_1/mac_operate_inst/mult_128/U4/CO (FA_X1)      0.05      0.30       4.51 f
+  MAC_inst_1/mac_operate_inst/mult_128/n3 (net)     1               0.00       4.51 f
+  MAC_inst_1/mac_operate_inst/mult_128/U3/CO (FA_X1)      0.05      0.30       4.81 f
+  MAC_inst_1/mac_operate_inst/mult_128/n2 (net)     1               0.00       4.81 f
+  MAC_inst_1/mac_operate_inst/mult_128/U2/S (FA_X1)       0.05      0.45       5.26 r
+  MAC_inst_1/mac_operate_inst/mult_128/product[12] (net)     2      0.00       5.26 r
+  MAC_inst_1/mac_operate_inst/mult_128/product[12] (mac_operate_0_DW_mult_uns_0)     0.00     5.26 r
+  MAC_inst_1/mac_operate_inst/mul_temp[12] (net)                    0.00       5.26 r
+  MAC_inst_1/mac_operate_inst/U9/ZN (INV_X1)              0.02      0.05       5.31 f
+  MAC_inst_1/mac_operate_inst/n6 (net)          2                   0.00       5.31 f
+  MAC_inst_1/mac_operate_inst/U72/Z (XOR2_X1)             0.03      0.20       5.51 f
+  MAC_inst_1/mac_operate_inst/N26 (net)         1                   0.00       5.51 f
+  MAC_inst_1/mac_operate_inst/U34/ZN (AOI22_X1)           0.10      0.17       5.68 r
+  MAC_inst_1/mac_operate_inst/n51 (net)         1                   0.00       5.68 r
+  MAC_inst_1/mac_operate_inst/U33/ZN (INV_X1)             0.03      0.06       5.74 f
+  MAC_inst_1/mac_operate_inst/n27 (net)         1                   0.00       5.74 f
+  MAC_inst_1/mac_operate_inst/add_131/B[5] (mac_operate_0_DW01_add_0)     0.00     5.74 f
+  MAC_inst_1/mac_operate_inst/add_131/B[5] (net)                    0.00       5.74 f
+  MAC_inst_1/mac_operate_inst/add_131/U1_5/CO (FA_X1)     0.05      0.32       6.06 f    mo 
+  MAC_inst_1/mac_operate_inst/add_131/carry[6] (net)     1          0.00       6.06 f
+  MAC_inst_1/mac_operate_inst/add_131/U1_6/CO (FA_X1)     0.05      0.30       6.36 f    mo 
+  MAC_inst_1/mac_operate_inst/add_131/carry[7] (net)     1          0.00       6.36 f
+  MAC_inst_1/mac_operate_inst/add_131/U1_7/CO (FA_X1)     0.05      0.30       6.66 f    mo 
+  MAC_inst_1/mac_operate_inst/add_131/carry[8] (net)     1          0.00       6.66 f
+  MAC_inst_1/mac_operate_inst/add_131/U1_8/CO (FA_X1)     0.05      0.30       6.95 f    mo 
+  MAC_inst_1/mac_operate_inst/add_131/carry[9] (net)     1          0.00       6.95 f
+  MAC_inst_1/mac_operate_inst/add_131/U1_9/S (FA_X1)      0.05      0.37       7.32 f    mo 
+  MAC_inst_1/mac_operate_inst/add_131/SUM[9] (net)     1            0.00       7.32 f
+  MAC_inst_1/mac_operate_inst/add_131/SUM[9] (mac_operate_0_DW01_add_0)     0.00     7.32 f
+  MAC_inst_1/mac_operate_inst/ac_sum_new[9] (net)                   0.00       7.32 f
+  MAC_inst_1/mac_operate_inst/ac_sum_new[9] (mac_operate_0)         0.00       7.32 f
+  MAC_inst_1/ac_sum_new[9] (net)                                    0.00       7.32 f
+  MAC_inst_1/U53/ZN (INV_X1)                              0.04      0.09       7.41 r
+  MAC_inst_1/n10 (net)                          2                   0.00       7.41 r
+  MAC_inst_1/U45/ZN (OAI21_X1)                            0.08      0.06       7.47 f
+  MAC_inst_1/n95 (net)                          1                   0.00       7.47 f
+  MAC_inst_1/ac_sum_old_reg_9_/D (DFFR_X1)                0.08      0.01       7.48 f
+  data arrival time                                                            7.48
 
-  clock clk (rise edge)                                             5.00       5.00
-  clock network delay (ideal)                                       0.00       5.00
-  MAC_inst_1/ac_sum_old_reg_9_/CK (DFFR_X1)                         0.00       5.00 r
-  library setup time                                               -0.11       4.89
-  data required time                                                           4.89
+  clock clk (rise edge)                                            50.00      50.00
+  clock network delay (ideal)                                       0.00      50.00
+  MAC_inst_1/ac_sum_old_reg_9_/CK (DFFR_X1)                         0.00      50.00 r
+  library setup time                                               -0.19      49.81
+  data required time                                                          49.81
   ---------------------------------------------------------------------------------------------------------
-  data required time                                                           4.89
-  data arrival time                                                           -4.89
+  data required time                                                          49.81
+  data arrival time                                                           -7.48
   ---------------------------------------------------------------------------------------------------------
-  slack (MET)                                                                  0.00
+  slack (MET)                                                                 42.33
 
 
 1

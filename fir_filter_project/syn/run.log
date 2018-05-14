@@ -300,7 +300,7 @@ check_design -summary
 ****************************************
 check_design summary:
 Version:     I-2013.12-SP5-5
-Date:        Mon May 14 20:43:42 2018
+Date:        Mon May 14 21:53:51 2018
 ****************************************
 
                    Name                                            Total
@@ -362,12 +362,6 @@ Information: Updating design information... (UID-85)
   Processing 'mac_operate_0_DW01_add_0'
   Processing 'mac_operate_0_DW01_sub_0'
   Processing 'mac_operate_0_DW01_sub_1'
-  Building model 'DW01_NAND2'
-  Processing 'DW01_NAND2'
-  Building model 'DW01_add_width12' (rpl)
-  Processing 'DW01_add_width12'
-  Building model 'DW01_sub_width7' (rpl)
-  Processing 'DW01_sub_width7'
   Processing 'FIR_DW01_add_0'
   Processing 'FIR_DW01_add_1'
   Processing 'FIR_DW01_add_2'
@@ -387,27 +381,20 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                            
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:07    6998.5      0.08       1.5       0.0                          
-    0:00:07    6993.1      0.08       1.5       0.0                          
-    0:00:07    6993.1      0.08       1.5       0.0                          
-    0:00:07    6989.9      0.08       1.5       0.0                          
-    0:00:07    6989.9      0.08       1.5       0.0                          
-    0:00:08    5685.8      0.38       4.8       0.0                          
-    0:00:09    5681.8      0.10       0.9       0.0                          
-    0:00:09    5686.5      0.04       0.2       0.0                          
-    0:00:09    5683.9      0.01       0.0       0.0                          
-    0:00:09    5682.8      0.01       0.0       0.0                          
-    0:00:09    5687.3      0.00       0.0       0.0                          
-    0:00:09    5685.2      0.01       0.0       0.0                          
-    0:00:09    5686.0      0.00       0.0       0.0                          
-    0:00:09    5684.7      0.00       0.0       0.0                          
-    0:00:09    5684.7      0.00       0.0       0.0                          
-    0:00:09    5684.7      0.00       0.0       0.0                          
-    0:00:09    5684.7      0.00       0.0       0.0                          
-    0:00:09    5684.7      0.00       0.0       0.0                          
-    0:00:09    5684.7      0.00       0.0       0.0                          
-    0:00:09    5684.7      0.00       0.0       0.0                          
-    0:00:09    5684.7      0.00       0.0       0.0                          
+    0:00:04    6608.5      0.00       0.0      19.5                          
+    0:00:04    6608.5      0.00       0.0      19.5                          
+    0:00:04    6608.5      0.00       0.0      19.5                          
+    0:00:04    6608.5      0.00       0.0      19.5                          
+    0:00:04    6608.5      0.00       0.0      19.5                          
+    0:00:05    5469.5      0.00       0.0       0.0                          
+    0:00:05    5468.2      0.00       0.0       0.0                          
+    0:00:05    5468.2      0.00       0.0       0.0                          
+    0:00:05    5468.2      0.00       0.0       0.0                          
+    0:00:05    5468.2      0.00       0.0       0.0                          
+    0:00:05    5468.2      0.00       0.0       0.0                          
+    0:00:05    5468.2      0.00       0.0       0.0                          
+    0:00:05    5468.2      0.00       0.0       0.0                          
+    0:00:05    5468.2      0.00       0.0       0.0                          
 
 
 
@@ -418,9 +405,9 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                            
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:09    5684.7      0.00       0.0       0.0                          
-    0:00:09    5684.7      0.00       0.0       0.0                          
-    0:00:11    5669.8      0.00       0.0       0.0                          
+    0:00:05    5468.2      0.00       0.0       0.0                          
+    0:00:05    5468.2      0.00       0.0       0.0                          
+    0:00:06    5468.2      0.00       0.0       0.0                          
 
 
   Beginning Area-Recovery Phase  (cleanup)
@@ -430,24 +417,22 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                            
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:11    5669.8      0.00       0.0       0.0                          
-    0:00:11    5669.8      0.00       0.0       0.0                          
-    0:00:11    5650.4      0.02       0.0       0.0                          
-    0:00:11    5646.4      0.02       0.0       0.0                          
-    0:00:11    5644.5      0.02       0.0       0.0                          
-    0:00:11    5643.5      0.02       0.0       0.0                          
-    0:00:11    5642.1      0.02       0.0       0.0                          
-    0:00:11    5642.1      0.02       0.0       0.0                          
-    0:00:11    5642.4      0.00       0.0       0.0                          
-    0:00:11    5625.1      0.02       0.1       0.0                          
-    0:00:11    5618.2      0.02       0.1       0.0                          
-    0:00:11    5614.5      0.02       0.1       0.0                          
-    0:00:11    5614.5      0.02       0.1       0.0                          
-    0:00:11    5614.5      0.02       0.1       0.0                          
-    0:00:11    5614.5      0.02       0.1       0.0                          
-    0:00:11    5614.5      0.02       0.1       0.0                          
-    0:00:11    5614.5      0.02       0.1       0.0                          
-    0:00:11    5615.8      0.00       0.0       0.0                          
+    0:00:06    5468.2      0.00       0.0       0.0                          
+    0:00:06    5468.2      0.00       0.0       0.0                          
+    0:00:07    5465.2      0.00       0.0       0.0                          
+    0:00:07    5463.6      0.00       0.0       0.0                          
+    0:00:07    5461.8      0.00       0.0       0.0                          
+    0:00:07    5460.7      0.00       0.0       0.0                          
+    0:00:07    5459.4      0.00       0.0       0.0                          
+    0:00:07    5459.4      0.00       0.0       0.0                          
+    0:00:07    5459.4      0.00       0.0       0.0                          
+    0:00:07    5458.3      0.00       0.0       0.0                          
+    0:00:07    5458.3      0.00       0.0       0.0                          
+    0:00:07    5458.3      0.00       0.0       0.0                          
+    0:00:07    5458.3      0.00       0.0       0.0                          
+    0:00:07    5458.3      0.00       0.0       0.0                          
+    0:00:07    5458.3      0.00       0.0       0.0                          
+    0:00:07    5458.3      0.00       0.0       0.0                          
 Loading db file '/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.db'
 
   Optimization Complete
@@ -467,7 +452,7 @@ optimize_netlist -area
 Analyzing: "/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.db"
 Library analysis succeeded.
 
-Information: There are 61 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+Information: There are 53 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
 
 
 Loaded alib file './alib-52/NangateOpenCellLibrary_slow.db.alib'
@@ -484,8 +469,8 @@ Loading db file '/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017sprin
    ELAPSED            WORST NEG   SETUP    DESIGN                            
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:02    5615.8      0.00       0.0       0.0                          
-    0:00:06    5444.2      0.00       0.0       0.0                          
+    0:00:01    5458.3      0.00       0.0       0.0                          
+    0:00:04    5336.5      0.00       0.0       0.0                          
 Loading db file '/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.db'
 
   Optimization Complete
