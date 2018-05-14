@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : FIR_4TAP
+Version: I-2013.12-SP5-5
+Date   : Fri May 11 23:37:19 2018
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.db)
+
+Number of ports:                           38
+Number of nets:                           686
+Number of cells:                          467
+Number of combinational cells:            281
+Number of sequential cells:               182
+Number of macros/black boxes:               0
+Number of buf/inv:                         79
+Number of references:                      10
+
+Combinational area:                547.960009
+Buf/Inv area:                       42.028000
+Noncombinational area:             968.772031
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  1516.732040
+Total area:                 undefined
+1

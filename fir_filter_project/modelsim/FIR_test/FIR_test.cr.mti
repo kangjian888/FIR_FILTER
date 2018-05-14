@@ -1,0 +1,37 @@
+{D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/FIR_control.v} {1 {vlog -work work -stats=none {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/FIR_control.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module FIR_control
+
+Top level modules:
+	FIR_control
+
+} {} {}} {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/FIR.v} {1 {vlog -work work -stats=none {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/FIR.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module FIR
+
+Top level modules:
+	FIR
+
+} {} {}} {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/MAC.v} {1 {vlog -work work -stats=none {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/MAC.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module MAC
+-- Compiling module mac_operate
+
+Top level modules:
+	MAC
+
+} {} {}} {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/bhave_sim/FIR_tb.v} {1 {vlog -work work -stats=none {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/bhave_sim/FIR_tb.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module FIR_tb
+
+Top level modules:
+	FIR_tb
+
+} {} {}} {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/CONFIG.v} {1 {vlog -work work -stats=none {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/CONFIG.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module CONFIG
+
+Top level modules:
+	CONFIG
+
+} {} {}}

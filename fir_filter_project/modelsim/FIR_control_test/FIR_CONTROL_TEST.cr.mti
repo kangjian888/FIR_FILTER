@@ -1,0 +1,15 @@
+{D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/FIR_control.v} {1 {vlog -work work -stats=none {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/FIR_control.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module FIR_control
+
+Top level modules:
+	FIR_control
+
+} {} {}} {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/bhave_sim/FIR_control_tb.v} {1 {vlog -work work -stats=none {D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/bhave_sim/FIR_control_tb.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module FIR_control_tb
+
+Top level modules:
+	FIR_control_tb
+
+} {} {}}

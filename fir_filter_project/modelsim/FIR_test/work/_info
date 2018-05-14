@@ -1,0 +1,141 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/modelsim/MAC_test
+vCONFIG
+Z0 !s110 1526300275
+!i10b 1
+!s100 0PDoQB]0_T]e7XnaG1TF>3
+IY75V`?O:OSP?Y:TMRCd_U1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/modelsim/FIR_test
+w1526286309
+8D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/CONFIG.v
+FD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/CONFIG.v
+L0 8
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1526300275.000000
+!s107 D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/CONFIG.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/CONFIG.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@c@o@n@f@i@g
+vFIR
+R0
+!i10b 1
+!s100 5Fo[DIVG?M`WNj3cghk210
+IYTNbbcEGBjLOJhO?Z?e@M3
+R1
+R2
+w1526289476
+8D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/FIR.v
+FD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/FIR.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/FIR.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/FIR.v|
+!s101 -O0
+!i113 1
+R5
+n@f@i@r
+vFIR_control
+R0
+!i10b 1
+!s100 >_=YR8=8QiEAA@6UGG9hH3
+I@zzXZFS=^Y4Pe9h?OOzI01
+R1
+R2
+w1526290642
+8D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/FIR_control.v
+FD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/FIR_control.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/FIR_control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/FIR_control.v|
+!s101 -O0
+!i113 1
+R5
+n@f@i@r_control
+vFIR_tb
+Z6 !s110 1526300276
+!i10b 1
+!s100 DZ3G]691o@[@jSCX9AZ6U1
+I3ja7d0;1l;]Y;M6AP2ZO91
+R1
+R2
+w1526300259
+8D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/bhave_sim/FIR_tb.v
+FD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/bhave_sim/FIR_tb.v
+L0 10
+R3
+r1
+!s85 0
+31
+!s108 1526300276.000000
+!s107 D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/bhave_sim/FIR_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/bhave_sim/FIR_tb.v|
+!s101 -O0
+!i113 1
+R5
+n@f@i@r_tb
+vMAC
+R6
+!i10b 1
+!s100 @blGOCfD[J_[CTCoC15d03
+Ide[?lGacOPdVd2850m_TJ2
+R1
+R2
+Z7 w1526286941
+Z8 8D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/MAC.v
+Z9 FD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/MAC.v
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+Z10 !s107 D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/MAC.v|
+Z11 !s90 -reportprogress|300|-work|work|-stats=none|D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/MAC.v|
+!s101 -O0
+!i113 1
+R5
+n@m@a@c
+vmac_operate
+R6
+!i10b 1
+!s100 <:YP>k@0@0EYh5JQ?LT<L0
+I;ogk8K8ll5g000FCN;N3e3
+R1
+R2
+R7
+R8
+R9
+L0 112
+R3
+r1
+!s85 0
+31
+R4
+R10
+R11
+!s101 -O0
+!i113 1
+R5

@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/modelsim/FIR_control_test
+vMAC
+Z0 !s110 1526279538
+!i10b 1
+!s100 @blGOCfD[J_[CTCoC15d03
+Ide[?lGacOPdVd2850m_TJ2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/modelsim/MAC_test
+Z3 w1526278864
+Z4 8D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/MAC.v
+Z5 FD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/MAC.v
+L0 8
+Z6 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z7 !s108 1526279538.000000
+Z8 !s107 D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/MAC.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/rtl/MAC.v|
+!s101 -O0
+!i113 1
+Z10 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@m@a@c
+vmac_operate
+R0
+!i10b 1
+!s100 <:YP>k@0@0EYh5JQ?LT<L0
+I;ogk8K8ll5g000FCN;N3e3
+R1
+R2
+R3
+R4
+R5
+L0 112
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+!i113 1
+R10
+vMAC_tb
+R0
+!i10b 1
+!s100 QE4e44YOiz8@mGA^>T@9D3
+IF]13knUJ]g5Cf::]MPV@T2
+R1
+R2
+w1526279394
+8D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/bhave_sim/MAC_tb.v
+FD:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/bhave_sim/MAC_tb.v
+L0 10
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/bhave_sim/MAC_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/OneDrive - HKUST Connect/COURSE/FIRST_GRADE/digital circuit/FIR_FILTER_DESIGN/fir_filter_project/bhave_sim/MAC_tb.v|
+!s101 -O0
+!i113 1
+R10
+n@m@a@c_tb
