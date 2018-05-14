@@ -195,7 +195,6 @@ always @ (posedge clk or negedge rst_n)
         		sum_2_2 <= 0;
         		sum_3_3 <= 0;
         		sum_4_4 <= 0;
-        		sum <= 0;
         	end
         else 
         	begin

@@ -37,7 +37,7 @@ always @ (posedge clk or negedge rst_n)
         		h_13 <= 8'b0100_0000;
         		h_14 <= 8'b0100_0000;
         		h_15 <= 8'b0100_0000;
-        		tap_num = 4'd15;//the reset value is 16
+        		tap_num <= 4'd15;//the reset value is 16
         	end
         else
         	begin
@@ -81,6 +81,7 @@ always @ (posedge clk or negedge rst_n)
 								h_13 <=h_13;
 								h_14 <=h_14;
 								h_15 <=h_15;
+								tap_num <= tap_num;
         		            end
         		    end
         		else 
@@ -101,6 +102,7 @@ always @ (posedge clk or negedge rst_n)
 						 h_13 <=h_13;
 						 h_14 <=h_14;
 						 h_15 <=h_15;
+						 tap_num <= tap_num;
         		    end
         	end
     end
