@@ -32,7 +32,7 @@ set_app_var link_library "* $target_library $synthetic_library"
 # Please do NOT import testbench or behavior memory model here.
 ################################################################################
 define_design_lib WORK -path ./WORK
-analyze -format verilog {FIR.v, CONFIG.v, FIR_control.v, MAC.v}
+analyze -format verilog {FIR.v CONFIG.v FIR_control.v MAC.v}
 elaborate FIR; # top module name
 
 # store the unmapped results
