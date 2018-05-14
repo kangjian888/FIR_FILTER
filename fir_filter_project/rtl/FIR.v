@@ -56,7 +56,7 @@ FIR_control FIR_control_inst(
 );
 
 //Data Loading
-always @ (posedge clk or negedge rst_n)
+always @ (posedge clk)
     begin
         if(!rst_n)
         	begin
@@ -187,7 +187,7 @@ MAC MAC_inst_4(
 	.mac_done(mac_4_done)//indecate the finish of calculation and ready to output the accumulation result	
 );
 //expand stage
-always @ (posedge clk or negedge rst_n)
+always @ (posedge clk)
     begin
         if(!rst_n)
         	begin
@@ -215,7 +215,7 @@ always @ (posedge clk or negedge rst_n)
         	end
     end
 //add stage
-always @ (posedge clk or negedge rst_n)
+always @ (posedge clk)
     begin
         if(!rst_n)
         	begin
@@ -234,8 +234,7 @@ always @ (posedge clk or negedge rst_n)
         	end
     end
 //judge stage
-always @ (posedge clk or negedge rst_n)
-    begin
+always @ (posedge clk)
         if(!rst_n)
         	begin
         		data_out <= 0;

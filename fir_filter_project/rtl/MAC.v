@@ -26,7 +26,7 @@ reg [7:0] op_1;
 reg [7:0] op_2;
 reg [9:0] ac_sum_old;
 wire [9:0] ac_sum_new;
-always @ (posedge clk or negedge rst_n)
+always @ (posedge clk)
     begin
         if(!rst_n)
         	begin
@@ -49,7 +49,7 @@ always @ (posedge clk or negedge rst_n)
             end
     end
 
-always @ (posedge clk or negedge rst_n)
+always @ (posedge clk)
     begin
         if(!rst_n)
         	begin
