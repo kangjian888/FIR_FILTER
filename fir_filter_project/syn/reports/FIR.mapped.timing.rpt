@@ -1,0 +1,236 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nets
+        -max_paths 1
+        -transition_time
+Design : FIR
+Version: I-2013.12-SP5-5
+Date   : Mon May 14 22:28:25 2018
+****************************************
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: rst_n (input port clocked by clk)
+  Endpoint: MAC_inst_1/op_1_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: REGIN
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIR                5K_hvratio_1_1        NangateOpenCellLibrary
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes
+  ------------------------------------------------------------------------------------------
+  clock clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  input external delay                              10.00      10.00 r
+  rst_n (in)                               0.10      0.00      10.00 r
+  rst_n (net)                   51                   0.00      10.00 r
+  MAC_inst_1/rst_n (MAC_0)                           0.00      10.00 r
+  MAC_inst_1/rst_n (net)                             0.00      10.00 r
+  MAC_inst_1/U116/ZN (INV_X1)              0.02      0.08      10.08 f
+  MAC_inst_1/n1 (net)            1                   0.00      10.08 f
+  MAC_inst_1/U9/ZN (NOR3_X1)               0.15      0.25      10.33 r
+  MAC_inst_1/n86 (net)           2                   0.00      10.33 r
+  MAC_inst_1/U12/ZN (NAND2_X1)             0.05      0.11      10.43 f
+  MAC_inst_1/n83 (net)           2                   0.00      10.43 f
+  MAC_inst_1/U8/ZN (NOR2_X2)               0.37      0.47      10.90 r
+  MAC_inst_1/n50 (net)          17                   0.00      10.90 r
+  MAC_inst_1/U82/ZN (NOR3_X2)              0.10      0.20      11.10 f
+  MAC_inst_1/n46 (net)          11                   0.00      11.10 f
+  MAC_inst_1/U5/ZN (NAND3_X1)              0.21      0.31      11.41 r
+  MAC_inst_1/n45 (net)          11                   0.00      11.41 r
+  MAC_inst_1/U4/ZN (INV_X1)                0.10      0.22      11.63 f
+  MAC_inst_1/n27 (net)          16                   0.00      11.63 f
+  MAC_inst_1/U43/ZN (AOI22_X1)             0.10      0.24      11.86 r
+  MAC_inst_1/n47 (net)           1                   0.00      11.86 r
+  MAC_inst_1/U41/ZN (NAND2_X1)             0.03      0.06      11.93 f
+  MAC_inst_1/n113 (net)          1                   0.00      11.93 f
+  MAC_inst_1/op_1_reg_0_/D (DFF_X1)        0.03      0.01      11.94 f
+  data arrival time                                            11.94
+
+  clock clk (rise edge)                             50.00      50.00
+  clock network delay (ideal)                        0.00      50.00
+  MAC_inst_1/op_1_reg_0_/CK (DFF_X1)                 0.00      50.00 r
+  library setup time                                -0.17      49.83
+  data required time                                           49.83
+  ------------------------------------------------------------------------------------------
+  data required time                                           49.83
+  data arrival time                                           -11.94
+  ------------------------------------------------------------------------------------------
+  slack (MET)                                                  37.90
+
+
+  Startpoint: data_out_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_out[0]
+            (output port clocked by clk)
+  Path Group: REGOUT
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIR                5K_hvratio_1_1        NangateOpenCellLibrary
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                        Fanout     Trans      Incr       Path      Attributes
+  ------------------------------------------------------------------------------------------
+  clock clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                        0.00       0.00
+  data_out_reg_0_/CK (DFF_X1)              0.00      0.00       0.00 r
+  data_out_reg_0_/Q (DFF_X1)               0.04      0.31       0.31 r
+  data_out[0] (net)              2                   0.00       0.31 r
+  data_out[0] (out)                        0.04      0.01       0.32 r
+  data arrival time                                             0.32
+
+  clock clk (rise edge)                             50.00      50.00
+  clock network delay (ideal)                        0.00      50.00
+  output external delay                            -10.00      40.00
+  data required time                                           40.00
+  ------------------------------------------------------------------------------------------
+  data required time                                           40.00
+  data arrival time                                            -0.32
+  ------------------------------------------------------------------------------------------
+  slack (MET)                                                  39.68
+
+
+  Startpoint: MAC_inst_1/op_1_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: MAC_inst_1/ac_sum_old_reg_9_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIR                5K_hvratio_1_1        NangateOpenCellLibrary
+
+Attributes:
+    d - dont_touch
+    u - dont_use
+   mo - map_only
+   so - size_only
+    i - ideal_net or ideal_network
+  inf - infeasible path
+
+  Point                                       Fanout     Trans      Incr       Path      Attributes
+  ---------------------------------------------------------------------------------------------------------
+  clock clk (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  MAC_inst_1/op_1_reg_1_/CK (DFF_X1)                      0.00      0.00       0.00 r
+  MAC_inst_1/op_1_reg_1_/Q (DFF_X1)                       0.08      0.35       0.35 r
+  MAC_inst_1/op_1[1] (net)                      4                   0.00       0.35 r
+  MAC_inst_1/mac_operate_inst/op_1[1] (mac_operate_0)               0.00       0.35 r
+  MAC_inst_1/mac_operate_inst/op_1[1] (net)                         0.00       0.35 r
+  MAC_inst_1/mac_operate_inst/U68/ZN (NOR2_X1)            0.03      0.07       0.42 f
+  MAC_inst_1/mac_operate_inst/sub_add_125_b0_carry[2] (net)     2     0.00     0.42 f
+  MAC_inst_1/mac_operate_inst/U99/ZN (AND2_X1)            0.02      0.12       0.53 f
+  MAC_inst_1/mac_operate_inst/sub_add_125_b0_carry[3] (net)     2     0.00     0.53 f
+  MAC_inst_1/mac_operate_inst/U97/ZN (AND2_X1)            0.02      0.11       0.65 f
+  MAC_inst_1/mac_operate_inst/sub_add_125_b0_carry[4] (net)     2     0.00     0.65 f
+  MAC_inst_1/mac_operate_inst/U85/ZN (AND2_X1)            0.02      0.12       0.77 f
+  MAC_inst_1/mac_operate_inst/sub_add_125_b0_carry[5] (net)     2     0.00     0.77 f
+  MAC_inst_1/mac_operate_inst/U84/Z (XOR2_X1)             0.03      0.22       0.98 f
+  MAC_inst_1/mac_operate_inst/N10 (net)         1                   0.00       0.98 f
+  MAC_inst_1/mac_operate_inst/U40/ZN (AOI22_X1)           0.10      0.14       1.12 r
+  MAC_inst_1/mac_operate_inst/n44 (net)         1                   0.00       1.12 r
+  MAC_inst_1/mac_operate_inst/U39/ZN (INV_X1)             0.02      0.05       1.17 f
+  MAC_inst_1/mac_operate_inst/op_1_ori[5] (net)     1               0.00       1.17 f
+  MAC_inst_1/mac_operate_inst/mult_128/a[5] (mac_operate_0_DW_mult_uns_0)     0.00     1.17 f
+  MAC_inst_1/mac_operate_inst/mult_128/a[5] (net)                   0.00       1.17 f
+  MAC_inst_1/mac_operate_inst/mult_128/U122/ZN (INV_X1)     0.13     0.16      1.33 r
+  MAC_inst_1/mac_operate_inst/mult_128/n163 (net)     7             0.00       1.33 r
+  MAC_inst_1/mac_operate_inst/mult_128/U140/ZN (NOR2_X1)     0.03     0.08     1.42 f
+  MAC_inst_1/mac_operate_inst/mult_128/n86 (net)     1              0.00       1.42 f
+  MAC_inst_1/mac_operate_inst/mult_128/U37/S (HA_X1)      0.04      0.23       1.65 f
+  MAC_inst_1/mac_operate_inst/mult_128/n60 (net)     1              0.00       1.65 f
+  MAC_inst_1/mac_operate_inst/mult_128/U35/S (FA_X1)      0.04      0.43       2.08 r
+  MAC_inst_1/mac_operate_inst/mult_128/n56 (net)     1              0.00       2.08 r
+  MAC_inst_1/mac_operate_inst/mult_128/U34/S (FA_X1)      0.06      0.34       2.42 f
+  MAC_inst_1/mac_operate_inst/mult_128/n54 (net)     2              0.00       2.42 f
+  MAC_inst_1/mac_operate_inst/mult_128/U155/ZN (AOI222_X1)     0.19     0.40     2.82 r
+  MAC_inst_1/mac_operate_inst/mult_128/n180 (net)     1             0.00       2.82 r
+  MAC_inst_1/mac_operate_inst/mult_128/U108/ZN (INV_X1)     0.05     0.07      2.89 f
+  MAC_inst_1/mac_operate_inst/mult_128/n162 (net)     2             0.00       2.89 f
+  MAC_inst_1/mac_operate_inst/mult_128/U154/ZN (AOI222_X1)     0.19     0.33     3.22 r
+  MAC_inst_1/mac_operate_inst/mult_128/n179 (net)     1             0.00       3.22 r
+  MAC_inst_1/mac_operate_inst/mult_128/U112/ZN (INV_X1)     0.04     0.07      3.29 f
+  MAC_inst_1/mac_operate_inst/mult_128/n160 (net)     1             0.00       3.29 f
+  MAC_inst_1/mac_operate_inst/mult_128/U7/CO (FA_X1)      0.05      0.29       3.58 f
+  MAC_inst_1/mac_operate_inst/mult_128/n6 (net)     1               0.00       3.58 f
+  MAC_inst_1/mac_operate_inst/mult_128/U6/CO (FA_X1)      0.05      0.30       3.87 f
+  MAC_inst_1/mac_operate_inst/mult_128/n5 (net)     1               0.00       3.87 f
+  MAC_inst_1/mac_operate_inst/mult_128/U5/CO (FA_X1)      0.05      0.30       4.17 f
+  MAC_inst_1/mac_operate_inst/mult_128/n4 (net)     1               0.00       4.17 f
+  MAC_inst_1/mac_operate_inst/mult_128/U4/CO (FA_X1)      0.05      0.30       4.47 f
+  MAC_inst_1/mac_operate_inst/mult_128/n3 (net)     1               0.00       4.47 f
+  MAC_inst_1/mac_operate_inst/mult_128/U3/CO (FA_X1)      0.05      0.30       4.76 f
+  MAC_inst_1/mac_operate_inst/mult_128/n2 (net)     1               0.00       4.76 f
+  MAC_inst_1/mac_operate_inst/mult_128/U2/S (FA_X1)       0.05      0.45       5.21 r
+  MAC_inst_1/mac_operate_inst/mult_128/product[12] (net)     2      0.00       5.21 r
+  MAC_inst_1/mac_operate_inst/mult_128/product[12] (mac_operate_0_DW_mult_uns_0)     0.00     5.21 r
+  MAC_inst_1/mac_operate_inst/mul_temp[12] (net)                    0.00       5.21 r
+  MAC_inst_1/mac_operate_inst/U9/ZN (INV_X1)              0.02      0.05       5.26 f
+  MAC_inst_1/mac_operate_inst/n6 (net)          2                   0.00       5.26 f
+  MAC_inst_1/mac_operate_inst/U72/Z (XOR2_X1)             0.03      0.20       5.46 f
+  MAC_inst_1/mac_operate_inst/N26 (net)         1                   0.00       5.46 f
+  MAC_inst_1/mac_operate_inst/U45/ZN (AOI22_X1)           0.10      0.17       5.63 r
+  MAC_inst_1/mac_operate_inst/n51 (net)         1                   0.00       5.63 r
+  MAC_inst_1/mac_operate_inst/U43/ZN (INV_X1)             0.03      0.06       5.69 f
+  MAC_inst_1/mac_operate_inst/n27 (net)         1                   0.00       5.69 f
+  MAC_inst_1/mac_operate_inst/add_131/B[5] (mac_operate_0_DW01_add_0)     0.00     5.69 f
+  MAC_inst_1/mac_operate_inst/add_131/B[5] (net)                    0.00       5.69 f
+  MAC_inst_1/mac_operate_inst/add_131/U1_5/CO (FA_X1)     0.05      0.32       6.02 f    mo 
+  MAC_inst_1/mac_operate_inst/add_131/carry[6] (net)     1          0.00       6.02 f
+  MAC_inst_1/mac_operate_inst/add_131/U1_6/CO (FA_X1)     0.05      0.30       6.31 f    mo 
+  MAC_inst_1/mac_operate_inst/add_131/carry[7] (net)     1          0.00       6.31 f
+  MAC_inst_1/mac_operate_inst/add_131/U1_7/CO (FA_X1)     0.05      0.30       6.61 f    mo 
+  MAC_inst_1/mac_operate_inst/add_131/carry[8] (net)     1          0.00       6.61 f
+  MAC_inst_1/mac_operate_inst/add_131/U1_8/CO (FA_X1)     0.05      0.30       6.90 f    mo 
+  MAC_inst_1/mac_operate_inst/add_131/carry[9] (net)     1          0.00       6.90 f
+  MAC_inst_1/mac_operate_inst/add_131/U1_9/S (FA_X1)      0.04      0.43       7.33 r    mo 
+  MAC_inst_1/mac_operate_inst/add_131/SUM[9] (net)     1            0.00       7.33 r
+  MAC_inst_1/mac_operate_inst/add_131/SUM[9] (mac_operate_0_DW01_add_0)     0.00     7.33 r
+  MAC_inst_1/mac_operate_inst/ac_sum_new[9] (net)                   0.00       7.33 r
+  MAC_inst_1/mac_operate_inst/ac_sum_new[9] (mac_operate_0)         0.00       7.33 r
+  MAC_inst_1/ac_sum_new[9] (net)                                    0.00       7.33 r
+  MAC_inst_1/U111/ZN (INV_X1)                             0.01      0.05       7.38 f
+  MAC_inst_1/n2 (net)                           2                   0.00       7.38 f
+  MAC_inst_1/U28/ZN (OAI22_X1)                            0.10      0.16       7.54 r
+  MAC_inst_1/n103 (net)                         1                   0.00       7.54 r
+  MAC_inst_1/ac_sum_old_reg_9_/D (DFF_X1)                 0.10      0.01       7.55 r
+  data arrival time                                                            7.55
+
+  clock clk (rise edge)                                            50.00      50.00
+  clock network delay (ideal)                                       0.00      50.00
+  MAC_inst_1/ac_sum_old_reg_9_/CK (DFF_X1)                          0.00      50.00 r
+  library setup time                                               -0.11      49.89
+  data required time                                                          49.89
+  ---------------------------------------------------------------------------------------------------------
+  data required time                                                          49.89
+  data arrival time                                                           -7.55
+  ---------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                 42.35
+
+
+1

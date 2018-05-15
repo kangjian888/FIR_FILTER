@@ -1,0 +1,19 @@
+ 
+****************************************
+check_design summary:
+Version:     I-2013.12-SP5-5
+Date:        Mon May 14 22:26:53 2018
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               5
+    Cells do not drive (LINT-1)                                     5
+--------------------------------------------------------------------------------
+
+Warning: In design 'FIR', cell 'C401' does not drive any nets. (LINT-1)
+Warning: In design 'MAC', cell 'C331' does not drive any nets. (LINT-1)
+Warning: In design 'mac_operate', cell 'B_4' does not drive any nets. (LINT-1)
+Warning: In design 'mac_operate', cell 'B_5' does not drive any nets. (LINT-1)
+Warning: In design 'mac_operate', cell 'B_7' does not drive any nets. (LINT-1)
+1
