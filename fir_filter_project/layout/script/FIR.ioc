@@ -1,0 +1,55 @@
+################################################################################
+# Filename: FIR.ioc
+# Author: KANG, Jian
+# Email: jkangac@connect.ust.hk
+# Affiliation: Hong Kong University of Science and Technology
+# ------------------------------------------------------------------------------
+#
+# This file defines the IO location constraint of the divider module. The input
+# pins are allocated at the left and right edge (on Metal 5). The output pins
+# are allocated at the top and bottom edge (on Metal 6). The space between each
+# pin is set as 1.5um. There is an offset of 1um to ensure the module pins do
+# not have any overlap with each other. Each pin dimension is set to be 0.14um x
+# 0.14um.
+#
+# Note: if we do not provide the IO location constraint for our FIR module,
+# the Encounter will randomly place our pins.
+################################################################################
+
+(globals
+    version = 3
+    io_order = default
+    space = 1.5
+)
+(iopin
+    (top
+	(pin name="data_in[0]"	 layer=6 width=0.1400 depth=0.1400 offset=1.0)
+	(pin name="data_in[1]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="data_in[2]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="data_in[3]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="data_in[4]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="data_in[5]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="data_in[6]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="data_in[7]"	 layer=6 width=0.1400 depth=0.1400 )
+    )
+    (left
+	(pin name="data_out[0]"	 layer=5 width=0.1400 depth=0.1400 offset=1.0)
+	(pin name="data_out[1]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="data_out[2]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="data_out[3]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="data_out[4]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="data_out[5]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="data_out[6]"	 layer=5 width=0.1400 depth=0.1400 )
+	(pin name="data_out[7]"	 layer=5 width=0.1400 depth=0.1400 )
+    )
+    (bottom
+	(pin name="clk"	 layer=6 width=0.1400 depth=0.1400 offset=1.0)
+	(pin name="rst_n"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="enable"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="configuration"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="config_data_enable"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="overflag[0]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="overflag[1]"	 layer=6 width=0.1400 depth=0.1400 )
+	(pin name="done"	 layer=6 width=0.1400 depth=0.1400 )
+    )   
+)
