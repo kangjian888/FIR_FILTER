@@ -1,0 +1,27 @@
+Chronologic VCS simulator copyright 1991-2014
+Contains Synopsys proprietary information.
+Compiler version I-2014.03-2_Full64; Runtime version I-2014.03-2_Full64;  May 16 12:38 2018
+Doing SDF annotation ...... Done
+VCD+ Writer I-2014.03-2_Full64 Copyright (c) 1991-2014 by Synopsys Inc.
+The file '/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout_sim/inter.vpd' was opened successfully.
+
+"/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Verilog/NangateOpenCellLibrary.v", 2342: Timing violation in FIR_tb.FIR_inst.FIR_control_inst.mac_3_enable_reg
+    $setuphold( posedge GN:123400, posedge D:123400, limits: (100,100) );
+
+"/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Verilog/NangateOpenCellLibrary.v", 2342: Timing violation in FIR_tb.FIR_inst.FIR_control_inst.mac_2_enable_reg
+    $setuphold( posedge GN:123400, posedge D:123400, limits: (100,100) );
+
+
+"/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Verilog/NangateOpenCellLibrary.v", 2342: Timing violation in FIR_tb.FIR_inst.FIR_control_inst.mac_3_enable_reg
+    $setuphold( posedge GN:183400, posedge D:183400, limits: (100,100) );
+
+"/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Verilog/NangateOpenCellLibrary.v", 2342: Timing violation in FIR_tb.FIR_inst.FIR_control_inst.mac_2_enable_reg
+    $setuphold( posedge GN:183400, posedge D:183400, limits: (100,100) );
+
+$finish called from file "FIR_tb.v", line 145.
+$finish at simulation time               248200
+Simulation complete, time is 248200 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 248200 ps
+CPU Time:      0.110 seconds;       Data structure size:   1.5Mb
+Wed May 16 12:39:20 2018
