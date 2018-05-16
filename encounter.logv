@@ -1,0 +1,85 @@
+[05/15 19:42:56     0s] Checking out Encounter license ...
+[05/15 19:42:57     0s] 	edsxl		DENIED:		"Encounter_Digital_Impl_Sys_XL"
+[05/15 19:42:57     0s] 	edsl		DENIED:		"Encounter_Digital_Impl_Sys_L"
+[05/15 19:42:57     0s] 	encblk		DENIED:		"Encounter_Block"
+[05/15 19:42:57     0s] 	fegxl		DENIED:		"First_Encounter_GXL"
+[05/15 19:42:57     0s] 	fexl		DENIED:		"FE_GPS"
+[05/15 19:42:57     0s] 	nru		DENIED:		"NanoRoute_Ultra"
+[05/15 19:42:57     0s] 	vdixl		DENIED:		"Virtuoso_Digital_Implem_XL"
+[05/15 19:42:57     0s] 	vdi		CHECKED OUT:	"Virtuoso_Digital_Implem"
+[05/15 19:42:57     0s] Virtuoso_Digital_Implem 14.2 license checkout succeeded.
+[05/15 19:42:57     0s] 	Maximum number of instance allowed (1 x 50000).
+[05/15 19:43:08     4s] *******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2014.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+[05/15 19:43:08     4s] @(#)CDS: Encounter v14.26-s039_1 (64bit) 07/15/2015 11:34 (Linux 2.6.18-194.el5)
+[05/15 19:43:08     4s] @(#)CDS: NanoRoute v14.26-s022 NR150713-1956/14_26-UB (database version 2.30, 267.6.1) {superthreading v1.25}
+[05/15 19:43:08     4s] @(#)CDS: CeltIC v14.26-s013_1 (64bit) 07/14/2015 03:32:40 (Linux 2.6.18-194.el5)
+[05/15 19:43:08     4s] @(#)CDS: AAE 14.26-s007 (64bit) 07/15/2015 (Linux 2.6.18-194.el5)
+[05/15 19:43:08     4s] @(#)CDS: CTE 14.26-s010_1 (64bit) Jul 15 2015 01:38:12 (Linux 2.6.18-194.el5)
+[05/15 19:43:08     4s] @(#)CDS: CPE v14.26-s026
+[05/15 19:43:08     4s] @(#)CDS: IQRC/TQRC 14.2.2-s217 (64bit) Wed Apr 15 23:10:24 PDT 2015 (Linux 2.6.18-194.el5)
+[05/15 19:43:08     4s] @(#)CDS: OA 22.50-p011 Tue Nov 11 03:24:55 2014
+[05/15 19:43:08     4s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[05/15 19:43:08     4s] @(#)CDS: RCDB 11.5
+[05/15 19:43:08     4s] --- Starting "Encounter v14.26-s039_1" on Tue May 15 19:43:08 2018 (mem=96.1M) ---
+[05/15 19:43:08     4s] --- Running on EEX109 (x86_64 w/Linux 2.6.32-696.18.7.el6.x86_64) ---
+[05/15 19:43:08     4s] This version was compiled on Wed Jul 15 11:34:51 PDT 2015.
+[05/15 19:43:08     4s] Set DBUPerIGU to 1000.
+[05/15 19:43:08     4s] Set net toggle Scale Factor to 1.00
+[05/15 19:43:08     4s] Set Shrink Factor to 1.00000
+[05/15 19:43:08     4s] 
+[05/15 19:43:08     4s] **INFO:  MMMC transition support version v31-84 
+[05/15 19:43:08     4s] 
+[05/15 19:43:08     4s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/15 19:43:08     4s] <CMD> suppressMessage ENCEXT-2799
+[05/15 19:43:08     4s] <CMD> win
+[05/15 19:50:34    79s] <CMD> create_rc_corner -name rc_best -cap_table {/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/best.captbl} -T {0} -preRoute_res {1.34236} -preRoute_cap {1.10066} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.34236} -postRoute_cap {0.960234} -postRoute_xcap {1.22327} -postRoute_clkres {0.0} -postRoute_clkcap {0.969117 0 0} -qx_tech_file {/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/best.tch}
+[05/15 19:50:34    79s] <CMD> create_rc_corner -name rc_worst -cap_table {/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/worst.captbl} -T {125} -preRoute_res {1.34236} -preRoute_cap {1.10066} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.34236} -postRoute_cap {0.960234} -postRoute_xcap {1.22327} -postRoute_clkres {0.0} -postRoute_clkcap {0.969117 0 0} -qx_tech_file {/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/worst.tch}
+[05/15 19:50:34    79s] <CMD> create_library_set -name lib_slow -timing {/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib} -si {/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/celtic/slow.cdb}
+[05/15 19:50:34    79s] <CMD> create_library_set -name lib_fast -timing {/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_fast.lib} -si {/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/celtic/fast.cdb}
+[05/15 19:50:34    79s] <CMD> create_constraint_mode -name constraint_slow -sdc_files {designs/divider.mapped.sdc}
+[05/15 19:50:34    79s] <CMD> create_delay_corner -name delay_corner_slow -library_set {lib_slow} -rc_corner {rc_worst}
+[05/15 19:50:34    79s] <CMD> create_delay_corner -name delay_corner_fast -library_set {lib_fast} -rc_corner {rc_best}
+[05/15 19:50:34    79s] <CMD> create_analysis_view -name analysis_slow -constraint_mode {constraint_slow} -delay_corner {delay_corner_slow}
+[05/15 19:50:34    79s] <CMD> create_analysis_view -name analysis_fast -constraint_mode {constraint_slow} -delay_corner {delay_corner_fast}
+[05/15 19:50:34    79s] <CMD> set_analysis_view -setup {analysis_slow} -hold {analysis_fast}
+[05/15 19:53:22   158s] <CMD> save_global fir_filter_project/layout/script/Default.globals
+[05/15 19:54:04   162s] <CMD> set init_gnd_net VDD
+[05/15 19:54:04   162s] <CMD> set init_lef_file {../../../dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.tech.lef ../../../dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.macro.lef}
+[05/15 19:54:04   162s] <CMD> set init_verilog fir_filter_project/layout/design/FIR.mapped.v
+[05/15 19:54:04   162s] <CMD> set init_mmmc_file fir_filter_project/layout/script/mmmc.view
+[05/15 19:54:04   162s] <CMD> set init_pwr_net VSS
+[05/15 19:54:04   162s] <CMD> init_design
+[05/15 19:54:04   162s] **ERROR: (TCLCMD-989):	cannot open SDC file 'designs/divider.mapped.sdc' for mode 'constraint_slow'
+[05/15 19:54:19   162s] <CMD> set init_gnd_net VDD
+[05/15 19:54:19   162s] <CMD> set init_lef_file {../../../dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.tech.lef ../../../dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.macro.lef}
+[05/15 19:54:19   162s] <CMD> set init_verilog fir_filter_project/layout/design/FIR.mapped.v
+[05/15 19:54:19   162s] <CMD> set init_mmmc_file fir_filter_project/layout/script/mmmc.view
+[05/15 19:54:19   162s] <CMD> set init_pwr_net VSS
+[05/15 19:54:19   162s] <CMD> init_design
+[05/15 19:54:19   162s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/15 19:54:19   162s] **ERROR: (TCLCMD-989):	cannot open SDC file 'designs/divider.mapped.sdc' for mode 'constraint_slow'
+[05/15 19:55:45   168s] 
+[05/15 19:55:45   168s] *** Memory Usage v#1 (Current mem = 365.969M, initial mem = 96.059M) ***
+[05/15 19:55:45   168s] *** Message Summary: 0 warning(s), 0 error(s)
+[05/15 19:55:45   168s] 
+[05/15 19:55:45   168s] --- Ending "Encounter" (totcpu=0:02:49, real=0:12:49, mem=366.0M) ---

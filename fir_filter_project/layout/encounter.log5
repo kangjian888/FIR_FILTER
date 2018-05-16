@@ -1,0 +1,3783 @@
+Checking out Encounter license ...
+	edsxl		DENIED:		"Encounter_Digital_Impl_Sys_XL"
+	edsl		DENIED:		"Encounter_Digital_Impl_Sys_L"
+	encblk		DENIED:		"Encounter_Block"
+	fegxl		DENIED:		"First_Encounter_GXL"
+	fexl		DENIED:		"FE_GPS"
+	nru		DENIED:		"NanoRoute_Ultra"
+	vdixl		DENIED:		"Virtuoso_Digital_Implem_XL"
+	vdi		CHECKED OUT:	"Virtuoso_Digital_Implem"
+Virtuoso_Digital_Implem 14.2 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2014.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v14.26-s039_1 (64bit) 07/15/2015 11:34 (Linux 2.6.18-194.el5)
+@(#)CDS: NanoRoute v14.26-s022 NR150713-1956/14_26-UB (database version 2.30, 267.6.1) {superthreading v1.25}
+@(#)CDS: CeltIC v14.26-s013_1 (64bit) 07/14/2015 03:32:40 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 14.26-s007 (64bit) 07/15/2015 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 14.26-s010_1 (64bit) Jul 15 2015 01:38:12 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v14.26-s026
+@(#)CDS: IQRC/TQRC 14.2.2-s217 (64bit) Wed Apr 15 23:10:24 PDT 2015 (Linux 2.6.18-194.el5)
+@(#)CDS: OA 22.50-p011 Tue Nov 11 03:24:55 2014
+@(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+@(#)CDS: RCDB 11.5
+--- Starting "Encounter v14.26-s039_1" on Wed May 16 11:58:28 2018 (mem=96.1M) ---
+--- Running on EEX109 (x86_64 w/Linux 2.6.32-696.18.7.el6.x86_64) ---
+This version was compiled on Wed Jul 15 11:34:51 PDT 2015.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+Loading global variable file /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/FIR.globals ...
+Loading view definition file from /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/viewDefinition.tcl
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library.
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.14min, fe_real=0.50min, fe_mem=389.7M) ***
+**WARN: (ENCFP-669):	IO pin "overflag[0]" not found.
+**WARN: (ENCFP-669):	IO pin "overflag[1]" not found.
+**WARN: (ENCFP-669):	IO pin "done" not found.
+Loading preference file /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/enc.pref.tcl ...
+Loading mode file /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/FIR.mode ...
+**WARN: (ENCEXT-6202):	In addition to the technology file, capacitance table file is specified for all RC corners. If the technology file for all RC corners is already specified, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command. In this case, the technology file will be used for preRoute extraction and effort level medium/high/signoff of postRoute extraction.
+FIR
+Loading place ...
+Loading route ...
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (ENCSYC-6163):	Command 'freeDesign' is obsolete and will be made private and will be unsupported in future release. To avoid this warning, please remove the obsolete command from your script.
+Reset to color id 0 for FIR_control_inst (FIR_control) and all their descendants.
+Reset to color id 0 for MAC_inst_1 (MAC_0) and all their descendants.
+Reset to color id 0 for MAC_inst_2 (MAC_3) and all their descendants.
+Reset to color id 0 for MAC_inst_3 (MAC_2) and all their descendants.
+Reset to color id 0 for MAC_inst_4 (MAC_1) and all their descendants.
+Reset to color id 0 for CONFIG_inst (CONFIG) and all their descendants.
+Reset to color id 0 for add_1_root_add_0_root_add_228_3 (FIR_DW01_add_2) and all their descendants.
+Reset to color id 0 for add_2_root_add_0_root_add_228_3 (FIR_DW01_add_1) and all their descendants.
+Reset to color id 0 for add_0_root_add_0_root_add_228_3 (FIR_DW01_add_0) and all their descendants.
+Free PSO.
+
+
+Info (SM2C): Status of key globals:
+	 MMMC-by-default flow     : 1
+	 Default MMMC objs envvar : 0
+	 Data portability         : 0
+	 MMMC PV Emulation        : 0
+	 MMMC debug               : 0
+	 Init_Design flow         : 1
+
+
+	 CTE SM2C global          : false
+	 Reporting view filter    : false
+Loading global variable file /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/FIR.globals ...
+Loading view definition file from /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/viewDefinition.tcl
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.18min, fe_real=0.62min, fe_mem=422.1M) ***
+**WARN: (ENCFP-669):	IO pin "overflag[0]" not found.
+**WARN: (ENCFP-669):	IO pin "overflag[1]" not found.
+**WARN: (ENCFP-669):	IO pin "done" not found.
+Loading preference file /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/enc.pref.tcl ...
+Loading mode file /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/FIR.mode ...
+**WARN: analysis view analysis_fast not found, use default_view_setup
+**WARN: (ENCEXT-6202):	In addition to the technology file, capacitance table file is specified for all RC corners. If the technology file for all RC corners is already specified, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command. In this case, the technology file will be used for preRoute extraction and effort level medium/high/signoff of postRoute extraction.
+FIR
+Loading place ...
+Loading route ...
+<CMD> setNanoRouteMode -quiet -timingEngine {}
+<CMD> setNanoRouteMode -quiet -routeWithTimingDriven 1
+<CMD> setNanoRouteMode -quiet -routeWithSiDriven 1
+<CMD> setNanoRouteMode -quiet -routeWithSiPostRouteFix 0
+<CMD> setNanoRouteMode -quiet -routeTopRoutingLayer default
+<CMD> setNanoRouteMode -quiet -routeBottomRoutingLayer default
+<CMD> setNanoRouteMode -quiet -drouteEndIteration default
+<CMD> setNanoRouteMode -quiet -routeWithTimingDriven true
+<CMD> setNanoRouteMode -quiet -routeWithSiDriven true
+<CMD> routeDesign -globalDetail
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 539.23 (MB), peak = 539.50 (MB)
+#WARNING (NRIG-96) Selected single pass global detail route "-globalDetail". Clock eco and post optimizations will not be run. See "man NRIG-96" for more details.
+Begin checking placement ... (start mem=538.6M, init mem=539.6M)
+*info: Placed = 2269           (Fixed = 541)
+*info: Unplaced = 0           
+Placement Density:59.94%(4857/8104)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=539.6M)
+#**INFO: honoring user setting for routeWithTimingDriven set to true
+#**INFO: honoring user setting for routeWithSiDriven set to true
+#WARNING (NRIG-87) Timing file "" not found, resetting timing engine to default for this session.
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (44) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=539.6M) ***
+
+globalDetailRoute
+
+#setNanoRouteMode -drouteStartIteration 0
+#setNanoRouteMode -routeWithSiDriven true
+#setNanoRouteMode -routeWithTimingDriven true
+#Start globalDetailRoute on Wed May 16 11:59:34 2018
+#
+#Generating timing graph information, please wait...
+#2822 total nets, 44 already routed, 44 will ignore in trialRoute
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+#Dump tif for version 2.1
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+AAE_INFO: Cdb files are: 
+ 	/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/slow.cdb
+	/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/fast.cdb
+ 
+**WARN: (ENCESI-3311):	Pin A of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin A of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin A of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin A of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin A of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin A of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin A of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin A of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin B of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin B of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin B of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin B of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin B of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin B of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin B of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin B of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin Z of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin Z of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin Z of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin Z of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (EMS-63):	Message <ENCESI-3311> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message by
+using the set_message -limit <number> command.
+The message limit can be removed by using the set_message -no_limit command.
+Note that setting a very large number using the set_message -limit command
+or removing the message limit using the set_message -no_limit command can
+significantly increase the log file size.
+To suppress a message, use the set_message -suppress command.
+AAE_THRD: End delay calculation. (MEM=708.688 CPU=0:00:00.1 REAL=0:00:01.0)
+AAE_THRD: End delay calculation. (MEM=709.688 CPU=0:00:00.5 REAL=0:00:00.0)
+#Write timing file took: cpu time = 00:00:02, elapsed time = 00:00:02, memory = 598.91 (MB), peak = 739.70 (MB)
+#Done generating timing graph information.
+#Start reading timing information from file .timing_file_47497.tif.gz ...
+#Read in timing information for 24 ports, 2269 instances from timing file .timing_file_47497.tif.gz.
+#NanoRoute Version v14.26-s022 NR150713-1956/14_26-UB
+#Bottom routing layer is M1, bottom routing layer for shielding is M1, bottom shield layer is M1
+#Start routing data preparation.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal1 is not specified for width 0.070.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal2 is not specified for width 0.070.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal1 is not specified for width 0.070.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal2 is not specified for width 0.070.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal2 is not specified for width 0.070.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal3 is not specified for width 0.070.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal2 is not specified for width 0.070.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal3 is not specified for width 0.070.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal3 is not specified for width 0.070.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal4 is not specified for width 0.140.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal3 is not specified for width 0.070.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal4 is not specified for width 0.140.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal4 is not specified for width 0.140.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal5 is not specified for width 0.140.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal4 is not specified for width 0.140.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal5 is not specified for width 0.140.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal5 is not specified for width 0.140.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal6 is not specified for width 0.140.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal5 is not specified for width 0.140.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal6 is not specified for width 0.140.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal6 is not specified for width 0.140.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal7 is not specified for width 0.400.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal6 is not specified for width 0.140.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal7 is not specified for width 0.400.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal7 is not specified for width 0.400.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal8 is not specified for width 0.400.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal7 is not specified for width 0.400.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal8 is not specified for width 0.400.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal8 is not specified for width 0.400.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal9 is not specified for width 0.800.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal8 is not specified for width 0.400.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal9 is not specified for width 0.800.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal9 is not specified for width 0.800.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal10 is not specified for width 0.800.
+#WARNING (NRDB-2077) The below via enclosure for LAYER metal9 is not specified for width 0.800.
+#WARNING (NRDB-2078) The above via enclosure for LAYER metal10 is not specified for width 0.800.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.250.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Voltage range [1.250 - 1.250] has 1 net.
+#Voltage range [0.000 - 1.250] has 2905 nets.
+# metal1       H   Track-Pitch = 0.140    Line-2-Via Pitch = 0.135
+# metal2       V   Track-Pitch = 0.190    Line-2-Via Pitch = 0.140
+# metal3       H   Track-Pitch = 0.140    Line-2-Via Pitch = 0.140
+# metal4       V   Track-Pitch = 0.280    Line-2-Via Pitch = 0.280
+# metal5       H   Track-Pitch = 0.280    Line-2-Via Pitch = 0.280
+# metal6       V   Track-Pitch = 0.280    Line-2-Via Pitch = 0.280
+# metal7       H   Track-Pitch = 0.840    Line-2-Via Pitch = 0.800
+# metal8       V   Track-Pitch = 0.840    Line-2-Via Pitch = 0.800
+# metal9       H   Track-Pitch = 1.600    Line-2-Via Pitch = 1.600
+# metal10      V   Track-Pitch = 1.680    Line-2-Via Pitch = 1.600
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer metal2's pitch = 0.190.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 631.79 (MB), peak = 739.70 (MB)
+#Merging special wires...
+#3 routed nets are extracted.
+#41 routed nets are imported.
+#2778 (95.56%) nets are without wires.
+#85 nets are fixed|skipped|trivial (not extracted).
+#Total number of nets = 2907.
+#Using S.M.A.R.T. routing technology.
+#Number of eco nets is 0
+#
+#Start data preparation...
+#
+#Data preparation is done on Wed May 16 11:59:37 2018
+#
+#Analyzing routing resource...
+#Routing resource analysis is done on Wed May 16 11:59:37 2018
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal 1        H         536           0        1274    64.36%
+#  Metal 2        V         742           0        1274     0.00%
+#  Metal 3        H         527           0        1274     0.00%
+#  Metal 4        V         495           0        1274     0.00%
+#  Metal 5        H         264           0        1274     0.00%
+#  Metal 6        V         495           0        1274     0.00%
+#  Metal 7        H          89           0        1274     1.73%
+#  Metal 8        V         154          13        1274     7.14%
+#  Metal 9        H          39           7        1274    22.29%
+#  Metal 10       V          72          12        1274    12.01%
+#  --------------------------------------------------------------
+#  Total                   3413       3.73%  12740    10.75%
+#
+#  44 nets (1.51%) with 1 preferred extra spacing.
+#
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 632.10 (MB), peak = 739.70 (MB)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 632.94 (MB), peak = 739.70 (MB)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 632.97 (MB), peak = 739.70 (MB)
+#
+#
+#Total number of trivial nets (e.g. < 2 pins) = 85 (skipped).
+#Total number of routable nets = 2822.
+#Total number of nets in the design = 2907.
+#
+#2778 routable nets have only global wires.
+#44 routable nets have only detail routed wires.
+#44 detail routed (routable) nets have been constrained (e.g. have preferred extra spacing, require shielding etc.)
+#
+#Routed nets constraints summary:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default            2778  
+#-----------------------------
+#        Total            2778  
+#-----------------------------
+#
+#Routing constraints summary of the whole design:
+#------------------------------------------------
+#        Rules   Pref Extra Space   Unconstrained  
+#------------------------------------------------
+#      Default                 44            2778  
+#------------------------------------------------
+#        Total                 44            2778  
+#------------------------------------------------
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon       OverCon       OverCon          
+#                  #Gcell        #Gcell        #Gcell    %Gcell
+#     Layer         (1-2)         (3-4)           (5)   OverCon
+#  ------------------------------------------------------------
+#   Metal 1      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 2     11(0.86%)      5(0.39%)      1(0.08%)   (1.33%)
+#   Metal 3      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 4      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 5      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 6      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 7      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 8      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#   Metal 9      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  Metal 10      0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  ------------------------------------------------------------
+#     Total     11(0.09%)      5(0.04%)      1(0.01%)   (0.14%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 5
+#
+#Complete Global Routing.
+#Total number of nets with non-default rule or having extra spacing = 44
+#Total wire length = 24799 um.
+#Total half perimeter of net bounding box = 24539 um.
+#Total wire length on LAYER metal1 = 18 um.
+#Total wire length on LAYER metal2 = 8140 um.
+#Total wire length on LAYER metal3 = 13811 um.
+#Total wire length on LAYER metal4 = 2582 um.
+#Total wire length on LAYER metal5 = 225 um.
+#Total wire length on LAYER metal6 = 23 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total wire length on LAYER metal9 = 0 um.
+#Total wire length on LAYER metal10 = 0 um.
+#Total number of vias = 13817
+#Up-Via Summary (total 13817):
+#           
+#-----------------------
+#  Metal 1         8099
+#  Metal 2         4831
+#  Metal 3          843
+#  Metal 4           31
+#  Metal 5           13
+#-----------------------
+#                 13817 
+#
+#Max overcon = 5 tracks.
+#Total overcon = 0.14%.
+#Worst layer Gcell overcon rate = 0.00%.
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 633.03 (MB), peak = 739.70 (MB)
+#
+#
+#Start data preparation for track assignment...
+#
+#Data preparation is done on Wed May 16 11:59:38 2018
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 633.05 (MB), peak = 739.70 (MB)
+#Start Track Assignment.
+#Done with 3003 horizontal wires in 1 hboxes and 2829 vertical wires in 1 hboxes.
+#Done with 832 horizontal wires in 1 hboxes and 614 vertical wires in 1 hboxes.
+#Complete Track Assignment.
+#Total number of nets with non-default rule or having extra spacing = 44
+#Total wire length = 24235 um.
+#Total half perimeter of net bounding box = 24539 um.
+#Total wire length on LAYER metal1 = 16 um.
+#Total wire length on LAYER metal2 = 7792 um.
+#Total wire length on LAYER metal3 = 13611 um.
+#Total wire length on LAYER metal4 = 2564 um.
+#Total wire length on LAYER metal5 = 225 um.
+#Total wire length on LAYER metal6 = 26 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total wire length on LAYER metal9 = 0 um.
+#Total wire length on LAYER metal10 = 0 um.
+#Total number of vias = 13817
+#Up-Via Summary (total 13817):
+#           
+#-----------------------
+#  Metal 1         8099
+#  Metal 2         4831
+#  Metal 3          843
+#  Metal 4           31
+#  Metal 5           13
+#-----------------------
+#                 13817 
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 605.54 (MB), peak = 739.70 (MB)
+#
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:01
+#Increased memory = 11.02 (MB)
+#Total memory = 605.54 (MB)
+#Peak memory = 739.70 (MB)
+#Using S.M.A.R.T. routing technology.
+#routeSiEffort set to high
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#    number of violations = 0
+#55 out of 2269 instances need to be verified(marked ipoed).
+#18.2% of the total area is being checked for drcs
+#18.2% of the total area was checked
+#    number of violations = 0
+#cpu time = 00:00:07, elapsed time = 00:00:07, memory = 690.97 (MB), peak = 739.70 (MB)
+#start 1st optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 690.97 (MB), peak = 739.70 (MB)
+#Complete Detail Routing.
+#Total number of nets with non-default rule or having extra spacing = 44
+#Total wire length = 25776 um.
+#Total half perimeter of net bounding box = 24539 um.
+#Total wire length on LAYER metal1 = 1617 um.
+#Total wire length on LAYER metal2 = 7909 um.
+#Total wire length on LAYER metal3 = 12767 um.
+#Total wire length on LAYER metal4 = 3089 um.
+#Total wire length on LAYER metal5 = 358 um.
+#Total wire length on LAYER metal6 = 37 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total wire length on LAYER metal9 = 0 um.
+#Total wire length on LAYER metal10 = 0 um.
+#Total number of vias = 17445
+#Up-Via Summary (total 17445):
+#           
+#-----------------------
+#  Metal 1         8970
+#  Metal 2         7095
+#  Metal 3         1288
+#  Metal 4           79
+#  Metal 5           13
+#-----------------------
+#                 17445 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:00:07
+#Elapsed time = 00:00:07
+#Increased memory = 85.42 (MB)
+#Total memory = 690.98 (MB)
+#Peak memory = 739.70 (MB)
+#
+#Start Post Route wire spreading..
+#
+#Start data preparation for wire spreading...
+#
+#Data preparation is done on Wed May 16 11:59:45 2018
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 691.00 (MB), peak = 739.70 (MB)
+#
+#Spread distance (# of tracks): min = 0.500000; max = 2.000000
+#
+#Start Post Route Wire Spread.
+#Done with 673 horizontal wires in 1 hboxes and 327 vertical wires in 1 hboxes.
+#Complete Post Route Wire Spread.
+#
+#Total number of nets with non-default rule or having extra spacing = 44
+#Total wire length = 26093 um.
+#Total half perimeter of net bounding box = 24539 um.
+#Total wire length on LAYER metal1 = 1620 um.
+#Total wire length on LAYER metal2 = 7997 um.
+#Total wire length on LAYER metal3 = 12953 um.
+#Total wire length on LAYER metal4 = 3126 um.
+#Total wire length on LAYER metal5 = 359 um.
+#Total wire length on LAYER metal6 = 37 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total wire length on LAYER metal9 = 0 um.
+#Total wire length on LAYER metal10 = 0 um.
+#Total number of vias = 17445
+#Up-Via Summary (total 17445):
+#           
+#-----------------------
+#  Metal 1         8970
+#  Metal 2         7095
+#  Metal 3         1288
+#  Metal 4           79
+#  Metal 5           13
+#-----------------------
+#                 17445 
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 616.55 (MB), peak = 739.70 (MB)
+#
+#Post Route wire spread is done.
+#Total number of nets with non-default rule or having extra spacing = 44
+#Total wire length = 26093 um.
+#Total half perimeter of net bounding box = 24539 um.
+#Total wire length on LAYER metal1 = 1620 um.
+#Total wire length on LAYER metal2 = 7997 um.
+#Total wire length on LAYER metal3 = 12953 um.
+#Total wire length on LAYER metal4 = 3126 um.
+#Total wire length on LAYER metal5 = 359 um.
+#Total wire length on LAYER metal6 = 37 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total wire length on LAYER metal9 = 0 um.
+#Total wire length on LAYER metal10 = 0 um.
+#Total number of vias = 17445
+#Up-Via Summary (total 17445):
+#           
+#-----------------------
+#  Metal 1         8970
+#  Metal 2         7095
+#  Metal 3         1288
+#  Metal 4           79
+#  Metal 5           13
+#-----------------------
+#                 17445 
+#
+#
+#Start DRC checking..
+#    number of violations = 0
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 667.92 (MB), peak = 739.70 (MB)
+#    number of violations = 0
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 667.92 (MB), peak = 739.70 (MB)
+#CELL_VIEW FIR,init has no DRC violation.
+#Total number of DRC violations = 0
+#detailRoute Statistics:
+#Cpu time = 00:00:08
+#Elapsed time = 00:00:08
+#Increased memory = 62.38 (MB)
+#Total memory = 667.92 (MB)
+#Peak memory = 739.70 (MB)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:12
+#Elapsed time = 00:00:12
+#Increased memory = 126.74 (MB)
+#Total memory = 668.02 (MB)
+#Peak memory = 739.70 (MB)
+#Number of warnings = 36
+#Total number of warnings = 38
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Wed May 16 11:59:46 2018
+#
+#routeDesign: cpu time = 00:00:12, elapsed time = 00:00:12, memory = 668.03 (MB), peak = 739.70 (MB)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   ENCEXT-3530          1  The process node is not set. Use the com...
+WARNING   ENCESI-3311       8760  Pin %s of Cell %s for timing library %s ...
+*** Message Summary: 8761 warning(s), 0 error(s)
+
+<CMD> setExtractRCMode -engine postRoute
+<CMD> setExtractRCMode -effortLevel medium
+<CMD> optDesign -postRoute -outDir reports/postRouteTimingReports
+Disable merging buffers from different footprints for postRoute code for non-MSV designs
+Switching SI Aware to true by default in postroute mode   
+**WARN: (ENCDC-2614):	Cannot invoke the command -siAware true option of set_delay_cal_mode command with Encounter_Digital_Impl_Sys_L license. This feature requires an Encounter_Digital_Impl_Sys_XL or equivalent license. Update the license file or remove the option from the command. Skipped -siAware true option.
+**WARN: (ENCDC-2614):	Cannot invoke the command -siAware true option of set_delay_cal_mode command with Encounter_Digital_Impl_Sys_L license. This feature requires an Encounter_Digital_Impl_Sys_XL or equivalent license. Update the license file or remove the option from the command. Skipped -siAware true option.
+**WARN: (ENCDC-2614):	Cannot invoke the command -siAware true option of set_delay_cal_mode command with Encounter_Digital_Impl_Sys_L license. This feature requires an Encounter_Digital_Impl_Sys_XL or equivalent license. Update the license file or remove the option from the command. Skipped -siAware true option.
+**WARN: (ENCDC-2614):	Cannot invoke the command -siAware true option of set_delay_cal_mode command with Encounter_Digital_Impl_Sys_L license. This feature requires an Encounter_Digital_Impl_Sys_XL or equivalent license. Update the license file or remove the option from the command. Skipped -siAware true option.
+**WARN: (ENCDC-2614):	Cannot invoke the command -siAware true option of set_delay_cal_mode command with Encounter_Digital_Impl_Sys_L license. This feature requires an Encounter_Digital_Impl_Sys_XL or equivalent license. Update the license file or remove the option from the command. Skipped -siAware true option.
+GigaOpt running with 1 threads.
+**WARN: (ENCDC-2614):	Cannot invoke the command -siAware true option of set_delay_cal_mode command with Encounter_Digital_Impl_Sys_L license. This feature requires an Encounter_Digital_Impl_Sys_XL or equivalent license. Update the license file or remove the option from the command. Skipped -siAware true option.
+**WARN: (ENCDC-2614):	Cannot invoke the command -siAware true option of set_delay_cal_mode command with Encounter_Digital_Impl_Sys_L license. This feature requires an Encounter_Digital_Impl_Sys_XL or equivalent license. Update the license file or remove the option from the command. Skipped -siAware true option.
+**WARN: (ENCTS-403):	Delay calculation was forced to extrapolate table data outside of the characterized range. In some cases, extrapolation can reduce the accuracy of the delay calculation. You can enable more detailed reporting of these cases by enabling the command 'setDelayCalMode -reportOutBound true'.
+Type 'man ENCTS-403' for more detail.
+**WARN: (ENCDC-2614):	Cannot invoke the command -siAware true option of set_delay_cal_mode command with Encounter_Digital_Impl_Sys_L license. This feature requires an Encounter_Digital_Impl_Sys_XL or equivalent license. Update the license file or remove the option from the command. Skipped -siAware true option.
+**WARN: (ENCDC-2614):	Cannot invoke the command -siAware true option of set_delay_cal_mode command with Encounter_Digital_Impl_Sys_L license. This feature requires an Encounter_Digital_Impl_Sys_XL or equivalent license. Update the license file or remove the option from the command. Skipped -siAware true option.
+**WARN: (ENCDC-2614):	Cannot invoke the command -siAware true option of set_delay_cal_mode command with Encounter_Digital_Impl_Sys_L license. This feature requires an Encounter_Digital_Impl_Sys_XL or equivalent license. Update the license file or remove the option from the command. Skipped -siAware true option.
+**WARN: (ENCDC-2614):	Cannot invoke the command -siAware true option of set_delay_cal_mode command with Encounter_Digital_Impl_Sys_L license. This feature requires an Encounter_Digital_Impl_Sys_XL or equivalent license. Update the license file or remove the option from the command. Skipped -siAware true option.
+This command "optDesign -postRoute -outDir reports/postRouteTimingReports" required an extra checkout of license tpsxl.
+Additional license(s) checked out: 1 'Tempus_Timing_Signoff_XL' license(s)
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 704.5M, totSessionCpu=0:00:34 **
+#Created 135 library cell signatures
+#Created 2907 NETS and 0 SPECIALNETS signatures
+#Created 2270 instance signatures
+Begin checking placement ... (start mem=704.5M, init mem=704.5M)
+*info: Placed = 2269           (Fixed = 43)
+*info: Unplaced = 0           
+Placement Density:59.94%(4857/8104)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=704.5M)
+Limited Access feature "encUseAAEForPostRouteOpt" is Set. Starting AAE Based SI Opt 
+ Initial DC engine is -> aae
+ 
+ AAE-Opt:: Current number of nets in RC Memory -> 100 K
+ 
+ 
+ AAE-Opt:: New number of nets in RC Memory -> 100 K
+ 
+Reset EOS DB
+Resetting the settings 
+Ignoring AAE DB Resetting ...
+ Set Options for AAE Based Opt flow 
+*** optDesign -postRoute ***
+DRC Margin: user margin 0.0; extra margin 0
+Setup Target Slack: user slack 0
+Hold Target Slack: user slack 0
+Multi-VT timing optimization disabled based on library information.
+** INFO : this run is activating 'postRoute' automaton
+Extraction called for design 'FIR' of instances=2269 and nets=2907 using extraction engine 'postRoute' at effort level 'medium' .
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man ENCEXT-3530' for more detail.
+Turbo QRC (TQRC) Extraction in Multi-Corner mode called for design 'FIR'. Number of corners is 2.
+No TQRC parasitic data in Encounter. Going for full-chip extraction.
+TQRC Extraction invoked in single CPU mode. Commands setDistributeHost/setMultiCpuUsage can be used to activate multiCPU extraction.
+
+TQRC Extraction engine initialization using 2 tech files:
+	/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/worst.tch at temperature 125C & 
+	/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/best.tch at temperature 0C . 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+INFO (EXTIQRC-101) : 
+  Turbo QRC - 64-bit Parasitic Extractor - Version 14.2.2-s217
+----------------------------------------------------------------
+          Copyright 2015 Cadence Design Systems, Inc.
+
+
+INFO (EXTIQRC-103) : Starting at 2018-May-16 12:00:15 (2018-May-16 04:00:15 GMT).
+
+INFO (EXTIQRC-104) : Starting extraction session...
+
+INFO (EXTIQRC-159) : Loading technology data from file:
+ 
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/worst.tch
+
+INFO (EXTIQRC-289) : Loading RCgen extraction models from file:
+ 
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/worst.tch
+
+INFO (EXTIQRC-345) : Checking Command/Tech/License Files. 
+
+INFO (EXTIQRC-105) : Starting design extraction....
+No layermap file specified. Automatically mapping tech and lef layers. Log file is 'extLogDir/TQRC_16-May-2018_12:00:14_47497_lbaSU5/extr.FIR.layermap.log'.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+TQRC Extraction engine initialized successfully.
+
+Dumping TQRC extraction options in file 'extLogDir/TQRC_16-May-2018_12:00:14_47497_lbaSU5/extr.FIR.extraction_options.log'.
+Initialization for TQRC Fullchip Extraction DONE (CPU Time: 0:00:02.1  Real Time: 0:00:02.0  MEM: 773.441M)
+
+Geometry processing of Gray and Metal fill STARTED........ DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 774.445M)
+Geometry processing of nets STARTED.................... DONE (NETS: 2822  Geometries: 41380  CPU Time: 0:00:00.3  Real Time: 0:00:00.0  MEM: 783.570M)
+
+Extraction of Geometries STARTED.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+INFO (EXTIQRC-282) : Checking Command/Tech Files. 
+
+INFO (EXTIQRC-277) : Manufacturing Data Information :- 
+  DEF/GDS file 
+    does NOT contain MetalFill data. 
+  Techfile  
+    does NOT contain WEE data.     
+    does NOT contain Erosion data t=f( density ) 
+    does NOT contain R(w) data.    
+    does NOT contain R(w, s) data.  
+    does NOT contain TC(w) data.    
+    does NOT contain T/B enlargement data. 
+    does     contain Floating Metal Fill models. 
+
+INFO (EXTIQRC-287) : Capacitance Models Information :- 
+ ICECAPS models are not available. 
+ RCgen   models are     available. 
+ This IQRC session uses RCgen models. 
+Your final RCs may vary depending on which models you use. 
+Please check Quantus QRC Manual for more information.
+
+INFO (EXTIQRC-286) : RCs effects computed for this session include :- 
+ MetalFill        : OFF 
+ WEE Effects      : n/a 
+ Erosion Effects  : n/a t=f( density ) 
+ T/B Enlargements : n/a 
+ R(w) Effects     : n/a 
+ R(w,s) Effects   : n/a 
+ TC(w) Effects     : n/a 
+Some effects indicate n/a because of non-availability of relevantinput data
+(or) requested to be off (and/or) usage of older Icecaps models.
+
+INFO (EXTHPY-103) : Extracting capacitance values.
+
+INFO (EXTHPY-104) :    0%
+
+INFO (EXTHPY-104) :    4%
+
+INFO (EXTHPY-104) :    7%
+
+INFO (EXTHPY-104) :    11%
+
+INFO (EXTHPY-104) :    15%
+
+INFO (EXTHPY-104) :    19%
+
+INFO (EXTHPY-104) :    22%
+
+INFO (EXTHPY-104) :    26%
+
+INFO (EXTHPY-104) :    30%
+
+INFO (EXTHPY-104) :    33%
+
+INFO (EXTHPY-104) :    37%
+
+INFO (EXTHPY-104) :    41%
+
+INFO (EXTHPY-104) :    44%
+
+INFO (EXTHPY-104) :    48%
+
+INFO (EXTHPY-104) :    52%
+
+INFO (EXTHPY-104) :    56%
+
+INFO (EXTHPY-104) :    59%
+
+INFO (EXTHPY-104) :    63%
+
+INFO (EXTHPY-104) :    67%
+
+INFO (EXTHPY-104) :    70%
+
+INFO (EXTHPY-104) :    74%
+
+INFO (EXTHPY-104) :    78%
+
+INFO (EXTHPY-104) :    81%
+
+INFO (EXTHPY-104) :    85%
+
+INFO (EXTHPY-104) :    89%
+
+INFO (EXTHPY-104) :    93%
+
+INFO (EXTHPY-104) :    96%
+
+INFO (EXTHPY-104) :    100%
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Extraction of Geometries DONE (NETS: 2822  CPU Time: 0:00:03.4  Real Time: 0:00:04.0  MEM: 918.953M)
+
+Parasitic Network Creation STARTED
+...................
+Number of Extracted Resistors     : 30152
+Number of Extracted Ground Caps   : 33110
+Number of Extracted Coupling Caps : 108
+Parasitic Network Creation DONE (Nets: 2822  CPU Time: 0:00:00.3  Real Time: 0:00:01.0  MEM: 842.984M)
+
+TQRC Extraction engine is being closed... 
+TQRC Fullchip Extraction DONE (CPU Time: 0:00:06.7  Real Time: 0:00:07.0  MEM: 831.973M)
+SI flow with analysisType aae and Opt Signoff SI using infinite TWs ...
+SI iteration 1 ... 
+#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV
+# Extraction Mode: detail/spef
+# Delay Calculation Options: engine=aae SIAware=true(opt_signoff)
+# Switching Delay Calculation Engine to AAE-SI
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Setting infinite Tws ...
+Loading CTE timing window...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 850.0M)
+	 First Iteration Infinite Tw... 
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 850.0M)
+Calculate early delays in OCV mode...
+Calculate late delays in OCV mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 850.0M, InitMEM = 850.0M)
+AAE_INFO-618: Total number of nets in the design is 2907,  100.0 percent of the nets selected for SI analysis
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=856.168 CPU=0:00:00.7 REAL=0:00:01.0)
+*** CDM Built up (cpu=0:00:00.9  real=0:00:01.0  mem= 856.2M) ***
+Loading CTE timing window...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 856.2M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 818.0M)
+
+Executing IPO callback for view pruning ..
+SI iteration 2 ... 
+AAE_INFO: 1 threads acquired from CTE.
+Calculate early delays in OCV mode...
+Calculate late delays in OCV mode...
+AAE_INFO-618: Total number of nets in the design is 2907,  100.0 percent of the nets selected for SI analysis
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=864.215 CPU=0:00:00.5 REAL=0:00:01.0)
+*** CDM Built up (cpu=0:00:00.5  real=0:00:01.0  mem= 864.2M) ***
+*** Done Building Timing Graph (cpu=0:00:02, real=0:00:02, mem=826.06M, totSessionCpu=0:00:42).
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+
+------------------------------------------------------------
+     Initial SI Timing Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 37.811  | 42.671  | 37.811  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   508   |   498   |   508   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 59.941%
+Total number of glitch violations: 0
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:09, real = 0:00:09, mem = 828.1M, totSessionCpu=0:00:42 **
+Setting latch borrow mode to budget during optimization.
+Glitch fixing enabled
+**INFO: Start fixing DRV (Mem = 885.29M) ...
+**INFO: Options = -postRoute -maxCap -maxTran -noMaxFanout -noSensitivity -backward -maxIter 1
+**INFO: Start fixing DRV iteration 1 ...
+Begin: GigaOpt DRV Optimization
+Glitch fixing enabled
+Info: 44 clock nets excluded from IPO operation.
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+DRV pessimism of 5.00% is used.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|      max-tran     |      max-cap      |     max-fanout    |     max-length    |       glitch      |       |           |           |         |            |           |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|  nets   |  terms  |  nets   |  terms  |  nets   |  terms  |  nets   |  terms  |  nets   |  terms  |  WNS  |  #Buffer  |  #Resize  | Density |    Real    |    Mem    |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|     0   |     0   |     0   |      0  |     0   |     0   |     0   |     0   |     0   |     0   | 37.81 |          0|          0|  59.94  |            |           |
+|     0   |     0   |     0   |      0  |     0   |     0   |     0   |     0   |     0   |     0   | 37.81 |          0|          0|  59.94  |   0:00:00.0|    1097.0M|
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+*** Finish DRV Fixing (cpu=0:00:00.1 real=0:00:01.0 mem=1097.0M) ***
+
+drv optimizer changes nothing and skips refinePlace
+End: GigaOpt DRV Optimization
+**optDesign ... cpu = 0:00:09, real = 0:00:10, mem = 979.9M, totSessionCpu=0:00:43 **
+*info:
+**INFO: Completed fixing DRV (CPU Time = 0:00:00, Mem = 979.88M).
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+
+------------------------------------------------------------
+     SI Timing Summary (cpu=0.01min real=0.02min mem=979.9M)                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 37.811  | 42.671  | 37.811  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   508   |   498   |   508   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 59.941%
+Total number of glitch violations: 0
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:10, real = 0:00:10, mem = 979.9M, totSessionCpu=0:00:43 **
+*** Timing Is met
+*** Check timing (0:00:00.0)
+*** Setup timing is met (target slack 0ns)
+Default Rule : ""
+Non Default Rules :
+Worst Slack : 42.671 ns
+Total 0 nets layer assigned (0.0).
+GigaOpt: setting up router preferences
+GigaOpt: 0 nets assigned router directives
+
+Start Assign Priority Nets ...
+TargetSlk(0.200ns) MaxAssign(3%) MinLen(50um)
+Existing Priority Nets 0 (0.0%)
+Assigned Priority Nets 0 (0.0%)
+Default Rule : ""
+Non Default Rules :
+Worst Slack : 37.810 ns
+Total 0 nets layer assigned (0.1).
+GigaOpt: setting up router preferences
+GigaOpt: 0 nets assigned router directives
+
+Start Assign Priority Nets ...
+TargetSlk(0.200ns) MaxAssign(3%) MinLen(50um)
+Existing Priority Nets 0 (0.0%)
+Assigned Priority Nets 0 (0.0%)
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+
+------------------------------------------------------------
+        Pre-ecoRoute Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 37.811  | 42.671  | 37.811  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   508   |   498   |   508   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 59.941%
+Total number of glitch violations: 0
+------------------------------------------------------------
+Active setup views: analysis_slow 
+Active hold views: analysis_fast 
+Latch borrow mode reset to max_borrow
+-routeWithEco false                      # bool, default=false
+-routeWithEco true                       # bool, default=false, user setting
+-routeSelectedNetOnly false              # bool, default=false
+-routeWithTimingDriven true              # bool, default=false, user setting
+-routeWithTimingDriven false             # bool, default=false, user setting
+-routeWithSiDriven true                  # bool, default=false, user setting
+-routeWithSiDriven false                 # bool, default=false, user setting
+-drouteStartIteration 0                  # int, default=0, user setting
+-drouteStartIteration 0                  # int, default=0
+
+globalDetailRoute
+
+#setNanoRouteMode -droutePostRouteSpreadWire "false"
+#setNanoRouteMode -routeWithEco true
+#setNanoRouteMode -routeWithSiDriven false
+#setNanoRouteMode -routeWithTimingDriven false
+#Start globalDetailRoute on Wed May 16 12:00:24 2018
+#
+#NanoRoute Version v14.26-s022 NR150713-1956/14_26-UB
+#Loading the last recorded routing design signature
+#No placement changes detected since last routing
+#Bottom routing layer is M1, bottom routing layer for shielding is M1, bottom shield layer is M1
+#Start routing data preparation.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.250.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Voltage range [1.250 - 1.250] has 1 net.
+#Voltage range [0.000 - 1.250] has 2905 nets.
+# metal1       H   Track-Pitch = 0.140    Line-2-Via Pitch = 0.135
+# metal2       V   Track-Pitch = 0.190    Line-2-Via Pitch = 0.140
+# metal3       H   Track-Pitch = 0.140    Line-2-Via Pitch = 0.140
+# metal4       V   Track-Pitch = 0.280    Line-2-Via Pitch = 0.280
+# metal5       H   Track-Pitch = 0.280    Line-2-Via Pitch = 0.280
+# metal6       V   Track-Pitch = 0.280    Line-2-Via Pitch = 0.280
+# metal7       H   Track-Pitch = 0.840    Line-2-Via Pitch = 0.800
+# metal8       V   Track-Pitch = 0.840    Line-2-Via Pitch = 0.800
+# metal9       H   Track-Pitch = 1.600    Line-2-Via Pitch = 1.600
+# metal10      V   Track-Pitch = 1.680    Line-2-Via Pitch = 1.600
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer metal2's pitch = 0.190.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 714.84 (MB), peak = 800.33 (MB)
+#Merging special wires...
+#Found 0 nets for post-route si or timing fixing.
+#WARNING (NRGR-22) Design is already detail routed.
+#
+#Start data preparation for track assignment...
+#
+#Data preparation is done on Wed May 16 12:00:24 2018
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 714.85 (MB), peak = 800.33 (MB)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 714.85 (MB), peak = 800.33 (MB)
+#
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = -1.96 (MB)
+#Total memory = 714.85 (MB)
+#Peak memory = 800.33 (MB)
+#
+#Start Detail Routing..
+#start 1st optimization iteration ...
+#    number of violations = 0
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 716.97 (MB), peak = 800.33 (MB)
+#Complete Detail Routing.
+#Total number of nets with non-default rule or having extra spacing = 44
+#Total wire length = 26093 um.
+#Total half perimeter of net bounding box = 24539 um.
+#Total wire length on LAYER metal1 = 1620 um.
+#Total wire length on LAYER metal2 = 7997 um.
+#Total wire length on LAYER metal3 = 12953 um.
+#Total wire length on LAYER metal4 = 3126 um.
+#Total wire length on LAYER metal5 = 359 um.
+#Total wire length on LAYER metal6 = 37 um.
+#Total wire length on LAYER metal7 = 0 um.
+#Total wire length on LAYER metal8 = 0 um.
+#Total wire length on LAYER metal9 = 0 um.
+#Total wire length on LAYER metal10 = 0 um.
+#Total number of vias = 17445
+#Up-Via Summary (total 17445):
+#           
+#-----------------------
+#  Metal 1         8970
+#  Metal 2         7095
+#  Metal 3         1288
+#  Metal 4           79
+#  Metal 5           13
+#-----------------------
+#                 17445 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 2.12 (MB)
+#Total memory = 716.97 (MB)
+#Peak memory = 800.33 (MB)
+#detailRoute Statistics:
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 2.12 (MB)
+#Total memory = 716.97 (MB)
+#Peak memory = 800.33 (MB)
+#Updating routing design signature
+#Created 135 library cell signatures
+#Created 2907 NETS and 0 SPECIALNETS signatures
+#Created 2270 instance signatures
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = -1.10 (MB)
+#Total memory = 714.86 (MB)
+#Peak memory = 800.33 (MB)
+#Number of warnings = 1
+#Total number of warnings = 39
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Wed May 16 12:00:24 2018
+#
+**optDesign ... cpu = 0:00:10, real = 0:00:10, mem = 851.4M, totSessionCpu=0:00:44 **
+-routeWithEco false                      # bool, default=false
+-routeSelectedNetOnly false              # bool, default=false
+-routeWithTimingDriven true              # bool, default=false, user setting
+-routeWithSiDriven true                  # bool, default=false, user setting
+-drouteStartIteration 0                  # int, default=0, user setting
+Extraction called for design 'FIR' of instances=2269 and nets=2907 using extraction engine 'postRoute' at effort level 'medium' .
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man ENCEXT-3530' for more detail.
+Turbo QRC (TQRC) Extraction in Multi-Corner mode called for design 'FIR'. Number of corners is 2.
+No changed net or region found. No need to perform incremental extraction. Changed status to 'Extracted'.
+Finished Generating Timing Windows
+**optDesign ... cpu = 0:00:11, real = 0:00:11, mem = 864.2M, totSessionCpu=0:00:44 **
+*** Done Building Timing Graph (cpu=0:00:00, real=0:00:00, mem=864.20M, totSessionCpu=0:00:44).
+Setting latch borrow mode to budget during optimization.
+Footprint XOR2_X1 has at least 2 pins...
+Footprint XNOR2_X1 has at least 3 pins...
+Footprint TLAT_X1 has at least 4 pins...
+Footprint SDFF_X1 has at least 5 pins...
+*** Number of Vt Cells Partition = 1
+Running setup recovery post routing.
+**optDesign ... cpu = 0:00:11, real = 0:00:11, mem = 864.2M, totSessionCpu=0:00:45 **
+Checking DRV degradation...
+Skipping DRV degradation check as timing recovery is disabled or not needed
+Skipping setup slack recovery as setup timing is met
+*** Done Building Timing Graph (cpu=0:00:00, real=0:00:00, mem=864.20M, totSessionCpu=0:00:45).
+*** Finish setup-recovery (cpu=0:00:00, real=0:00:00, mem=864.20M, totSessionCpu=0:00:45 .
+**optDesign ... cpu = 0:00:11, real = 0:00:11, mem = 864.2M, totSessionCpu=0:00:45 **
+
+Active setup views: analysis_slow 
+Active hold views: analysis_fast 
+Latch borrow mode reset to max_borrow
+Active setup views: analysis_slow 
+Active hold views: analysis_fast 
+Reported timing to dir reports/postRouteTimingReports
+**optDesign ... cpu = 0:00:11, real = 0:00:11, mem = 864.2M, totSessionCpu=0:00:45 **
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+
+------------------------------------------------------------
+     optDesign Final SI Timing Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 37.811  | 42.671  | 37.811  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   508   |   498   |   508   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 59.941%
+Total number of glitch violations: 0
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:12, real = 0:00:12, mem = 862.2M, totSessionCpu=0:00:45 **
+ ReSet Options after AAE Based Opt flow 
+*** Finished optDesign ***
+<CMD> optDesign -postRoute -hold -outDir reports/postRouteTimingReports
+Disable merging buffers from different footprints for postRoute code for non-MSV designs
+GigaOpt running with 1 threads.
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 862.2M, totSessionCpu=0:00:48 **
+#Created 135 library cell signatures
+#Created 2907 NETS and 0 SPECIALNETS signatures
+#Created 2270 instance signatures
+Begin checking placement ... (start mem=862.2M, init mem=862.2M)
+*info: Placed = 2269           (Fixed = 43)
+*info: Unplaced = 0           
+Placement Density:59.94%(4857/8104)
+Finished checkPlace (cpu: total=0:00:00.0, vio checks=0:00:00.0; mem=862.2M)
+Limited Access feature "encUseAAEForPostRouteOpt" is Set. Starting AAE Based SI Opt 
+ Initial DC engine is -> aae
+ 
+ AAE-Opt:: Current number of nets in RC Memory -> 100 K
+ 
+ 
+ AAE-Opt:: New number of nets in RC Memory -> 100 K
+ 
+Reset EOS DB
+Resetting the settings 
+Ignoring AAE DB Resetting ...
+ Set Options for AAE Based Opt flow 
+*** optDesign -postRoute ***
+DRC Margin: user margin 0.0; extra margin 0
+Setup Target Slack: user slack 0
+Hold Target Slack: user slack 0
+** INFO : this run is activating 'postRoute' automaton
+Extraction called for design 'FIR' of instances=2269 and nets=2907 using extraction engine 'postRoute' at effort level 'medium' .
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man ENCEXT-3530' for more detail.
+Turbo QRC (TQRC) Extraction in Multi-Corner mode called for design 'FIR'. Number of corners is 2.
+No changed net or region found. No need to perform incremental extraction.
+GigaOpt Hold Optimizer is used
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+*info: Run optDesign holdfix with 1 thread.
+Starting initialization (fixHold) cpu=0:00:00.4 real=0:00:00.0 totSessionCpu=0:00:48.5 mem=1043.1M ***
+*info: Starting Blocking QThread with 1 CPU
+SI flow with analysisType aae and Opt Signoff SI using infinite TWs ...
+SI iteration 1 ... 
+Begin IPO call back ...
+End IPO call back ...
+#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV
+# Extraction Mode: detail/spef
+# Delay Calculation Options: engine=aae SIAware=true(opt_signoff)
+# Switching Delay Calculation Engine to AAE-SI
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Setting infinite Tws ...
+Loading CTE timing window...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 0.0M)
+	 First Iteration Infinite Tw... 
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 0.0M)
+Calculate late delays in OCV mode...
+Calculate early delays in OCV mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 0.0M, InitMEM = 0.0M)
+*** Calculating scaling factor for lib_fast libraries using the default operating condition of each library.
+AAE_INFO-618: Total number of nets in the design is 2907,  100.0 percent of the nets selected for SI analysis
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=0 CPU=0:00:00.7 REAL=0:00:01.0)
+*** CDM Built up (cpu=0:00:00.9  real=0:00:01.0  mem= 0.0M) ***
+Loading CTE timing window...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 0.0M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 0.0M)
+
+Executing IPO callback for view pruning ..
+SI iteration 2 ... 
+AAE_INFO: 1 threads acquired from CTE.
+Calculate late delays in OCV mode...
+Calculate early delays in OCV mode...
+AAE_INFO-618: Total number of nets in the design is 2907,  100.0 percent of the nets selected for SI analysis
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=0 CPU=0:00:00.5 REAL=0:00:01.0)
+*** CDM Built up (cpu=0:00:00.5  real=0:00:01.0  mem= 0.0M) ***
+Done building cte hold timing graph (fixHold) cpu=0:00:01.9 real=0:00:02.0 totSessionCpu=0:00:01.9 mem=0.0M ***
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+Done building hold timer [1 node(s), 0 edge(s), 1 view(s)] (fixHold) cpu=0:00:02.1 real=0:00:02.0 totSessionCpu=0:00:02.1 mem=0.0M ***
+Timing Data dump into file .holdtw.analysis_fast.47497.twf, for view: analysis_fast 
+	 Dumping view 1 analysis_fast 
+
+SI flow with analysisType aae and Opt Signoff SI using infinite TWs ...
+SI iteration 1 ... 
+Begin IPO call back ...
+End IPO call back ...
+#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV
+# Extraction Mode: detail/spef
+# Delay Calculation Options: engine=aae SIAware=true(opt_signoff)
+# Switching Delay Calculation Engine to AAE-SI
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Setting infinite Tws ...
+Loading CTE timing window...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1059.1M)
+	 First Iteration Infinite Tw... 
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1059.1M)
+Calculate early delays in OCV mode...
+Calculate late delays in OCV mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 1059.1M, InitMEM = 1059.1M)
+AAE_INFO-618: Total number of nets in the design is 2907,  100.0 percent of the nets selected for SI analysis
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=1061.66 CPU=0:00:00.7 REAL=0:00:01.0)
+*** CDM Built up (cpu=0:00:00.8  real=0:00:01.0  mem= 1061.7M) ***
+Loading CTE timing window...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1061.7M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1023.5M)
+
+Executing IPO callback for view pruning ..
+SI iteration 2 ... 
+AAE_INFO: 1 threads acquired from CTE.
+Calculate early delays in OCV mode...
+Calculate late delays in OCV mode...
+AAE_INFO-618: Total number of nets in the design is 2907,  100.0 percent of the nets selected for SI analysis
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=1069.71 CPU=0:00:00.5 REAL=0:00:01.0)
+*** CDM Built up (cpu=0:00:00.5  real=0:00:01.0  mem= 1069.7M) ***
+Done building cte setup timing graph (fixHold) cpu=0:00:03.3 real=0:00:04.0 totSessionCpu=0:00:51.3 mem=1069.7M ***
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+Loading timing data from .holdtw.analysis_fast.47497.twf 
+	 Loading view 1 analysis_fast 
+
+------------------------------------------------------------
+             Initial Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 37.811  | 42.671  | 37.811  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   508   |   498   |   508   |
++--------------------+---------+---------+---------+
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.046  |  0.046  |   N/A   |
+|           TNS (ns):|  0.000  |  0.000  |   N/A   |
+|    Violating Paths:|    0    |    0    |   N/A   |
+|          All Paths:|   498   |   498   |   N/A   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 59.941%
+------------------------------------------------------------
+Info: 44 clock nets excluded from IPO operation.
+*** Hold timing is met. Hold fixing is not needed 
+**optDesign ... cpu = 0:00:04, real = 0:00:05, mem = 919.1M, totSessionCpu=0:00:52 **
+Active setup views: analysis_slow 
+Active hold views: analysis_fast 
+Reported timing to dir reports/postRouteTimingReports
+**optDesign ... cpu = 0:00:04, real = 0:00:05, mem = 919.1M, totSessionCpu=0:00:52 **
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+*info: Starting Blocking QThread with 1 CPU
+AAE_INFO-618: Total number of nets in the design is 2907,  100.0 percent of the nets selected for SI analysis
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=0 CPU=0:00:00.7 REAL=0:00:00.0)
+AAE_INFO-618: Total number of nets in the design is 2907,  100.0 percent of the nets selected for SI analysis
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=0 CPU=0:00:00.4 REAL=0:00:00.0)
+
+
+------------------------------------------------------------
+     optDesign Final SI Timing Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 37.811  | 42.671  | 37.811  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   508   |   498   |   508   |
++--------------------+---------+---------+---------+
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.046  |  0.046  |   N/A   |
+|           TNS (ns):|  0.000  |  0.000  |   N/A   |
+|    Violating Paths:|    0    |    0    |   N/A   |
+|          All Paths:|   498   |   498   |   N/A   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 59.941%
+Total number of glitch violations: 0
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:05, real = 0:00:08, mem = 917.1M, totSessionCpu=0:00:53 **
+ ReSet Options after AAE Based Opt flow 
+*** Finished optDesign ***
+<CMD> setDelayCalMode -SIAware false
+<CMD> setDelayCalMode -engine signalStorm
+**WARN: (ENCDC-2616):	The feDc and signalStorm delay calculation engines are obsolete and have been replaced by the AAE engine which is default in the EDI13.1 releases. The feDc and signalStorm engines still work in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to remove the invocation of these engines via the -engine option in the setDelayCalMode command.
+<CMD> timeDesign -signoff -si -outDir reports/signoffTimingReports
+**WARN: (ENCDC-2616):	The feDc and signalStorm delay calculation engines are obsolete and have been replaced by the AAE engine which is default in the EDI13.1 releases. The feDc and signalStorm engines still work in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to remove the invocation of these engines via the -engine option in the setDelayCalMode command.
+Set Using Elmore Delay Limit as 300.
+**WARN: (ENCTCM-70):	Option "-fixDRC" for command getSIMode is obsolete and has been replaced by "-report_si_slew_max_transition". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-report_si_slew_max_transition".
+**INFO: signalStorm engine is used for delay analysis with -signoff option
+**WARN: (ENCEXT-3493):	The design extraction status has been reset by the setExtractRCMode command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s).
+Type 'man ENCEXT-3493' for more detail.
+siFlowRuntime: Start timeDesign -postRoute -si : realTime (0.0secs) : cpuTime (0.0secs) : Wed May 16 12:01:29 HKT 2018
+-pruneSetupViewsForHoldFixing true         # bool, default=true, private
+siFlow: ========= Start Loop  Extraction ==========
+**WARN: (ENCEXT-1285):	The data for incremental TQRC/IQRC extraction is deleted because when the extractRC command is invoked, the parasitic data is reset. This forces the next TQRC/IQRC extraction run to be full chip.
+Extraction called for design 'FIR' of instances=2269 and nets=2907 using extraction engine 'postRoute' at effort level 'signoff' .
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man ENCEXT-3530' for more detail.
+Writing DEF file '/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ/qrc.def.gz', current time is Wed May 16 12:01:30 2018 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file '/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ/qrc.def.gz' is written, current time is Wed May 16 12:01:31 2018 ...
+
+
+  Cadence Quantus QRC Extraction - 64-bit Parasitic Extractor - Version
+14.2.3-s099 Wed Jun 17 00:01:02 PDT 2015
+-------------------------------------------------------------------------------------------------------------------
+                                    Copyright 2015 Cadence Design Systems,
+Inc.
+
+extract \
+	 -selection "all" \
+	 -type "rc_coupled"
+extraction_setup \
+	 -max_fracture_length 50 \
+	 -promote_pin_pad "LOGICAL"
+filter_coupling_cap \
+	 -cap_filtering_mode "absolute_and_relative" \
+	 -coupling_cap_threshold_absolute 3.0 \
+	 -coupling_cap_threshold_relative 0.03 \
+	 -total_cap_threshold 5.0
+input_db -type def \
+	 -lef_file_list_file "/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ/qrc.leflist"
+log_file \
+	 -dump_options true \
+	 -file_name "qrc_47497_20180516_12:01:29.log"
+output_db -type spef \
+	 -short_incomplete_net_pins true \
+	 -subtype "STANDARD"
+output_setup \
+	 -compressed true \
+	 -directory_name "/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ" \
+	 -file_name "FIR" \
+	 -temporary_directory_name "/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ"
+process_technology \
+	 -technology_corner \
+		"rc_worst" \
+		"rc_best" \
+	 -technology_library_file "/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ/_qrc_techlib.defs" \
+	 -technology_name "_qrc_tech_" \
+	 -temperature \
+		125 \
+		0
+
+
+
+INFO (EXTGRMP-102) : Starting at 2018-May-16 12:01:31 (2018-May-16 04:01:31 GMT).
+Running binary as: 
+ /usr/eelocal/cadence/ext142/tools/extraction/bin/64bit/qrc -cmd
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ/qrc.cmd
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ/qrc.def.gz
+ 
+
+WARNING (EXTGRMP-414) : No GDSII/OASIS file is specified. Setting graybox type as LEF_OBSTRUCTION.
+
+INFO (EXTGRMP-142) : Command line arguments:
+"-cmd"
+"/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ/qrc.cmd"
+"/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ/qrc.def.gz"
+
+INFO (EXTGRMP-143) : Option copy_port_to_obs = "true"
+
+INFO (EXTGRMP-143) : Option log_file = "qrc_47497_20180516_12:01:29.log"
+
+INFO (EXTGRMP-143) : Option max_error_messages = "100"
+
+INFO (EXTGRMP-143) : Option message_detail_level = "10"
+
+INFO (EXTGRMP-143) : Option tech_file = ""
+
+INFO (EXTGRMP-143) : Option library_name = ""
+
+INFO (EXTGRMP-143) : Option oa_default_rule_name = ""
+
+INFO (EXTGRMP-143) : Option gray_data = "obs"
+
+INFO (EXTGRMP-143) : Option comp_prealloc = "0"
+
+INFO (EXTGRMP-143) : Option net_prealloc = "0"
+
+INFO (EXTGRMP-143) : Option output_directory_name =
+"/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ"
+
+INFO (EXTGRMP-143) : Option output_coordinate_units = "micron"
+
+INFO (EXTGRMP-143) : Option output_cache_directory_name =
+"/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ/.qrctemp"
+
+INFO (EXTGRMP-143) : Option keep_temporary_files = "false"
+
+INFO (EXTGRMP-143) : Option output_file_name = "FIR"
+
+INFO (EXTGRMP-143) : Option spef_define_file = ""
+
+INFO (EXTGRMP-143) : Option reduce_output = "false"
+
+INFO (EXTGRMP-143) : Option debug_log = "false"
+
+INFO (EXTGRMP-143) : Option spef_output = "generic"
+
+INFO (EXTGRMP-143) : Option dspf_output = "none"
+
+INFO (EXTGRMP-143) : Option output_sstorm_db_name = ""
+
+INFO (EXTGRMP-143) : Option netlist_output = "none"
+
+INFO (EXTGRMP-143) : Option net_cc_output = "false"
+
+INFO (EXTGRMP-143) : Option rcdb_output = "false"
+
+INFO (EXTGRMP-143) : Option hierarchy_char = "/"
+
+INFO (EXTGRMP-143) : Option bus_chars = "[]"
+
+INFO (EXTGRMP-143) : Option pin_char = ":"
+
+INFO (EXTGRMP-143) : Option truncate_regular_wires = "false"
+
+INFO (EXTGRMP-143) : Option layout_scale = "1.0"
+
+INFO (EXTGRMP-143) : Option output_file_max_size = "9223372036854775807"
+
+INFO (EXTGRMP-143) : Option dump_options = "true"
+
+INFO (EXTGRMP-143) : Option short_incomplete_net_pins = "true"
+
+INFO (EXTGRMP-143) : Option promote_incomplete_net_pins = "true"
+
+INFO (EXTGRMP-143) : Option output_incomplete_nets = "true"
+
+INFO (EXTGRMP-143) : Option output_unrouted_nets = "false"
+
+INFO (EXTGRMP-143) : Option treat_special_chars = "true"
+
+INFO (EXTGRMP-143) : Option lumped_cc_threshold = "0.0"
+
+INFO (EXTGRMP-143) : Option reduction_max_frequency = "1.0e+08"
+
+INFO (EXTGRMP-143) : Option compressed_output = "true"
+
+INFO (EXTGRMP-143) : Option max_resistor_length = "50"
+
+INFO (EXTGRMP-143) : Option promote_feedthru_ports = "none"
+
+INFO (EXTGRMP-143) : Option promote_instance_ports = "none"
+
+INFO (EXTGRMP-143) : Option output_promoted_feedthrus = "false"
+
+INFO (EXTGRMP-143) : Option output_unconnected_pins = "false"
+
+INFO (EXTGRMP-143) : Option remove_floating_metals = "false"
+
+INFO (EXTGRMP-143) : Option promote_pin_pad = "logical"
+
+INFO (EXTGRMP-143) : Option eco_compatible_mode = "false"
+
+INFO (EXTGRMP-143) : Option cap_mode_2915 = "true"
+
+INFO (EXTGRMP-143) : Option quickcap_file = "false"
+
+INFO (EXTGRMP-143) : Option ict_file = "process.ict"
+
+INFO (EXTGRMP-143) : Option quickcap_netfile = "qapi.net"
+
+INFO (EXTGRMP-143) : Option lefcap_output = "false"
+
+INFO (EXTGRMP-143) : Option lefcap_scale = "1.25"
+
+INFO (EXTGRMP-143) : Option lefres_output = "false"
+
+INFO (EXTGRMP-143) : Option kfactor_file = ""
+
+INFO (EXTGRMP-143) : Option total_c_threshold = "5"
+
+INFO (EXTGRMP-143) : Option relative_c_threshold = "0.03"
+
+INFO (EXTGRMP-143) : Option output_cap_filtering_mode = "relative_and_coupling"
+
+INFO (EXTGRMP-143) : Option cap_mode = "default"
+
+INFO (EXTGRMP-143) : Option parallel_options = ""
+
+INFO (EXTGRMP-143) : Option load_optimized_views = "true"
+
+INFO (EXTGRMP-143) : Option enable_metal_fill_effects = "true"
+
+INFO (EXTGRMP-143) : Option advanced_metal_fill = "false"
+
+INFO (EXTGRMP-143) : Option metal_fill_type = "floating"
+
+INFO (EXTGRMP-143) : Option vmf_metal_scheme_file = ""
+
+INFO (EXTGRMP-143) : Option vmf_rule_file = ""
+
+INFO (EXTGRMP-143) : Option metal_fill_gds_file = ""
+
+INFO (EXTGRMP-143) : Option density_check_method = "none"
+
+INFO (EXTGRMP-143) : Option temperature = "125"
+
+INFO (EXTGRMP-143) : Option promote_gray_data_pins = "false"
+
+INFO (EXTGRMP-143) : Option use_layer_bias_in_cmd_and_process_bias_in_tech = "false"
+
+INFO (EXTGRMP-143) : Option inductance_extraction = "none"
+
+INFO (EXTGRMP-143) : Option inductance_type = "partial"
+
+INFO (EXTGRMP-143) : Option map_eeq_to_master_in_output = "false"
+
+INFO (EXTGRMP-143) : Option match_res_cap_in_output = "false"
+
+INFO (EXTGRMP-143) : Option merge_tile_boundary_data = "true"
+
+INFO (EXTGRMP-143) : Option coupling_c_threshold = "3"
+
+INFO (EXTGRMP-143) : Option use_icecaps_models_only = "false"
+
+INFO (EXTGRMP-143) : Option use_name_map_in_spef = "true"
+
+INFO (EXTGRMP-143) : Option name_map_start_index_in_spef = "0"
+
+INFO (EXTGRMP-143) : Option timeout = "604800"
+
+INFO (EXTGRMP-143) : Option num_of_trials = "0"
+
+INFO (EXTGRMP-143) : Option separate_cc_prefix_in_dspf = "false"
+
+INFO (EXTGRMP-143) : Option output_oa = "false"
+
+INFO (EXTGRMP-143) : Option oa_analysis_point = "default"
+
+INFO (EXTGRMP-143) : Option enable_sensitivity_extraction = "false"
+
+INFO (EXTGRMP-143) : Option report_details = "false"
+
+INFO (EXTGRMP-143) : Option report_shorts = "false"
+
+INFO (EXTGRMP-143) : Option metal_fill_gds_offset_X = "0.0"
+
+INFO (EXTGRMP-143) : Option metal_fill_gds_offset_Y = "0.0"
+
+INFO (EXTGRMP-143) : Option ignore_pushdown_blockages = "false"
+
+INFO (EXTGRMP-143) : Option compress_cache_files = "true"
+
+INFO (EXTGRMP-143) : Option strong_gray_debug = "false"
+
+INFO (EXTGRMP-143) : Option disable_instances = "true"
+
+INFO (EXTGRMP-143) : Option disable_subnodes = "true"
+
+INFO (EXTGRMP-143) : Option dump_erosion_info = ""
+
+INFO (EXTGRMP-143) : Option silicon_width_printing = "true"
+
+INFO (EXTGRMP-143) : Option add_explicit_vias = "false"
+
+INFO (EXTGRMP-143) : Option cap_ground_net = "0"
+
+INFO (EXTGRMP-143) : Option output_res_temp_coeff = "false"
+
+INFO (EXTGRMP-143) : Option write_coupled_decoupled_files = "false"
+
+INFO (EXTGRMP-143) : Option capacitance_coupling = "default"
+
+INFO (EXTGRMP-143) : Option top_cell = ""
+
+INFO (EXTGRMP-143) : Option input_directory_name = ""
+
+INFO (EXTGRMP-143) : Option binary_input = "false"
+
+INFO (EXTGRMP-143) : Option binary_output = "false"
+
+INFO (EXTGRMP-143) : Option enable_ieee_sensitivity = "false"
+
+INFO (EXTGRMP-143) : Option bump_map_file = ""
+
+INFO (EXTGRMP-143) : Option enable_bump_instance = "false"
+
+INFO (EXTGRMP-143) : Option enable_tsv_instance = "false"
+
+INFO (EXTGRMP-143) : Option enable_TSV_STA_Cc_model = "false"
+
+INFO (EXTGRMP-143) : Option stitch_bump_model = "false"
+
+INFO (EXTGRMP-143) : Option stitch_tsv_model = "none"
+
+INFO (EXTGRMP-143) : Option enable_eco_mode = "false"
+
+INFO (EXTGRMP-143) : Option eco_file = ""
+
+INFO (EXTGRMP-143) : Option override_eco_reference = "true"
+
+INFO (EXTGRMP-143) : Option analysis_mode = "timing"
+
+INFO (EXTGRMP-143) : Option LEF files =
+"/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/lef/NangateOpenCellLibrary.tech.lef
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/lef/NangateOpenCellLibrary.macro.lef"
+
+INFO (EXTGRMP-143) : Option GDSII files = ""
+
+INFO (EXTGRMP-143) : Option GDSII/RDL files = ""
+
+INFO (EXTGRMP-143) : Option SPICE files = ""
+
+INFO (EXTGRMP-143) : Option stitch bump cells = ""
+
+INFO (EXTGRMP-143) : Option ignored macros = ""
+
+INFO (EXTGRMP-143) : Option black macros = ""
+
+INFO (EXTGRMP-155) : Layer mappings were not specified.
+
+INFO (EXTGRMP-276) : Layer settings were not specified.
+
+INFO (EXTGRMP-548) : Fill layer settings were not specified.
+
+INFO (EXTGRMP-550) : Active Fill layer settings were not specified.
+
+INFO (EXTGRMP-562) : HPB layer settings were not specified.
+
+INFO (EXTGRMP-144) : There were no layer bias commands for R values.
+
+INFO (EXTGRMP-147) : Layer bias settings for C values were not specified.
+
+INFO (EXTGRMP-149) : Lefcap area scale settings were not specified.
+
+INFO (EXTGRMP-153) : Lefcap edge scale settings were not specified.
+
+INFO (EXTGRMP-151) : Parameter name settings were not specified.
+
+INFO (EXTGRMP-260) : Layer cluster settings were not specified.
+
+INFO (EXTHPY-232) : Preprocessing stage started at Wed May 16 12:01:31 2018.
+
+INFO (EXTGRMP-336) : Reading technology data and cell definitions from LEF file:
+
+INFO (EXTGRMP-338) : /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/lef/NangateOpenCellLibrary.tech.lef
+
+WARNING (EXTGRMP-330) : LEF layer "active" is not mapped with any tech file layer. 
+Ignoring its definition.
+
+INFO (EXTGRMP-338) : /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/lef/NangateOpenCellLibrary.macro.lef
+
+WARNING (EXTGRMP-184) : Gray-box mode was selected for extraction, but 27 macro definitions did not
+include any obstruction data. The first 10 were:
+ ANTENNA_X1 FILLCELL_X1 FILLCELL_X16 FILLCELL_X2 FILLCELL_X32 FILLCELL_X4
+FILLCELL_X8 INV_X1 INV_X16 INV_X2
+Check the library inputs and log files from library setup to determine
+whether there is a problem.
+
+INFO (EXTGRMP-205) : Reading DEF file:
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ/qrc.def.gz
+
+INFO (EXTGRMP-195) : Line 143: reading VIAS section. Expecting 50.
+
+INFO (EXTGRMP-195) : Line 473: reading COMPONENTS section. Expecting 2269.
+
+INFO (EXTGRMP-195) : Line 5014: reading PINS section. Expecting 24.
+
+INFO (EXTGRMP-195) : Line 5089: reading SPECIALNETS section. Expecting 2.
+
+INFO (EXTGRMP-195) : Line 6490: reading NETS section. Expecting 2822.
+
+INFO (EXTGRMP-248) : METAL FILL data is not available in DEF file.
+
+INFO (EXTGRMP-207) : Reading DEF file completed successfully.
+
+INFO (EXTGRMP-292) : Checking Command/Tech/License Files. 
+
+INFO (EXTGRMP-281) : Manufacturing Data Information :- 
+  DEF/GDS/OASIS/LEF file 
+    does NOT contain MetalFill data. 
+  Techfile  
+    does NOT contain WEE data.     
+    does NOT contain Erosion data t=f( density ) 
+    does NOT contain R(w) data.    
+    does NOT contain R(w, s) data.  
+    does NOT contain TC(w) data.    
+    does NOT contain T/B enlargement data. 
+    does     contain Floating Metal Fill models. 
+    does NOT contain WBE data. 
+
+INFO (EXTGRMP-294) : RCs effects computed for this session include :- 
+ MetalFill        : OFF 
+ WEE Effects      : n/a 
+ Erosion Effects  : n/a t=f(density) 
+ T/B Enlargements : n/a 
+ R(w) Effects     : n/a 
+ R(w,s) Effects   : n/a 
+ TC(w) Effects    : n/a 
+Some effects indicate n/a because of non-availability of relevant input
+data (or) requested to be off.
+
+INFO (EXTGRMP-103) : NOTE: Using advanced paramter1: 1013
+
+INFO (EXTGRMP-103) : NOTE: Using advanced paramter2: 1.3
+
+INFO (EXTGRMP-103) : NOTE: Using advanced paramter3: YES
+
+INFO (EXTGRMP-3841) : Preparations for RC computations started. 
+
+INFO (EXTGRMP-509) : The extracted temperature is 125, the reference temperature is 25 for the
+process rc_worst. However, the techfile does not contain TC1/TC2 data for
+any conductor and via layers!
+
+INFO (EXTGRMP-509) : The extracted temperature is 0, the reference temperature is 25 for the
+process rc_best. However, the techfile does not contain TC1/TC2 data for
+any conductor and via layers!
+
+INFO (EXTGRMP-3842) : Preparations for RC computations completed successfully. 
+
+INFO (EXTGRMP-211) : Reading geometric data from DEF file:
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ/qrc.def.gz
+
+INFO (EXTSNZ-133) : 1%
+
+INFO (EXTSNZ-133) : 2%
+
+INFO (EXTSNZ-133) : 3%
+
+INFO (EXTSNZ-133) : 4%
+
+INFO (EXTSNZ-133) : 5%
+
+INFO (EXTSNZ-133) : 6%
+
+INFO (EXTSNZ-133) : 7%
+
+INFO (EXTSNZ-133) : 8%
+
+INFO (EXTSNZ-133) : 9%
+
+INFO (EXTSNZ-133) : 10%
+
+INFO (EXTSNZ-133) : 11%
+
+INFO (EXTSNZ-133) : 12%
+
+INFO (EXTSNZ-133) : 13%
+
+INFO (EXTSNZ-133) : 14%
+
+INFO (EXTSNZ-133) : 15%
+
+INFO (EXTSNZ-133) : 16%
+
+INFO (EXTSNZ-133) : 17%
+
+INFO (EXTSNZ-133) : 18%
+
+INFO (EXTSNZ-133) : 19%
+
+INFO (EXTSNZ-133) : 20%
+
+INFO (EXTSNZ-133) : 21%
+
+INFO (EXTSNZ-133) : 22%
+
+INFO (EXTSNZ-133) : 23%
+
+INFO (EXTSNZ-133) : 24%
+
+INFO (EXTSNZ-133) : 25%
+
+INFO (EXTSNZ-133) : 26%
+
+INFO (EXTSNZ-133) : 27%
+
+INFO (EXTSNZ-133) : 28%
+
+INFO (EXTSNZ-133) : 29%
+
+INFO (EXTSNZ-133) : 30%
+
+INFO (EXTSNZ-133) : 31%
+
+INFO (EXTSNZ-133) : 32%
+
+INFO (EXTSNZ-133) : 33%
+
+INFO (EXTSNZ-133) : 34%
+
+INFO (EXTSNZ-133) : 35%
+
+INFO (EXTSNZ-133) : 36%
+
+INFO (EXTSNZ-133) : 37%
+
+INFO (EXTSNZ-133) : 38%
+
+INFO (EXTSNZ-133) : 39%
+
+INFO (EXTSNZ-133) : 40%
+
+INFO (EXTSNZ-133) : 41%
+
+INFO (EXTSNZ-133) : 42%
+
+INFO (EXTSNZ-133) : 43%
+
+INFO (EXTSNZ-133) : 44%
+
+INFO (EXTSNZ-133) : 45%
+
+INFO (EXTSNZ-133) : 46%
+
+INFO (EXTSNZ-133) : 47%
+
+INFO (EXTSNZ-133) : 48%
+
+INFO (EXTSNZ-133) : 49%
+
+INFO (EXTSNZ-133) : 50%
+
+INFO (EXTSNZ-133) : 51%
+
+INFO (EXTSNZ-133) : 52%
+
+INFO (EXTSNZ-133) : 53%
+
+INFO (EXTSNZ-133) : 54%
+
+INFO (EXTSNZ-133) : 55%
+
+INFO (EXTSNZ-133) : 56%
+
+INFO (EXTSNZ-133) : 57%
+
+INFO (EXTSNZ-133) : 58%
+
+INFO (EXTSNZ-133) : 59%
+
+INFO (EXTSNZ-133) : 60%
+
+INFO (EXTSNZ-133) : 61%
+
+INFO (EXTSNZ-133) : 62%
+
+INFO (EXTSNZ-133) : 63%
+
+INFO (EXTSNZ-133) : 64%
+
+INFO (EXTSNZ-133) : 65%
+
+INFO (EXTSNZ-133) : 66%
+
+INFO (EXTSNZ-133) : 67%
+
+INFO (EXTSNZ-133) : 68%
+
+INFO (EXTSNZ-133) : 69%
+
+INFO (EXTSNZ-133) : 70%
+
+INFO (EXTSNZ-133) : 71%
+
+INFO (EXTSNZ-133) : 72%
+
+INFO (EXTSNZ-133) : 73%
+
+INFO (EXTSNZ-133) : 74%
+
+INFO (EXTSNZ-133) : 75%
+
+INFO (EXTSNZ-133) : 76%
+
+INFO (EXTSNZ-133) : 77%
+
+INFO (EXTSNZ-133) : 78%
+
+INFO (EXTSNZ-133) : 79%
+
+INFO (EXTSNZ-133) : 80%
+
+INFO (EXTSNZ-133) : 81%
+
+INFO (EXTSNZ-133) : 82%
+
+INFO (EXTSNZ-133) : 83%
+
+INFO (EXTSNZ-133) : 84%
+
+INFO (EXTSNZ-133) : 85%
+
+INFO (EXTSNZ-133) : 86%
+
+INFO (EXTSNZ-133) : 87%
+
+INFO (EXTSNZ-133) : 88%
+
+INFO (EXTSNZ-133) : 89%
+
+INFO (EXTSNZ-133) : 90%
+
+INFO (EXTSNZ-133) : 91%
+
+INFO (EXTSNZ-133) : 92%
+
+INFO (EXTSNZ-133) : 93%
+
+INFO (EXTSNZ-133) : 94%
+
+INFO (EXTSNZ-133) : 95%
+
+INFO (EXTSNZ-133) : 96%
+
+INFO (EXTSNZ-133) : 97%
+
+INFO (EXTSNZ-133) : 98%
+
+INFO (EXTSNZ-133) : 99%
+
+INFO (EXTGRMP-213) : Reading geometric data from DEF completed successfully.
+
+INFO (EXTHPY-233) : Preprocessing stage completed successfully at Wed May 16 12:01:44 2018.
+
+INFO (EXTHPY-173) : Capacitance extraction started at Wed May 16 12:01:44 2018.
+
+INFO (EXTHPY-103) : Extracting capacitance values.
+
+INFO (EXTHPY-104) :    0%
+
+INFO (EXTHPY-104) :    100%
+
+INFO (EXTHPY-174) : Capacitance extraction completed successfully at Wed May 16 12:01:49 2018.
+
+INFO (EXTHPY-175) : Output generation started at Wed May 16 12:01:49 2018.
+
+INFO (EXTSNZ-156) :    0%
+
+INFO (EXTSNZ-156) :    10%
+
+INFO (EXTSNZ-156) :    20%
+
+INFO (EXTSNZ-156) :    30%
+
+INFO (EXTSNZ-156) :    40%
+
+INFO (EXTSNZ-156) :    50%
+
+INFO (EXTSNZ-156) :    60%
+
+INFO (EXTSNZ-156) :    70%
+
+INFO (EXTSNZ-156) :    80%
+
+INFO (EXTSNZ-156) :    90%
+
+INFO (EXTHPY-176) : Output generation completed successfully at Wed May 16 12:01:55 2018.
+
+Ending at 2018-May-16 12:01:55 (2018-May-16 04:01:55 GMT).
+
+ Tool:                    Cadence Quantus QRC Extraction 64-bit
+ Version:                 14.2.3-s099 Wed Jun 17 00:01:02 PDT 2015
+ IR Build No:             099 
+ Techfile:                
+    rc_worst
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ/_qrc_techdir/rc_worst/qrcTechFile
+; version: p13.1.0102
+    rc_best
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ/_qrc_techdir/rc_best/qrcTechFile
+; version: p13.1.0102 
+ License(s) used:         1 of Virtuoso_QRC_Extraction_XL, 1 of
+QRC_Advanced_Analysis 
+ User Name:               jkangac
+ Host Name:               EEX109
+ Host OS Release:         Linux 2.6.32-696.18.7.el6.x86_64
+ Host OS Version:         #1 SMP Thu Jan 4 17:31:22 UTC 2018
+ Run duration:            00:00:10 CPU time, 00:00:24 clock time
+ Max (Total) memory used: 584 MB
+ Max (CPU) memory used:   531 MB
+ Max Temp-Directory used: 4 MB
+ Nets/hour:               1015K nets/CPU-hr, 423K nets/clock-hr
+ Design data:
+    Components:           2269
+    Phy components:       0
+    Nets:                 2822
+    Unconnected pins:     0
+ Warning messages:        15
+ Error messages:          0
+
+Exit code 0.
+Cadence Quantus QRC Extraction completed successfully at 2018-May-16
+12:01:55 (2018-May-16 04:01:55 GMT).
+*** qrc completed. ***
+spefIn Option :  -rc_corner rc_worst /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ/FIR_rc_worst_125.spef.gz 
+Spef available for 1 corner(s)but not available for 1 corner(s). Spef reading will be triggered only after spef for all active RC Corners are available.
+spefIn Option :  -rc_corner rc_best /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ/FIR_rc_best_0.spef.gz 
+***** SPEF Reading Started (CPU Time: 0:00:00.0  MEM: 786.516M)
+
+
+SPEF files for RC Corner rc_worst:
+Top-level spef file '/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ/FIR_rc_worst_125.spef.gz'.
+
+Reading TopLevel spef file '/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ/FIR_rc_worst_125.spef.gz'
+Reading NAME_MAP section...done in CPU Time: 0:00:00.0 and Real Time: 0:00:00.0
+Reading D_NET section...
+
+Number of Resistors     :  22677
+Number of Ground Caps   :  18102
+Number of Coupling Caps :  110
+
+SPEF files for RC Corner rc_best:
+Top-level spef file '/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ/FIR_rc_best_0.spef.gz'.
+
+Reading TopLevel spef file '/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_zwOwnJ/FIR_rc_best_0.spef.gz'
+Reading NAME_MAP section...done in CPU Time: 0:00:00.0 and Real Time: 0:00:00.0
+Reading D_NET section...
+
+Number of Resistors     :  22677
+Number of Ground Caps   :  18100
+Number of Coupling Caps :  110
+RC Database Merging Started (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 801.3M)
+ Corner: rc_worst
+ Corner: rc_best
+RC Database Merging Completed (CPU Time= 0:00:00.1  Real Time=0:00:00.0  MEM= 805.3M)
+***** SPEF Reading completed (CPU Time: 0:00:00.4 Real Time: 0:00:00.0 MEM: 799.266M)
+
+This setSIMode -usePrevCeltICRunDir option will have no impact on the current Default AAE-SI GigaOpt optDesign -postRoute (-hold) commands. It is only supported in the old Celtic Optimization Flow which can be triggered using setDelayCalMode -engine signalStorm/feDc -SIAware false & optDesign -postRoute -si (-hold).
+siFlowRuntime: Done extraction : realTime (27.0secs) : cpuTime (25.58secs) : Wed May 16 12:01:56 HKT 2018
+siFlow: Writing timing window file in early late mode.
+siFlowRuntime: Done twf generation : realTime (2.0secs) : cpuTime (2.03secs) : Wed May 16 12:01:58 HKT 2018
+siFlow: Running noise analysis using single thread.
+siFlow: Running noise analysis for view analysis_slow
+siFlow: ======= Start Loop  CeltIC Noise Analysis ............. Wed May 16 12:01:58 HKT 2018 =======
+siFlow: CeltIC working directory: celtic_tmp_qw5Y1U
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/mmmc/modes/constraint_slow/constraint_slow.sdc
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/mmmc/modes/constraint_slow/constraint_slow.sdc
+**WARN: (SI-2308) Setting timing_enable_simultaneous_setup_hold_mode to false in OCV/SI analysis may lead to unreliable results.                     [set_run_mode]
+INFO:(SI-9558) Propagated noise mode is on by default for glitch analysis          [celtic_ndc]
+INFO:(SI-122) CdB used in SI analysis :  /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/slow.cdb           [celtic_ndc]
+CDB supply set:CPU=0.01, REAL=0.00, TOTCPU=27.90, TOTREAL=1.00, MEM=0.00MB, TOTMEM=2.38MB
+si_initialization:CPU=0.00, REAL=0.00, TOTCPU=27.90, TOTREAL=1.00, MEM=0.00MB, TOTMEM=2.38MB
+INFO:(SI-6069) Using /tmp for temporary files, as neither the environment variable TMPDIR 
+        nor the tcl variable parm_tmpdir is set.          [celtic_ndc]
+
+Evaluating/Parsing black boxes...
+
+load_netlist:CPU=0.23, REAL=1.00, TOTCPU=28.13, TOTREAL=2.00, MEM=22.00MB, TOTMEM=24.38MB
+Noise run mode set as follows:
+      Process: 90nm
+      Mode: Signoff
+      Simulation Resolution: 5e-12
+      Fast Slew: 50e-12
+      Slow Slew: 100e-12
+      Virtual Attacker Fast Slew: 100e-12
+      Port resistance: 1e3
+      Gtol: 0.05
+INFO:(SI-6040) Number of clocks processed : 1          [load_timing]
+INFO:(SI-6040) Number of Slew Data processed : 12755          [load_timing]
+INFO:(SI-6040) Number of Timing Window Data processed : 9893          [load_timing]
+**WARN: (SI-2291) Ignoring the timing window data for 2862 nets. These nets will have infinite timing windows.                    [load_timing]
+INFO:(SI-6040) Number of Constants processed : 0          [load_timing]
+INFO:(SI-6040) Number of Driver Strength data processed : 0          [load_timing]
+INFO:(SI-6040) Number of External Load data processed : 11          [load_timing]
+read_twf:CPU=0.26, REAL=0.00, TOTCPU=28.39, TOTREAL=2.00, MEM=4.00MB, TOTMEM=28.38MB
+INFO:(SI-9584) Setting 0.19V peak threshold for glitch analysis          [set_thresh]
+INFO:(SI-9584) Setting 0.19V peak threshold for delay analysis          [set_thresh]
+Final flattened circuit: 2269 cell instances, 2907 nets, 0 echo instances.
+Qualify Xtors:CPU=0.06 REAL=0.00 MEM=2.00MB 
+INFO:(SI-9517) Loading cells..          [celtic_ndc]
+INFO:(SI-9520) Loaded 40 cells          [celtic]
+Spice ckt loaded:CPU=0.82 REAL=1.00 MEM=2.00MB 
+INFO:(SI-9547) 2822 out of 2822 Nets can be analyzed
+        	0 out of 2822 Nets cannot be analyzed          [process_netlist]
+INFO:(SI-9552) Starting latch identification ..          [process_netlist]
+INFO:(SI-9553) Finished latch identification.          [process_netlist]
+INFO:(SI-9554) Identified 2 latch cells for noise stability check          [process_netlist]
+INFO:(SI-9555) Identified 508 latch inst for noise stability check          [process_netlist]
+INFO:(SI-6029) Starting noise graph creation          [ngr]
+INFO:(SI-9556) Finished with process_netlist command          [process_netlist]
+process_netlist:CPU=0.95 REAL=1.00 TOTCPU=29.35 TOTREAL=3.00 MEM=4.00MB TOTMEM=32.38MB
+process_constraint:CPU=0.01, REAL=0.00, TOTCPU=29.37, TOTREAL=3.00, MEM=0.00MB, TOTMEM=32.38MB
+Trace clock nets:CPU=0.00, REAL=0.00, TOTCPU=29.37, TOTREAL=3.00, MEM=0.00MB, TOTMEM=32.38MB
+INFO:(SI-6135) Setting the virtual attacker mode to cap.          [celtic_ndc]
+Create xcapmap:CPU=0.18, REAL=0.00, TOTCPU=29.55, TOTREAL=3.00, MEM=2.00MB, TOTMEM=34.38MB
+INFO:(SI-9510) Starting noise analysis          [analyze_noise]
+CCC analysis init:CPU=0.03, REAL=0.00, TOTCPU=29.58, TOTREAL=3.00, MEM=19.54MB, TOTMEM=53.92MB
+*********************************************************************
+analyze_noise 	SUMMARY
+analyze_noise: 	Number of cells in design = 2269
+analyze_noise: 	Number of black boxes in design = 0
+analyze_noise: 	Number of nets analyzed = 2822
+analyze_noise: 	Number of DC tolerance violations (VH + VL) = 0
+analyze_noise: 	Number of receiver output peak violations (VH + VL) = 0
+analyze_noise: 	Number of total problem noisenets = 0
+*********************************************************************
+analyze_noise Analysis finished at Wed May 16 12:02:02 +0800 2018
+analyze_noise:CPU=0.67, REAL=1.00, TOTCPU=30.25, TOTREAL=4.00, MEM=0.00MB, TOTMEM=53.92MB
+Generated histogram:CPU=0.00, REAL=0.00, TOTCPU=30.25, TOTREAL=4.00, MEM=0.00MB, TOTMEM=53.92MB
+**WARN: (TCLCMD-1234):	In multi-mode, multi-corner analysis mode, you should include the -view option with the read_sdf command to annotate the SDF file to specific view(s). Without the -view option, the SDF file will only be annotated to the current default view.
+reports: Generating reports ...
+**WARN: (SI-2190) The default for report generation has changed from HTML to text. To generate an HTML report, specify the -html option to the generate_report command.                    [reports]
+reports: Generated 0 records in celtic_tmp_qw5Y1U/analysis_slow/celtic_noise_slack.text.gz.
+SI reports:CPU=0.01, REAL=0.00, TOTCPU=30.28, TOTREAL=4.00, MEM=0.00MB, TOTMEM=53.92MB
+INFO:(SI-9516) ECO changes will be written to celtic_tmp_qw5Y1U/analysis_slow/celtic.eco          [celtic_ndc]
+INFO:(SI-6084) Completed ECO analysis          [analyze_noise]
+*********************************************************************
+report_eco 	SUMMARY
+report_eco: 	Number of glitch ECO changes = 0
+report_eco: 	Number of  delay ECO changes = 0
+report_eco: 	Number of  slope ECO changes = 0
+report_eco: 	Number of ECO skipped        = 0
+*********************************************************************
+reports: Generating SDF ...
+Generated SDF:CPU=0.03, REAL=0.00, TOTCPU=30.31, TOTREAL=4.00, MEM=0.00MB, TOTMEM=53.92MB
+reports: Finished generating SDF ...
+Finished CeltIC run at Wed May 16 12:02:02 +0800 2018
+free_noise_analysis: CPU=0.23, REAL=0.00, TOTCPU=30.54, TOTREAL=4.00, MEM=-53.92MB, TOTMEM=0.00MB
+siFlow: Glitch nets:
+siFlow: Finish CeltIC Loop  Noise Analysis ............ Wed May 16 12:02:02 HKT 2018
+siFlow: ====================================================
+siFlow: Number of nets with noise violation      =      0	(0 external, 0 clock, 0 ilm)
+siFlow: ====================================================
+siFlowRuntime: Noise analysis done for view analysis_slow : realTime (4.0secs) : cpuTime (3.08secs) : Wed May 16 12:02:02 HKT 2018
+Ending "Noise analysis" (total cpu=0:00:03.1, real=0:00:04.0, peak res=643.0M, current mem=851.4M)
+All previously read TWF files have been cleared up. Power and Noise analysis will switch over to CTE.
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 37.821  | 42.687  | 37.821  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   508   |   498   |   508   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 59.941%
+Total number of glitch violations: 0
+------------------------------------------------------------
+siFlow: Deleting temp files in folder "celtic_tmp_qw5Y1U". Check "celtic" folder for noise analysis results.
+siFlowRuntime: Timing report generation : realTime (1.0secs) : cpuTime (0.76secs) : Wed May 16 12:02:03 HKT 2018
+Reported timing to dir reports/signoffTimingReports
+Total CPU time: 31.54 sec
+Total Real time: 34.0 sec
+Total Memory Usage: 849.382812 Mbytes
+**WARN: (ENCDC-2616):	The feDc and signalStorm delay calculation engines are obsolete and have been replaced by the AAE engine which is default in the EDI13.1 releases. The feDc and signalStorm engines still work in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to remove the invocation of these engines via the -engine option in the setDelayCalMode command.
+Set Using Elmore Delay Limit as 100.
+<CMD> timeDesign -signoff -si -hold -outDir reports/signoffTimingReports
+**WARN: (ENCDC-2616):	The feDc and signalStorm delay calculation engines are obsolete and have been replaced by the AAE engine which is default in the EDI13.1 releases. The feDc and signalStorm engines still work in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to remove the invocation of these engines via the -engine option in the setDelayCalMode command.
+Set Using Elmore Delay Limit as 300.
+**WARN: (ENCTCM-70):	Option "-fixDRC" for command getSIMode is obsolete and has been replaced by "-report_si_slew_max_transition". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-report_si_slew_max_transition".
+**INFO: signalStorm engine is used for delay analysis with -signoff option
+**WARN: (ENCEXT-3493):	The design extraction status has been reset by the setExtractRCMode command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s).
+Type 'man ENCEXT-3493' for more detail.
+siFlowRuntime: Start timeDesign -postRoute -si : realTime (0.0secs) : cpuTime (0.0secs) : Wed May 16 12:02:17 HKT 2018
+-pruneSetupViewsForHoldFixing true         # bool, default=true, private
+siFlow: ========= Start Loop  Extraction ==========
+Extraction called for design 'FIR' of instances=2269 and nets=2907 using extraction engine 'postRoute' at effort level 'signoff' .
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man ENCEXT-3530' for more detail.
+Writing DEF file '/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6/qrc.def.gz', current time is Wed May 16 12:02:18 2018 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file '/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6/qrc.def.gz' is written, current time is Wed May 16 12:02:18 2018 ...
+
+
+  Cadence Quantus QRC Extraction - 64-bit Parasitic Extractor - Version
+14.2.3-s099 Wed Jun 17 00:01:02 PDT 2015
+-------------------------------------------------------------------------------------------------------------------
+                                    Copyright 2015 Cadence Design Systems,
+Inc.
+
+extract \
+	 -selection "all" \
+	 -type "rc_coupled"
+extraction_setup \
+	 -max_fracture_length 50 \
+	 -promote_pin_pad "LOGICAL"
+filter_coupling_cap \
+	 -cap_filtering_mode "absolute_and_relative" \
+	 -coupling_cap_threshold_absolute 3.0 \
+	 -coupling_cap_threshold_relative 0.03 \
+	 -total_cap_threshold 5.0
+input_db -type def \
+	 -lef_file_list_file "/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6/qrc.leflist"
+log_file \
+	 -dump_options true \
+	 -file_name "qrc_47497_20180516_12:02:17.log"
+output_db -type spef \
+	 -short_incomplete_net_pins true \
+	 -subtype "STANDARD"
+output_setup \
+	 -compressed true \
+	 -directory_name "/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6" \
+	 -file_name "FIR" \
+	 -temporary_directory_name "/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6"
+process_technology \
+	 -technology_corner \
+		"rc_worst" \
+		"rc_best" \
+	 -technology_library_file "/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6/_qrc_techlib.defs" \
+	 -technology_name "_qrc_tech_" \
+	 -temperature \
+		125 \
+		0
+
+
+
+INFO (EXTGRMP-102) : Starting at 2018-May-16 12:02:18 (2018-May-16 04:02:18 GMT).
+Running binary as: 
+ /usr/eelocal/cadence/ext142/tools/extraction/bin/64bit/qrc -cmd
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6/qrc.cmd
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6/qrc.def.gz
+ 
+
+WARNING (EXTGRMP-414) : No GDSII/OASIS file is specified. Setting graybox type as LEF_OBSTRUCTION.
+
+INFO (EXTGRMP-142) : Command line arguments:
+"-cmd"
+"/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6/qrc.cmd"
+"/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6/qrc.def.gz"
+
+INFO (EXTGRMP-143) : Option copy_port_to_obs = "true"
+
+INFO (EXTGRMP-143) : Option log_file = "qrc_47497_20180516_12:02:17.log"
+
+INFO (EXTGRMP-143) : Option max_error_messages = "100"
+
+INFO (EXTGRMP-143) : Option message_detail_level = "10"
+
+INFO (EXTGRMP-143) : Option tech_file = ""
+
+INFO (EXTGRMP-143) : Option library_name = ""
+
+INFO (EXTGRMP-143) : Option oa_default_rule_name = ""
+
+INFO (EXTGRMP-143) : Option gray_data = "obs"
+
+INFO (EXTGRMP-143) : Option comp_prealloc = "0"
+
+INFO (EXTGRMP-143) : Option net_prealloc = "0"
+
+INFO (EXTGRMP-143) : Option output_directory_name =
+"/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6"
+
+INFO (EXTGRMP-143) : Option output_coordinate_units = "micron"
+
+INFO (EXTGRMP-143) : Option output_cache_directory_name =
+"/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6/.qrctemp"
+
+INFO (EXTGRMP-143) : Option keep_temporary_files = "false"
+
+INFO (EXTGRMP-143) : Option output_file_name = "FIR"
+
+INFO (EXTGRMP-143) : Option spef_define_file = ""
+
+INFO (EXTGRMP-143) : Option reduce_output = "false"
+
+INFO (EXTGRMP-143) : Option debug_log = "false"
+
+INFO (EXTGRMP-143) : Option spef_output = "generic"
+
+INFO (EXTGRMP-143) : Option dspf_output = "none"
+
+INFO (EXTGRMP-143) : Option output_sstorm_db_name = ""
+
+INFO (EXTGRMP-143) : Option netlist_output = "none"
+
+INFO (EXTGRMP-143) : Option net_cc_output = "false"
+
+INFO (EXTGRMP-143) : Option rcdb_output = "false"
+
+INFO (EXTGRMP-143) : Option hierarchy_char = "/"
+
+INFO (EXTGRMP-143) : Option bus_chars = "[]"
+
+INFO (EXTGRMP-143) : Option pin_char = ":"
+
+INFO (EXTGRMP-143) : Option truncate_regular_wires = "false"
+
+INFO (EXTGRMP-143) : Option layout_scale = "1.0"
+
+INFO (EXTGRMP-143) : Option output_file_max_size = "9223372036854775807"
+
+INFO (EXTGRMP-143) : Option dump_options = "true"
+
+INFO (EXTGRMP-143) : Option short_incomplete_net_pins = "true"
+
+INFO (EXTGRMP-143) : Option promote_incomplete_net_pins = "true"
+
+INFO (EXTGRMP-143) : Option output_incomplete_nets = "true"
+
+INFO (EXTGRMP-143) : Option output_unrouted_nets = "false"
+
+INFO (EXTGRMP-143) : Option treat_special_chars = "true"
+
+INFO (EXTGRMP-143) : Option lumped_cc_threshold = "0.0"
+
+INFO (EXTGRMP-143) : Option reduction_max_frequency = "1.0e+08"
+
+INFO (EXTGRMP-143) : Option compressed_output = "true"
+
+INFO (EXTGRMP-143) : Option max_resistor_length = "50"
+
+INFO (EXTGRMP-143) : Option promote_feedthru_ports = "none"
+
+INFO (EXTGRMP-143) : Option promote_instance_ports = "none"
+
+INFO (EXTGRMP-143) : Option output_promoted_feedthrus = "false"
+
+INFO (EXTGRMP-143) : Option output_unconnected_pins = "false"
+
+INFO (EXTGRMP-143) : Option remove_floating_metals = "false"
+
+INFO (EXTGRMP-143) : Option promote_pin_pad = "logical"
+
+INFO (EXTGRMP-143) : Option eco_compatible_mode = "false"
+
+INFO (EXTGRMP-143) : Option cap_mode_2915 = "true"
+
+INFO (EXTGRMP-143) : Option quickcap_file = "false"
+
+INFO (EXTGRMP-143) : Option ict_file = "process.ict"
+
+INFO (EXTGRMP-143) : Option quickcap_netfile = "qapi.net"
+
+INFO (EXTGRMP-143) : Option lefcap_output = "false"
+
+INFO (EXTGRMP-143) : Option lefcap_scale = "1.25"
+
+INFO (EXTGRMP-143) : Option lefres_output = "false"
+
+INFO (EXTGRMP-143) : Option kfactor_file = ""
+
+INFO (EXTGRMP-143) : Option total_c_threshold = "5"
+
+INFO (EXTGRMP-143) : Option relative_c_threshold = "0.03"
+
+INFO (EXTGRMP-143) : Option output_cap_filtering_mode = "relative_and_coupling"
+
+INFO (EXTGRMP-143) : Option cap_mode = "default"
+
+INFO (EXTGRMP-143) : Option parallel_options = ""
+
+INFO (EXTGRMP-143) : Option load_optimized_views = "true"
+
+INFO (EXTGRMP-143) : Option enable_metal_fill_effects = "true"
+
+INFO (EXTGRMP-143) : Option advanced_metal_fill = "false"
+
+INFO (EXTGRMP-143) : Option metal_fill_type = "floating"
+
+INFO (EXTGRMP-143) : Option vmf_metal_scheme_file = ""
+
+INFO (EXTGRMP-143) : Option vmf_rule_file = ""
+
+INFO (EXTGRMP-143) : Option metal_fill_gds_file = ""
+
+INFO (EXTGRMP-143) : Option density_check_method = "none"
+
+INFO (EXTGRMP-143) : Option temperature = "125"
+
+INFO (EXTGRMP-143) : Option promote_gray_data_pins = "false"
+
+INFO (EXTGRMP-143) : Option use_layer_bias_in_cmd_and_process_bias_in_tech = "false"
+
+INFO (EXTGRMP-143) : Option inductance_extraction = "none"
+
+INFO (EXTGRMP-143) : Option inductance_type = "partial"
+
+INFO (EXTGRMP-143) : Option map_eeq_to_master_in_output = "false"
+
+INFO (EXTGRMP-143) : Option match_res_cap_in_output = "false"
+
+INFO (EXTGRMP-143) : Option merge_tile_boundary_data = "true"
+
+INFO (EXTGRMP-143) : Option coupling_c_threshold = "3"
+
+INFO (EXTGRMP-143) : Option use_icecaps_models_only = "false"
+
+INFO (EXTGRMP-143) : Option use_name_map_in_spef = "true"
+
+INFO (EXTGRMP-143) : Option name_map_start_index_in_spef = "0"
+
+INFO (EXTGRMP-143) : Option timeout = "604800"
+
+INFO (EXTGRMP-143) : Option num_of_trials = "0"
+
+INFO (EXTGRMP-143) : Option separate_cc_prefix_in_dspf = "false"
+
+INFO (EXTGRMP-143) : Option output_oa = "false"
+
+INFO (EXTGRMP-143) : Option oa_analysis_point = "default"
+
+INFO (EXTGRMP-143) : Option enable_sensitivity_extraction = "false"
+
+INFO (EXTGRMP-143) : Option report_details = "false"
+
+INFO (EXTGRMP-143) : Option report_shorts = "false"
+
+INFO (EXTGRMP-143) : Option metal_fill_gds_offset_X = "0.0"
+
+INFO (EXTGRMP-143) : Option metal_fill_gds_offset_Y = "0.0"
+
+INFO (EXTGRMP-143) : Option ignore_pushdown_blockages = "false"
+
+INFO (EXTGRMP-143) : Option compress_cache_files = "true"
+
+INFO (EXTGRMP-143) : Option strong_gray_debug = "false"
+
+INFO (EXTGRMP-143) : Option disable_instances = "true"
+
+INFO (EXTGRMP-143) : Option disable_subnodes = "true"
+
+INFO (EXTGRMP-143) : Option dump_erosion_info = ""
+
+INFO (EXTGRMP-143) : Option silicon_width_printing = "true"
+
+INFO (EXTGRMP-143) : Option add_explicit_vias = "false"
+
+INFO (EXTGRMP-143) : Option cap_ground_net = "0"
+
+INFO (EXTGRMP-143) : Option output_res_temp_coeff = "false"
+
+INFO (EXTGRMP-143) : Option write_coupled_decoupled_files = "false"
+
+INFO (EXTGRMP-143) : Option capacitance_coupling = "default"
+
+INFO (EXTGRMP-143) : Option top_cell = ""
+
+INFO (EXTGRMP-143) : Option input_directory_name = ""
+
+INFO (EXTGRMP-143) : Option binary_input = "false"
+
+INFO (EXTGRMP-143) : Option binary_output = "false"
+
+INFO (EXTGRMP-143) : Option enable_ieee_sensitivity = "false"
+
+INFO (EXTGRMP-143) : Option bump_map_file = ""
+
+INFO (EXTGRMP-143) : Option enable_bump_instance = "false"
+
+INFO (EXTGRMP-143) : Option enable_tsv_instance = "false"
+
+INFO (EXTGRMP-143) : Option enable_TSV_STA_Cc_model = "false"
+
+INFO (EXTGRMP-143) : Option stitch_bump_model = "false"
+
+INFO (EXTGRMP-143) : Option stitch_tsv_model = "none"
+
+INFO (EXTGRMP-143) : Option enable_eco_mode = "false"
+
+INFO (EXTGRMP-143) : Option eco_file = ""
+
+INFO (EXTGRMP-143) : Option override_eco_reference = "true"
+
+INFO (EXTGRMP-143) : Option analysis_mode = "timing"
+
+INFO (EXTGRMP-143) : Option LEF files =
+"/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/lef/NangateOpenCellLibrary.tech.lef
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/lef/NangateOpenCellLibrary.macro.lef"
+
+INFO (EXTGRMP-143) : Option GDSII files = ""
+
+INFO (EXTGRMP-143) : Option GDSII/RDL files = ""
+
+INFO (EXTGRMP-143) : Option SPICE files = ""
+
+INFO (EXTGRMP-143) : Option stitch bump cells = ""
+
+INFO (EXTGRMP-143) : Option ignored macros = ""
+
+INFO (EXTGRMP-143) : Option black macros = ""
+
+INFO (EXTGRMP-155) : Layer mappings were not specified.
+
+INFO (EXTGRMP-276) : Layer settings were not specified.
+
+INFO (EXTGRMP-548) : Fill layer settings were not specified.
+
+INFO (EXTGRMP-550) : Active Fill layer settings were not specified.
+
+INFO (EXTGRMP-562) : HPB layer settings were not specified.
+
+INFO (EXTGRMP-144) : There were no layer bias commands for R values.
+
+INFO (EXTGRMP-147) : Layer bias settings for C values were not specified.
+
+INFO (EXTGRMP-149) : Lefcap area scale settings were not specified.
+
+INFO (EXTGRMP-153) : Lefcap edge scale settings were not specified.
+
+INFO (EXTGRMP-151) : Parameter name settings were not specified.
+
+INFO (EXTGRMP-260) : Layer cluster settings were not specified.
+
+INFO (EXTHPY-232) : Preprocessing stage started at Wed May 16 12:02:18 2018.
+
+INFO (EXTGRMP-336) : Reading technology data and cell definitions from LEF file:
+
+INFO (EXTGRMP-338) : /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/lef/NangateOpenCellLibrary.tech.lef
+
+WARNING (EXTGRMP-330) : LEF layer "active" is not mapped with any tech file layer. 
+Ignoring its definition.
+
+INFO (EXTGRMP-338) : /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/lef/NangateOpenCellLibrary.macro.lef
+
+WARNING (EXTGRMP-184) : Gray-box mode was selected for extraction, but 27 macro definitions did not
+include any obstruction data. The first 10 were:
+ ANTENNA_X1 FILLCELL_X1 FILLCELL_X16 FILLCELL_X2 FILLCELL_X32 FILLCELL_X4
+FILLCELL_X8 INV_X1 INV_X16 INV_X2
+Check the library inputs and log files from library setup to determine
+whether there is a problem.
+
+INFO (EXTGRMP-205) : Reading DEF file:
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6/qrc.def.gz
+
+INFO (EXTGRMP-195) : Line 143: reading VIAS section. Expecting 50.
+
+INFO (EXTGRMP-195) : Line 473: reading COMPONENTS section. Expecting 2269.
+
+INFO (EXTGRMP-195) : Line 5014: reading PINS section. Expecting 24.
+
+INFO (EXTGRMP-195) : Line 5089: reading SPECIALNETS section. Expecting 2.
+
+INFO (EXTGRMP-195) : Line 6490: reading NETS section. Expecting 2822.
+
+INFO (EXTGRMP-248) : METAL FILL data is not available in DEF file.
+
+INFO (EXTGRMP-207) : Reading DEF file completed successfully.
+
+INFO (EXTGRMP-292) : Checking Command/Tech/License Files. 
+
+INFO (EXTGRMP-281) : Manufacturing Data Information :- 
+  DEF/GDS/OASIS/LEF file 
+    does NOT contain MetalFill data. 
+  Techfile  
+    does NOT contain WEE data.     
+    does NOT contain Erosion data t=f( density ) 
+    does NOT contain R(w) data.    
+    does NOT contain R(w, s) data.  
+    does NOT contain TC(w) data.    
+    does NOT contain T/B enlargement data. 
+    does     contain Floating Metal Fill models. 
+    does NOT contain WBE data. 
+
+INFO (EXTGRMP-294) : RCs effects computed for this session include :- 
+ MetalFill        : OFF 
+ WEE Effects      : n/a 
+ Erosion Effects  : n/a t=f(density) 
+ T/B Enlargements : n/a 
+ R(w) Effects     : n/a 
+ R(w,s) Effects   : n/a 
+ TC(w) Effects    : n/a 
+Some effects indicate n/a because of non-availability of relevant input
+data (or) requested to be off.
+
+INFO (EXTGRMP-103) : NOTE: Using advanced paramter1: 1013
+
+INFO (EXTGRMP-103) : NOTE: Using advanced paramter2: 1.3
+
+INFO (EXTGRMP-103) : NOTE: Using advanced paramter3: YES
+
+INFO (EXTGRMP-3841) : Preparations for RC computations started. 
+
+INFO (EXTGRMP-509) : The extracted temperature is 125, the reference temperature is 25 for the
+process rc_worst. However, the techfile does not contain TC1/TC2 data for
+any conductor and via layers!
+
+INFO (EXTGRMP-509) : The extracted temperature is 0, the reference temperature is 25 for the
+process rc_best. However, the techfile does not contain TC1/TC2 data for
+any conductor and via layers!
+
+INFO (EXTGRMP-3842) : Preparations for RC computations completed successfully. 
+
+INFO (EXTGRMP-211) : Reading geometric data from DEF file:
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6/qrc.def.gz
+
+INFO (EXTSNZ-133) : 1%
+
+INFO (EXTSNZ-133) : 2%
+
+INFO (EXTSNZ-133) : 3%
+
+INFO (EXTSNZ-133) : 4%
+
+INFO (EXTSNZ-133) : 5%
+
+INFO (EXTSNZ-133) : 6%
+
+INFO (EXTSNZ-133) : 7%
+
+INFO (EXTSNZ-133) : 8%
+
+INFO (EXTSNZ-133) : 9%
+
+INFO (EXTSNZ-133) : 10%
+
+INFO (EXTSNZ-133) : 11%
+
+INFO (EXTSNZ-133) : 12%
+
+INFO (EXTSNZ-133) : 13%
+
+INFO (EXTSNZ-133) : 14%
+
+INFO (EXTSNZ-133) : 15%
+
+INFO (EXTSNZ-133) : 16%
+
+INFO (EXTSNZ-133) : 17%
+
+INFO (EXTSNZ-133) : 18%
+
+INFO (EXTSNZ-133) : 19%
+
+INFO (EXTSNZ-133) : 20%
+
+INFO (EXTSNZ-133) : 21%
+
+INFO (EXTSNZ-133) : 22%
+
+INFO (EXTSNZ-133) : 23%
+
+INFO (EXTSNZ-133) : 24%
+
+INFO (EXTSNZ-133) : 25%
+
+INFO (EXTSNZ-133) : 26%
+
+INFO (EXTSNZ-133) : 27%
+
+INFO (EXTSNZ-133) : 28%
+
+INFO (EXTSNZ-133) : 29%
+
+INFO (EXTSNZ-133) : 30%
+
+INFO (EXTSNZ-133) : 31%
+
+INFO (EXTSNZ-133) : 32%
+
+INFO (EXTSNZ-133) : 33%
+
+INFO (EXTSNZ-133) : 34%
+
+INFO (EXTSNZ-133) : 35%
+
+INFO (EXTSNZ-133) : 36%
+
+INFO (EXTSNZ-133) : 37%
+
+INFO (EXTSNZ-133) : 38%
+
+INFO (EXTSNZ-133) : 39%
+
+INFO (EXTSNZ-133) : 40%
+
+INFO (EXTSNZ-133) : 41%
+
+INFO (EXTSNZ-133) : 42%
+
+INFO (EXTSNZ-133) : 43%
+
+INFO (EXTSNZ-133) : 44%
+
+INFO (EXTSNZ-133) : 45%
+
+INFO (EXTSNZ-133) : 46%
+
+INFO (EXTSNZ-133) : 47%
+
+INFO (EXTSNZ-133) : 48%
+
+INFO (EXTSNZ-133) : 49%
+
+INFO (EXTSNZ-133) : 50%
+
+INFO (EXTSNZ-133) : 51%
+
+INFO (EXTSNZ-133) : 52%
+
+INFO (EXTSNZ-133) : 53%
+
+INFO (EXTSNZ-133) : 54%
+
+INFO (EXTSNZ-133) : 55%
+
+INFO (EXTSNZ-133) : 56%
+
+INFO (EXTSNZ-133) : 57%
+
+INFO (EXTSNZ-133) : 58%
+
+INFO (EXTSNZ-133) : 59%
+
+INFO (EXTSNZ-133) : 60%
+
+INFO (EXTSNZ-133) : 61%
+
+INFO (EXTSNZ-133) : 62%
+
+INFO (EXTSNZ-133) : 63%
+
+INFO (EXTSNZ-133) : 64%
+
+INFO (EXTSNZ-133) : 65%
+
+INFO (EXTSNZ-133) : 66%
+
+INFO (EXTSNZ-133) : 67%
+
+INFO (EXTSNZ-133) : 68%
+
+INFO (EXTSNZ-133) : 69%
+
+INFO (EXTSNZ-133) : 70%
+
+INFO (EXTSNZ-133) : 71%
+
+INFO (EXTSNZ-133) : 72%
+
+INFO (EXTSNZ-133) : 73%
+
+INFO (EXTSNZ-133) : 74%
+
+INFO (EXTSNZ-133) : 75%
+
+INFO (EXTSNZ-133) : 76%
+
+INFO (EXTSNZ-133) : 77%
+
+INFO (EXTSNZ-133) : 78%
+
+INFO (EXTSNZ-133) : 79%
+
+INFO (EXTSNZ-133) : 80%
+
+INFO (EXTSNZ-133) : 81%
+
+INFO (EXTSNZ-133) : 82%
+
+INFO (EXTSNZ-133) : 83%
+
+INFO (EXTSNZ-133) : 84%
+
+INFO (EXTSNZ-133) : 85%
+
+INFO (EXTSNZ-133) : 86%
+
+INFO (EXTSNZ-133) : 87%
+
+INFO (EXTSNZ-133) : 88%
+
+INFO (EXTSNZ-133) : 89%
+
+INFO (EXTSNZ-133) : 90%
+
+INFO (EXTSNZ-133) : 91%
+
+INFO (EXTSNZ-133) : 92%
+
+INFO (EXTSNZ-133) : 93%
+
+INFO (EXTSNZ-133) : 94%
+
+INFO (EXTSNZ-133) : 95%
+
+INFO (EXTSNZ-133) : 96%
+
+INFO (EXTSNZ-133) : 97%
+
+INFO (EXTSNZ-133) : 98%
+
+INFO (EXTSNZ-133) : 99%
+
+INFO (EXTGRMP-213) : Reading geometric data from DEF completed successfully.
+
+INFO (EXTHPY-233) : Preprocessing stage completed successfully at Wed May 16 12:02:31 2018.
+
+INFO (EXTHPY-173) : Capacitance extraction started at Wed May 16 12:02:31 2018.
+
+INFO (EXTHPY-103) : Extracting capacitance values.
+
+INFO (EXTHPY-104) :    0%
+
+INFO (EXTHPY-104) :    100%
+
+INFO (EXTHPY-174) : Capacitance extraction completed successfully at Wed May 16 12:02:37 2018.
+
+INFO (EXTHPY-175) : Output generation started at Wed May 16 12:02:37 2018.
+
+INFO (EXTSNZ-156) :    0%
+
+INFO (EXTSNZ-156) :    10%
+
+INFO (EXTSNZ-156) :    20%
+
+INFO (EXTSNZ-156) :    30%
+
+INFO (EXTSNZ-156) :    40%
+
+INFO (EXTSNZ-156) :    50%
+
+INFO (EXTSNZ-156) :    60%
+
+INFO (EXTSNZ-156) :    70%
+
+INFO (EXTSNZ-156) :    80%
+
+INFO (EXTSNZ-156) :    90%
+
+INFO (EXTHPY-176) : Output generation completed successfully at Wed May 16 12:02:42 2018.
+
+Ending at 2018-May-16 12:02:43 (2018-May-16 04:02:43 GMT).
+
+ Tool:                    Cadence Quantus QRC Extraction 64-bit
+ Version:                 14.2.3-s099 Wed Jun 17 00:01:02 PDT 2015
+ IR Build No:             099 
+ Techfile:                
+    rc_worst
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6/_qrc_techdir/rc_worst/qrcTechFile
+; version: p13.1.0102
+    rc_best
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6/_qrc_techdir/rc_best/qrcTechFile
+; version: p13.1.0102 
+ License(s) used:         1 of Virtuoso_QRC_Extraction_XL, 1 of
+QRC_Advanced_Analysis 
+ User Name:               jkangac
+ Host Name:               EEX109
+ Host OS Release:         Linux 2.6.32-696.18.7.el6.x86_64
+ Host OS Version:         #1 SMP Thu Jan 4 17:31:22 UTC 2018
+ Run duration:            00:00:09 CPU time, 00:00:25 clock time
+ Max (Total) memory used: 584 MB
+ Max (CPU) memory used:   531 MB
+ Max Temp-Directory used: 4 MB
+ Nets/hour:               1128K nets/CPU-hr, 406K nets/clock-hr
+ Design data:
+    Components:           2269
+    Phy components:       0
+    Nets:                 2822
+    Unconnected pins:     0
+ Warning messages:        15
+ Error messages:          0
+
+Exit code 0.
+Cadence Quantus QRC Extraction completed successfully at 2018-May-16
+12:02:43 (2018-May-16 04:02:43 GMT).
+*** qrc completed. ***
+spefIn Option :  -rc_corner rc_worst /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6/FIR_rc_worst_125.spef.gz 
+Spef available for 1 corner(s)but not available for 1 corner(s). Spef reading will be triggered only after spef for all active RC Corners are available.
+spefIn Option :  -rc_corner rc_best /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6/FIR_rc_best_0.spef.gz 
+***** SPEF Reading Started (CPU Time: 0:00:00.0  MEM: 817.273M)
+
+
+SPEF files for RC Corner rc_worst:
+Top-level spef file '/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6/FIR_rc_worst_125.spef.gz'.
+
+Reading TopLevel spef file '/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6/FIR_rc_worst_125.spef.gz'
+Reading NAME_MAP section...done in CPU Time: 0:00:00.0 and Real Time: 0:00:00.0
+Reading D_NET section...
+
+Number of Resistors     :  22677
+Number of Ground Caps   :  18102
+Number of Coupling Caps :  110
+
+SPEF files for RC Corner rc_best:
+Top-level spef file '/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6/FIR_rc_best_0.spef.gz'.
+
+Reading TopLevel spef file '/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/tmp_qrc_Bastq6/FIR_rc_best_0.spef.gz'
+Reading NAME_MAP section...done in CPU Time: 0:00:00.0 and Real Time: 0:00:00.0
+Reading D_NET section...
+
+Number of Resistors     :  22677
+Number of Ground Caps   :  18100
+Number of Coupling Caps :  110
+RC Database Merging Started (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 819.3M)
+ Corner: rc_worst
+ Corner: rc_best
+RC Database Merging Completed (CPU Time= 0:00:00.1  Real Time=0:00:00.0  MEM= 823.3M)
+***** SPEF Reading completed (CPU Time: 0:00:00.4 Real Time: 0:00:00.0 MEM: 819.273M)
+
+This setSIMode -usePrevCeltICRunDir option will have no impact on the current Default AAE-SI GigaOpt optDesign -postRoute (-hold) commands. It is only supported in the old Celtic Optimization Flow which can be triggered using setDelayCalMode -engine signalStorm/feDc -SIAware false & optDesign -postRoute -si (-hold).
+siFlowRuntime: Done extraction : realTime (26.0secs) : cpuTime (25.59secs) : Wed May 16 12:02:43 HKT 2018
+siFlow: Writing timing window file in early late mode.
+siFlowRuntime: Done twf generation : realTime (2.0secs) : cpuTime (1.96secs) : Wed May 16 12:02:45 HKT 2018
+siFlow: Running noise analysis using single thread.
+siFlow: Running noise analysis for view analysis_fast
+siFlow: ======= Start Loop  CeltIC Noise Analysis ............. Wed May 16 12:02:45 HKT 2018 =======
+siFlow: CeltIC working directory: celtic_tmp_pnNTAO
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/mmmc/modes/constraint_slow/constraint_slow.sdc
+/afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/mmmc/modes/constraint_slow/constraint_slow.sdc
+**WARN: (SI-2308) Setting timing_enable_simultaneous_setup_hold_mode to false in OCV/SI analysis may lead to unreliable results.                     [set_run_mode]
+INFO:(SI-9558) Propagated noise mode is on by default for glitch analysis          [celtic_ndc]
+INFO:(SI-122) CdB used in SI analysis :  /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/fast.cdb           [celtic_ndc]
+CDB supply set:CPU=0.04, REAL=0.00, TOTCPU=55.76, TOTREAL=1.00, MEM=2.00MB, TOTMEM=4.39MB
+si_initialization:CPU=0.00, REAL=0.00, TOTCPU=55.76, TOTREAL=1.00, MEM=0.00MB, TOTMEM=4.39MB
+INFO:(SI-6069) Using /tmp for temporary files, as neither the environment variable TMPDIR 
+        nor the tcl variable parm_tmpdir is set.          [celtic_ndc]
+
+Evaluating/Parsing black boxes...
+
+load_netlist:CPU=0.21, REAL=0.00, TOTCPU=55.97, TOTREAL=1.00, MEM=22.00MB, TOTMEM=26.39MB
+Noise run mode set as follows:
+      Process: 90nm
+      Mode: Signoff
+      Simulation Resolution: 5e-12
+      Fast Slew: 50e-12
+      Slow Slew: 100e-12
+      Virtual Attacker Fast Slew: 100e-12
+      Port resistance: 1e3
+      Gtol: 0.05
+INFO:(SI-6040) Number of clocks processed : 1          [load_timing]
+INFO:(SI-6040) Number of Slew Data processed : 12755          [load_timing]
+INFO:(SI-6040) Number of Timing Window Data processed : 9893          [load_timing]
+**WARN: (SI-2291) Ignoring the timing window data for 2862 nets. These nets will have infinite timing windows.                    [load_timing]
+INFO:(SI-6040) Number of Constants processed : 0          [load_timing]
+INFO:(SI-6040) Number of Driver Strength data processed : 0          [load_timing]
+INFO:(SI-6040) Number of External Load data processed : 11          [load_timing]
+read_twf:CPU=0.26, REAL=1.00, TOTCPU=56.23, TOTREAL=2.00, MEM=4.00MB, TOTMEM=30.39MB
+INFO:(SI-9584) Setting 0.25V peak threshold for glitch analysis          [set_thresh]
+INFO:(SI-9584) Setting 0.25V peak threshold for delay analysis          [set_thresh]
+Final flattened circuit: 2269 cell instances, 2907 nets, 0 echo instances.
+Qualify Xtors:CPU=0.06 REAL=0.00 MEM=2.00MB 
+INFO:(SI-9517) Loading cells..          [celtic_ndc]
+INFO:(SI-9520) Loaded 40 cells          [celtic]
+Spice ckt loaded:CPU=0.80 REAL=1.00 MEM=2.00MB 
+INFO:(SI-9547) 2822 out of 2822 Nets can be analyzed
+        	0 out of 2822 Nets cannot be analyzed          [process_netlist]
+INFO:(SI-9552) Starting latch identification ..          [process_netlist]
+INFO:(SI-9553) Finished latch identification.          [process_netlist]
+INFO:(SI-9554) Identified 2 latch cells for noise stability check          [process_netlist]
+INFO:(SI-9555) Identified 508 latch inst for noise stability check          [process_netlist]
+INFO:(SI-6029) Starting noise graph creation          [ngr]
+INFO:(SI-9556) Finished with process_netlist command          [process_netlist]
+process_netlist:CPU=0.94 REAL=1.00 TOTCPU=57.18 TOTREAL=3.00 MEM=4.00MB TOTMEM=34.39MB
+process_constraint:CPU=0.01, REAL=0.00, TOTCPU=57.20, TOTREAL=3.00, MEM=0.00MB, TOTMEM=34.39MB
+Trace clock nets:CPU=0.00, REAL=0.00, TOTCPU=57.20, TOTREAL=3.00, MEM=0.00MB, TOTMEM=34.39MB
+INFO:(SI-6135) Setting the virtual attacker mode to cap.          [celtic_ndc]
+Create xcapmap:CPU=0.17, REAL=0.00, TOTCPU=57.37, TOTREAL=3.00, MEM=0.00MB, TOTMEM=34.39MB
+INFO:(SI-9510) Starting noise analysis          [analyze_noise]
+CCC analysis init:CPU=0.02, REAL=0.00, TOTCPU=57.39, TOTREAL=3.00, MEM=19.54MB, TOTMEM=53.93MB
+*********************************************************************
+analyze_noise 	SUMMARY
+analyze_noise: 	Number of cells in design = 2269
+analyze_noise: 	Number of black boxes in design = 0
+analyze_noise: 	Number of nets analyzed = 2822
+analyze_noise: 	Number of DC tolerance violations (VH + VL) = 0
+analyze_noise: 	Number of receiver output peak violations (VH + VL) = 0
+analyze_noise: 	Number of total problem noisenets = 0
+*********************************************************************
+analyze_noise Analysis finished at Wed May 16 12:02:48 +0800 2018
+analyze_noise:CPU=0.66, REAL=0.00, TOTCPU=58.05, TOTREAL=3.00, MEM=0.00MB, TOTMEM=53.93MB
+Generated histogram:CPU=0.01, REAL=0.00, TOTCPU=58.06, TOTREAL=3.00, MEM=0.00MB, TOTMEM=53.93MB
+**WARN: (TCLCMD-1234):	In multi-mode, multi-corner analysis mode, you should include the -view option with the read_sdf command to annotate the SDF file to specific view(s). Without the -view option, the SDF file will only be annotated to the current default view.
+reports: Generating reports ...
+**WARN: (SI-2190) The default for report generation has changed from HTML to text. To generate an HTML report, specify the -html option to the generate_report command.                    [reports]
+reports: Generated 0 records in celtic_tmp_pnNTAO/analysis_fast/celtic_noise_slack.text.gz.
+SI reports:CPU=0.01, REAL=0.00, TOTCPU=58.08, TOTREAL=4.00, MEM=0.00MB, TOTMEM=53.93MB
+INFO:(SI-9516) ECO changes will be written to celtic_tmp_pnNTAO/analysis_fast/celtic.eco          [celtic_ndc]
+INFO:(SI-6084) Completed ECO analysis          [analyze_noise]
+*********************************************************************
+report_eco 	SUMMARY
+report_eco: 	Number of glitch ECO changes = 0
+report_eco: 	Number of  delay ECO changes = 0
+report_eco: 	Number of  slope ECO changes = 0
+report_eco: 	Number of ECO skipped        = 0
+*********************************************************************
+reports: Generating SDF ...
+Generated SDF:CPU=0.03, REAL=0.00, TOTCPU=58.11, TOTREAL=4.00, MEM=0.00MB, TOTMEM=53.93MB
+reports: Finished generating SDF ...
+Finished CeltIC run at Wed May 16 12:02:49 +0800 2018
+free_noise_analysis: CPU=0.23, REAL=0.00, TOTCPU=58.34, TOTREAL=4.00, MEM=-53.93MB, TOTMEM=0.00MB
+siFlow: Glitch nets:
+siFlow: Finish CeltIC Loop  Noise Analysis ............ Wed May 16 12:02:49 HKT 2018
+siFlow: ====================================================
+siFlow: Number of nets with noise violation      =      0	(0 external, 0 clock, 0 ilm)
+siFlow: ====================================================
+siFlowRuntime: Noise analysis done for view analysis_fast : realTime (4.0secs) : cpuTime (3.07secs) : Wed May 16 12:02:49 HKT 2018
+Ending "Noise analysis" (total cpu=0:00:03.1, real=0:00:04.0, peak res=604.7M, current mem=849.4M)
+All previously read TWF files have been cleared up. Power and Noise analysis will switch over to CTE.
+**WARN: (ENCTCM-70):	Option "-fixDRC" for command setSIMode is obsolete and has been replaced by "-report_si_slew_max_transition". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-report_si_slew_max_transition".
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.047  |  0.047  |  0.000  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   498   |   498   |    0    |
++--------------------+---------+---------+---------+
+
+Density: 59.941%
+Total number of glitch violations: 0
+------------------------------------------------------------
+siFlow: Deleting temp files in folder "celtic_tmp_pnNTAO". Check "celtic" folder for noise analysis results.
+siFlowRuntime: Timing report generation : realTime (0.0secs) : cpuTime (0.5secs) : Wed May 16 12:02:49 HKT 2018
+Reported timing to dir reports/signoffTimingReports
+Total CPU time: 31.23 sec
+Total Real time: 32.0 sec
+Total Memory Usage: 819.28125 Mbytes
+**WARN: (ENCDC-2616):	The feDc and signalStorm delay calculation engines are obsolete and have been replaced by the AAE engine which is default in the EDI13.1 releases. The feDc and signalStorm engines still work in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to remove the invocation of these engines via the -engine option in the setDelayCalMode command.
+Set Using Elmore Delay Limit as 100.
+<CMD> addFiller -cell {FILLCELL_X32 FILLCELL_X16 FILLCELL_X8 FILLCELL_X4 FILLCELL_X2  FILLCELL_X1}
+**WARN: (ENCSP-5215):	addFiller command is running on a postRoute database. It is recommended to be followed by ecoRoute command to make the DRC clean.
+Type 'man ENCSP-5215' for more detail.
+*INFO: Adding fillers to top-module.
+*INFO:   Added 11 filler insts (cell FILLCELL_X32 / prefix FILLER).
+*INFO:   Added 64 filler insts (cell FILLCELL_X16 / prefix FILLER).
+*INFO:   Added 484 filler insts (cell FILLCELL_X8 / prefix FILLER).
+*INFO:   Added 994 filler insts (cell FILLCELL_X4 / prefix FILLER).
+*INFO:   Added 2980 filler insts (cell FILLCELL_X1 / prefix FILLER).
+*INFO:   Added 0 filler inst  (cell FILLCELL_X2 / prefix FILLER).
+*INFO: Total 4533 filler insts added - prefix FILLER (CPU: 0:00:00.2).
+For 4533 new insts, *** Applied 2 GNC rules (cpu = 0:00:00.0)
+<CMD> saveDesign db/FIR_postroute.enc
+The in-memory database contained RC information but was not saved. To save 
+the RC information, use saveDesign's -rc option. Note: Saving RC information can be quite large, 
+so it should only be saved when it is really desired.
+Redoing specifyClockTree ...
+Checking spec file integrity...
+Writing Netlist "db/FIR_postroute.enc.dat/FIR.v.gz" ...
+Saving AAE Data ...
+Saving clock tree spec file 'db/FIR_postroute.enc.dat/FIR.ctstch' ...
+Saving configuration ...
+Saving preference file db/FIR_postroute.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=819.3M) ***
+Writing DEF file 'db/FIR_postroute.enc.dat/FIR.def.gz', current time is Wed May 16 12:04:10 2018 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'db/FIR_postroute.enc.dat/FIR.def.gz' is written, current time is Wed May 16 12:04:10 2018 ...
+Copying LEF file...
+Copying IO file...
+Copying Non-ILM Constraints file(s) ...
+Modifying Mode File...
+Modifying View File...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/NangateOpenCellLibrary_fast.lib...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/fast.cdb...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/NangateOpenCellLibrary_slow.lib...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/slow.cdb...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/best.captbl...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/best.tch...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/worst.captbl...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/worst.tch...
+rc_best rc_worst
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> verifyGeometry -report reports/FIR.geometry.rpt
+ *** Starting Verify Geometry (MEM: 819.3) ***
+
+  VERIFY GEOMETRY ...... Starting Verification
+  VERIFY GEOMETRY ...... Initializing
+  VERIFY GEOMETRY ...... Deleting Existing Violations
+  VERIFY GEOMETRY ...... Creating Sub-Areas
+                  ...... bin size: 2160
+VG: elapsed time: 1.00
+Begin Summary ...
+  Cells       : 0
+  SameNet     : 0
+  Wiring      : 0
+  Antenna     : 0
+  Short       : 0
+  Overlap     : 0
+End Summary
+
+  Verification Complete : 0 Viols.  0 Wrngs.
+
+**********End: VERIFY GEOMETRY**********
+ *** verify geometry (CPU: 0:00:00.8  MEM: 99.0M)
+
+<CMD> verifyConnectivity -type all -report reports/FIR.connectivity.rpt
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Wed May 16 12:05:20 2018
+
+Design Name: FIR
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (140.9700, 75.0400)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Wed May 16 12:05:20 2018
+Time Elapsed: 0:00:00.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.2  MEM: 0.000M)
+
+<CMD> summaryReport -outdir reports/summaryReport
+Creating directory reports/summaryReport.
+Start to collect the design information.
+Build netlist information for Cell FIR.
+Finished collecting the design information.
+Generating standard cells used in the design report.
+Analyze library ... 
+Analyze netlist ... 
+Generate no-driven nets information report.
+Analyze timing ... 
+Analyze floorplan/placement ... 
+Analysis Routing ...
+Report saved in file reports/summaryReport/FIR.main.htm.ascii.
+<CMD> report_area -out_file reports/FIR.routed.area.rpt
+<CMD> report_power -outfile reports/FIR.routed.power.rpt
+
+Power Net Detected:
+    Voltage	    Name
+    0.00V	    VSS
+    0.95V	    VDD
+#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV
+# Extraction Mode: detail/spef
+# Delay Calculation Options: engine=signalStorm signOff=true SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to signalStorm
+#################################################################################
+Calculate early delays in OCV mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 926.3M, InitMEM = 926.3M)
+Start delay calculation using Signal Storm (mem=926.340M)...
+Free All library cells ECSM data ...
+Total 80 cell ECSM data are removed.
+*** Calculating scaling factor for lib_fast libraries using the default operating condition of each library.
+Start translating cell libraries into ECSM model (MEM=926.3M)
+End translating ECSM and Loading done (CPU=0:00:00.4, MEM=926.3M)
+delayCal using detail RC...
+Delay calculation completed. (cpu=0:00:00.6 real=0:00:01.0 mem=942.387M 0)
+Calculate late delays in OCV mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 942.4M, InitMEM = 942.4M)
+Start delay calculation using Signal Storm (mem=942.387M)...
+Start translating cell libraries into ECSM model (MEM=942.4M)
+End translating ECSM and Loading done (CPU=0:00:00.4, MEM=942.4M)
+delayCal using detail RC...
+Delay calculation completed. (cpu=0:00:00.7 real=0:00:00.0 mem=942.387M 0)
+*** CDM Built up (cpu=0:00:01.4  real=0:00:01.0  mem= 942.4M) ***
+
+Begin Power Analysis
+
+    0.00V	    VSS
+    0.95V	    VDD
+
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=886.86MB/886.86MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+clk(20MHz) Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=886.93MB/886.93MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=886.97MB/886.97MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT)
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 10%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 20%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 30%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 40%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 50%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 60%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 70%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 80%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 90%
+
+Finished Levelizing
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT)
+
+Starting Activity Propagation
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT)
+** INFO:  (VOLTUS_POWR-1356): No default input activity has been set. Defaulting to 0.2.
+Use 'set_default_switching_activity -input_activity' command to change the default activity value.
+
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 10%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 20%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 30%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 40%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 50%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 60%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 70%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 80%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 90%
+
+Finished Activity Propagation
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total)=887.15MB/887.15MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT)
+ ... Calculating switching power
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 10%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 20%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 30%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 40%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 50%
+ ... Calculating internal and leakage power
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 60%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 70%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 80%
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT): 90%
+
+Finished Calculating power
+2018-May-16 12:07:11 (2018-May-16 04:07:11 GMT)
+Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total)=887.41MB/887.41MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=887.44MB/887.44MB)
+
+Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total)=887.44MB/887.44MB)
+
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.06772942 	   43.7514%
+Total Switching Power:       0.02830727 	   18.2858%
+Total Leakage Power:         0.05876830 	   37.9628%
+Total Power:                 0.15480499
+-----------------------------------------------------------------------------------------
+
+Output file is reports/FIR.routed.power.rpt.
+<CMD> rcOut -spef results/FIR.spef -rc_corner rc_worst
+** NOTE: Created directory path 'results' for file 'results/FIR.spef'.
+Dumping Spef file.....
+RC Out has the following PVT Info:
+   RC:rc_worst, Operating temperature 125 C
+Printing D_NET...
+RC Out from RCDB Completed (CPU Time= 0:00:00.1  MEM= 942.4M)
+<CMD> write_sdf results/FIR.sdf
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
+#################################################################################
+# Design Stage: PostRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV
+# Extraction Mode: detail/spef
+# Delay Calculation Options: engine=signalStorm signOff=true SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to signalStorm
+#################################################################################
+Calculate early delays in OCV mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 934.3M, InitMEM = 934.3M)
+Start delay calculation using Signal Storm (mem=934.340M)...
+delayCal using detail RC...
+Delay calculation completed. (cpu=0:00:00.1 real=0:00:00.0 mem=966.387M 0)
+Calculate late delays in OCV mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 966.4M, InitMEM = 966.4M)
+Start delay calculation using Signal Storm (mem=966.387M)...
+delayCal using detail RC...
+Delay calculation completed. (cpu=0:00:00.3 real=0:00:00.0 mem=966.387M 0)
+Calculate late delays in OCV mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 966.4M, InitMEM = 966.4M)
+Start delay calculation using Signal Storm (mem=966.387M)...
+Start translating cell libraries into ECSM model (MEM=966.4M)
+End translating ECSM and Loading done (CPU=0:00:00.4, MEM=966.4M)
+delayCal using detail RC...
+Delay calculation completed. (cpu=0:00:00.5 real=0:00:01.0 mem=966.387M 0)
+Calculate early delays in OCV mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 966.4M, InitMEM = 966.4M)
+Start delay calculation using Signal Storm (mem=966.387M)...
+Start translating cell libraries into ECSM model (MEM=966.4M)
+End translating ECSM and Loading done (CPU=0:00:00.4, MEM=966.4M)
+delayCal using detail RC...
+Delay calculation completed. (cpu=0:00:00.7 real=0:00:00.0 mem=966.387M 0)
+*** CDM Built up (cpu=0:00:01.8  real=0:00:01.0  mem= 966.4M) ***
+<CMD> saveNetlist results/FIR.routed.v
+Writing Netlist "results/FIR.routed.v" ...
+<CMD> streamOut results/FIR.gds -mapFile streamOut.map -merge /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/gds/NangateOpenCellLibrary.gds -stripes 1 -units 2000 -mode ALL
+Finding the highest version number among the merge files
+Merge file: /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/gds/NangateOpenCellLibrary.gds has version number: 3
+
+Parse map file...
+Writing GDSII file ...
+	****** db unit per micron = 2000 ******
+	****** output gds2 file unit per micron = 2000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    205                             COMP
+    206                          DIEAREA
+    1                             metal1
+    2                             metal1
+    3                             metal1
+    4                             metal1
+    7                             metal1
+    5                             metal1
+    6                             metal1
+    8                             metal1
+    9                             metal1
+    10                            metal1
+    15                              via1
+    16                              via1
+    19                              via1
+    17                              via1
+    18                              via1
+    20                              via1
+    21                              via1
+    22                            metal2
+    23                            metal2
+    24                            metal2
+    25                            metal2
+    28                            metal2
+    26                            metal2
+    27                            metal2
+    29                            metal2
+    30                            metal2
+    31                            metal2
+    36                              via2
+    37                              via2
+    40                              via2
+    38                              via2
+    39                              via2
+    41                              via2
+    42                              via2
+    43                            metal3
+    44                            metal3
+    45                            metal3
+    46                            metal3
+    49                            metal3
+    47                            metal3
+    48                            metal3
+    50                            metal3
+    51                            metal3
+    52                            metal3
+    57                              via3
+    58                              via3
+    61                              via3
+    59                              via3
+    60                              via3
+    62                              via3
+    63                              via3
+    64                            metal4
+    65                            metal4
+    66                            metal4
+    67                            metal4
+    70                            metal4
+    68                            metal4
+    69                            metal4
+    71                            metal4
+    72                            metal4
+    73                            metal4
+    78                              via4
+    79                              via4
+    82                              via4
+    80                              via4
+    81                              via4
+    83                              via4
+    84                              via4
+    85                            metal5
+    86                            metal5
+    87                            metal5
+    88                            metal5
+    91                            metal5
+    89                            metal5
+    90                            metal5
+    92                            metal5
+    93                            metal5
+    94                            metal5
+    99                              via5
+    100                             via5
+    103                             via5
+    101                             via5
+    102                             via5
+    104                             via5
+    105                             via5
+    106                           metal6
+    107                           metal6
+    108                           metal6
+    109                           metal6
+    112                           metal6
+    110                           metal6
+    111                           metal6
+    113                           metal6
+    114                           metal6
+    115                           metal6
+    120                             via6
+    121                             via6
+    124                             via6
+    122                             via6
+    123                             via6
+    125                             via6
+    126                             via6
+    127                           metal7
+    128                           metal7
+    129                           metal7
+    130                           metal7
+    133                           metal7
+    131                           metal7
+    132                           metal7
+    134                           metal7
+    135                           metal7
+    136                           metal7
+    141                             via7
+    142                             via7
+    145                             via7
+    143                             via7
+    144                             via7
+    146                             via7
+    147                             via7
+    148                           metal8
+    149                           metal8
+    150                           metal8
+    151                           metal8
+    154                           metal8
+    152                           metal8
+    153                           metal8
+    155                           metal8
+    156                           metal8
+    157                           metal8
+    162                             via8
+    163                             via8
+    166                             via8
+    164                             via8
+    165                             via8
+    167                             via8
+    168                             via8
+    169                           metal9
+    170                           metal9
+    171                           metal9
+    172                           metal9
+    175                           metal9
+    173                           metal9
+    174                           metal9
+    176                           metal9
+    177                           metal9
+    178                           metal9
+    183                             via9
+    184                             via9
+    187                             via9
+    185                             via9
+    186                             via9
+    188                             via9
+    189                             via9
+    190                          metal10
+    191                          metal10
+    192                          metal10
+    193                          metal10
+    196                          metal10
+    194                          metal10
+    195                          metal10
+    197                          metal10
+    198                          metal10
+    199                          metal10
+    11                            metal1
+    12                            metal1
+    13                            metal1
+    14                            metal1
+    32                            metal2
+    33                            metal2
+    34                            metal2
+    35                            metal2
+    53                            metal3
+    54                            metal3
+    55                            metal3
+    56                            metal3
+    74                            metal4
+    75                            metal4
+    76                            metal4
+    77                            metal4
+    95                            metal5
+    96                            metal5
+    97                            metal5
+    98                            metal5
+    116                           metal6
+    117                           metal6
+    118                           metal6
+    119                           metal6
+    137                           metal7
+    138                           metal7
+    139                           metal7
+    140                           metal7
+    158                           metal8
+    159                           metal8
+    160                           metal8
+    161                           metal8
+    179                           metal9
+    180                           metal9
+    181                           metal9
+    182                           metal9
+    200                          metal10
+    201                          metal10
+    202                          metal10
+    203                          metal10
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 2000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                           6802
+
+Ports/Pins                            24
+    metal layer metal2                 1
+    metal layer metal3                 2
+    metal layer metal5                 8
+    metal layer metal6                13
+
+Nets                               20478
+    metal layer metal1              2487
+    metal layer metal2              9157
+    metal layer metal3              7716
+    metal layer metal4              1029
+    metal layer metal5                68
+    metal layer metal6                21
+
+    Via Instances                  17445
+
+Special Nets                         152
+    metal layer metal1               138
+    metal layer metal8                 4
+    metal layer metal9                 4
+    metal layer metal10                6
+
+    Via Instances                   1240
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Text                                2848
+    metal layer metal1               642
+    metal layer metal2              1803
+    metal layer metal3               342
+    metal layer metal4                29
+    metal layer metal5                 9
+    metal layer metal6                23
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+Merging with GDS libraries
+Scanning GDS file /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/gds/NangateOpenCellLibrary.gds to register cell name ......
+Merging GDS file /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/gds/NangateOpenCellLibrary.gds ......
+	****** Merge file: /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/gds/NangateOpenCellLibrary.gds has version number: 3.
+	****** Merge file: /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/gds/NangateOpenCellLibrary.gds has units: 10000 per micron.
+	****** unit scaling factor = 0.2 ******
+**WARN: (ENCOGDS-215):	Merge file : /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/gds/NangateOpenCellLibrary.gds has larger units than output file units. You may have rounding problem.
+**WARN: (ENCOGDS-280):	Maximum units in merge file is 10000. Use -units 10000 to avoid rounding issue.
+######Streamout is finished!
+<CMD> setDrawView place
+<CMD> fit
+<CMD> setDrawView fplan
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+<CMD> saveDesign FIR.enc
+The in-memory database contained RC information but was not saved. To save 
+the RC information, use saveDesign's -rc option. Note: Saving RC information can be quite large, 
+so it should only be saved when it is really desired.
+Redoing specifyClockTree ...
+Checking spec file integrity...
+Writing Netlist "FIR.enc.dat.tmp/FIR.v.gz" ...
+Saving AAE Data ...
+Saving clock tree spec file 'FIR.enc.dat.tmp/FIR.ctstch' ...
+Saving configuration ...
+Saving preference file FIR.enc.dat.tmp/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=848.4M) ***
+Writing DEF file 'FIR.enc.dat.tmp/FIR.def.gz', current time is Wed May 16 12:11:36 2018 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'FIR.enc.dat.tmp/FIR.def.gz' is written, current time is Wed May 16 12:11:36 2018 ...
+Copying LEF file...
+Copying IO file...
+Copying Non-ILM Constraints file(s) ...
+Modifying Mode File...
+Modifying View File...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/NangateOpenCellLibrary_fast.lib...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/fast.cdb...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/NangateOpenCellLibrary_slow.lib...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/slow.cdb...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/best.captbl...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/best.tch...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/worst.captbl...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/worst.tch...
+rc_best rc_worst
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> saveDesign FIR.enc
+The in-memory database contained RC information but was not saved. To save 
+the RC information, use saveDesign's -rc option. Note: Saving RC information can be quite large, 
+so it should only be saved when it is really desired.
+Redoing specifyClockTree ...
+Checking spec file integrity...
+Writing Netlist "FIR.enc.dat.tmp/FIR.v.gz" ...
+Saving AAE Data ...
+Saving clock tree spec file 'FIR.enc.dat.tmp/FIR.ctstch' ...
+Saving configuration ...
+Saving preference file FIR.enc.dat.tmp/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=848.4M) ***
+Writing DEF file 'FIR.enc.dat.tmp/FIR.def.gz', current time is Wed May 16 12:11:40 2018 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'FIR.enc.dat.tmp/FIR.def.gz' is written, current time is Wed May 16 12:11:40 2018 ...
+Copying LEF file...
+Copying IO file...
+Copying Non-ILM Constraints file(s) ...
+Modifying Mode File...
+Modifying View File...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/NangateOpenCellLibrary_fast.lib...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/fast.cdb...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/NangateOpenCellLibrary_slow.lib...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/slow.cdb...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/best.captbl...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/best.tch...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/worst.captbl...
+Copying /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat/libs/mmmc/worst.tch...
+rc_best rc_worst
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout
+*** Message Summary: 0 warning(s), 0 error(s)
+
+
+*** Memory Usage v#1 (Current mem = 848.371M, initial mem = 96.059M) ***
+*** Message Summary: 8801 warning(s), 0 error(s)
+
+--- Ending "Encounter" (totcpu=0:03:28, real=0:13:33, mem=848.4M) ---

@@ -1,0 +1,24 @@
+Depth  Name                                    #Inst  Area (um^2)
+-----------------------------------------------------------------
+0      FIR                                     2269   4857.426   
+1      MAC_inst_4                              339    632.548    
+1      MAC_inst_1                              339    631.75     
+1      add_1_root_add_0_root_add_228_3         13     49.476     
+1      MAC_inst_3                              339    631.75     
+1      FIR_control_inst                        75     119.168    
+1      add_0_root_add_0_root_add_228_3         13     49.476     
+1      MAC_inst_2                              338    631.75     
+1      CONFIG_inst                             273    786.828    
+1      add_2_root_add_0_root_add_228_3         13     49.476     
+2      MAC_inst_3/mac_operate_inst             181    318.402    
+2      MAC_inst_2/mac_operate_inst             181    318.402    
+2      MAC_inst_1/mac_operate_inst             181    318.402    
+2      MAC_inst_4/mac_operate_inst             181    319.2      
+3      MAC_inst_4/mac_operate_inst/mult_128    95     196.042    
+3      MAC_inst_1/mac_operate_inst/add_131     11     40.964     
+3      MAC_inst_3/mac_operate_inst/mult_128    95     196.042    
+3      MAC_inst_2/mac_operate_inst/mult_128    95     196.042    
+3      MAC_inst_4/mac_operate_inst/add_131     11     40.964     
+3      MAC_inst_3/mac_operate_inst/add_131     11     40.964     
+3      MAC_inst_2/mac_operate_inst/add_131     11     40.964     
+3      MAC_inst_1/mac_operate_inst/mult_128    95     196.042    

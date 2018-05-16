@@ -1,0 +1,28 @@
+
+***********************************************************
+
+	CeltIC ECO Report (Release    EDI14.1 (BID_CNDC142_V14_26_S013_1) )
+
+***********************************************************
+
+ECO Settings :
+-----------------------------------------------------------
+Noise ECO command	 : modify_net {$NAME}
+Delay ECO command	 : No Fix
+Slope ECO command	 : No Fix
+Clock nets		 : Fix
+Propagated noise fix	 : Fix Source Coupling
+ECO report file		 : celtic_tmp_pnNTAO/analysis_fast/celtic.eco (Noise and Delay fixes)
+-----------------------------------------------------------
+
+Noise ECO Report :
+-----------------------------------------------------------
+Pin Name (Net Name)
+ VL Noise		 Orig / New / Thresh (in volts)
+    Output Peak		 Orig / New / Thresh
+ VH Noise		 Orig / New / Thresh (in volts)
+    Output Peak		 Orig / New / Thresh
+ What caused this ECO
+ ECO analysis status
+-----------------------------------------------------------
+

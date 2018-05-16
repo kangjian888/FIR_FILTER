@@ -1,0 +1,103 @@
+[05/15 19:57:14     0s] Checking out Encounter license ...
+[05/15 19:57:14     0s] 	edsxl		DENIED:		"Encounter_Digital_Impl_Sys_XL"
+[05/15 19:57:14     0s] 	edsl		DENIED:		"Encounter_Digital_Impl_Sys_L"
+[05/15 19:57:14     0s] 	encblk		DENIED:		"Encounter_Block"
+[05/15 19:57:14     0s] 	fegxl		DENIED:		"First_Encounter_GXL"
+[05/15 19:57:14     0s] 	fexl		DENIED:		"FE_GPS"
+[05/15 19:57:14     0s] 	nru		DENIED:		"NanoRoute_Ultra"
+[05/15 19:57:14     0s] 	vdixl		DENIED:		"Virtuoso_Digital_Implem_XL"
+[05/15 19:57:14     0s] 	vdi		CHECKED OUT:	"Virtuoso_Digital_Implem"
+[05/15 19:57:14     0s] Virtuoso_Digital_Implem 14.2 license checkout succeeded.
+[05/15 19:57:14     0s] 	Maximum number of instance allowed (1 x 50000).
+[05/15 19:57:25     4s] *******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2014.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+[05/15 19:57:25     4s] @(#)CDS: Encounter v14.26-s039_1 (64bit) 07/15/2015 11:34 (Linux 2.6.18-194.el5)
+[05/15 19:57:25     4s] @(#)CDS: NanoRoute v14.26-s022 NR150713-1956/14_26-UB (database version 2.30, 267.6.1) {superthreading v1.25}
+[05/15 19:57:25     4s] @(#)CDS: CeltIC v14.26-s013_1 (64bit) 07/14/2015 03:32:40 (Linux 2.6.18-194.el5)
+[05/15 19:57:25     4s] @(#)CDS: AAE 14.26-s007 (64bit) 07/15/2015 (Linux 2.6.18-194.el5)
+[05/15 19:57:25     4s] @(#)CDS: CTE 14.26-s010_1 (64bit) Jul 15 2015 01:38:12 (Linux 2.6.18-194.el5)
+[05/15 19:57:25     4s] @(#)CDS: CPE v14.26-s026
+[05/15 19:57:25     4s] @(#)CDS: IQRC/TQRC 14.2.2-s217 (64bit) Wed Apr 15 23:10:24 PDT 2015 (Linux 2.6.18-194.el5)
+[05/15 19:57:25     4s] @(#)CDS: OA 22.50-p011 Tue Nov 11 03:24:55 2014
+[05/15 19:57:25     4s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[05/15 19:57:25     4s] @(#)CDS: RCDB 11.5
+[05/15 19:57:25     4s] --- Starting "Encounter v14.26-s039_1" on Tue May 15 19:57:25 2018 (mem=96.1M) ---
+[05/15 19:57:25     4s] --- Running on EEX109 (x86_64 w/Linux 2.6.32-696.18.7.el6.x86_64) ---
+[05/15 19:57:25     4s] This version was compiled on Wed Jul 15 11:34:51 PDT 2015.
+[05/15 19:57:25     4s] Set DBUPerIGU to 1000.
+[05/15 19:57:25     4s] Set net toggle Scale Factor to 1.00
+[05/15 19:57:25     4s] Set Shrink Factor to 1.00000
+[05/15 19:57:25     5s] 
+[05/15 19:57:25     5s] **INFO:  MMMC transition support version v31-84 
+[05/15 19:57:25     5s] 
+[05/15 19:57:25     5s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[05/15 19:57:25     5s] <CMD> suppressMessage ENCEXT-2799
+[05/15 19:57:26     5s] <CMD> win
+[05/15 19:57:46     6s] <CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+[05/15 19:57:46     6s] <CMD> set conf_qxconf_file NULL
+[05/15 19:57:46     6s] <CMD> set conf_qxlib_file NULL
+[05/15 19:57:46     6s] <CMD> set defHierChar /
+[05/15 19:57:46     6s] <CMD> set distributed_client_message_echo 1
+[05/15 19:57:46     6s] <CMD> set gpsPrivate::dpgNewAddBufsDBUpdate 1
+[05/15 19:57:46     6s] <CMD> set gpsPrivate::lsgEnableNewDbApiInRestruct 1
+[05/15 19:57:46     6s] <CMD> set init_gnd_net VDD
+[05/15 19:57:46     6s] <CMD> set init_lef_file {../../../dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.tech.lef ../../../dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.macro.lef}
+[05/15 19:57:46     6s] <CMD> set init_mmmc_file fir_filter_project/layout/script/mmmc.view
+[05/15 19:57:46     6s] <CMD> set init_pwr_net VSS
+[05/15 19:57:46     6s] <CMD> set init_verilog fir_filter_project/layout/design/FIR.mapped.v
+[05/15 19:57:46     6s] <CMD> set lsgOCPGainMult 1.000000
+[05/15 19:57:46     6s] <CMD> set pegDefaultResScaleFactor 1.000000
+[05/15 19:57:46     6s] <CMD> set pegDetailResScaleFactor 1.000000
+[05/15 19:57:46     6s] <CMD> set timing_library_float_precision_tol 0.000010
+[05/15 19:57:46     6s] <CMD> set timing_library_load_pin_cap_indices {}
+[05/15 19:57:46     6s] <CMD> set tso_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+[05/15 19:57:49     7s] <CMD> init_design
+[05/15 19:57:49     7s] **ERROR: (TCLCMD-989):	cannot open SDC file 'designs/FIR.mapped.sdc' for mode 'constraint_slow'
+[05/15 20:00:21    22s] <CMD> init_design
+[05/15 20:00:21    22s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/15 20:00:21    22s] **ERROR: (TCLCMD-989):	cannot open SDC file 'designs/FIR.mapped.sdc' for mode 'constraint_slow'
+[05/15 20:00:53    25s] <CMD> init_design
+[05/15 20:00:53    25s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/15 20:00:53    25s] **ERROR: (TCLCMD-989):	cannot open SDC file 'designs/FIR.mapped.sdc' for mode 'constraint_slow'
+[05/15 20:00:53    25s] <CMD> init_design
+[05/15 20:00:53    25s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/15 20:00:53    25s] **ERROR: (TCLCMD-989):	cannot open SDC file 'designs/FIR.mapped.sdc' for mode 'constraint_slow'
+[05/15 20:00:54    25s] <CMD> init_design
+[05/15 20:00:54    25s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/15 20:00:54    25s] **ERROR: (TCLCMD-989):	cannot open SDC file 'designs/FIR.mapped.sdc' for mode 'constraint_slow'
+[05/15 20:00:55    25s] <CMD> init_design
+[05/15 20:00:55    25s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/15 20:00:55    25s] **ERROR: (TCLCMD-989):	cannot open SDC file 'designs/FIR.mapped.sdc' for mode 'constraint_slow'
+[05/15 20:02:16    34s] <CMD> init_design
+[05/15 20:02:16    34s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/15 20:02:16    34s] **ERROR: (TCLCMD-989):	cannot open SDC file 'designs/FIR.mapped.sdc' for mode 'constraint_slow'
+[05/15 20:03:56    44s] <CMD> init_design
+[05/15 20:03:56    44s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/15 20:03:56    44s] **ERROR: (TCLCMD-989):	cannot open SDC file 'design/FIR.mapped.sdc' for mode 'constraint_slow'
+[05/15 20:05:30    54s] <CMD> init_design
+[05/15 20:05:30    54s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[05/15 20:05:30    54s] **ERROR: (TCLCMD-989):	cannot open SDC file '../design/FIR.mapped.sdc' for mode 'constraint_slow'
+[05/15 20:07:19    62s] 
+[05/15 20:07:19    62s] *** Memory Usage v#1 (Current mem = 353.004M, initial mem = 96.059M) ***
+[05/15 20:07:19    62s] *** Message Summary: 0 warning(s), 0 error(s)
+[05/15 20:07:19    62s] 
+[05/15 20:07:19    62s] --- Ending "Encounter" (totcpu=0:01:02, real=0:10:05, mem=353.0M) ---

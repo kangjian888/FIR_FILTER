@@ -1,0 +1,70 @@
+#######################################################
+#                                                     
+#  Encounter Command Logging File                     
+#  Created on Wed May 16 11:58:29 2018                
+#                                                     
+#######################################################
+
+#@(#)CDS: Encounter v14.26-s039_1 (64bit) 07/15/2015 11:34 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute v14.26-s022 NR150713-1956/14_26-UB (database version 2.30, 267.6.1) {superthreading v1.25}
+#@(#)CDS: CeltIC v14.26-s013_1 (64bit) 07/14/2015 03:32:40 (Linux 2.6.18-194.el5)
+#@(#)CDS: AAE 14.26-s007 (64bit) 07/15/2015 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 14.26-s010_1 (64bit) Jul 15 2015 01:38:12 (Linux 2.6.18-194.el5)
+#@(#)CDS: CPE v14.26-s026
+#@(#)CDS: IQRC/TQRC 14.2.2-s217 (64bit) Wed Apr 15 23:10:24 PDT 2015 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+restoreDesign /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat FIR
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+restoreDesign /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/db/FIR_cts.enc.dat FIR
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+setNanoRouteMode -quiet -timingEngine {}
+setNanoRouteMode -quiet -routeWithTimingDriven 1
+setNanoRouteMode -quiet -routeWithSiDriven 1
+setNanoRouteMode -quiet -routeWithSiPostRouteFix 0
+setNanoRouteMode -quiet -routeTopRoutingLayer default
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+setNanoRouteMode -quiet -drouteEndIteration default
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven true
+routeDesign -globalDetail
+setExtractRCMode -engine postRoute
+setExtractRCMode -effortLevel medium
+optDesign -postRoute -outDir reports/postRouteTimingReports
+optDesign -postRoute -hold -outDir reports/postRouteTimingReports
+setDelayCalMode -SIAware false
+setDelayCalMode -engine signalStorm
+timeDesign -signoff -si -outDir reports/signoffTimingReports
+timeDesign -signoff -si -hold -outDir reports/signoffTimingReports
+addFiller -cell {FILLCELL_X32 FILLCELL_X16 FILLCELL_X8 FILLCELL_X4 FILLCELL_X2  FILLCELL_X1}
+saveDesign db/FIR_postroute.enc
+verifyGeometry -report reports/FIR.geometry.rpt
+verifyConnectivity -type all -report reports/FIR.connectivity.rpt
+summaryReport -outdir reports/summaryReport
+report_area -out_file reports/FIR.routed.area.rpt
+report_power -outfile reports/FIR.routed.power.rpt
+rcOut -spef results/FIR.spef -rc_corner rc_worst
+write_sdf results/FIR.sdf
+saveNetlist results/FIR.routed.v
+streamOut results/FIR.gds -mapFile streamOut.map -merge /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/gds/NangateOpenCellLibrary.gds -stripes 1 -units 2000 -mode ALL
+setDrawView place
+fit
+setDrawView fplan
+setDrawView ameba
+setDrawView place
+saveDesign FIR.enc
+saveDesign FIR.enc

@@ -1,0 +1,2993 @@
+Checking out Encounter license ...
+	edsxl		DENIED:		"Encounter_Digital_Impl_Sys_XL"
+	edsl		DENIED:		"Encounter_Digital_Impl_Sys_L"
+	encblk		DENIED:		"Encounter_Block"
+	fegxl		DENIED:		"First_Encounter_GXL"
+	fexl		DENIED:		"FE_GPS"
+	nru		DENIED:		"NanoRoute_Ultra"
+	vdixl		DENIED:		"Virtuoso_Digital_Implem_XL"
+	vdi		CHECKED OUT:	"Virtuoso_Digital_Implem"
+Virtuoso_Digital_Implem 14.2 license checkout succeeded.
+	Maximum number of instance allowed (1 x 50000).
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2014.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v14.26-s039_1 (64bit) 07/15/2015 11:34 (Linux 2.6.18-194.el5)
+@(#)CDS: NanoRoute v14.26-s022 NR150713-1956/14_26-UB (database version 2.30, 267.6.1) {superthreading v1.25}
+@(#)CDS: CeltIC v14.26-s013_1 (64bit) 07/14/2015 03:32:40 (Linux 2.6.18-194.el5)
+@(#)CDS: AAE 14.26-s007 (64bit) 07/15/2015 (Linux 2.6.18-194.el5)
+@(#)CDS: CTE 14.26-s010_1 (64bit) Jul 15 2015 01:38:12 (Linux 2.6.18-194.el5)
+@(#)CDS: CPE v14.26-s026
+@(#)CDS: IQRC/TQRC 14.2.2-s217 (64bit) Wed Apr 15 23:10:24 PDT 2015 (Linux 2.6.18-194.el5)
+@(#)CDS: OA 22.50-p011 Tue Nov 11 03:24:55 2014
+@(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+@(#)CDS: RCDB 11.5
+--- Starting "Encounter v14.26-s039_1" on Tue May 15 21:21:28 2018 (mem=96.1M) ---
+--- Running on EEX109 (x86_64 w/Linux 2.6.32-696.18.7.el6.x86_64) ---
+This version was compiled on Wed Jul 15 11:34:51 PDT 2015.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set ::TimeLib::tsgMarkCellLatchConstructFlag 1
+<CMD> set _timing_library_enable_mt_flow 0
+<CMD> set conf_ioOri R0
+<CMD> set conf_row_height 1.400000
+<CMD> set dcgHonorSignalNetNDR 1
+<CMD> set defHierChar /
+<CMD> set delaycal_input_transition_delay 0.1ps
+Set Input Pin Transition Delay as 0.1 ps.
+<CMD> set distributed_client_message_echo 1
+<CMD> set fpIsMaxIoHeight 0
+<CMD> set fp_core_height 75.600000
+<CMD> set fp_core_to_bottom 6.020000
+<CMD> set fp_core_to_left 6.080000
+<CMD> set fp_core_to_right 6.080000
+<CMD> set fp_core_to_top 6.020000
+<CMD> set fp_core_width 128.800000
+<CMD> set gpsPrivate::dpgNewAddBufsDBUpdate 1
+<CMD> set gpsPrivate::lsgEnableNewDbApiInRestruct 1
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file {../../../../../dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.tech.lef ../../../../../dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.macro.lef}
+<CMD> set init_mmmc_file script/mmmc.view
+<CMD> set init_oa_search_lib {}
+<CMD> set init_pwr_net VDD
+<CMD> set init_verilog design/FIR.mapped.v
+<CMD> set lsgOCPGainMult 1.000000
+<CMD> set pegDefaultResScaleFactor 1.000000
+<CMD> set pegDetailResScaleFactor 1.000000
+<CMD> set timing_library_float_precision_tol 0.000010
+<CMD> set timing_library_load_pin_cap_indices {}
+<CMD> set tso_post_client_restore_command {update_timing ; write_eco_opt_db ;}
+<CMD> save_global script/FIR.globals
+<CMD> set init_io_file script/FIR.ioc
+<CMD> init_design
+
+Loading LEF file ../../../../../dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.tech.lef ...
+
+Loading LEF file ../../../../../dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Back_End/lef/NangateOpenCellLibrary.macro.lef ...
+Set DBUPerIGU to M2 pitch 380.
+
+viaInitial starts at Tue May 15 21:22:07 2018
+viaInitial ends at Tue May 15 21:22:07 2018
+*** Begin netlist parsing (mem=362.3M) ***
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'design/FIR.mapped.v'
+
+*** Memory Usage v#1 (Current mem = 365.344M, initial mem = 96.059M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=365.3M) ***
+Top level cell is FIR.
+Loading view definition file from script/mmmc.view
+Reading lib_slow timing library '/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_slow.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library.
+Message <TECHLIB-436> has exceeded the message display limit of '20'. setMessageLimit/set_message_limit sets the limit. unsetMessageLimit/unset_message_limit can be used to reset this.
+Read 134 cells in library 'NangateOpenCellLibrary' 
+Reading lib_fast timing library '/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_fast.lib' ...
+Read 134 cells in library 'NangateOpenCellLibrary' 
+*** End library_loading (cpu=0.00min, mem=0.0M, fe_cpu=0.16min, fe_real=0.85min, fe_mem=391.3M) ***
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell FIR ...
+*** Netlist is unique.
+** info: there are 290 modules.
+** info: there are 2358 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 397.047M, initial mem = 96.059M) ***
+*info: set bottom ioPad orient R0
+Reading IO assignment file "script/FIR.ioc" ...
+**WARN: (ENCFP-669):	IO pin "overflag[0]" not found.
+**WARN: (ENCFP-669):	IO pin "overflag[1]" not found.
+**WARN: (ENCFP-669):	IO pin "done" not found.
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Input Pin Transition Delay as 0.1 ps.
+Initializing multi-corner RC extraction with 2 active RC Corners ...
+**WARN: (ENCEXT-6202):	In addition to the technology file, capacitance table file is specified for all RC corners. If the technology file for all RC corners is already specified, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command. In this case, the technology file will be used for preRoute extraction and effort level medium/high/signoff of postRoute extraction.
+Type 'man ENCEXT-6202' for more detail.
+Reading Capacitance Table File /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/worst.captbl ...
+Cap table was created using Encounter 13.13-s017_1.
+Process name: FreePDK45.
+Reading Capacitance Table File /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/best.captbl ...
+Cap table was created using Encounter 13.13-s017_1.
+Process name: FreePDK45.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: analysis_slow
+    RC-Corner Name        : rc_worst
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : '/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/worst.captbl'
+    RC-Corner PreRoute Res Factor         : 1.34
+    RC-Corner PreRoute Cap Factor         : 1.1
+    RC-Corner PostRoute Res Factor        : 1.34
+    RC-Corner PostRoute Cap Factor        : 0.96
+    RC-Corner PostRoute XCap Factor       : 1.22
+    RC-Corner PreRoute Clock Res Factor   : 1.34	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 0.96	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 0.969   
+    RC-Corner PostRoute Clock Res Factor  : 1.34   	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: '/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/worst.tch'
+ 
+ Analysis View: analysis_fast
+    RC-Corner Name        : rc_best
+    RC-Corner Index       : 1
+    RC-Corner Temperature : 0 Celsius
+    RC-Corner Cap Table   : '/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/best.captbl'
+    RC-Corner PreRoute Res Factor         : 1.34
+    RC-Corner PreRoute Cap Factor         : 1.1
+    RC-Corner PostRoute Res Factor        : 1.34
+    RC-Corner PostRoute Cap Factor        : 0.96
+    RC-Corner PostRoute XCap Factor       : 1.22
+    RC-Corner PreRoute Clock Res Factor   : 1.34	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 0.96	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 0.969   
+    RC-Corner PostRoute Clock Res Factor  : 1.34   	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner Technology file: '/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/best.tch'
+Technology file '/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/worst.tch' associated with first view 'analysis_slow' specified to command 'set_analysis_view' will be used as the primary corner for the multi-corner extraction. TQRC/IQRC extraction leverages a single primary corner extraction, then derives the other corners based on their technology files and operating conditions from the primary corner.
+*Info: initialize multi-corner CTS.
+CTE reading timing constraint file 'design/FIR.mapped.sdc' ...
+Current (total cpu=0:00:10.0, real=0:00:51.0, peak res=398.2M, current mem=502.9M)
+INFO (CTE): Constraints read successfully.
+WARNING (CTE-25): Line: 8 of File design/FIR.mapped.sdc : Skipped unsupported command: set_units
+
+
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=412.8M, current mem=517.4M)
+Current (total cpu=0:00:10.1, real=0:00:51.0, peak res=412.8M, current mem=517.4M)
+**WARN: (TA-976):	Path groups asserted by the group_path constraint are considered by the software to be global in nature - they cannot be restricted to specific constraint modes. Due to this restriction, the group_path constraint is not supported directly in the constraint files which are configured in mode-specific commands such as create_constraint_mode. The current group_path entry will be ignored. You can enter the group_path constraint interactively or as part of a general command script -  where it will be interpreted as global and will be in effect for all modes.
+Total number of combinational cells: 99
+Total number of sequential cells: 29
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+Total number of usable buffers: 9
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+Total number of usable inverters: 6
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   ENCFP-669            3  IO pin "%s" not found.                   
+WARNING   ENCEXT-6202          1  In addition to the technology file, capa...
+*** Message Summary: 4 warning(s), 0 error(s)
+
+<CMD> fit
+<CMD> setDrawView fplan
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 0.66 0.5 6.08 6.02 6.08 6.02
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 0.653991148992 0.5 6.08 6.02 6.08 6.02
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> selectObject Module MAC_inst_2
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_2
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 0.653991148992 0.5 6.08 6.02 6.08 6.02
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 0.653991148992 0.5 6.08 6.02 6.08 6.02
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_2
+<CMD> uiSetTool move
+<CMD> setObjFPlanBox Module MAC_inst_2 12.074 51.6695 55.506 81.397
+<CMD> deselectAll
+<CMD> selectObject Module CONFIG_inst
+<CMD> setObjFPlanBox Module CONFIG_inst 77.1215 50.94 125.281 83.903
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_1
+<CMD> setObjFPlanBox Module MAC_inst_1 12.8755 18.9935 56.3075 48.721
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_4
+<CMD> setObjFPlanBox Module MAC_inst_4 57.519 17.1225 100.951 46.85
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_3
+<CMD> setObjFPlanBox Module MAC_inst_3 11.9465 36.3855 55.3785 66.113
+<CMD> fit
+<CMD> deselectAll
+<CMD> selectObject Module CONFIG_inst
+<CMD> setObjFPlanBox Module CONFIG_inst 75.1425 49.821 123.2125 83.421
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_4
+<CMD> setObjFPlanBox Module MAC_inst_4 79.83 18.3615 123.34 47.7615
+<CMD> setObjFPlanBox Module MAC_inst_4 76.946 17.621 120.456 47.021
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_1
+<CMD> setObjFPlanBox Module MAC_inst_1 29.1865 9.6305 72.6965 39.0305
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_4
+<CMD> setObjFPlanBox Module MAC_inst_4 82.0865 7.66 125.5965 37.06
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_1
+<CMD> setObjFPlanBox Module MAC_inst_1 36.537 7.3665 80.047 36.7665
+<CMD> deselectAll
+<CMD> selectObject Module CONFIG_inst
+<CMD> setObjFPlanBox Module CONFIG_inst 77.9035 38.433 125.9735 72.033
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_3
+<CMD> setObjFPlanBox Module MAC_inst_3 30.6625 41.529 74.1725 70.929
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_2
+<CMD> setObjFPlanBox Module MAC_inst_2 -3.6785 30.3885 39.8315 59.7885
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_3
+<CMD> setObjFPlanBox Module MAC_inst_3 32.017 40.164 75.527 69.564
+<CMD> setObjFPlanBox Module MAC_inst_3 8.138 54.6025 51.648 84.0025
+<CMD> deselectAll
+<CMD> selectObject Module CONFIG_inst
+<CMD> setObjFPlanBox Module CONFIG_inst 77.044 49.778 125.114 83.378
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 0.6 0.5 6.08 6.02 6.08 6.02
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 0.586956521739 0.499996 6.08 6.02 6.08 6.02
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> deselectAll
+<CMD> selectObject Module CONFIG_inst
+<CMD> windowSelect 114.705 63.486 116.849 57.323
+<CMD> uiSetTool move
+<CMD> selectObject Module CONFIG_inst
+<CMD> setObjFPlanBox Module CONFIG_inst 86.1955 45.4005 134.2655 79.0005
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_4
+<CMD> setObjFPlanBox Module MAC_inst_4 92.263 7.688 135.773 37.088
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_1
+<CMD> setObjFPlanBox Module MAC_inst_1 46.797 7.554 90.307 36.954
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_2
+<CMD> setObjFPlanBox Module MAC_inst_2 2.0095 7.042 45.5195 36.442
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_1
+<CMD> setObjFPlanBox Module MAC_inst_1 47.678 7.286 91.188 36.686
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_2
+<CMD> setObjFPlanBox Module MAC_inst_2 3.028 7.152 46.538 36.552
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 0.7 0.499996 6.08 6.02 6.08 6.02
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 0.55 0.499984 6.08 6.02 6.08 6.02
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_4
+<CMD> uiSetTool move
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_3
+<CMD> setObjFPlanBox Module MAC_inst_3 9.7515 42.366 53.2615 71.766
+<CMD> deselectAll
+<CMD> selectObject Module CONFIG_inst
+<CMD> setObjFPlanBox Module CONFIG_inst 84.81 40.211 132.88 73.811
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_4
+<CMD> setObjFPlanBox Module MAC_inst_4 94.8445 7.42 138.3545 36.82
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_1
+<CMD> setObjFPlanBox Module MAC_inst_1 50.0625 7.0245 93.5725 36.4245
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_2
+<CMD> setObjFPlanBox Module MAC_inst_2 7.258 7.42 50.768 36.82
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_1
+<CMD> setObjFPlanBox Module MAC_inst_1 51.6835 7.42 95.1935 36.82
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_4
+<CMD> setObjFPlanBox Module MAC_inst_4 57.77 43.405 101.28 72.805
+<CMD> flipModule MAC_inst_4 X
+Flip instance MAC_inst_4/cnt_reg_0_ to match row orient.
+Flip instance MAC_inst_4/cnt_reg_2_ to match row orient.
+Flip instance MAC_inst_4/cnt_reg_1_ to match row orient.
+Flip instance MAC_inst_4/op_2_reg_7_ to match row orient.
+Flip instance MAC_inst_4/op_2_reg_6_ to match row orient.
+Flip instance MAC_inst_4/op_2_reg_5_ to match row orient.
+Flip instance MAC_inst_4/op_2_reg_4_ to match row orient.
+Flip instance MAC_inst_4/op_2_reg_3_ to match row orient.
+Flip instance MAC_inst_4/op_2_reg_2_ to match row orient.
+Flip instance MAC_inst_4/op_2_reg_1_ to match row orient.
+Flip instance MAC_inst_4/op_2_reg_0_ to match row orient.
+Flip instance MAC_inst_4/mac_done_reg_0_ to match row orient.
+Flip instance MAC_inst_4/op_1_reg_7_ to match row orient.
+Flip instance MAC_inst_4/op_1_reg_6_ to match row orient.
+Flip instance MAC_inst_4/op_1_reg_5_ to match row orient.
+Flip instance MAC_inst_4/op_1_reg_4_ to match row orient.
+Flip instance MAC_inst_4/op_1_reg_3_ to match row orient.
+Flip instance MAC_inst_4/op_1_reg_2_ to match row orient.
+Flip instance MAC_inst_4/op_1_reg_1_ to match row orient.
+Flip instance MAC_inst_4/op_1_reg_0_ to match row orient.
+Flip instance MAC_inst_4/data_out_reg_0_ to match row orient.
+Flip instance MAC_inst_4/ac_sum_old_reg_0_ to match row orient.
+Flip instance MAC_inst_4/data_out_reg_1_ to match row orient.
+Flip instance MAC_inst_4/ac_sum_old_reg_1_ to match row orient.
+Flip instance MAC_inst_4/data_out_reg_2_ to match row orient.
+Flip instance MAC_inst_4/ac_sum_old_reg_2_ to match row orient.
+Flip instance MAC_inst_4/data_out_reg_3_ to match row orient.
+Flip instance MAC_inst_4/ac_sum_old_reg_3_ to match row orient.
+Flip instance MAC_inst_4/data_out_reg_4_ to match row orient.
+Flip instance MAC_inst_4/ac_sum_old_reg_4_ to match row orient.
+Flip instance MAC_inst_4/data_out_reg_5_ to match row orient.
+Flip instance MAC_inst_4/ac_sum_old_reg_5_ to match row orient.
+Flip instance MAC_inst_4/data_out_reg_6_ to match row orient.
+Flip instance MAC_inst_4/ac_sum_old_reg_6_ to match row orient.
+Flip instance MAC_inst_4/data_out_reg_7_ to match row orient.
+Flip instance MAC_inst_4/ac_sum_old_reg_7_ to match row orient.
+Flip instance MAC_inst_4/data_out_reg_8_ to match row orient.
+Flip instance MAC_inst_4/ac_sum_old_reg_8_ to match row orient.
+Flip instance MAC_inst_4/data_out_reg_9_ to match row orient.
+Flip instance MAC_inst_4/ac_sum_old_reg_9_ to match row orient.
+Flip instance MAC_inst_4/U82 to match row orient.
+Flip instance MAC_inst_4/U117 to match row orient.
+Flip instance MAC_inst_4/U118 to match row orient.
+Flip instance MAC_inst_4/U119 to match row orient.
+Flip instance MAC_inst_4/U120 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/add_131/U1_9 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/add_131/U1_8 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/add_131/U1_7 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/add_131/U1_6 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/add_131/U1_5 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/add_131/U1_4 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/add_131/U1_3 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/add_131/U1_2 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/add_131/U1_1 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/add_131/U1 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/add_131/U2 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U2 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U3 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U4 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U5 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U6 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U7 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U14 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U15 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U16 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U17 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U18 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U19 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U20 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U21 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U22 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U23 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U24 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U25 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U26 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U27 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U28 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U29 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U30 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U31 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U32 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U33 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U34 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U35 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U36 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U37 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U38 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U39 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U40 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U41 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U42 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U43 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U108 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U109 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U110 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U111 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U112 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U113 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U114 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U115 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U116 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U117 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U118 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U119 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U120 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U121 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U122 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U123 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U124 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U125 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U126 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U127 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U128 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U129 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U130 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U131 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U132 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U133 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U134 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U135 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U136 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U137 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U138 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U139 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U140 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U141 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U142 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U143 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U144 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U145 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U146 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U147 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U148 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U149 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U150 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U151 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U152 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U153 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U154 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U155 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U156 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U157 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U158 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U159 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U160 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U161 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U162 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U163 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U164 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U165 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U166 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U167 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U168 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U169 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U170 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U171 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U172 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U173 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U174 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U175 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U176 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U177 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/mult_128/U178 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U2 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U5 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U6 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U8 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U9 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U11 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U14 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U17 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U18 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U19 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U20 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U21 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U22 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U25 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U26 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U29 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U30 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U31 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U32 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U33 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U34 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U35 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U36 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U37 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U38 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U39 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U40 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U41 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U42 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U43 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U45 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U46 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U47 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U48 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U49 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U50 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U51 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U52 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U53 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U54 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U55 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U60 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U61 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U62 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U63 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U64 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U65 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U66 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U67 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U72 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U73 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U74 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U75 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U76 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U77 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U78 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U84 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U85 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U86 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U88 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U89 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U90 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U91 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U92 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U93 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U94 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U97 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U98 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U99 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U100 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U4 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U7 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U10 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U12 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U13 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U15 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U16 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U23 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U24 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U27 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U28 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U44 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U56 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U57 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U58 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U59 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U68 to match row orient.
+Flip instance MAC_inst_4/mac_operate_inst/U69 to match row orient.
+Flip instance MAC_inst_4/U3 to match row orient.
+Flip instance MAC_inst_4/U4 to match row orient.
+Flip instance MAC_inst_4/U5 to match row orient.
+Flip instance MAC_inst_4/U6 to match row orient.
+Flip instance MAC_inst_4/U7 to match row orient.
+Flip instance MAC_inst_4/U8 to match row orient.
+Flip instance MAC_inst_4/U9 to match row orient.
+Flip instance MAC_inst_4/U10 to match row orient.
+Flip instance MAC_inst_4/U11 to match row orient.
+Flip instance MAC_inst_4/U12 to match row orient.
+Flip instance MAC_inst_4/U13 to match row orient.
+Flip instance MAC_inst_4/U14 to match row orient.
+Flip instance MAC_inst_4/U15 to match row orient.
+Flip instance MAC_inst_4/U16 to match row orient.
+Flip instance MAC_inst_4/U17 to match row orient.
+Flip instance MAC_inst_4/U18 to match row orient.
+Flip instance MAC_inst_4/U19 to match row orient.
+Flip instance MAC_inst_4/U20 to match row orient.
+Flip instance MAC_inst_4/U21 to match row orient.
+Flip instance MAC_inst_4/U22 to match row orient.
+Flip instance MAC_inst_4/U23 to match row orient.
+Flip instance MAC_inst_4/U24 to match row orient.
+Flip instance MAC_inst_4/U25 to match row orient.
+Flip instance MAC_inst_4/U26 to match row orient.
+Flip instance MAC_inst_4/U27 to match row orient.
+Flip instance MAC_inst_4/U28 to match row orient.
+Flip instance MAC_inst_4/U29 to match row orient.
+Flip instance MAC_inst_4/U30 to match row orient.
+Flip instance MAC_inst_4/U31 to match row orient.
+Flip instance MAC_inst_4/U32 to match row orient.
+Flip instance MAC_inst_4/U33 to match row orient.
+Flip instance MAC_inst_4/U34 to match row orient.
+Flip instance MAC_inst_4/U35 to match row orient.
+Flip instance MAC_inst_4/U36 to match row orient.
+Flip instance MAC_inst_4/U37 to match row orient.
+Flip instance MAC_inst_4/U38 to match row orient.
+Flip instance MAC_inst_4/U39 to match row orient.
+Flip instance MAC_inst_4/U40 to match row orient.
+Flip instance MAC_inst_4/U41 to match row orient.
+Flip instance MAC_inst_4/U42 to match row orient.
+Flip instance MAC_inst_4/U43 to match row orient.
+Flip instance MAC_inst_4/U44 to match row orient.
+Flip instance MAC_inst_4/U45 to match row orient.
+Flip instance MAC_inst_4/U46 to match row orient.
+Flip instance MAC_inst_4/U47 to match row orient.
+Flip instance MAC_inst_4/U48 to match row orient.
+Flip instance MAC_inst_4/U49 to match row orient.
+Flip instance MAC_inst_4/U50 to match row orient.
+Flip instance MAC_inst_4/U51 to match row orient.
+Flip instance MAC_inst_4/U52 to match row orient.
+Flip instance MAC_inst_4/U53 to match row orient.
+Flip instance MAC_inst_4/U54 to match row orient.
+Flip instance MAC_inst_4/U55 to match row orient.
+Flip instance MAC_inst_4/U56 to match row orient.
+Flip instance MAC_inst_4/U57 to match row orient.
+Flip instance MAC_inst_4/U58 to match row orient.
+Flip instance MAC_inst_4/U59 to match row orient.
+Flip instance MAC_inst_4/U60 to match row orient.
+Flip instance MAC_inst_4/U61 to match row orient.
+Flip instance MAC_inst_4/U62 to match row orient.
+Flip instance MAC_inst_4/U63 to match row orient.
+Flip instance MAC_inst_4/U64 to match row orient.
+Flip instance MAC_inst_4/U65 to match row orient.
+Flip instance MAC_inst_4/U66 to match row orient.
+Flip instance MAC_inst_4/U67 to match row orient.
+Flip instance MAC_inst_4/U68 to match row orient.
+Flip instance MAC_inst_4/U69 to match row orient.
+Flip instance MAC_inst_4/U70 to match row orient.
+Flip instance MAC_inst_4/U71 to match row orient.
+Flip instance MAC_inst_4/U72 to match row orient.
+Flip instance MAC_inst_4/U73 to match row orient.
+Flip instance MAC_inst_4/U74 to match row orient.
+Flip instance MAC_inst_4/U75 to match row orient.
+Flip instance MAC_inst_4/U76 to match row orient.
+Flip instance MAC_inst_4/U77 to match row orient.
+Flip instance MAC_inst_4/U78 to match row orient.
+Flip instance MAC_inst_4/U79 to match row orient.
+Flip instance MAC_inst_4/U80 to match row orient.
+Flip instance MAC_inst_4/U81 to match row orient.
+Flip instance MAC_inst_4/U83 to match row orient.
+Flip instance MAC_inst_4/U84 to match row orient.
+Flip instance MAC_inst_4/U85 to match row orient.
+Flip instance MAC_inst_4/U86 to match row orient.
+Flip instance MAC_inst_4/U87 to match row orient.
+Flip instance MAC_inst_4/U88 to match row orient.
+Flip instance MAC_inst_4/U89 to match row orient.
+Flip instance MAC_inst_4/U90 to match row orient.
+Flip instance MAC_inst_4/U91 to match row orient.
+Flip instance MAC_inst_4/U92 to match row orient.
+Flip instance MAC_inst_4/U93 to match row orient.
+Flip instance MAC_inst_4/U94 to match row orient.
+Flip instance MAC_inst_4/U95 to match row orient.
+Flip instance MAC_inst_4/U96 to match row orient.
+Flip instance MAC_inst_4/U97 to match row orient.
+Flip instance MAC_inst_4/U98 to match row orient.
+Flip instance MAC_inst_4/U99 to match row orient.
+Flip instance MAC_inst_4/U100 to match row orient.
+Flip instance MAC_inst_4/U101 to match row orient.
+Flip instance MAC_inst_4/U102 to match row orient.
+Flip instance MAC_inst_4/U103 to match row orient.
+Flip instance MAC_inst_4/U104 to match row orient.
+Flip instance MAC_inst_4/U105 to match row orient.
+Flip instance MAC_inst_4/U106 to match row orient.
+Flip instance MAC_inst_4/U107 to match row orient.
+Flip instance MAC_inst_4/U108 to match row orient.
+Flip instance MAC_inst_4/U109 to match row orient.
+Flip instance MAC_inst_4/U110 to match row orient.
+Flip instance MAC_inst_4/U111 to match row orient.
+Flip instance MAC_inst_4/U112 to match row orient.
+Flip instance MAC_inst_4/U113 to match row orient.
+Flip instance MAC_inst_4/U114 to match row orient.
+Flip instance MAC_inst_4/U115 to match row orient.
+Flip instance MAC_inst_4/U116 to match row orient.
+<CMD> flipModule MAC_inst_4 Y
+<CMD> setObjFPlanBox Module MAC_inst_4 52.751 29.716 96.261 59.116
+<CMD> setObjFPlanBox Module MAC_inst_4 55.72 40.8925 99.23 70.2925
+<CMD> deselectAll
+<CMD> selectObject Module CONFIG_inst
+<CMD> setObjFPlanBox Module CONFIG_inst 85.0035 36.061 133.0735 69.661
+<CMD> selectModule CONFIG_inst
+**ERROR: Design must be placed before running "hiliteModuleNet"
+**ERROR: (ENCQTF-4044):	Error happens when execute 'RdaObjMenu::hiInNet 0x7f13fe30b340' with error message: 'Design must be placed before running "hiliteModuleNet"'.This is probably an inner GUI action error.Use direct TCL command instead of GUI interactive.
+<CMD> setObjFPlanBox Module CONFIG_inst 83.7435 40.0335 131.8135 73.6335
+<CMD> flipModule CONFIG_inst X
+Flip instance CONFIG_inst/h_0_reg_7_ to match row orient.
+Flip instance CONFIG_inst/h_1_reg_7_ to match row orient.
+Flip instance CONFIG_inst/h_2_reg_7_ to match row orient.
+Flip instance CONFIG_inst/h_3_reg_7_ to match row orient.
+Flip instance CONFIG_inst/h_4_reg_7_ to match row orient.
+Flip instance CONFIG_inst/h_5_reg_7_ to match row orient.
+Flip instance CONFIG_inst/h_6_reg_7_ to match row orient.
+Flip instance CONFIG_inst/h_7_reg_7_ to match row orient.
+Flip instance CONFIG_inst/h_8_reg_7_ to match row orient.
+Flip instance CONFIG_inst/h_9_reg_7_ to match row orient.
+Flip instance CONFIG_inst/h_10_reg_7_ to match row orient.
+Flip instance CONFIG_inst/h_11_reg_7_ to match row orient.
+Flip instance CONFIG_inst/h_12_reg_7_ to match row orient.
+Flip instance CONFIG_inst/h_13_reg_7_ to match row orient.
+Flip instance CONFIG_inst/h_14_reg_7_ to match row orient.
+Flip instance CONFIG_inst/h_0_reg_6_ to match row orient.
+Flip instance CONFIG_inst/h_1_reg_6_ to match row orient.
+Flip instance CONFIG_inst/h_2_reg_6_ to match row orient.
+Flip instance CONFIG_inst/h_3_reg_6_ to match row orient.
+Flip instance CONFIG_inst/h_4_reg_6_ to match row orient.
+Flip instance CONFIG_inst/h_5_reg_6_ to match row orient.
+Flip instance CONFIG_inst/h_6_reg_6_ to match row orient.
+Flip instance CONFIG_inst/h_7_reg_6_ to match row orient.
+Flip instance CONFIG_inst/h_8_reg_6_ to match row orient.
+Flip instance CONFIG_inst/h_9_reg_6_ to match row orient.
+Flip instance CONFIG_inst/h_10_reg_6_ to match row orient.
+Flip instance CONFIG_inst/h_11_reg_6_ to match row orient.
+Flip instance CONFIG_inst/h_12_reg_6_ to match row orient.
+Flip instance CONFIG_inst/h_13_reg_6_ to match row orient.
+Flip instance CONFIG_inst/h_14_reg_6_ to match row orient.
+Flip instance CONFIG_inst/h_0_reg_5_ to match row orient.
+Flip instance CONFIG_inst/h_1_reg_5_ to match row orient.
+Flip instance CONFIG_inst/h_2_reg_5_ to match row orient.
+Flip instance CONFIG_inst/h_3_reg_5_ to match row orient.
+Flip instance CONFIG_inst/h_4_reg_5_ to match row orient.
+Flip instance CONFIG_inst/h_5_reg_5_ to match row orient.
+Flip instance CONFIG_inst/h_6_reg_5_ to match row orient.
+Flip instance CONFIG_inst/h_7_reg_5_ to match row orient.
+Flip instance CONFIG_inst/h_8_reg_5_ to match row orient.
+Flip instance CONFIG_inst/h_9_reg_5_ to match row orient.
+Flip instance CONFIG_inst/h_10_reg_5_ to match row orient.
+Flip instance CONFIG_inst/h_11_reg_5_ to match row orient.
+Flip instance CONFIG_inst/h_12_reg_5_ to match row orient.
+Flip instance CONFIG_inst/h_13_reg_5_ to match row orient.
+Flip instance CONFIG_inst/h_14_reg_5_ to match row orient.
+Flip instance CONFIG_inst/h_0_reg_4_ to match row orient.
+Flip instance CONFIG_inst/h_1_reg_4_ to match row orient.
+Flip instance CONFIG_inst/h_2_reg_4_ to match row orient.
+Flip instance CONFIG_inst/h_3_reg_4_ to match row orient.
+Flip instance CONFIG_inst/h_4_reg_4_ to match row orient.
+Flip instance CONFIG_inst/h_5_reg_4_ to match row orient.
+Flip instance CONFIG_inst/h_6_reg_4_ to match row orient.
+Flip instance CONFIG_inst/h_7_reg_4_ to match row orient.
+Flip instance CONFIG_inst/h_8_reg_4_ to match row orient.
+Flip instance CONFIG_inst/h_9_reg_4_ to match row orient.
+Flip instance CONFIG_inst/h_10_reg_4_ to match row orient.
+Flip instance CONFIG_inst/h_11_reg_4_ to match row orient.
+Flip instance CONFIG_inst/h_12_reg_4_ to match row orient.
+Flip instance CONFIG_inst/h_13_reg_4_ to match row orient.
+Flip instance CONFIG_inst/h_14_reg_4_ to match row orient.
+Flip instance CONFIG_inst/h_0_reg_3_ to match row orient.
+Flip instance CONFIG_inst/h_1_reg_3_ to match row orient.
+Flip instance CONFIG_inst/h_2_reg_3_ to match row orient.
+Flip instance CONFIG_inst/h_3_reg_3_ to match row orient.
+Flip instance CONFIG_inst/h_4_reg_3_ to match row orient.
+Flip instance CONFIG_inst/h_5_reg_3_ to match row orient.
+Flip instance CONFIG_inst/h_6_reg_3_ to match row orient.
+Flip instance CONFIG_inst/h_7_reg_3_ to match row orient.
+Flip instance CONFIG_inst/h_8_reg_3_ to match row orient.
+Flip instance CONFIG_inst/h_9_reg_3_ to match row orient.
+Flip instance CONFIG_inst/h_10_reg_3_ to match row orient.
+Flip instance CONFIG_inst/h_11_reg_3_ to match row orient.
+Flip instance CONFIG_inst/h_12_reg_3_ to match row orient.
+Flip instance CONFIG_inst/h_13_reg_3_ to match row orient.
+Flip instance CONFIG_inst/h_14_reg_3_ to match row orient.
+Flip instance CONFIG_inst/h_0_reg_2_ to match row orient.
+Flip instance CONFIG_inst/h_1_reg_2_ to match row orient.
+Flip instance CONFIG_inst/h_2_reg_2_ to match row orient.
+Flip instance CONFIG_inst/h_3_reg_2_ to match row orient.
+Flip instance CONFIG_inst/h_4_reg_2_ to match row orient.
+Flip instance CONFIG_inst/h_5_reg_2_ to match row orient.
+Flip instance CONFIG_inst/h_6_reg_2_ to match row orient.
+Flip instance CONFIG_inst/h_7_reg_2_ to match row orient.
+Flip instance CONFIG_inst/h_8_reg_2_ to match row orient.
+Flip instance CONFIG_inst/h_9_reg_2_ to match row orient.
+Flip instance CONFIG_inst/h_10_reg_2_ to match row orient.
+Flip instance CONFIG_inst/h_11_reg_2_ to match row orient.
+Flip instance CONFIG_inst/h_12_reg_2_ to match row orient.
+Flip instance CONFIG_inst/h_13_reg_2_ to match row orient.
+Flip instance CONFIG_inst/h_14_reg_2_ to match row orient.
+Flip instance CONFIG_inst/h_0_reg_1_ to match row orient.
+Flip instance CONFIG_inst/h_1_reg_1_ to match row orient.
+Flip instance CONFIG_inst/h_2_reg_1_ to match row orient.
+Flip instance CONFIG_inst/h_3_reg_1_ to match row orient.
+Flip instance CONFIG_inst/h_4_reg_1_ to match row orient.
+Flip instance CONFIG_inst/h_5_reg_1_ to match row orient.
+Flip instance CONFIG_inst/h_6_reg_1_ to match row orient.
+Flip instance CONFIG_inst/h_7_reg_1_ to match row orient.
+Flip instance CONFIG_inst/h_8_reg_1_ to match row orient.
+Flip instance CONFIG_inst/h_9_reg_1_ to match row orient.
+Flip instance CONFIG_inst/h_10_reg_1_ to match row orient.
+Flip instance CONFIG_inst/h_11_reg_1_ to match row orient.
+Flip instance CONFIG_inst/h_12_reg_1_ to match row orient.
+Flip instance CONFIG_inst/h_13_reg_1_ to match row orient.
+Flip instance CONFIG_inst/h_14_reg_1_ to match row orient.
+Flip instance CONFIG_inst/h_0_reg_0_ to match row orient.
+Flip instance CONFIG_inst/h_1_reg_0_ to match row orient.
+Flip instance CONFIG_inst/h_2_reg_0_ to match row orient.
+Flip instance CONFIG_inst/h_3_reg_0_ to match row orient.
+Flip instance CONFIG_inst/h_4_reg_0_ to match row orient.
+Flip instance CONFIG_inst/h_5_reg_0_ to match row orient.
+Flip instance CONFIG_inst/h_6_reg_0_ to match row orient.
+Flip instance CONFIG_inst/h_7_reg_0_ to match row orient.
+Flip instance CONFIG_inst/h_8_reg_0_ to match row orient.
+Flip instance CONFIG_inst/h_9_reg_0_ to match row orient.
+Flip instance CONFIG_inst/h_10_reg_0_ to match row orient.
+Flip instance CONFIG_inst/h_11_reg_0_ to match row orient.
+Flip instance CONFIG_inst/h_12_reg_0_ to match row orient.
+Flip instance CONFIG_inst/h_13_reg_0_ to match row orient.
+Flip instance CONFIG_inst/h_14_reg_0_ to match row orient.
+Flip instance CONFIG_inst/h_15_reg_7_ to match row orient.
+Flip instance CONFIG_inst/h_15_reg_6_ to match row orient.
+Flip instance CONFIG_inst/h_15_reg_5_ to match row orient.
+Flip instance CONFIG_inst/h_15_reg_4_ to match row orient.
+Flip instance CONFIG_inst/h_15_reg_3_ to match row orient.
+Flip instance CONFIG_inst/tap_num_reg_3_ to match row orient.
+Flip instance CONFIG_inst/h_15_reg_2_ to match row orient.
+Flip instance CONFIG_inst/tap_num_reg_2_ to match row orient.
+Flip instance CONFIG_inst/h_15_reg_1_ to match row orient.
+Flip instance CONFIG_inst/tap_num_reg_1_ to match row orient.
+Flip instance CONFIG_inst/h_15_reg_0_ to match row orient.
+Flip instance CONFIG_inst/tap_num_reg_0_ to match row orient.
+Flip instance CONFIG_inst/U6 to match row orient.
+Flip instance CONFIG_inst/U7 to match row orient.
+Flip instance CONFIG_inst/U8 to match row orient.
+Flip instance CONFIG_inst/U9 to match row orient.
+Flip instance CONFIG_inst/U10 to match row orient.
+Flip instance CONFIG_inst/U11 to match row orient.
+Flip instance CONFIG_inst/U12 to match row orient.
+Flip instance CONFIG_inst/U18 to match row orient.
+Flip instance CONFIG_inst/U19 to match row orient.
+Flip instance CONFIG_inst/U20 to match row orient.
+Flip instance CONFIG_inst/U21 to match row orient.
+Flip instance CONFIG_inst/U22 to match row orient.
+Flip instance CONFIG_inst/U23 to match row orient.
+Flip instance CONFIG_inst/U24 to match row orient.
+Flip instance CONFIG_inst/U25 to match row orient.
+Flip instance CONFIG_inst/U26 to match row orient.
+Flip instance CONFIG_inst/U27 to match row orient.
+Flip instance CONFIG_inst/U28 to match row orient.
+Flip instance CONFIG_inst/U29 to match row orient.
+Flip instance CONFIG_inst/U30 to match row orient.
+Flip instance CONFIG_inst/U31 to match row orient.
+Flip instance CONFIG_inst/U32 to match row orient.
+Flip instance CONFIG_inst/U33 to match row orient.
+Flip instance CONFIG_inst/U34 to match row orient.
+Flip instance CONFIG_inst/U35 to match row orient.
+Flip instance CONFIG_inst/U36 to match row orient.
+Flip instance CONFIG_inst/U37 to match row orient.
+Flip instance CONFIG_inst/U38 to match row orient.
+Flip instance CONFIG_inst/U39 to match row orient.
+Flip instance CONFIG_inst/U40 to match row orient.
+Flip instance CONFIG_inst/U41 to match row orient.
+Flip instance CONFIG_inst/U42 to match row orient.
+Flip instance CONFIG_inst/U43 to match row orient.
+Flip instance CONFIG_inst/U44 to match row orient.
+Flip instance CONFIG_inst/U45 to match row orient.
+Flip instance CONFIG_inst/U46 to match row orient.
+Flip instance CONFIG_inst/U47 to match row orient.
+Flip instance CONFIG_inst/U48 to match row orient.
+Flip instance CONFIG_inst/U49 to match row orient.
+Flip instance CONFIG_inst/U50 to match row orient.
+Flip instance CONFIG_inst/U51 to match row orient.
+Flip instance CONFIG_inst/U52 to match row orient.
+Flip instance CONFIG_inst/U53 to match row orient.
+Flip instance CONFIG_inst/U54 to match row orient.
+Flip instance CONFIG_inst/U55 to match row orient.
+Flip instance CONFIG_inst/U56 to match row orient.
+Flip instance CONFIG_inst/U57 to match row orient.
+Flip instance CONFIG_inst/U58 to match row orient.
+Flip instance CONFIG_inst/U59 to match row orient.
+Flip instance CONFIG_inst/U60 to match row orient.
+Flip instance CONFIG_inst/U61 to match row orient.
+Flip instance CONFIG_inst/U62 to match row orient.
+Flip instance CONFIG_inst/U63 to match row orient.
+Flip instance CONFIG_inst/U64 to match row orient.
+Flip instance CONFIG_inst/U65 to match row orient.
+Flip instance CONFIG_inst/U66 to match row orient.
+Flip instance CONFIG_inst/U67 to match row orient.
+Flip instance CONFIG_inst/U68 to match row orient.
+Flip instance CONFIG_inst/U69 to match row orient.
+Flip instance CONFIG_inst/U70 to match row orient.
+Flip instance CONFIG_inst/U71 to match row orient.
+Flip instance CONFIG_inst/U72 to match row orient.
+Flip instance CONFIG_inst/U73 to match row orient.
+Flip instance CONFIG_inst/U74 to match row orient.
+Flip instance CONFIG_inst/U75 to match row orient.
+Flip instance CONFIG_inst/U76 to match row orient.
+Flip instance CONFIG_inst/U77 to match row orient.
+Flip instance CONFIG_inst/U78 to match row orient.
+Flip instance CONFIG_inst/U79 to match row orient.
+Flip instance CONFIG_inst/U80 to match row orient.
+Flip instance CONFIG_inst/U81 to match row orient.
+Flip instance CONFIG_inst/U82 to match row orient.
+Flip instance CONFIG_inst/U83 to match row orient.
+Flip instance CONFIG_inst/U84 to match row orient.
+Flip instance CONFIG_inst/U85 to match row orient.
+Flip instance CONFIG_inst/U86 to match row orient.
+Flip instance CONFIG_inst/U87 to match row orient.
+Flip instance CONFIG_inst/U88 to match row orient.
+Flip instance CONFIG_inst/U89 to match row orient.
+Flip instance CONFIG_inst/U90 to match row orient.
+Flip instance CONFIG_inst/U91 to match row orient.
+Flip instance CONFIG_inst/U92 to match row orient.
+Flip instance CONFIG_inst/U93 to match row orient.
+Flip instance CONFIG_inst/U94 to match row orient.
+Flip instance CONFIG_inst/U95 to match row orient.
+Flip instance CONFIG_inst/U96 to match row orient.
+Flip instance CONFIG_inst/U97 to match row orient.
+Flip instance CONFIG_inst/U98 to match row orient.
+Flip instance CONFIG_inst/U99 to match row orient.
+Flip instance CONFIG_inst/U100 to match row orient.
+Flip instance CONFIG_inst/U101 to match row orient.
+Flip instance CONFIG_inst/U102 to match row orient.
+Flip instance CONFIG_inst/U103 to match row orient.
+Flip instance CONFIG_inst/U104 to match row orient.
+Flip instance CONFIG_inst/U105 to match row orient.
+Flip instance CONFIG_inst/U106 to match row orient.
+Flip instance CONFIG_inst/U107 to match row orient.
+Flip instance CONFIG_inst/U108 to match row orient.
+Flip instance CONFIG_inst/U109 to match row orient.
+Flip instance CONFIG_inst/U110 to match row orient.
+Flip instance CONFIG_inst/U111 to match row orient.
+Flip instance CONFIG_inst/U112 to match row orient.
+Flip instance CONFIG_inst/U113 to match row orient.
+Flip instance CONFIG_inst/U114 to match row orient.
+Flip instance CONFIG_inst/U115 to match row orient.
+Flip instance CONFIG_inst/U116 to match row orient.
+Flip instance CONFIG_inst/U117 to match row orient.
+Flip instance CONFIG_inst/U118 to match row orient.
+Flip instance CONFIG_inst/U119 to match row orient.
+Flip instance CONFIG_inst/U120 to match row orient.
+Flip instance CONFIG_inst/U121 to match row orient.
+Flip instance CONFIG_inst/U122 to match row orient.
+Flip instance CONFIG_inst/U123 to match row orient.
+Flip instance CONFIG_inst/U124 to match row orient.
+Flip instance CONFIG_inst/U125 to match row orient.
+Flip instance CONFIG_inst/U126 to match row orient.
+Flip instance CONFIG_inst/U127 to match row orient.
+Flip instance CONFIG_inst/U128 to match row orient.
+Flip instance CONFIG_inst/U129 to match row orient.
+Flip instance CONFIG_inst/U130 to match row orient.
+Flip instance CONFIG_inst/U131 to match row orient.
+Flip instance CONFIG_inst/U132 to match row orient.
+Flip instance CONFIG_inst/U133 to match row orient.
+Flip instance CONFIG_inst/U134 to match row orient.
+Flip instance CONFIG_inst/U135 to match row orient.
+Flip instance CONFIG_inst/U136 to match row orient.
+Flip instance CONFIG_inst/U137 to match row orient.
+Flip instance CONFIG_inst/U138 to match row orient.
+Flip instance CONFIG_inst/U139 to match row orient.
+Flip instance CONFIG_inst/U140 to match row orient.
+Flip instance CONFIG_inst/U141 to match row orient.
+Flip instance CONFIG_inst/U142 to match row orient.
+Flip instance CONFIG_inst/U143 to match row orient.
+Flip instance CONFIG_inst/U144 to match row orient.
+Flip instance CONFIG_inst/U145 to match row orient.
+Flip instance CONFIG_inst/U146 to match row orient.
+Flip instance CONFIG_inst/U147 to match row orient.
+Flip instance CONFIG_inst/U148 to match row orient.
+Flip instance CONFIG_inst/U149 to match row orient.
+Flip instance CONFIG_inst/U150 to match row orient.
+Flip instance CONFIG_inst/U151 to match row orient.
+Flip instance CONFIG_inst/U152 to match row orient.
+Flip instance CONFIG_inst/U153 to match row orient.
+Flip instance CONFIG_inst/U154 to match row orient.
+Flip instance CONFIG_inst/U155 to match row orient.
+Flip instance CONFIG_inst/U156 to match row orient.
+Flip instance CONFIG_inst/U157 to match row orient.
+Flip instance CONFIG_inst/U162 to match row orient.
+Flip instance CONFIG_inst/U163 to match row orient.
+Flip instance CONFIG_inst/U164 to match row orient.
+Flip instance CONFIG_inst/U165 to match row orient.
+Flip instance CONFIG_inst/U166 to match row orient.
+Flip instance CONFIG_inst/U3 to match row orient.
+Flip instance CONFIG_inst/U4 to match row orient.
+Flip instance CONFIG_inst/U5 to match row orient.
+Flip instance CONFIG_inst/U13 to match row orient.
+<CMD> flipModule CONFIG_inst Y
+<CMD> setObjFPlanBox Module CONFIG_inst 91.6985 23.539 139.7685 57.139
+<CMD> flipModule CONFIG_inst Y
+<CMD> setObjFPlanBox Module CONFIG_inst 89.2655 19.343 137.3355 52.943
+<CMD> flipOrRotateObject -rotate R90
+<CMD> flipOrRotateObject -rotate R90
+<CMD> setObjFPlanBox Module CONFIG_inst 89.564 20.5475 137.634 54.1475
+<CMD> flipOrRotateObject -rotate R90
+<CMD> flipOrRotateObject -rotate R90
+<CMD> flipOrRotateObject -rotate R90
+<CMD> flipOrRotateObject -rotate R90
+<CMD> flipOrRotateObject -rotate R90
+<CMD> setObjFPlanBox Module CONFIG_inst 86.854 22.3925 120.454 70.4625
+<CMD> setObjFPlanBox Module CONFIG_inst 101.9885 15.4385 135.6185 63.0385
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_4
+<CMD> setObjFPlanBox Module MAC_inst_4 54.6155 42.47 98.1255 71.87
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_3
+<CMD> setObjFPlanBox Module MAC_inst_3 7.3175 42.42 50.8275 71.82
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_4
+<CMD> setObjFPlanBox Module MAC_inst_4 52.0255 37.9385 95.5355 67.3385
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_3
+<CMD> setObjFPlanBox Module MAC_inst_3 7.0145 38.07 50.5245 67.47
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_4
+<CMD> deselectAll
+<CMD> selectObject Module CONFIG_inst
+<CMD> setObjFPlanBox Module CONFIG_inst 97.2845 12.92 130.9145 60.52
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_4
+<CMD> setObjFPlanBox Module MAC_inst_4 51.6645 38.3515 95.1745 67.7515
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 0.544258373206 0.6 6.08 6.02 6.08 6.02
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 0.55 0.599991 6.08 6.02 6.08 6.02
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 0.5 0.599991 6.08 6.02 6.08 6.02
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 0.489111447537 0.599972 6.08 6.02 6.08 6.02
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_2
+<CMD> uiSetTool move
+<CMD> getIoFlowFlag
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 0.51 0.59996 6.08 6.02 6.08 6.02
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+**WARN: (ENCFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> setIoFlowFlag 0
+<CMD> floorPlan -site FreePDK45_38x28_10R_NP_162NW_34O -r 0.489092461765 0.599948 6.08 6.02 6.08 6.02
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+<CMD> uiSetTool select
+<CMD> getIoFlowFlag
+<CMD> fit
+<CMD> saveDesign FIR.enc
+Writing Netlist "FIR.enc.dat/FIR.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file FIR.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=539.5M) ***
+Writing DEF file 'FIR.enc.dat/FIR.def.gz', current time is Tue May 15 21:33:27 2018 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'FIR.enc.dat/FIR.def.gz' is written, current time is Tue May 15 21:33:27 2018 ...
+Copying Timing Library...
+Copying LEF file...
+Copying IO file...
+Copying Constraints file(s) ...
+Modifying Mode File...
+Modifying View File...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_fast.lib...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/celtic/fast.cdb...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/celtic/slow.cdb...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/best.captbl...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/best.tch...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/worst.captbl...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/worst.tch...
+rc_best rc_worst
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -all
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -all
+<CMD> globalNetConnect VDD -type tiehi
+<CMD> globalNetConnect VSS -type tielo
+<CMD> saveDesign FIR.enc
+Writing Netlist "FIR.enc.dat.tmp/FIR.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file FIR.enc.dat.tmp/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=542.7M) ***
+Writing DEF file 'FIR.enc.dat.tmp/FIR.def.gz', current time is Tue May 15 21:34:53 2018 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'FIR.enc.dat.tmp/FIR.def.gz' is written, current time is Tue May 15 21:34:53 2018 ...
+Copying Timing Library...
+Copying LEF file...
+Copying IO file...
+Copying Constraints file(s) ...
+Modifying Mode File...
+Modifying View File...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_fast.lib...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/celtic/fast.cdb...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/celtic/slow.cdb...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/best.captbl...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/best.tch...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/worst.captbl...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/worst.tch...
+rc_best rc_worst
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> set sprCreateIeRingNets {}
+<CMD> set sprCreateIeRingLayers {}
+<CMD> set sprCreateIeRingWidth 1.0
+<CMD> set sprCreateIeRingSpacing 1.0
+<CMD> set sprCreateIeRingOffset 1.0
+<CMD> set sprCreateIeRingThreshold 1.0
+<CMD> set sprCreateIeRingJogDistance 1.0
+<CMD> addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -center 1 -stacked_via_top_layer metal10 -type core_rings -jog_distance 0.095 -threshold 0.095 -nets {VSS VDD} -follow core -stacked_via_bottom_layer metal1 -layer {bottom metal9 top metal9 right metal8 left metal8} -width 1.5 -spacing 0.9 -offset 0.095
+
+The power planner created 8 wires.
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 546.5M) ***
+<CMD> addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -center 1 -stacked_via_top_layer metal10 -type core_rings -jog_distance 0.095 -threshold 0.095 -nets {VSS VDD} -follow core -stacked_via_bottom_layer metal1 -layer {bottom metal9 top metal9 right metal8 left metal8} -width 1.5 -spacing 0.9 -offset 0.095
+
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 546.5M) ***
+<CMD> set sprCreateIeStripeNets {}
+<CMD> set sprCreateIeStripeLayers {}
+<CMD> set sprCreateIeStripeWidth 10.0
+<CMD> set sprCreateIeStripeSpacing 2.0
+<CMD> set sprCreateIeStripeThreshold 1.0
+<CMD> addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -center 1 -stacked_via_top_layer metal10 -type core_rings -jog_distance 0.095 -threshold 0.095 -nets {VSS VDD} -follow core -stacked_via_bottom_layer metal1 -layer {bottom metal9 top metal9 right metal10 left metal10} -width 1.5 -spacing 0.9 -offset 0.095
+
+**WARN: (ENCPP-532):	ViaGen Warning: top layer and bottom layer have same direction but only orthogonal via is allowed between layer: metal10 & metal8 at (3.49, 3.46) (4.99, 71.58)
+**WARN: (ENCPP-532):	ViaGen Warning: top layer and bottom layer have same direction but only orthogonal via is allowed between layer: metal10 & metal8 at (135.89, 3.46) (137.39, 71.58)
+**WARN: (ENCPP-532):	ViaGen Warning: top layer and bottom layer have same direction but only orthogonal via is allowed between layer: metal10 & metal8 at (1.09, 1.06) (2.59, 73.98)
+**WARN: (ENCPP-532):	ViaGen Warning: top layer and bottom layer have same direction but only orthogonal via is allowed between layer: metal10 & metal8 at (138.29, 1.06) (139.79, 73.98)
+The power planner created 4 wires.
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 549.1M) ***
+<CMD> addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -center 1 -stacked_via_top_layer metal10 -type core_rings -jog_distance 0.095 -threshold 0.095 -nets {VSS VDD} -follow core -stacked_via_bottom_layer metal1 -layer {bottom metal9 top metal9 right metal10 left metal10} -width 1.5 -spacing 0.9 -offset 0.095
+
+*** Ending Ring Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 549.1M) ***
+<CMD> addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit metal10 -max_same_layer_jog_length 1.6 -padcore_ring_bottom_layer_limit metal9 -number_of_sets 1 -skip_via_on_pin Standardcell -stacked_via_top_layer metal10 -padcore_ring_top_layer_limit metal10 -spacing 0.9 -xleft_offset 20 -merge_stripes_value 0.095 -layer metal10 -block_ring_bottom_layer_limit metal9 -width 1.25 -nets {VDD VSS} -stacked_via_bottom_layer metal1
+
+Starting stripe generation ...
+Non-Default setAddStripeOption Settings :
+  NONE
+Stripe generation is complete; vias are now being generated.
+The power planner created 2 wires.
+*** Ending Stripe Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 552.1M) ***
+<CMD> deselectAll
+<CMD> addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit metal10 -max_same_layer_jog_length 1.6 -padcore_ring_bottom_layer_limit metal9 -number_of_sets 4 -skip_via_on_pin Standardcell -stacked_via_top_layer metal10 -padcore_ring_top_layer_limit metal10 -spacing 0.9 -xleft_offset 20 -merge_stripes_value 0.095 -layer metal10 -block_ring_bottom_layer_limit metal9 -width 1.25 -nets {VDD VSS} -stacked_via_bottom_layer metal1
+
+Starting stripe generation ...
+Non-Default setAddStripeOption Settings :
+  NONE
+Stripe generation is complete; vias are now being generated.
+**WARN: (ENCPP-170):	The power planner failed to create a wire at (26.70, 1.06) (26.70, 73.98) because same wire already exists.
+**WARN: (ENCPP-170):	The power planner failed to create a wire at (28.85, 3.46) (28.85, 71.58) because same wire already exists.
+The power planner created 6 wires.
+*** Ending Stripe Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 552.1M) ***
+<CMD> addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit metal10 -max_same_layer_jog_length 1.6 -padcore_ring_bottom_layer_limit metal9 -number_of_sets 3 -skip_via_on_pin Standardcell -stacked_via_top_layer metal10 -padcore_ring_top_layer_limit metal10 -spacing 0.9 -xleft_offset 20 -merge_stripes_value 0.095 -layer metal10 -block_ring_bottom_layer_limit metal9 -width 1.25 -nets {VDD VSS} -stacked_via_bottom_layer metal1
+
+Starting stripe generation ...
+Non-Default setAddStripeOption Settings :
+  NONE
+Stripe generation is complete; vias are now being generated.
+**WARN: (ENCPP-170):	The power planner failed to create a wire at (26.70, 1.06) (26.70, 73.98) because same wire already exists.
+**WARN: (ENCPP-170):	The power planner failed to create a wire at (28.85, 3.46) (28.85, 71.58) because same wire already exists.
+The power planner created 4 wires.
+*** Ending Stripe Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 552.1M) ***
+<CMD> addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit metal10 -max_same_layer_jog_length 1.6 -padcore_ring_bottom_layer_limit metal9 -number_of_sets 1 -skip_via_on_pin Standardcell -stacked_via_top_layer metal10 -padcore_ring_top_layer_limit metal10 -spacing 0.9 -xleft_offset 20 -merge_stripes_value 0.095 -layer metal10 -block_ring_bottom_layer_limit metal9 -width 1.25 -nets {VDD VSS} -stacked_via_bottom_layer metal1
+
+Starting stripe generation ...
+Non-Default setAddStripeOption Settings :
+  NONE
+Stripe generation is complete; vias are now being generated.
+**WARN: (ENCPP-170):	The power planner failed to create a wire at (26.70, 1.06) (26.70, 73.98) because same wire already exists.
+**WARN: (ENCPP-170):	The power planner failed to create a wire at (28.85, 3.46) (28.85, 71.58) because same wire already exists.
+*** Ending Stripe Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 552.1M) ***
+<CMD> selectObject Module MAC_inst_4
+<CMD> deselectAll
+<CMD> selectWire 61.2150 1.0600 62.4650 73.9800 10 VDD
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_4
+<CMD> deselectAll
+<CMD> selectWire 131.4850 1.0600 132.7350 73.9800 10 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 131.4900 72.7300 132.7400 73.9800 10 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 133.6350 3.4600 134.8850 71.5800 10 VSS
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 133.6400 3.4600 134.8900 71.5800 10 VSS
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 98.5000 3.4600 99.7500 71.5800 10 VSS
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 96.3500 1.0600 97.6000 73.9800 10 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 80.9350 3.4600 82.1850 71.5800 10 VSS
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 78.7850 1.0600 80.0350 73.9800 10 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 63.3650 3.4600 64.6150 71.5800 10 VSS
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 61.2150 1.0600 62.4650 73.9800 10 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 28.2300 3.4600 29.4800 71.5800 10 VSS
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 26.0800 1.0600 27.3300 73.9800 10 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit metal10 -max_same_layer_jog_length 1.6 -padcore_ring_bottom_layer_limit metal9 -number_of_sets 3 -skip_via_on_pin Standardcell -stacked_via_top_layer metal10 -padcore_ring_top_layer_limit metal10 -spacing 0.9 -xleft_offset 20 -merge_stripes_value 0.095 -layer metal10 -block_ring_bottom_layer_limit metal9 -width 1.25 -nets {VDD VSS} -stacked_via_bottom_layer metal1
+
+Starting stripe generation ...
+Non-Default setAddStripeOption Settings :
+  NONE
+Stripe generation is complete; vias are now being generated.
+The power planner created 6 wires.
+*** Ending Stripe Generation (totcpu: 0:00:00.0,real: 0:00:00.0, mem: 552.1M) ***
+<CMD> selectWire 131.4900 1.0600 132.7400 73.9800 10 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 133.6400 3.4600 134.8900 71.5800 10 VSS
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 26.0800 1.0600 27.3300 73.9800 10 VDD
+<CMD> deleteSelectedFromFPlan
+<CMD> selectWire 28.2300 3.4600 29.4800 71.5800 10 VSS
+<CMD> deleteSelectedFromFPlan
+<CMD> saveDesign FIR.enc
+Writing Netlist "FIR.enc.dat.tmp/FIR.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file FIR.enc.dat.tmp/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=552.1M) ***
+Writing DEF file 'FIR.enc.dat.tmp/FIR.def.gz', current time is Tue May 15 21:54:18 2018 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'FIR.enc.dat.tmp/FIR.def.gz' is written, current time is Tue May 15 21:54:18 2018 ...
+Copying Timing Library...
+Copying LEF file...
+Copying IO file...
+Copying Constraints file(s) ...
+Modifying Mode File...
+Modifying View File...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_fast.lib...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/celtic/fast.cdb...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/celtic/slow.cdb...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/best.captbl...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/best.tch...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/worst.captbl...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/worst.tch...
+rc_best rc_worst
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> selectObject Module MAC_inst_4
+<CMD> deselectAll
+<CMD> selectObject Module MAC_inst_4
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+<CMD> setDrawView fplan
+<CMD> sroute -connect { corePin } -layerChangeRange { metal1 metal10 } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { metal1 metal10 } -nets { VDD VSS } -allowLayerChange 1 -targetViaLayerRange { metal1 metal10 }
+**WARN: (ENCSR-4058):	Sroute option: blockPinTarget should be used in conjunction with option: -connect blockPin. 
+*** Begin SPECIAL ROUTE on Tue May 15 21:57:22 2018 ***
+SPECIAL ROUTE ran on directory: /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout
+SPECIAL ROUTE ran on machine: EEX109 (Linux 2.6.32-696.18.7.el6.x86_64 Xeon 1.20Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSelectNet set to "VDD VSS"
+routeSpecial set to true
+srouteBottomLayerLimit set to 1
+srouteBottomTargetLayerLimit set to 1
+srouteConnectBlockPin set to false
+srouteConnectConverterPin set to false
+srouteConnectPadPin set to false
+srouteConnectStripe set to false
+srouteCrossoverViaBottomLayer set to 1
+srouteCrossoverViaTopLayer set to 10
+srouteFollowCorePinEnd set to 3
+srouteFollowPadPin set to false
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+srouteStopBlockPin set to "nearestTarget"
+srouteTopLayerLimit set to 10
+srouteTopTargetLayerLimit set to 10
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 1149.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+Read in 20 layers, 10 routing layers, 1 overlap layer
+Read in 134 macros, 35 used
+Read in 684 components
+  684 core components: 32 unplaced, 652 placed, 0 fixed
+Read in 21 physical pins
+  21 physical pins: 0 unplaced, 0 placed, 21 fixed
+Read in 3 logical pins
+Read in 24 nets
+Read in 2 special nets, 2 routed
+Read in 1389 terminals
+2 nets selected.
+
+Begin power routing ...
+**WARN: (ENCSR-469):	Instance CONFIG_inst/U10 is not placed within row, followpin rail may not be generated correctly for it.
+CPU time for FollowPin 0 seconds
+CPU time for FollowPin 0 seconds
+  Number of Core ports routed: 92
+  Number of Followpin connections: 46
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 1158.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 50 via definition ...
+ Updating DB with 21 io pins ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+
+sroute post-processing starts at Tue May 15 21:57:22 2018
+The viaGen is rebuilding shadow vias for net VSS.
+**WARN: (ENCPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer via8 at (80.93, 68.62) (82.18, 69.28)
+sroute post-processing ends at Tue May 15 21:57:22 2018
+
+sroute post-processing starts at Tue May 15 21:57:22 2018
+The viaGen is rebuilding shadow vias for net VDD.
+**WARN: (ENCPP-531):	ViaGen Warning: SPACING rule violation, no via created on layer via8 at (78.79, 5.76) (80.04, 6.42)
+sroute post-processing ends at Tue May 15 21:57:22 2018
+sroute: Total CPU time used = 0:0:0
+sroute: Total Real time used = 0:0:0
+sroute: Total Memory used = 10.30 megs
+sroute: Total Peak Memory used = 565.52 megs
+**WARN: (ENCTCM-125):	Option "-checkPinLayerForAccess" for command getPlaceMode is obsolete and will be ignored. It no longer has any effect and should be removed from your script.
+<CMD> setEndCapMode -reset
+<CMD> setEndCapMode -boundary_tap false
+**WARN: (ENCTCM-77):	Option "-routeAllowPowerGroundPin" for command getNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+**WARN: (ENCTCM-77):	Option "-routeAllowPowerGroundPin" for command getNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+<CMD> setPlaceMode -reset
+<CMD> setPlaceMode -congEffort auto -timingDriven 1 -modulePlan 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 0 -ignoreSpare 0 -placeIOPins 1 -moduleAwareSpare 0 -preserveRouting 0 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+<CMD> setMultiCpuUsage -localCpu 1 -cpuPerRemoteHost 1 -remoteHost 0 -keepLicense true
+Setting releaseMultiCpuLicenseMode to false.
+<CMD> setDistributeHost -local
+The timeout for a remote job to respond is 30 seconds.
+Submit command for task runs will be: local
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign
+*** Starting placeDesign default flow ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (ENCDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.1446 path_group
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 598.4M, InitMEM = 598.4M)
+AAE_INFO: Cdb files are: 
+ 	/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/celtic/slow.cdb
+	/afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/celtic/fast.cdb
+ 
+**WARN: (ENCESI-3311):	Pin A of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin A of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin A of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin A of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin A of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin A of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin A of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin A of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin B of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin B of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin B of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin B of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin B of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin B of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin B of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin B of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin Z of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin Z of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin Z of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (ENCESI-3311):	Pin Z of Cell XOR2_X2 for timing library NangateOpenCellLibrary has different voltage for the vivo between CDB(0.9) and timing library(0.95). This vivo will be ignored.
+**WARN: (EMS-63):	Message <ENCESI-3311> has exceeded the default message display limit of 20.
+To avoid this warning, increase the display limit per unique message by
+using the set_message -limit <number> command.
+The message limit can be removed by using the set_message -no_limit command.
+Note that setting a very large number using the set_message -limit command
+or removing the message limit using the set_message -no_limit command can
+significantly increase the log file size.
+To suppress a message, use the set_message -suppress command.
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=718.402 CPU=0:00:00.4 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:01.1  real=0:00:01.0  mem= 718.4M) ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+All-RC-Corners-Per-Net-In-Memory is turned ON...
+Updating netlist
+
+*summary: 153 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.1) ***
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+*** Starting "NanoPlace(TM) placement v#3 (mem=710.4M)" ...
+**WARN: (ENCTS-403):	Delay calculation was forced to extrapolate table data outside of the characterized range. In some cases, extrapolation can reduce the accuracy of the delay calculation. You can enable more detailed reporting of these cases by enabling the command 'setDelayCalMode -reportOutBound true'.
+Type 'man ENCTS-403' for more detail.
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:01.0 mem=710.4M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:01.1 mem=710.4M) ***
+Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+**WARN: (ENCSP-9042):	Scan chains were not defined, -ignoreScan option will be ignored.
+Define the scan chains before using this option.
+Type 'man ENCSP-9042' for more detail.
+#std cell=2215 (0 fixed + 2215 movable) #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=2768 #term=8647 #term/net=3.12, #fixedIo=21, #floatIo=0, #fixedPin=21, #floatPin=3
+stdCell: 2215 single + 0 double + 0 multi
+Total standard cell length = 3.4192 (mm), area = 0.0048 (mm^2)
+Average module density = 0.591.
+Density for the design = 0.591.
+       = stdcell_area 17996 sites (4787 um^2) / alloc_area 30465 sites (8104 um^2).
+Pin Density = 0.480.
+            = total # of pins 8647 / total Instance area 17996.
+
+=== lastAutoLevel = 8 
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 4.230e+03 (2.88e+03 1.35e+03)
+              Est.  stn bbox = 4.863e+03 (3.28e+03 1.58e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 715.9M
+Iteration  2: Total net bbox = 4.230e+03 (2.88e+03 1.35e+03)
+              Est.  stn bbox = 4.863e+03 (3.28e+03 1.58e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 715.9M
+Iteration  3: Total net bbox = 7.453e+03 (5.22e+03 2.23e+03)
+              Est.  stn bbox = 9.123e+03 (6.33e+03 2.79e+03)
+              cpu = 0:00:00.7 real = 0:00:01.0 mem = 715.9M
+Iteration  4: Total net bbox = 1.484e+04 (1.16e+04 3.22e+03)
+              Est.  stn bbox = 1.741e+04 (1.37e+04 3.72e+03)
+              cpu = 0:00:01.2 real = 0:00:01.0 mem = 716.9M
+Iteration  5: Total net bbox = 1.752e+04 (1.29e+04 4.59e+03)
+              Est.  stn bbox = 2.032e+04 (1.49e+04 5.39e+03)
+              cpu = 0:00:01.6 real = 0:00:02.0 mem = 717.9M
+Iteration  6: Total net bbox = 1.754e+04 (1.20e+04 5.55e+03)
+              Est.  stn bbox = 2.059e+04 (1.39e+04 6.64e+03)
+              cpu = 0:00:01.0 real = 0:00:01.0 mem = 717.9M
+Iteration  7: Total net bbox = 2.132e+04 (1.51e+04 6.23e+03)
+              Est.  stn bbox = 2.442e+04 (1.70e+04 7.38e+03)
+              cpu = 0:00:00.8 real = 0:00:01.0 mem = 720.9M
+Iteration  8: Total net bbox = 2.132e+04 (1.51e+04 6.23e+03)
+              Est.  stn bbox = 2.442e+04 (1.70e+04 7.38e+03)
+              cpu = 0:00:00.9 real = 0:00:01.0 mem = 720.9M
+Iteration  9: Total net bbox = 2.082e+04 (1.28e+04 8.02e+03)
+              Est.  stn bbox = 2.441e+04 (1.51e+04 9.32e+03)
+              cpu = 0:00:02.2 real = 0:00:02.0 mem = 720.9M
+Iteration 10: Total net bbox = 2.071e+04 (1.27e+04 8.02e+03)
+              Est.  stn bbox = 2.430e+04 (1.50e+04 9.31e+03)
+              cpu = 0:00:00.3 real = 0:00:01.0 mem = 720.9M
+Iteration 11: Total net bbox = 2.192e+04 (1.38e+04 8.16e+03)
+              Est.  stn bbox = 2.551e+04 (1.61e+04 9.46e+03)
+              cpu = 0:00:07.1 real = 0:00:07.0 mem = 720.9M
+Iteration 12: Total net bbox = 2.192e+04 (1.38e+04 8.16e+03)
+              Est.  stn bbox = 2.551e+04 (1.61e+04 9.46e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 720.9M
+Iteration 13: Total net bbox = 2.192e+04 (1.38e+04 8.16e+03)
+              Est.  stn bbox = 2.551e+04 (1.61e+04 9.46e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 720.9M
+*** cost = 2.192e+04 (1.38e+04 8.16e+03) (cpu for global=0:00:13.4) real=0:00:15.0***
+Info: 0 clock gating cells identified, 0 (on average) moved
+Core Placement runtime cpu: 0:00:12.3 real: 0:00:14.0
+*** Starting refinePlace (0:04:44 mem=686.0M) ***
+Total net length = 2.192e+04 (1.376e+04 8.165e+03) (ext = 7.174e+02)
+Move report: Detail placement moves 2215 insts, mean move: 0.71 um, max move: 49.82 um
+	Max move on inst (CONFIG_inst/U5): (80.06, 17.36) --> (34.58, 13.02)
+	Runtime: CPU: 0:00:00.2 REAL: 0:00:00.0 MEM: 686.0MB
+Summary Report:
+Instances move: 2215 (out of 2215 movable)
+Mean displacement: 0.71 um
+Max displacement: 49.82 um (Instance: CONFIG_inst/U5) (80.059, 17.357) -> (34.58, 13.02)
+	Length: 3 sites, height: 1 rows, site name: FreePDK45_38x28_10R_NP_162NW_34O, cell type: NAND2_X1
+Total net length = 2.073e+04 (1.242e+04 8.313e+03) (ext = 6.929e+02)
+Runtime: CPU: 0:00:00.2 REAL: 0:00:00.0 MEM: 686.0MB
+*** Finished refinePlace (0:04:44 mem=686.0M) ***
+Total net length = 2.067e+04 (1.240e+04 8.271e+03) (ext = 6.951e+02)
+*** End of Placement (cpu=0:00:15.6, real=0:00:16.0, mem=686.0M) ***
+default core: bins with density >  0.75 =    0 % ( 0 / 50 )
+Density distribution unevenness ratio = 3.538%
+*** Free Virtual Timing Model ...(mem=686.0M)
+Starting IO pin assignment...
+Completed IO pin assignment.
+Starting congestion repair ...
+*** Starting trialRoute (mem=686.0M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+Options:  -noPinGuide
+
+
+Phase 1a-1d Overflow: 0.00% H + 0.64% V (0:00:00.0 686.0M)
+
+Phase 1e-1f Overflow: 0.00% H + 0.18% V (0:00:00.0 686.0M)
+
+Phase 1l Overflow: 0.00% H + 1.10% V (0:00:00.1 694.0M)
+
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -5:	0	 0.00%	4	 0.10%
+ -4:	0	 0.00%	4	 0.10%
+ -3:	0	 0.00%	5	 0.13%
+ -2:	0	 0.00%	5	 0.13%
+ -1:	0	 0.00%	10	 0.26%
+--------------------------------------
+  0:	0	 0.00%	16	 0.41%
+  1:	0	 0.00%	18	 0.46%
+  2:	0	 0.00%	11	 0.28%
+  3:	0	 0.00%	5	 0.13%
+  4:	1	 0.03%	0	 0.00%
+  5:	3900	99.97%	3823	98.00%
+
+
+Total length: 3.102e+04um, number of vias: 15191
+M1(H) length: 8.249e+02um, number of vias: 8623
+M2(V) length: 1.526e+04um, number of vias: 6352
+M3(H) length: 1.415e+04um, number of vias: 172
+M4(V) length: 6.606e+02um, number of vias: 27
+M5(H) length: 4.511e+01um, number of vias: 17
+M6(V) length: 7.549e+01um, number of vias: 0
+M7(H) length: 0.000e+00um, number of vias: 0
+M8(V) length: 0.000e+00um, number of vias: 0
+M9(H) length: 0.000e+00um, number of vias: 0
+M10(V) length: 0.000e+00um
+
+Peak Memory Usage was 694.0M 
+*** Finished trialRoute (cpu=0:00:00.2 mem=694.0M) ***
+
+Local HotSpot Analysis: normalized max congestion hotspot area = 2.00, normalized total congestion hotspot area = 4.00 (area is in unit of 4 std-cell row bins)
+describeCongestion: hCong = 0.00 vCong = 0.00
+Trial Route Overflow 0.000000(H) 1.099436(V).
+Start repairing congestion with level 2.
+congRepair additional round: bin height 2 and width 2
+
+Iteration  8: Total net bbox = 1.893e+04 (1.20e+04 6.89e+03)
+              Est.  stn bbox = 2.241e+04 (1.43e+04 8.13e+03)
+              cpu = 0:00:03.8 real = 0:00:04.0 mem = 694.0M
+Iteration  9: Total net bbox = 2.088e+04 (1.28e+04 8.11e+03)
+              Est.  stn bbox = 2.434e+04 (1.50e+04 9.36e+03)
+              cpu = 0:00:02.8 real = 0:00:03.0 mem = 694.0M
+Iteration 10: Total net bbox = 2.060e+04 (1.26e+04 8.04e+03)
+              Est.  stn bbox = 2.404e+04 (1.48e+04 9.27e+03)
+              cpu = 0:00:00.4 real = 0:00:00.0 mem = 694.0M
+*** Starting refinePlace (0:04:51 mem=694.0M) ***
+Total net length = 2.165e+04 (1.350e+04 8.150e+03) (ext = 7.046e+02)
+Move report: Detail placement moves 2215 insts, mean move: 0.64 um, max move: 7.47 um
+	Max move on inst (CONFIG_inst/U5): (75.48, 16.02) --> (68.21, 15.82)
+	Runtime: CPU: 0:00:00.2 REAL: 0:00:00.0 MEM: 694.0MB
+Summary Report:
+Instances move: 2215 (out of 2215 movable)
+Mean displacement: 0.64 um
+Max displacement: 7.47 um (Instance: CONFIG_inst/U5) (75.48, 16.0235) -> (68.21, 15.82)
+	Length: 3 sites, height: 1 rows, site name: FreePDK45_38x28_10R_NP_162NW_34O, cell type: NAND2_X1
+Total net length = 2.040e+04 (1.207e+04 8.329e+03) (ext = 6.856e+02)
+Runtime: CPU: 0:00:00.2 REAL: 0:00:00.0 MEM: 694.0MB
+*** Finished refinePlace (0:04:51 mem=694.0M) ***
+Total net length = 2.034e+04 (1.204e+04 8.295e+03) (ext = 6.858e+02)
+*** Starting trialRoute (mem=694.0M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+Options:  -noPinGuide
+
+
+Phase 1a-1d Overflow: 0.00% H + 0.66% V (0:00:00.0 694.0M)
+
+Phase 1e-1f Overflow: 0.00% H + 0.08% V (0:00:00.0 694.0M)
+
+Phase 1l Overflow: 0.00% H + 0.92% V (0:00:00.1 694.0M)
+
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -5:	0	 0.00%	2	 0.05%
+ -4:	0	 0.00%	1	 0.03%
+ -3:	0	 0.00%	4	 0.10%
+ -2:	0	 0.00%	8	 0.21%
+ -1:	0	 0.00%	11	 0.28%
+--------------------------------------
+  0:	0	 0.00%	15	 0.38%
+  1:	0	 0.00%	18	 0.46%
+  2:	0	 0.00%	14	 0.36%
+  3:	0	 0.00%	3	 0.08%
+  4:	0	 0.00%	2	 0.05%
+  5:	3901	100.00%	3823	98.00%
+
+
+Total length: 2.632e+04um, number of vias: 15249
+M1(H) length: 1.134e+03um, number of vias: 8627
+M2(V) length: 1.141e+04um, number of vias: 6387
+M3(H) length: 1.271e+04um, number of vias: 195
+M4(V) length: 7.517e+02um, number of vias: 27
+M5(H) length: 2.512e+02um, number of vias: 13
+M6(V) length: 6.273e+01um, number of vias: 0
+M7(H) length: 0.000e+00um, number of vias: 0
+M8(V) length: 0.000e+00um, number of vias: 0
+M9(H) length: 0.000e+00um, number of vias: 0
+M10(V) length: 0.000e+00um
+
+Peak Memory Usage was 694.0M 
+*** Finished trialRoute (cpu=0:00:00.3 mem=694.0M) ***
+
+Local HotSpot Analysis: normalized max congestion hotspot area = 1.00, normalized total congestion hotspot area = 3.00 (area is in unit of 4 std-cell row bins)
+describeCongestion: hCong = 0.00 vCong = 0.00
+End of congRepair (cpu=0:00:07.7, real=0:00:08.0)
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0:25, real = 0: 0:26, mem = 686.0M **
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   ENCTS-403            1  Delay calculation was forced to extrapol...
+WARNING   ENCDC-1629           1  The default delay limit was set to %d. T...
+WARNING   ENCESI-3311       8760  Pin %s of Cell %s for timing library %s ...
+WARNING   ENCSP-9042           1  Scan chains were not defined, -ignoreSca...
+*** Message Summary: 8763 warning(s), 0 error(s)
+
+<CMD> setDrawView ameba
+<CMD> setDrawView place
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> saveDesign FIR.enc
+Writing Netlist "FIR.enc.dat.tmp/FIR.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file FIR.enc.dat.tmp/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=689.3M) ***
+Writing DEF file 'FIR.enc.dat.tmp/FIR.def.gz', current time is Tue May 15 22:07:19 2018 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'FIR.enc.dat.tmp/FIR.def.gz' is written, current time is Tue May 15 22:07:19 2018 ...
+Copying Timing Library...
+Copying LEF file...
+Copying IO file...
+Copying Constraints file(s) ...
+Modifying Mode File...
+Modifying View File...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_fast.lib...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/celtic/fast.cdb...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/celtic/slow.cdb...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/best.captbl...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/best.tch...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/worst.captbl...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/worst.tch...
+rc_best rc_worst
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> setExtractRCMode -engine preRoute
+<CMD> optDesign -preCTS -outDir reports/preCTSTimingReports
+GigaOpt running with 1 threads.
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 695.3M, totSessionCpu=0:05:40 **
+Added -handlePreroute to trialRouteMode
+*** optDesign -preCTS ***
+DRC Margin: user margin 0.0; extra margin 0.2
+Setup Target Slack: user slack 0; extra slack 0.1
+Hold Target Slack: user slack 0
+**WARN: (ENCOPT-3195):	Analysis mode has changed.
+Type 'man ENCOPT-3195' for more detail.
+Multi-VT timing optimization disabled based on library information.
+*** Starting trialRoute (mem=695.3M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+All nets are already routed correctly.
+*** Finishing trialRoute (mem=695.3M) ***
+
+Extraction called for design 'FIR' of instances=2215 and nets=2853 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man ENCEXT-3530' for more detail.
+PreRoute RC Extraction called for design FIR.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.10066 1.10066 
+Resistance Scaling Factor    : 1.34236 1.34236 
+Clock Cap. Scaling Factor    : 0.96023 0.96023 
+Clock Res. Scaling Factor    : 1.34236 1.34236 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 695.285M)
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=760.324 CPU=0:00:00.5 REAL=0:00:01.0)
+
+------------------------------------------------------------
+             Initial Summary                             
+------------------------------------------------------------
+
++--------------------+---------+
+|     Setup mode     |   all   |
++--------------------+---------+
+|           WNS (ns):| 35.103  |
+|           TNS (ns):|  0.000  |
+|    Violating Paths:|    0    |
+|          All Paths:|   508   |
++--------------------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      5 (5)       |   -0.202   |      5 (5)       |
+|   max_tran     |     5 (560)      |   -1.703   |     5 (560)      |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 59.071%
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:01, real = 0:00:01, mem = 726.2M, totSessionCpu=0:05:41 **
+** INFO : this run is activating placeOpt flow focusing on WNS only...
+*** Starting optimizing excluded clock nets MEM= 726.2M) ***
+*info: No excluded clock nets to be optimized.
+*** Finished optimizing excluded clock nets (CPU Time= 0:00:00.0  MEM= 726.2M) ***
+Info: 1 clock net  excluded from IPO operation.
+*info: There are 9 candidate Buffer cells
+*info: There are 6 candidate Inverter cells
+
+Netlist preparation processing... 
+Removed 0 instance
+*info: Marking 0 isolation instances dont touch
+*info: Marking 0 level shifter instances dont touch
+**optDesign ... cpu = 0:00:02, real = 0:00:02, mem = 808.7M, totSessionCpu=0:05:42 **
+Begin: GigaOpt high fanout net optimization
+Info: 1 clock net  excluded from IPO operation.
+End: GigaOpt high fanout net optimization
+Begin: GigaOpt DRV Optimization
+Info: 1 clock net  excluded from IPO operation.
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+|      max-tran     |      max-cap      |     max-fanout    |     max-length    |       |           |           |         |            |           |
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+|  nets   |  terms  |  nets   |  terms  |  nets   |  terms  |  nets   |  terms  |  WNS  |  #Buffer  |  #Resize  | Density |    Real    |    Mem    |
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+|    12   |   631   |     9   |      9  |     0   |     0   |     0   |     0   | 35.10 |          0|          0|  59.07  |            |           |
+|     0   |     0   |     0   |      0  |     0   |     0   |     0   |     0   | 37.48 |          9|          9|  59.23  |   0:00:01.0|     946.5M|
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+
+*** Finish DRV Fixing (cpu=0:00:00.8 real=0:00:01.0 mem=946.5M) ***
+
+End: GigaOpt DRV Optimization
+**optDesign ... cpu = 0:00:03, real = 0:00:03, mem = 832.0M, totSessionCpu=0:05:43 **
+Begin: GigaOpt Global Optimization
+Info: 1 clock net  excluded from IPO operation.
+*info: 1 clock net excluded
+*info: 2 special nets excluded.
+*info: 85 no-driver nets excluded.
+** GigaOpt Global Opt WNS Slack 0.000  TNS Slack 0.000 
++--------+--------+----------+------------+--------+-------------+---------+---------------------------------------+
+|  WNS   |  TNS   | Density  |    Real    |  Mem   | Worst View  |Pathgroup|               End Point               |
++--------+--------+----------+------------+--------+-------------+---------+---------------------------------------+
+|   0.000|   0.000|    59.23%|   0:00:00.0|  946.5M|analysis_slow|       NA| NA                                    |
++--------+--------+----------+------------+--------+-------------+---------+---------------------------------------+
+
+*** Finish pre-CTS Global Setup Fixing (cpu=0:00:00.0 real=0:00:00.0 mem=946.5M) ***
+
+*** Finish pre-CTS Setup Fixing (cpu=0:00:00.0 real=0:00:00.0 mem=946.5M) ***
+** GigaOpt Global Opt End WNS Slack 0.000  TNS Slack 0.000 
+End: GigaOpt Global Optimization
+**optDesign ... cpu = 0:00:04, real = 0:00:04, mem = 830.0M, totSessionCpu=0:05:44 **
+*** Starting refinePlace (0:05:44 mem=830.0M) ***
+Density distribution unevenness ratio = 5.323%
+Move report: Detail placement moves 47 insts, mean move: 1.54 um, max move: 4.75 um
+	Max move on inst (data_2_reg_4_): (91.96, 20.02) --> (87.21, 20.02)
+	Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 830.0MB
+Summary Report:
+Instances move: 47 (out of 2224 movable)
+Mean displacement: 1.54 um
+Max displacement: 4.75 um (Instance: data_2_reg_4_) (91.96, 20.02) -> (87.21, 20.02)
+	Length: 17 sites, height: 1 rows, site name: FreePDK45_38x28_10R_NP_162NW_34O, cell type: DFF_X1
+Runtime: CPU: 0:00:00.1 REAL: 0:00:00.0 MEM: 830.0MB
+*** Finished refinePlace (0:05:44 mem=830.0M) ***
+Density distribution unevenness ratio = 4.707%
+Re-routed 161 nets
+Extraction called for design 'FIR' of instances=2224 and nets=2862 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man ENCEXT-3530' for more detail.
+PreRoute RC Extraction called for design FIR.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.10066 1.10066 
+Resistance Scaling Factor    : 1.34236 1.34236 
+Clock Cap. Scaling Factor    : 0.96023 0.96023 
+Clock Res. Scaling Factor    : 1.34236 1.34236 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 829.992M)
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 830.0M, InitMEM = 830.0M)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=852.887 CPU=0:00:00.5 REAL=0:00:01.0)
+*** CDM Built up (cpu=0:00:00.6  real=0:00:01.0  mem= 852.9M) ***
+*** Timing Is met
+*** Check timing (0:00:00.0)
+*** Starting trialRoute (mem=852.9M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+Options:  -handlePreroute -keepMarkedOptRoutes -noPinGuide
+
+Nr of prerouted/Fixed nets = 0
+
+Phase 1a-1d Overflow: 0.00% H + 0.71% V (0:00:00.0 852.9M)
+
+Phase 1e-1f Overflow: 0.00% H + 0.10% V (0:00:00.0 852.9M)
+
+Phase 1l Overflow: 0.00% H + 0.92% V (0:00:00.1 852.9M)
+
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -5:	0	 0.00%	2	 0.05%
+ -4:	0	 0.00%	2	 0.05%
+ -3:	0	 0.00%	3	 0.08%
+ -2:	0	 0.00%	8	 0.21%
+ -1:	0	 0.00%	11	 0.28%
+--------------------------------------
+  0:	0	 0.00%	16	 0.41%
+  1:	0	 0.00%	21	 0.54%
+  2:	0	 0.00%	11	 0.28%
+  3:	0	 0.00%	2	 0.05%
+  4:	0	 0.00%	2	 0.05%
+  5:	3901	100.00%	3823	98.00%
+
+
+Total length: 2.659e+04um, number of vias: 15277
+M1(H) length: 1.142e+03um, number of vias: 8643
+M2(V) length: 1.155e+04um, number of vias: 6383
+M3(H) length: 1.283e+04um, number of vias: 211
+M4(V) length: 7.562e+02um, number of vias: 27
+M5(H) length: 2.512e+02um, number of vias: 13
+M6(V) length: 6.273e+01um, number of vias: 0
+M7(H) length: 0.000e+00um, number of vias: 0
+M8(V) length: 0.000e+00um, number of vias: 0
+M9(H) length: 0.000e+00um, number of vias: 0
+M10(V) length: 0.000e+00um
+
+Peak Memory Usage was 852.9M 
+*** Finished trialRoute (cpu=0:00:00.3 mem=852.9M) ***
+
+Extraction called for design 'FIR' of instances=2224 and nets=2862 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man ENCEXT-3530' for more detail.
+PreRoute RC Extraction called for design FIR.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.10066 1.10066 
+Resistance Scaling Factor    : 1.34236 1.34236 
+Clock Cap. Scaling Factor    : 0.96023 0.96023 
+Clock Res. Scaling Factor    : 1.34236 1.34236 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 852.887M)
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 852.9M, InitMEM = 852.9M)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=852.887 CPU=0:00:00.5 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.5  real=0:00:00.0  mem= 852.9M) ***
+Begin: GigaOpt postEco DRV Optimization
+Info: 1 clock net  excluded from IPO operation.
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+|      max-tran     |      max-cap      |     max-fanout    |     max-length    |       |           |           |         |            |           |
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+|  nets   |  terms  |  nets   |  terms  |  nets   |  terms  |  nets   |  terms  |  WNS  |  #Buffer  |  #Resize  | Density |    Real    |    Mem    |
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+|     0   |     0   |     0   |      0  |     0   |     0   |     0   |     0   | 37.46 |          0|          0|  59.23  |            |           |
+|     0   |     0   |     0   |      0  |     0   |     0   |     0   |     0   | 37.46 |          0|          0|  59.23  |   0:00:00.0|     944.5M|
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+
+*** Finish DRV Fixing (cpu=0:00:00.1 real=0:00:01.0 mem=944.5M) ***
+
+End: GigaOpt postEco DRV Optimization
+*** Steiner Routed Nets: 0.0%; Threshold: 100; Threshold for Hold: 100
+*** Starting trialRoute (mem=868.1M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+All nets are already routed correctly.
+*** Finishing trialRoute (mem=868.1M) ***
+
+Extraction called for design 'FIR' of instances=2224 and nets=2862 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man ENCEXT-3530' for more detail.
+PreRoute RC Extraction called for design FIR.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.10066 1.10066 
+Resistance Scaling Factor    : 1.34236 1.34236 
+Clock Cap. Scaling Factor    : 0.96023 0.96023 
+Clock Res. Scaling Factor    : 1.34236 1.34236 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 860.102M)
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 868.1M, InitMEM = 868.1M)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=846.355 CPU=0:00:00.5 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.6  real=0:00:00.0  mem= 846.4M) ***
+Reported timing to dir reports/preCTSTimingReports
+**optDesign ... cpu = 0:00:07, real = 0:00:07, mem = 810.2M, totSessionCpu=0:05:48 **
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+
+------------------------------------------------------------
+     optDesign Final Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 37.458  | 42.606  | 37.458  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   508   |   498   |   508   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 59.232%
+Routing Overflow: 0.00% H and 0.92% V
+------------------------------------------------------------
+**optDesign ... cpu = 0:00:08, real = 0:00:08, mem = 808.2M, totSessionCpu=0:05:48 **
+**WARN: (ENCOPT-3195):	Analysis mode has changed.
+Type 'man ENCOPT-3195' for more detail.
+*** Finished optDesign ***
+<CMD> saveDesign FIR.enc
+Writing Netlist "FIR.enc.dat.tmp/FIR.v.gz" ...
+Saving AAE Data ...
+Saving configuration ...
+Saving preference file FIR.enc.dat.tmp/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=729.6M) ***
+Writing DEF file 'FIR.enc.dat.tmp/FIR.def.gz', current time is Tue May 15 22:09:46 2018 ...
+unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
+DEF file 'FIR.enc.dat.tmp/FIR.def.gz' is written, current time is Tue May 15 22:09:46 2018 ...
+Copying Timing Library...
+Copying LEF file...
+Copying IO file...
+Copying Constraints file(s) ...
+Modifying Mode File...
+Modifying View File...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/Liberty/NLDM/NangateOpenCellLibrary_fast.lib...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/celtic/fast.cdb...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/celtic/slow.cdb...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/best.captbl...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/best.tch...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/worst.captbl...
+Copying /afs/ee.ust.hk/staff/ee/dept/public/elec516/eesm_5020_2017spring/eesm_5020/lib/fireice/worst.tch...
+rc_best rc_worst
+Modifying Globals File...
+Modifying Power Constraints File...
+Generated self-contained design: /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix FIR_preCTS -outDir timingReports
+**WARN: (ENCTCM-70):	Option "-fixDRC" for command getSIMode is obsolete and has been replaced by "-report_si_slew_max_transition". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-report_si_slew_max_transition".
+**WARN: (ENCEXT-3493):	The design extraction status has been reset by the setExtractRCMode command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s).
+Type 'man ENCEXT-3493' for more detail.
+*** Starting trialRoute (mem=729.6M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+All nets are already routed correctly.
+*** Finishing trialRoute (mem=729.6M) ***
+
+Extraction called for design 'FIR' of instances=2224 and nets=2862 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man ENCEXT-3530' for more detail.
+PreRoute RC Extraction called for design FIR.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.10066 1.10066 
+Resistance Scaling Factor    : 1.34236 1.34236 
+Clock Cap. Scaling Factor    : 0.96023 0.96023 
+Clock Res. Scaling Factor    : 1.34236 1.34236 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 729.641M)
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=765.801 CPU=0:00:00.5 REAL=0:00:01.0)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 37.458  | 42.606  | 37.458  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   508   |   498   |   508   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 59.232%
+Routing Overflow: 0.00% H and 0.92% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 1.17 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 727.640625 Mbytes
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_points 10000 -max_slack 0.75 -path_exceptions all > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt
+Parsing file top.mtarpt...
+**WARN: (ENCGTD-801):	File (top.mtarpt) does not contain any timing paths.
+This could be because the report is not of the correct format,
+or because it does not contain any paths (because there are no
+failing paths in the design, for instance).
+**ERROR: (ENCQTF-4005):	Cannot find item 'pan1f0page_b1' in form 'tdDock@frameOnly'.This is probably an inner GUI action error.Use direct TCL command instead of GUI interactive.
+**ERROR: (ENCQTF-4005):	Cannot find item 'pan1f0page_b1' in form 'tdDock@frameOnly'.This is probably an inner GUI action error.Use direct TCL command instead of GUI interactive.
+**ERROR: (ENCQTF-4005):	Cannot find item 'pan1f0page_b1' in form 'tdDock@frameOnly'.This is probably an inner GUI action error.Use direct TCL command instead of GUI interactive.
+**ERROR: (ENCGTD-908):	Path (1) not found.
+**ERROR: (ENCQTF-4005):	Cannot find item 'pan1f0page_b1' in form 'tdDock@frameOnly'.This is probably an inner GUI action error.Use direct TCL command instead of GUI interactive.
+**ERROR: (ENCQTF-4005):	Cannot find item 'pan1f0page_b1' in form 'tdDock@frameOnly'.This is probably an inner GUI action error.Use direct TCL command instead of GUI interactive.
+**ERROR: Path 1 not found.
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix FIR_preCTS -outDir timingReports
+**WARN: (ENCTCM-70):	Option "-fixDRC" for command getSIMode is obsolete and has been replaced by "-report_si_slew_max_transition". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-report_si_slew_max_transition".
+**WARN: (ENCEXT-3493):	The design extraction status has been reset by the setExtractRCMode command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s).
+Type 'man ENCEXT-3493' for more detail.
+*** Starting trialRoute (mem=727.6M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+All nets are already routed correctly.
+*** Finishing trialRoute (mem=727.6M) ***
+
+Extraction called for design 'FIR' of instances=2224 and nets=2862 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man ENCEXT-3530' for more detail.
+PreRoute RC Extraction called for design FIR.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.10066 1.10066 
+Resistance Scaling Factor    : 1.34236 1.34236 
+Clock Cap. Scaling Factor    : 0.96023 0.96023 
+Clock Res. Scaling Factor    : 1.34236 1.34236 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 727.641M)
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=764.809 CPU=0:00:00.5 REAL=0:00:00.0)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 37.458  | 42.606  | 37.458  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   508   |   498   |   508   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 59.232%
+Routing Overflow: 0.00% H and 0.92% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 1.14 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 726.648438 Mbytes
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix FIR_preCTS -outDir timingReports
+**WARN: (ENCTCM-70):	Option "-fixDRC" for command getSIMode is obsolete and has been replaced by "-report_si_slew_max_transition". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-report_si_slew_max_transition".
+**WARN: (ENCEXT-3493):	The design extraction status has been reset by the setExtractRCMode command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s).
+Type 'man ENCEXT-3493' for more detail.
+*** Starting trialRoute (mem=726.6M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+All nets are already routed correctly.
+*** Finishing trialRoute (mem=726.6M) ***
+
+Extraction called for design 'FIR' of instances=2224 and nets=2862 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man ENCEXT-3530' for more detail.
+PreRoute RC Extraction called for design FIR.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.10066 1.10066 
+Resistance Scaling Factor    : 1.34236 1.34236 
+Clock Cap. Scaling Factor    : 0.96023 0.96023 
+Clock Res. Scaling Factor    : 1.34236 1.34236 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 726.648M)
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=763.816 CPU=0:00:00.5 REAL=0:00:01.0)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 37.458  | 42.606  | 37.458  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   508   |   498   |   508   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 59.232%
+Routing Overflow: 0.00% H and 0.92% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 1.13 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 725.65625 Mbytes
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_points 10000 -max_slack 0.75 -path_exceptions all > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt
+Parsing file top.mtarpt...
+**WARN: (ENCGTD-801):	File (top.mtarpt) does not contain any timing paths.
+This could be because the report is not of the correct format,
+or because it does not contain any paths (because there are no
+failing paths in the design, for instance).
+**ERROR: (ENCQTF-4005):	Cannot find item 'pan1f0page_b1' in form 'tdDock@frameOnly'.This is probably an inner GUI action error.Use direct TCL command instead of GUI interactive.
+**ERROR: (ENCQTF-4005):	Cannot find item 'pan1f0page_b1' in form 'tdDock@frameOnly'.This is probably an inner GUI action error.Use direct TCL command instead of GUI interactive.
+**ERROR: (ENCQTF-4005):	Cannot find item 'pan1f0page_b1' in form 'tdDock@frameOnly'.This is probably an inner GUI action error.Use direct TCL command instead of GUI interactive.
+**ERROR: (ENCGTD-908):	Path (1) not found.
+**ERROR: (ENCQTF-4044):	Error happens when execute '@´NÖ' with error message: ''.This is probably an inner GUI action error.Use direct TCL command instead of GUI interactive.
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -idealClock -pathReports -slackReports -numPaths 50 -prefix FIR_preCTS -outDir timingReports
+**WARN: (ENCTCM-70):	Option "-fixDRC" for command getSIMode is obsolete and has been replaced by "-report_si_slew_max_transition". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-report_si_slew_max_transition".
+**WARN: (ENCEXT-3493):	The design extraction status has been reset by the setExtractRCMode command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s).
+Type 'man ENCEXT-3493' for more detail.
+*** Starting trialRoute (mem=745.7M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+All nets are already routed correctly.
+*** Finishing trialRoute (mem=745.7M) ***
+
+Extraction called for design 'FIR' of instances=2224 and nets=2862 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man ENCEXT-3530' for more detail.
+PreRoute RC Extraction called for design FIR.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.10066 1.10066 
+Resistance Scaling Factor    : 1.34236 1.34236 
+Clock Cap. Scaling Factor    : 0.96023 0.96023 
+Clock Res. Scaling Factor    : 1.34236 1.34236 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 745.664M)
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=764.566 CPU=0:00:00.5 REAL=0:00:00.0)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 37.458  | 42.606  | 37.458  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   508   |   498   |   508   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 59.232%
+Routing Overflow: 0.00% H and 0.92% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 1.1 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 726.40625 Mbytes
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -idealClock -pathReports -slackReports -numPaths 50 -prefix FIR_preCTS -outDir timingReports
+**WARN: (ENCTCM-70):	Option "-fixDRC" for command getSIMode is obsolete and has been replaced by "-report_si_slew_max_transition". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-report_si_slew_max_transition".
+**WARN: (ENCEXT-3493):	The design extraction status has been reset by the setExtractRCMode command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s).
+Type 'man ENCEXT-3493' for more detail.
+*** Starting trialRoute (mem=726.4M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+All nets are already routed correctly.
+*** Finishing trialRoute (mem=726.4M) ***
+
+Extraction called for design 'FIR' of instances=2224 and nets=2862 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man ENCEXT-3530' for more detail.
+PreRoute RC Extraction called for design FIR.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.10066 1.10066 
+Resistance Scaling Factor    : 1.34236 1.34236 
+Clock Cap. Scaling Factor    : 0.96023 0.96023 
+Clock Res. Scaling Factor    : 1.34236 1.34236 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 726.406M)
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=765.066 CPU=0:00:00.5 REAL=0:00:00.0)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 37.458  | 42.606  | 37.458  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   508   |   498   |   508   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 59.232%
+Routing Overflow: 0.00% H and 0.92% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 1.12 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 726.90625 Mbytes
+<CMD> deselectAll
+**ERROR: (ENCQTF-4005):	Cannot find item 'pan1f0page_b1' in form 'tdDock@frameOnly'.This is probably an inner GUI action error.Use direct TCL command instead of GUI interactive.
+**ERROR: (ENCQTF-4005):	Cannot find item 'pan1f0page_b1' in form 'tdDock@frameOnly'.This is probably an inner GUI action error.Use direct TCL command instead of GUI interactive.
+**ERROR: Path 1 not found.
+<CMD> report_timing
+Path 1: MET Setup Check with Pin MAC_inst_1/op_2_reg_0_/CK 
+Endpoint:   MAC_inst_1/op_2_reg_0_/D (^) checked with  leading edge of 'clk'
+Beginpoint: rst_n                    (v) triggered by  leading edge of 'clk'
+Analysis View: analysis_slow
+Other End Arrival Time          0.000
+- Setup                         0.080
++ Phase Shift                  50.000
+= Required Time                49.920
+- Arrival Time                 12.462
+= Slack Time                   37.458
+     Clock Rise Edge                      0.000
+     + Input Delay                       10.000
+     = Beginpoint Arrival Time           10.000
+     +---------------------------------------------------------------------------------+ 
+     |        Instance         |     Arc      |   Cell    | Delay | Arrival | Required | 
+     |                         |              |           |       |  Time   |   Time   | 
+     |-------------------------+--------------+-----------+-------+---------+----------| 
+     |                         | rst_n v      |           |       |  10.000 |   47.458 | 
+     | FE_DBTC1_rst_n          | A v -> ZN ^  | INV_X1    | 0.384 |  10.384 |   47.842 | 
+     | MAC_inst_1/U9           | A3 ^ -> ZN v | NOR3_X1   | 0.094 |  10.478 |   47.936 | 
+     | MAC_inst_1/U12          | A1 v -> ZN ^ | NAND2_X1  | 0.092 |  10.569 |   48.028 | 
+     | MAC_inst_1/U8           | A1 ^ -> ZN v | NOR2_X1   | 0.028 |  10.597 |   48.055 | 
+     | MAC_inst_1/FE_OFC13_n50 | A v -> Z v   | CLKBUF_X1 | 0.292 |  10.889 |   48.348 | 
+     | MAC_inst_1/U82          | A3 v -> ZN ^ | NOR3_X2   | 0.594 |  11.484 |   48.942 | 
+     | MAC_inst_1/U5           | A3 ^ -> ZN v | NAND3_X1  | 0.353 |  11.837 |   49.295 | 
+     | MAC_inst_1/U4           | A v -> ZN ^  | INV_X1    | 0.417 |  12.253 |   49.712 | 
+     | MAC_inst_1/U64          | B2 ^ -> ZN v | AOI22_X1  | 0.142 |  12.395 |   49.854 | 
+     | MAC_inst_1/U62          | A1 v -> ZN ^ | NAND2_X1  | 0.066 |  12.462 |   49.920 | 
+     | MAC_inst_1/op_2_reg_0_  | D ^          | DFF_X1    | 0.000 |  12.462 |   49.920 | 
+     +---------------------------------------------------------------------------------+ 
+
+invalid command name "debug_timing"
+usage: [[-now] 1|0]
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_points 10000 -max_slack 0.75 -path_exceptions all > top.mtarpt
+<CMD> load_timing_debug_report -name default_report top.mtarpt
+Parsing file top.mtarpt...
+**WARN: (ENCGTD-801):	File (top.mtarpt) does not contain any timing paths.
+This could be because the report is not of the correct format,
+or because it does not contain any paths (because there are no
+failing paths in the design, for instance).
+**ERROR: (ENCQTF-4005):	Cannot find item 'pan1f0page_b1' in form 'tdDock@frameOnly'.This is probably an inner GUI action error.Use direct TCL command instead of GUI interactive.
+**ERROR: (ENCQTF-4005):	Cannot find item 'pan1f0page_b1' in form 'tdDock@frameOnly'.This is probably an inner GUI action error.Use direct TCL command instead of GUI interactive.
+**ERROR: (ENCQTF-4005):	Cannot find item 'pan1f0page_b1' in form 'tdDock@frameOnly'.This is probably an inner GUI action error.Use direct TCL command instead of GUI interactive.
+**ERROR: (ENCGTD-908):	Path (1) not found.
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -hold -idealClock -pathReports -slackReports -numPaths 50 -prefix FIR_preCTS -outDir timingReports
+**WARN: (ENCTCM-70):	Option "-fixDRC" for command getSIMode is obsolete and has been replaced by "-report_si_slew_max_transition". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-report_si_slew_max_transition".
+**WARN: (ENCEXT-3493):	The design extraction status has been reset by the setExtractRCMode command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s).
+Type 'man ENCEXT-3493' for more detail.
+*** Starting trialRoute (mem=731.1M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+All nets are already routed correctly.
+*** Finishing trialRoute (mem=731.1M) ***
+
+Extraction called for design 'FIR' of instances=2224 and nets=2862 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man ENCEXT-3530' for more detail.
+PreRoute RC Extraction called for design FIR.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.10066 1.10066 
+Resistance Scaling Factor    : 1.34236 1.34236 
+Clock Cap. Scaling Factor    : 0.96023 0.96023 
+Clock Res. Scaling Factor    : 1.34236 1.34236 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 731.078M)
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=764.309 CPU=0:00:00.5 REAL=0:00:01.0)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.046  |  0.046  |  0.000  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   498   |   498   |    0    |
++--------------------+---------+---------+---------+
+
+Density: 59.232%
+Routing Overflow: 0.00% H and 0.92% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 0.92 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 711.070312 Mbytes
+**ERROR: (ENCQTF-4005):	Cannot find item 'pan1f0page_b1' in form 'tdDock@frameOnly'.This is probably an inner GUI action error.Use direct TCL command instead of GUI interactive.
+**ERROR: (ENCQTF-4005):	Cannot find item 'pan1f0page_b1' in form 'tdDock@frameOnly'.This is probably an inner GUI action error.Use direct TCL command instead of GUI interactive.
+<CMD> selectWire 74.7300 46.2350 81.2600 46.3050 3 MAC_inst_3/n200
+**ERROR: Path 1 not found.
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_points 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 724.9M, InitMEM = 724.9M)
+*** Calculating scaling factor for lib_slow libraries using the default operating condition of each library.
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=765.051 CPU=0:00:00.5 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.6  real=0:00:00.0  mem= 765.1M) ***
+<CMD> load_timing_debug_report -name default_report top.mtarpt
+Parsing file top.mtarpt...
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix FIR_preCTS -outDir timingReports
+**WARN: (ENCTCM-70):	Option "-fixDRC" for command getSIMode is obsolete and has been replaced by "-report_si_slew_max_transition". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-report_si_slew_max_transition".
+**WARN: (ENCEXT-3493):	The design extraction status has been reset by the setExtractRCMode command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s).
+Type 'man ENCEXT-3493' for more detail.
+*** Starting trialRoute (mem=711.1M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+All nets are already routed correctly.
+*** Finishing trialRoute (mem=711.2M) ***
+
+Extraction called for design 'FIR' of instances=2224 and nets=2862 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man ENCEXT-3530' for more detail.
+PreRoute RC Extraction called for design FIR.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.10066 1.10066 
+Resistance Scaling Factor    : 1.34236 1.34236 
+Clock Cap. Scaling Factor    : 0.96023 0.96023 
+Clock Res. Scaling Factor    : 1.34236 1.34236 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 711.195M)
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=763.941 CPU=0:00:00.5 REAL=0:00:00.0)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 37.458  | 42.606  | 37.458  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   508   |   498   |   508   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 59.232%
+Routing Overflow: 0.00% H and 0.92% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 1.15 sec
+Total Real time: 2.0 sec
+Total Memory Usage: 725.78125 Mbytes
+<CMD> windowSelect -15.582 91.192 171.635 -29.834
+<CMD> windowSelect 155.933 59.547 157.865 57.614
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix FIR_preCTS -outDir timingReports
+**WARN: (ENCTCM-70):	Option "-fixDRC" for command getSIMode is obsolete and has been replaced by "-report_si_slew_max_transition". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-report_si_slew_max_transition".
+**WARN: (ENCEXT-3493):	The design extraction status has been reset by the setExtractRCMode command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s).
+Type 'man ENCEXT-3493' for more detail.
+*** Starting trialRoute (mem=728.1M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+All nets are already routed correctly.
+*** Finishing trialRoute (mem=729.1M) ***
+
+Extraction called for design 'FIR' of instances=2224 and nets=2862 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man ENCEXT-3530' for more detail.
+PreRoute RC Extraction called for design FIR.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.10066 1.10066 
+Resistance Scaling Factor    : 1.34236 1.34236 
+Clock Cap. Scaling Factor    : 0.96023 0.96023 
+Clock Res. Scaling Factor    : 1.34236 1.34236 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 729.086M)
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=767.996 CPU=0:00:00.5 REAL=0:00:01.0)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 37.458  | 42.606  | 37.458  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   508   |   498   |   508   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 59.232%
+Routing Overflow: 0.00% H and 0.92% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 1.12 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 729.835938 Mbytes
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -hold -idealClock -pathReports -slackReports -numPaths 50 -prefix FIR_preCTS -outDir timingReports
+**WARN: (ENCTCM-70):	Option "-fixDRC" for command getSIMode is obsolete and has been replaced by "-report_si_slew_max_transition". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-report_si_slew_max_transition".
+**WARN: (ENCEXT-3493):	The design extraction status has been reset by the setExtractRCMode command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s).
+Type 'man ENCEXT-3493' for more detail.
+*** Starting trialRoute (mem=711.5M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+All nets are already routed correctly.
+*** Finishing trialRoute (mem=711.5M) ***
+
+Extraction called for design 'FIR' of instances=2224 and nets=2862 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man ENCEXT-3530' for more detail.
+PreRoute RC Extraction called for design FIR.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.10066 1.10066 
+Resistance Scaling Factor    : 1.34236 1.34236 
+Clock Cap. Scaling Factor    : 0.96023 0.96023 
+Clock Res. Scaling Factor    : 1.34236 1.34236 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 711.492M)
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=767.746 CPU=0:00:00.5 REAL=0:00:01.0)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.046  |  0.046  |  0.000  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   498   |   498   |    0    |
++--------------------+---------+---------+---------+
+
+Density: 59.232%
+Routing Overflow: 0.00% H and 0.92% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 0.91 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 713.242188 Mbytes
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_points 10000 -max_slack 0.75 -path_exceptions all > top.mtarpt
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 732.9M, InitMEM = 732.9M)
+*** Calculating scaling factor for lib_slow libraries using the default operating condition of each library.
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=773.012 CPU=0:00:00.5 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.6  real=0:00:01.0  mem= 773.0M) ***
+<CMD> load_timing_debug_report -name default_report top.mtarpt
+Parsing file top.mtarpt...
+**WARN: (ENCGTD-801):	File (top.mtarpt) does not contain any timing paths.
+This could be because the report is not of the correct format,
+or because it does not contain any paths (because there are no
+failing paths in the design, for instance).
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_points 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 754.9M, InitMEM = 754.9M)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=773.012 CPU=0:00:00.4 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.6  real=0:00:00.0  mem= 773.0M) ***
+<CMD> load_timing_debug_report -name default_report top.mtarpt
+Parsing file top.mtarpt...
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_points 10000 -max_slack 0.75 -path_exceptions all > top.mtarpt
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 773.0M, InitMEM = 773.0M)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=775.012 CPU=0:00:00.5 REAL=0:00:01.0)
+*** CDM Built up (cpu=0:00:00.6  real=0:00:01.0  mem= 775.0M) ***
+<CMD> load_timing_debug_report -name default_report top.mtarpt
+Parsing file top.mtarpt...
+**WARN: (ENCGTD-801):	File (top.mtarpt) does not contain any timing paths.
+This could be because the report is not of the correct format,
+or because it does not contain any paths (because there are no
+failing paths in the design, for instance).
+<CMD> get_time_unit
+<CMD> report_timing -machine_readable -max_points 10000 -max_slack 0.75 -path_exceptions all -early > top.mtarpt
+#################################################################################
+# Design Stage: PreRoute
+# Design Mode: 90nm
+# Analysis Mode: MMMC non-OCV
+# Extraction Mode: default
+# Delay Calculation Options: engine=aae SIAware=false(opt_signoff)
+# Switching Delay Calculation Engine to AAE
+#################################################################################
+Calculate delays in BcWc mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 775.0M, InitMEM = 775.0M)
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=773.004 CPU=0:00:00.5 REAL=0:00:00.0)
+*** CDM Built up (cpu=0:00:00.6  real=0:00:00.0  mem= 773.0M) ***
+<CMD> load_timing_debug_report -name default_report top.mtarpt
+Parsing file top.mtarpt...
+<CMD> load_timing_debug_report -name default_report top.mtarpt
+Parsing file top.mtarpt...
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -preCTS -idealClock -pathReports -slackReports -numPaths 50 -prefix FIR_preCTS -outDir timingReports
+**WARN: (ENCTCM-70):	Option "-fixDRC" for command getSIMode is obsolete and has been replaced by "-report_si_slew_max_transition". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-report_si_slew_max_transition".
+**WARN: (ENCEXT-3493):	The design extraction status has been reset by the setExtractRCMode command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s).
+Type 'man ENCEXT-3493' for more detail.
+*** Starting trialRoute (mem=720.5M) ***
+
+There are 0 guide points passed to trialRoute for fixed pins.
+There are 0 guide points passed to trialRoute for pinGroup/netGroup/pinGuide pins.
+All nets are already routed correctly.
+*** Finishing trialRoute (mem=720.5M) ***
+
+Extraction called for design 'FIR' of instances=2224 and nets=2862 using extraction engine 'preRoute' .
+**WARN: (ENCEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man ENCEXT-3530' for more detail.
+PreRoute RC Extraction called for design FIR.
+RC Extraction called in multi-corner(2) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.10066 1.10066 
+Resistance Scaling Factor    : 1.34236 1.34236 
+Clock Cap. Scaling Factor    : 0.96023 0.96023 
+Clock Res. Scaling Factor    : 1.34236 1.34236 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using capacitance table file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.0  Real Time: 0:00:00.0  MEM: 720.477M)
+Found active setup analysis view analysis_slow
+Found active hold analysis view analysis_fast
+AAE_MTTC: End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+AAE_THRD: End delay calculation. (MEM=769.707 CPU=0:00:00.5 REAL=0:00:00.0)
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| 37.458  | 42.606  | 37.458  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|   508   |   498   |   508   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 59.232%
+Routing Overflow: 0.00% H and 0.92% V
+------------------------------------------------------------
+Reported timing to dir timingReports
+Total CPU time: 1.09 sec
+Total Real time: 4.0 sec
+Total Memory Usage: 731.546875 Mbytes
+
+*** Memory Usage v#1 (Current mem = 733.852M, initial mem = 96.059M) ***
+*** Message Summary: 8835 warning(s), 20 error(s)
+
+--- Ending "Encounter" (totcpu=0:14:53, real=1:31:59, mem=733.9M) ---

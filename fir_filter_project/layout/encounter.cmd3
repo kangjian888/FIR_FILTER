@@ -1,0 +1,83 @@
+#######################################################
+#                                                     
+#  Encounter Command Logging File                     
+#  Created on Wed May 16 10:55:49 2018                
+#                                                     
+#######################################################
+
+#@(#)CDS: Encounter v14.26-s039_1 (64bit) 07/15/2015 11:34 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute v14.26-s022 NR150713-1956/14_26-UB (database version 2.30, 267.6.1) {superthreading v1.25}
+#@(#)CDS: CeltIC v14.26-s013_1 (64bit) 07/14/2015 03:32:40 (Linux 2.6.18-194.el5)
+#@(#)CDS: AAE 14.26-s007 (64bit) 07/15/2015 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 14.26-s010_1 (64bit) Jul 15 2015 01:38:12 (Linux 2.6.18-194.el5)
+#@(#)CDS: CPE v14.26-s026
+#@(#)CDS: IQRC/TQRC 14.2.2-s217 (64bit) Wed Apr 15 23:10:24 PDT 2015 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+restoreDesign /afs/ee.ust.hk/staff/ee/jkangac/Desktop/FIR_FILTER/fir_filter_project/layout/FIR.enc.dat FIR
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+setPlaceMode -reset
+setPlaceMode -reorderScan 0
+placeDesign
+setDrawView place
+setDrawView ameba
+setDrawView place
+setDrawView ameba
+setExtractRCMode -engine preRoute
+optDesign -preCTS -outDir reports/preCTSTimingReports
+saveDesign db/FIR.enc
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix FIR_preCTS -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -idealClock -pathReports -drvReports -slackReports -numPaths 50 -prefix FIR_preCTS -outDir timingReports
+get_time_unit
+report_timing -machine_readable -max_points 10000 -max_slack 0.75 -path_exceptions all > top.mtarpt
+load_timing_debug_report -name default_report top.mtarpt
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -hold -idealClock -pathReports -slackReports -numPaths 50 -prefix FIR_preCTS -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -hold -idealClock -pathReports -slackReports -numPaths 50 -prefix FIR_preCTS -outDir timingReports
+get_time_unit
+report_timing -machine_readable -max_points 10000 -max_slack 0.75 -path_exceptions all > top.mtarpt
+load_timing_debug_report -name default_report top.mtarpt
+saveDesign FIR_place.enc
+saveDesign FIR_place.enc
+createClockTreeSpec -bufferList {CLKBUF_X1 CLKBUF_X2 CLKBUF_X3} -file Clock.ctstch
+setCTSMode -engine ck
+clockDesign -specFile Clock.ctstch -outDir clock_report -fixedInstBeforeCTS -updateIoLatency
+setAnalysisMode -analysisType onChipVariation
+setAnalysisMode -cppr both
+optDesign -postCTS -outDir reports/postCTSTimingReports
+optDesign -postCTS -hold -outDir reports/postCTSTimingReports
+saveDesign db/FIR_cts.enc
+setNanoRouteMode -quiet -timingEngine {}
+setNanoRouteMode -quiet -routeWithTimingDriven 1
+setNanoRouteMode -quiet -routeWithSiDriven 1
+setNanoRouteMode -quiet -routeWithSiPostRouteFix 0
+setNanoRouteMode -quiet -routeTopRoutingLayer default
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+setNanoRouteMode -quiet -drouteEndIteration default
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven true
+routeDesign -globalDetail
+setDrawView place
+setDrawView ameba
+setDrawView fplan
+setExtractRCMode -engine postRoute
+setExtractRCMode -effortLevel medium
+setDelayCalMode -engine default -SIAware true
+optDesign -postRoute -outDir reports/postRouteTimingReports
+optDesign -postRoute -hold -outDir reports/postRouteTimingReports
+setDelayCalMode -SIAware false
+setDelayCalMode -engine signalStorm
+timeDesign -signoff -si -outDir reports/signoffTimingReports
+timeDesign -signoff -si -outDir reports/signoffTimingReports
+timeDesign -signoff -si -outDir reports/signoffTimingReports

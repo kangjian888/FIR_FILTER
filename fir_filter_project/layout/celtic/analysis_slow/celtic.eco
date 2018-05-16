@@ -1,0 +1,18 @@
+# Run settings
+#   Run mode                        = coupling analysis with RCs
+#   Process                         = 90nm
+# Failure Thresholds
+#   Functional (sequential)         = 0.24 V
+#   Functional (combinatorial)      = 0.76 V
+#   Functional (clock)              = 0.0475 V
+#   Delay absolute                  = 1000.00 ps
+#   Delay relative                  = 0.50
+#   Slope                           = 0.00
+#
+# Number of glitch ECO failures     = 0
+# Number of delay  ECO failures     = 0
+# Number of slope  ECO failures     = 0
+# Number of ECOs skipped            = 0
+#
+# For complete details, view the html or text ECO report
+#

@@ -1,0 +1,41 @@
+catch { setAnalysisMode -analysisType onChipVariation }
+catch { setAnalysisMode -checkType setup }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -cppr both }
+catch { setAnalysisMode -virtualIPO false }
+catch { setOptMode -deleteInst true }
+catch { setOptMode -drcMargin 0 }
+catch { setOptMode -effort high }
+catch { setOptMode -fixDrc true }
+catch { setOptMode -optimizeFF true }
+catch { setOptMode -setupTargetSlack 0 }
+setExtractRCMode  -effortLevel signoff -engine postRoute -total_c_th 5 -relative_c_th 0.03 -coupling_c_th 3
+catch { setCTSMode -engine ck }
+catch { setCTSMode -moveGateLimit 25 }
+catch {setNanoRouteMode -quiet -droutePostRouteSpreadWire "false"}
+catch {setNanoRouteMode -quiet -drouteStartIteration 0}
+catch {setNanoRouteMode -quiet -routeExpPreserveConstraints true}
+catch {setNanoRouteMode -quiet -routeExpSignatureEco false}
+catch {setNanoRouteMode -quiet -routeWithSiDriven true}
+catch {setNanoRouteMode -quiet -routeWithSiPostRouteFix false}
+catch {setNanoRouteMode -quiet -routeWithTimingDriven true}
+catch {setNanoRouteMode -quiet -timingEngine ""}
+
+catch { setPlaceMode -reorderScan false }
+catch { setIlmMode -keepHighFanoutPorts true -loopBack false -keepFlatten true }
+catch { setDelayCalMode -considerMillerEffect false }
+catch { setDelayCalMode -enable_high_fanout true }
+catch { setDelayCalMode -engine signalStorm }
+catch { setDelayCalMode -ignore_clock_idealness false }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setDelayCalMode -SIAware false }
+catch { setDelayCalMode -signOff true }
+catch { setTrialRouteMode -handlePreroute true }
+catch { setTrialRouteMode -keepMarkedOptRoutes true }
+catch { setHierMode -disableArt false }
+catch { setHierMode -reportPostRouteArtTiming false }
+catch { setHierMode -trialRouteHonorReadOnly false }
+catch { setSIMode -report_si_slew_max_transition false }
+catch { setSIMode -usePrevCeltICRunDir {} }
+catch { setEndCapMode -boundary_tap false }
